@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hagrid!</title>
+  <link rel="stylesheet" href="dist/css/main.css">
+</head>
+<body>
+  <div class="grid-wrap grid-wrap-90">
+
+    <h1 class="align-center">Hagrid!</h1>
+    <h2>Grid System</h2>
+    
+    <div class="grid-layout" hagrid-debug>
+      <div class="layout-50"></div>
+      <div class="layout-20"></div>
+      <div class="layout-30"></div>
+    </div>
+    <h3>Grid Flex Examples</h3>
+    <p>Flex order</p>
+    <div class="grid-flex" hagrid-debug debug-empty>
+      <div class="flex-50 order-2">1</div>
+      <div class="flex-20 order-3">2</div>
+      <div class="flex-30 order-1">3</div>
+    </div>
+    <p>Flex align (left)</p>
+    <div class="grid-flex justify-content-flex-start" hagrid-debug>
+      <div class="flex-30"></div>
+      <div class="flex-20"></div>
+      <div class="flex-30"></div>
+    </div>
+    <p>Flex align (center)</p>
+    <div class="grid-flex justify-content-center" hagrid-debug>
+      <div class="flex-30"></div>
+      <div class="flex-20"></div>
+      <div class="flex-30"></div>
+    </div>
+    <p>Flex align (right)</p>
+    <div class="grid-flex justify-content-flex-end" hagrid-debug>
+      <div class="flex-30"></div>
+      <div class="flex-20"></div>
+      <div class="flex-30"></div>
+    </div>
+    <p>Flex align (justify)</p>
+    <div class="grid-flex justify-content-space-between" hagrid-debug>
+      <div class="flex-30"></div>
+      <div class="flex-20"></div>
+      <div class="flex-30"></div>
+    </div>
+    <p>Flex align (center justify)</p>
+    <div class="grid-flex justify-content-space-around" hagrid-debug>
+      <div class="flex-30"></div>
+      <div class="flex-20"></div>
+      <div class="flex-30"></div>
+    </div>
+    <p>Flex Vertical align (top)</p>
+    <div class="grid-flex align-items-flex-start" hagrid-debug style="height: 100px">
+      <div class="flex-50"></div>
+      <div class="flex-20"></div>
+      <div class="flex-30"></div>
+    </div>
+    <p>Flex Vertical align (middle)</p>
+    <div class="grid-flex align-items-center" hagrid-debug style="height: 100px">
+      <div class="flex-50"></div>
+      <div class="flex-20"></div>
+      <div class="flex-30"></div>
+    </div>
+    <p>Flex Vertical align (bottom)</p>
+    <div class="grid-flex align-items-flex-end" hagrid-debug style="height: 100px">
+      <div class="flex-50"></div>
+      <div class="flex-20"></div>
+      <div class="flex-30"></div>
+    </div>
+    <p>Flex Vertical align (stretch)</p>
+    <div class="grid-flex align-items-stretch" hagrid-debug style="height: 100px">
+      <div class="flex-50"></div>
+      <div class="flex-20"></div>
+      <div class="flex-30"></div>
+    </div>
+    <p>Flex Vertical align selft(center)</p>
+    <div class="grid-flex align-items-stretch" hagrid-debug style="height: 100px">
+      <div class="flex-50"></div>
+      <div class="flex-20 align-self-center"></div>
+      <div class="flex-30"></div>
+    </div>
+    <p>Flex Vertical align selft(bottom)</p>
+    <div class="grid-flex align-items-stretch" hagrid-debug style="height: 100px">
+      <div class="flex-50"></div>
+      <div class="flex-20 align-self-flex-end"></div>
+      <div class="flex-30"></div>
+    </div>
+    <p>Flex Vertical align (baseline)</p>
+    <div class="grid-flex align-items-baseline" hagrid-debug debug-empty style="height: 100px">
+      <div class="flex-50"><h2>text</h2></div>
+      <div class="flex-30"><p>text</p></div>
+      <div class="flex-20"><h4>text</h4></div>
+    </div>
+    <p>Flex Align Cotnent (top)</p>
+    <div class="grid-flex align-content-flex-start flex-wrap-wrap" hagrid-debug style="height: 300px">
+      <div class="flex-30"></div>
+      <div class="flex-10"></div>
+      <div class="flex-60"></div>
+      <div class="flex-50"></div>
+      <div class="flex-50"></div>
+      <div class="flex-30"></div>
+      <div class="flex-10"></div>
+    </div>
+    <p>Flex Align Cotnent (center)</p>
+    <div class="grid-flex align-content-center flex-wrap-wrap" hagrid-debug style="height: 300px">
+      <div class="flex-30"></div>
+      <div class="flex-10"></div>
+      <div class="flex-60"></div>
+      <div class="flex-50"></div>
+      <div class="flex-50"></div>
+      <div class="flex-30"></div>
+      <div class="flex-10"></div>
+    </div>
+    <p>Flex Align Cotnent (bottom)</p>
+    <div class="grid-flex align-content-flex-end flex-wrap-wrap" hagrid-debug style="height: 300px">
+      <div class="flex-30"></div>
+      <div class="flex-10"></div>
+      <div class="flex-60"></div>
+      <div class="flex-50"></div>
+      <div class="flex-50"></div>
+      <div class="flex-30"></div>
+      <div class="flex-10"></div>
+    </div>
+
+  </div><!-- end grid wrap-->
+  <footer>footer
+  </footer>
+
+  <script>document.body.innerHTML = document.body.innerHTML.replace(/>\s+</g, "><");</script>
+</body>
+</html>
