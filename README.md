@@ -5,6 +5,7 @@
 	* Buttons(TODO)
 	* Input forms(TODO)
 	* Typography(TODO)
+	* Glyphicons(TODO)
 	* Tables(TODO)
 	* Images(TODO)
 

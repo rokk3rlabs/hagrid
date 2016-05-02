@@ -77,13 +77,19 @@
       <div class="flex-20"></div>
       <div class="flex-30"></div>
     </div>
-    <p>Flex Vertical align selft(center)</p>
+    <p>Flex Vertical align top(center)</p>
+    <div class="grid-flex align-items-stretch" hagrid-debug style="height: 100px">
+      <div class="flex-50"></div>
+      <div class="flex-20 align-self-flex-start"></div>
+      <div class="flex-30"></div>
+    </div>
+    <p>Flex Vertical align self(center)</p>
     <div class="grid-flex align-items-stretch" hagrid-debug style="height: 100px">
       <div class="flex-50"></div>
       <div class="flex-20 align-self-center"></div>
       <div class="flex-30"></div>
     </div>
-    <p>Flex Vertical align selft(bottom)</p>
+    <p>Flex Vertical align self(bottom)</p>
     <div class="grid-flex align-items-stretch" hagrid-debug style="height: 100px">
       <div class="flex-50"></div>
       <div class="flex-20 align-self-flex-end"></div>
@@ -95,7 +101,7 @@
       <div class="flex-30"><p>text</p></div>
       <div class="flex-20"><h4>text</h4></div>
     </div>
-    <p>Flex Align Cotnent (top)</p>
+    <p>Flex Align Content (top)</p>
     <div class="grid-flex align-content-flex-start flex-wrap-wrap" hagrid-debug style="height: 300px">
       <div class="flex-30"></div>
       <div class="flex-10"></div>
@@ -105,7 +111,7 @@
       <div class="flex-30"></div>
       <div class="flex-10"></div>
     </div>
-    <p>Flex Align Cotnent (center)</p>
+    <p>Flex Align Content (center)</p>
     <div class="grid-flex align-content-center flex-wrap-wrap" hagrid-debug style="height: 300px">
       <div class="flex-30"></div>
       <div class="flex-10"></div>
@@ -115,7 +121,7 @@
       <div class="flex-30"></div>
       <div class="flex-10"></div>
     </div>
-    <p>Flex Align Cotnent (bottom)</p>
+    <p>Flex Align Content (bottom)</p>
     <div class="grid-flex align-content-flex-end flex-wrap-wrap" hagrid-debug style="height: 300px">
       <div class="flex-30"></div>
       <div class="flex-10"></div>
@@ -127,8 +133,7 @@
     </div>
 
   </div><!-- end grid wrap-->
-  <footer>footer
-  </footer>
+  <footer>footer</footer>
 
   <script>document.body.innerHTML = document.body.innerHTML.replace(/>\s+</g, "><");</script>
 </body>

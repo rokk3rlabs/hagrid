@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hagrid!</title>
+  <link rel="stylesheet" href="../../dist/css/main.css">
+</head>
+<body>
+  <section class="full-screen">
+    <header class="grid-flex height-10" hagrid-debug debug-empty>
+      <section class="flex-100">header</section>
+    </header>
+    <section class="grid-flex height-80" hagrid-debug debug-empty>
+      <aside class="flex-20">sidebar</aside>
+      <main class="flex-80 scroll-y">
+        <article style="height:1000px">
+          <h1>Scroll Down</h1>
+        </article>
+      </main>
+    </section>
+    <footer class="grid-flex height-10" hagrid-debug debug-empty>
+      <section class="flex-100">footer</section>
+    </footer>
+  </section>  
+
+  <script>document.body.innerHTML = document.body.innerHTML.replace(/>\s+</g, "><");</script>
+</body>
+</html>

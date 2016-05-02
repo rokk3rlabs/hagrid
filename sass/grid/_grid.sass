@@ -33,6 +33,7 @@
 	+inline-block
 	text-align: center
 
+
 [class*="grid-for"].margin-boxes
 
 	.grid-box
@@ -107,6 +108,11 @@
 	&:before
 		content: "fifth"
 
+
+/// Layouts, Flex, width
+@for $i from 1 through 10
+	.height-#{$i}0,
+		height: (($i*10)/100)*100%
 
 /// Layouts, Flex, width
 @for $i from 1 through 10
@@ -229,7 +235,7 @@
 
 				
 		$i0: $i
-		
+
 	&[debug-empty]
 		*
 			&:before
@@ -282,5 +288,21 @@
 	.#{$class-order}-#{$i}
 		
 		order: $i
+
+// General Grid class
+.full-screen
+	position: absolute
+	height: 100%
+	width: 100%
+	left: 0
+	top: 0
+
+.scroll-y
+	overflow: hidden
+	overflow-y: scroll!important
+
+.scroll-x
+	overflow: hidden
+	overflow-x: scroll!important
 
 /// End Grid System
