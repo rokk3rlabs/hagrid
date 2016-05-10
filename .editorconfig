@@ -1,0 +1,27 @@
+# EditorConfig is awesome: http://EditorConfig.org
+
+# top-most EditorConfig file
+root = true
+
+[*]
+indent_style = space
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+# Use 2 spaces for indentation in HTML, JavaScript, Ruby, SCSS, SASS, and XML
+
+[*.{html,js,rb,scss,sass,xml}]
+indent_size = 2
+
+[Gemfile*]
+indent_size = 2
+
+[Rakefile]
+indent_size = 2
+
+# Use 4 spaces for indentation in Markdown files
+
+[*.md]
+indent_size = 4

@@ -281,7 +281,54 @@
 		&.#{$align-content}-#{$i}
 			align-content: #{$i}
 
+	&.grid-spaces
+		[class*="flex-"]
+			margin: 1em
 
+
+@for $i from 1 through 3
+	[grid-spaces="#{$i}0px"]
+		[class*="flex-"]
+			margin: #{$i}0px
+	[grid-spaces="#{$i}em"]
+		[class*="flex-"]
+			margin: #{$i}em
+	[grid-spaces="#{$i}rem"]
+		[class*="flex-"]
+			margin: #{$i}rem
+	[grid-spaces="#{$i}0%"]
+		[class*="flex-"]
+			margin: #{$i}0%
+
+.grid-spaces-sides
+	[class*="flex-"]
+		margin-top: 0
+		margin-bottom: 0
+.grid-spaces-top-bottom
+	[class*="flex-"]
+		margin-right: 0
+		margin-left: 0
+.grid-spaces-right
+	[class*="flex-"]
+		margin-top: 0
+		margin-bottom: 0
+		margin-left: 0
+.grid-spaces-left
+	[class*="flex-"]
+		margin-top: 0
+		margin-bottom: 0
+		margin-right: 0
+.grid-spaces-top
+	[class*="flex-"]
+		margin-bottom: 0
+		margin-right: 0
+		margin-left: 0
+.grid-spaces-bottom
+	[class*="flex-"]
+		margin-top: 0
+		margin-right: 0
+		margin-left: 0
+		
 
 /// Order
 @for $i from 1 through 12
