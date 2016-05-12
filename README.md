@@ -8,6 +8,16 @@
 	* Glyphicons(TODO)
 	* Tables(TODO)
 	* Images(TODO)
+	* Alerts (TODO)
+
+## Utilities
+	* Gutters (TODO)
+	* Responsive (TODO)
+	* Theming (TODO)
+	* Animations (TODO)
+
+## Examples
+    * Landing Page
 
 ## Setup build
 
