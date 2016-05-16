@@ -69,7 +69,7 @@ body {
 }
 
 .grey {
-  background: #A8BAC8;
+  background: #E6E6E6;
 }
 
 .red {
@@ -82,7 +82,6 @@ body {
 
 [class*="cols-"] {
   display: block;
-  text-align: center;
   margin: 10px;
   vertical-align: top;
   -webkit-box-sizing: border-box;
@@ -102,7 +101,6 @@ body {
 [class*="grid-col-"] {
   display: inline-block;
   *display: inline;
-  text-align: center;
   margin: 0;
   vertical-align: top;
   -webkit-box-sizing: border-box;
@@ -136,7 +134,6 @@ body {
 .grid-box {
   display: inline-block;
   *display: inline;
-  text-align: center;
 }
 
 [class*="grid-for"].margin-boxes .grid-box {
@@ -165,12 +162,6 @@ body {
 .grid-columns {
   display: block;
   margin: auto;
-  text-align: center;
-}
-@media screen and (min-width: 700px) {
-  .grid-columns {
-    text-align: center;
-  }
 }
 @media screen and (min-width: 960px) {
   .grid-columns {
@@ -1258,7 +1249,8 @@ body {
 [hagrid-debug] [class*="flex-"],
 [hagrid-debug] [class*="grid-for"] .grid-box,
 [hagrid-debug] .grid-box {
-  background-color: #3f7edd;
+  text-align: center;
+  background-color: #7F90A9;
   min-height: 60px;
   outline: 1px solid rgba(0, 0, 0, 0.09);
   color: #fff;
@@ -1270,6 +1262,8 @@ body {
 [hagrid-debug] [class*="flex-"]:before,
 [hagrid-debug] [class*="grid-for"] .grid-box:before,
 [hagrid-debug] .grid-box:before {
+  display: block;
+  text-align: center;
   line-height: 60px;
   font-family: arial;
   font-weight: bold;
@@ -1286,7 +1280,7 @@ body {
   }
 }
 [hagrid-debug].grid-flex {
-  background: #A8BAC8;
+  background: #E6E6E6;
 }
 [hagrid-debug] *.col-set {
   background-color: transparent;
@@ -1423,7 +1417,6 @@ body {
 [class*="grid-flex"],
 [class*="support-flex"] {
   display: flex;
-  text-align: center;
   margin: 0;
   vertical-align: top;
   -webkit-box-sizing: border-box;
@@ -1691,6 +1684,14 @@ body {
   top: 0;
 }
 
+.full-width {
+  width: 100;
+}
+
+.full-height {
+  height: 100;
+}
+
 .scroll-y {
   overflow: hidden;
   overflow-y: scroll !important;
@@ -1709,6 +1710,7 @@ body {
   color: #333;
   text-decoration: none;
   font-weight: 100;
+  font-size: 1em;
   margin: 0.25em;
   border: 1px solid rgba(0, 0, 0, 0.1);
   -webkit-text-shadow: 0 0 1px rgba(0, 0, 0, 0.01);
@@ -1747,11 +1749,11 @@ body {
 .btn.btn-primary:hover {
   background: #2364c6;
 }
-.btn.btn-secundary {
+.btn.btn-secondary {
   background: #1FC757;
   color: #1FC757;
 }
-.btn.btn-secundary:hover {
+.btn.btn-secondary:hover {
   background: #189b44;
 }
 .btn.btn-info {
@@ -1838,7 +1840,7 @@ body {
 .btn.btn-pink:hover {
   background: #bb1e5c;
 }
-.btn:not(.btn-circle) {
+.btn:not(.btn-outline) {
   color: #fff;
 }
 .btn.btn-bigger {
@@ -1871,9 +1873,25 @@ body {
   border-radius: 4px;
   box-shadow: 0 -4px 0 0 rgba(0, 0, 0, 0.2) inset;
 }
-.btn.btn-circle {
+.btn.btn-outline {
   background: transparent;
   border-radius: 100px;
   border-width: 3px;
   border-style: solid;
+}
+
+.list-items {
+  padding: 0;
+  margin: 0;
+}
+.list-items li {
+  display: block;
+}
+.list-items li a {
+  display: block;
+  padding: 0.5em;
+  border-bottom: 1px solid #F2F2F2;
+}
+.list-items li:last-child a {
+  border-bottom: none;
 }

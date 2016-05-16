@@ -1,20 +1,20 @@
 /// Start Grid System
 [class*="cols-"]
-	display: block
-	margin: 10px
-	vertical-align: top
-	+prefix(box-sizing, border-box)
+  display: block
+  margin: 10px
+  vertical-align: top
+  +prefix(box-sizing, border-box)
 
-	@media screen and (min-width: $small-device)
-		+inline-block
+  @media screen and (min-width: $small-device)
+    +inline-block
 
 
 [class*="layout-"],
 [class*="grid-col-"],
-	+inline-block
-	margin: 0
-	vertical-align: top
-	+prefix(box-sizing, border-box)
+  +inline-block
+  margin: 0
+  vertical-align: top
+  +prefix(box-sizing, border-box)
 
 
 
@@ -22,144 +22,144 @@
 [class*="grid-col-"],
 [class*="layout-"],
 .grid-box
-	vertical-align: top
-	+prefix(box-sizing, border-box)
-	@media screen and (min-width: $small-device)
-		+inline-block
+  vertical-align: top
+  +prefix(box-sizing, border-box)
+  @media screen and (min-width: $small-device)
+    +inline-block
 
 .grid-box
-	+inline-block
+  +inline-block
 
 
 [class*="grid-for"].margin-boxes
 
-	.grid-box
-		+prefix(background-clip, padding-box)
-		border: 10px solid transparent
+  .grid-box
+    +prefix(background-clip, padding-box)
+    border: 10px solid transparent
 
 *.col-set
-	margin: 0
+  margin: 0
 
 .grid-wrap
-	display: block
-	margin: auto
+  display: block
+  margin: auto
 
-	@media screen and (min-width: $portrait-ipad)
+  @media screen and (min-width: $portrait-ipad)
 
 
-	@media screen and (min-width: 960px)
-		width: $width-960
+  @media screen and (min-width: 960px)
+    width: $width-960
 
 .grid-columns
-	display: block
-	margin: auto
+  display: block
+  margin: auto
 
-	@media screen and (min-width: $portrait-ipad)
+  @media screen and (min-width: $portrait-ipad)
 
 
-	@media screen and (min-width: 960px)
-		width: $width-960
+  @media screen and (min-width: 960px)
+    width: $width-960
 
 
 .grid-wrap,
 [class*="cols-"]
-	img
-		max-width: 100%
-		height: auto
+  img
+    max-width: 100%
+    height: auto
 
 
 .grid-960
-	width: $width-960
+  width: $width-960
 
 
 .grid-col-full
-	width: $width-100-percent
+  width: $width-100-percent
 
-	&:before
-		content: "full width"
+  &:before
+    content: "full width"
 
 
 .grid-col-half
-	width: 50%
+  width: 50%
 
-	&:before
-		content: "half"
+  &:before
+    content: "half"
 
 .grid-col-third
-	width: 33.3%
+  width: 33.3%
 
-	&:before
-		content: "third"
+  &:before
+    content: "third"
 
 .grid-col-fourth
-	width: 25%
+  width: 25%
 
-	&:before
-		content: "fourth"
+  &:before
+    content: "fourth"
 
 .grid-col-fifth
-	width: 20%
+  width: 20%
 
-	&:before
-		content: "fifth"
+  &:before
+    content: "fifth"
 
-
-/// Layouts, Flex, width
-@for $i from 1 through 10
-	.height-#{$i}0,
-		height: (($i*10)/100)*100%
 
 /// Layouts, Flex, width
 @for $i from 1 through 10
-	.#{$class-layout}-#{$i}0,
-	.#{$class-flex}-#{$i}0,
-	.grid-wrap-#{$i}0,
-	.width-#{$i}0,
-		width: (($i*10)/100)*100%
+  .height-#{$i}0,
+    height: (($i*10)/100)*100%
+
+/// Layouts, Flex, width
+@for $i from 1 through 10
+  .#{$class-layout}-#{$i}0,
+  .#{$class-flex}-#{$i}0,
+  .grid-wrap-#{$i}0,
+  .width-#{$i}0,
+    width: (($i*10)/100)*100%
 
 
 /// Boxes
 @for $i from 1 through 12
-	.#{$class-mod}-#{$i}
+  .#{$class-mod}-#{$i}
 
-		.grid-box
-			width: ($width-100-percent/$i)
+    .grid-box
+      width: ($width-100-percent/$i)
 
 
 
 // cols normal
 @for $i from 1 through 12
-	.#{$class-cols}-#{$i}
+  .#{$class-cols}-#{$i}
 
-		@media screen and (min-width: $grid-960)
-			width: ($col-width*$i)+(($col-margin*2)*$i0)
+    @media screen and (min-width: $grid-960)
+      width: ($col-width*$i)+(($col-margin*2)*$i0)
 
-		@for $in from 1 through 6
+    @for $in from 1 through 6
 
-			@if $in == 6
-				@media screen and (min-width: $small-device ) and (max-width: ( ($grid-960 - ($col-width-responsive * ($in - 1)) ) - 1) )
-					width: (($col-width-responsive - (5 * $in) )*$i)+(($col-margin*2)*$i0)
-			@else
-				@media screen and (min-width: $grid-960 - ($col-width-responsive * $in) ) and (max-width: ( ($grid-960 - ($col-width-responsive * ($in - 1)) ) - 1) )
-					width: (($col-width-responsive - (5 * $in) )*$i)+(($col-margin*2)*$i0)
+      @if $in == 6
+        @media screen and (min-width: $small-device ) and (max-width: ( ($grid-960 - ($col-width-responsive * ($in - 1)) ) - 1) )
+          width: (($col-width-responsive - (5 * $in) )*$i)+(($col-margin*2)*$i0)
+      @else
+        @media screen and (min-width: $grid-960 - ($col-width-responsive * $in) ) and (max-width: ( ($grid-960 - ($col-width-responsive * ($in - 1)) ) - 1) )
+          width: (($col-width-responsive - (5 * $in) )*$i)+(($col-margin*2)*$i0)
 
-	$i0: $i
+  $i0: $i
 
 //sets
 @for $i from 1 through 12
-	.#{$class-cols}-#{$i}.#{$class-col-set}
+  .#{$class-cols}-#{$i}.#{$class-col-set}
 
-		@media screen and (min-width: $grid-960)
-			width: (($col-width+20)*$i)
+    @media screen and (min-width: $grid-960)
+      width: (($col-width+20)*$i)
 
 
-		@for $in from 1 through 6
-			@media screen and (min-width: $grid-960 - ($col-width-responsive * $in ) ) and (max-width: ($grid-960 - ($col-width-responsive * ($in - 1) ) )- 1 )
-				width: (($col-width-responsive + ( 20 - (5 * $in ))) * $i)
+    @for $in from 1 through 6
+      @media screen and (min-width: $grid-960 - ($col-width-responsive * $in ) ) and (max-width: ($grid-960 - ($col-width-responsive * ($in - 1) ) )- 1 )
+        width: (($col-width-responsive + ( 20 - (5 * $in ))) * $i)
 
 
 * [class*="no-cols-"]
-	display: block!important
+  display: block!important
 
 
 /******************/
@@ -168,177 +168,177 @@
 
 [hagrid-debug]
 
-	[class*="cols-"],
-	[class*="grid-col-"],
-	[class*="layout-"],
-	[class*="flex-"],
-	[class*="grid-for"] .grid-box,
-	.grid-box
+  [class*="cols-"],
+  [class*="grid-col-"],
+  [class*="layout-"],
+  [class*="flex-"],
+  [class*="grid-for"] .grid-box,
+  .grid-box
 
-		//+prefix(border-radius, 2px)
-		background-color: $bkcolor-cols
-		min-height: 60px
-		outline: 1px solid rgba(0, 0, 0, .09)
-		color: #fff
-		overflow: hidden
+    text-align: center
+    background-color: $bkcolor-cols
+    min-height: 60px
+    outline: 1px solid rgba(0, 0, 0, .09)
+    color: #fff
+    overflow: hidden
 
-		&:before
+    &:before
       display: block
       text-align: center
-			line-height: 60px
-			font-family: arial
-			font-weight: bold
-			font-size: 18px
+      line-height: 60px
+      font-family: arial
+      font-weight: bold
+      font-size: 18px
 
-			@media screen and (max-width: $small-device)
-				font-size: 12px
+      @media screen and (max-width: $small-device)
+        font-size: 12px
 
-	&.grid-flex
-		background: $grey
+  &.grid-flex
+    background: $grey
 
-	*.col-set
-		background-color: transparent
+  *.col-set
+    background-color: transparent
 
-		&:before
-			display: none
+    &:before
+      display: none
 
-	/// Layout, flex, width
-	@for $i from 1 through 10
-		.#{$class-layout}-#{$i}0,
-		.#{$class-flex}-#{$i}0,
-		.width-#{$i}0,
+  /// Layout, flex, width
+  @for $i from 1 through 10
+    .#{$class-layout}-#{$i}0,
+    .#{$class-flex}-#{$i}0,
+    .width-#{$i}0,
 
-			&:before
-				content: "#{$i}0%"
-
-
-	/// Boxes
-	@for $i from 1 through 12
-		.#{$class-mod}-#{$i},
-		&.#{$class-mod}-#{$i}
-
-			.grid-box
-
-				&:before
-					content: "#{$i}"
+      &:before
+        content: "#{$i}0%"
 
 
-	// cols normal
-	@for $i from 1 through 12
-		.#{$class-cols}-#{$i}
+  /// Boxes
+  @for $i from 1 through 12
+    .#{$class-mod}-#{$i},
+    &.#{$class-mod}-#{$i}
 
-			&:before
-				content: "#{$i}"
+      .grid-box
+
+        &:before
+          content: "#{$i}"
 
 
-		$i0: $i
+  // cols normal
+  @for $i from 1 through 12
+    .#{$class-cols}-#{$i}
 
-	&[debug-empty]
-		*
-			&:before
-				content: ''
+      &:before
+        content: "#{$i}"
+
+
+    $i0: $i
+
+  &[debug-empty]
+    *
+      &:before
+        content: ''
 
 // FLEX BOX
 [class*="grid-flex"],
 [class*="support-flex"],
-	display: flex
-	margin: 0
-	vertical-align: top
-	+prefix(box-sizing, border-box)
+  display: flex
+  margin: 0
+  vertical-align: top
+  +prefix(box-sizing, border-box)
 
-	// Flex Direction
-	@each $i in $flex-direction-list
-		&.#{$flex-direction}-#{$i}
-			flex-direction: #{$i}
+  // Flex Direction
+  @each $i in $flex-direction-list
+    &.#{$flex-direction}-#{$i}
+      flex-direction: #{$i}
 
-	// Flex Wrap
-	@each $i in $flex-wrap-list
-		&.#{$flex-wrap}-#{$i}
-			flex-wrap: #{$i}
+  // Flex Wrap
+  @each $i in $flex-wrap-list
+    &.#{$flex-wrap}-#{$i}
+      flex-wrap: #{$i}
 
-	// Flex justify
-	@each $i in $justify-content-list
-		&.#{$justify-content}-#{$i}
-			justify-content: #{$i}
+  // Flex justify
+  @each $i in $justify-content-list
+    &.#{$justify-content}-#{$i}
+      justify-content: #{$i}
 
-	// Flex align-items
-	@each $i in $align-items-list
-		&.#{$align-items}-#{$i}
-			align-items: #{$i}
+  // Flex align-items
+  @each $i in $align-items-list
+    &.#{$align-items}-#{$i}
+      align-items: #{$i}
 
 
-	//align-self
-	@each $i in $align-self-list
-		.#{$align-self}-#{$i}
-			align-self: #{$i}
+  //align-self
+  @each $i in $align-self-list
+    .#{$align-self}-#{$i}
+      align-self: #{$i}
 
-	//align-content
-	@each $i in $align-content-list
-		&.#{$align-content}-#{$i}
-			align-content: #{$i}
+  //align-content
+  @each $i in $align-content-list
+    &.#{$align-content}-#{$i}
+      align-content: #{$i}
 
-	&.grid-spaces
-		[class*="flex-"]
-			margin: 1em
+  &.grid-spaces
+    [class*="flex-"]
+      margin: 1em
 
 
 @for $i from 1 through 3
-	[grid-spaces="#{$i}0px"]
-		[class*="flex-"]
-			margin: #{$i}0px
-	[grid-spaces="#{$i}em"]
-		[class*="flex-"]
-			margin: #{$i}em
-	[grid-spaces="#{$i}rem"]
-		[class*="flex-"]
-			margin: #{$i}rem
-	[grid-spaces="#{$i}0%"]
-		[class*="flex-"]
-			margin: #{$i}0%
+  [grid-spaces="#{$i}0px"]
+    [class*="flex-"]
+      margin: #{$i}0px
+  [grid-spaces="#{$i}em"]
+    [class*="flex-"]
+      margin: #{$i}em
+  [grid-spaces="#{$i}rem"]
+    [class*="flex-"]
+      margin: #{$i}rem
+  [grid-spaces="#{$i}0%"]
+    [class*="flex-"]
+      margin: #{$i}0%
 
 .grid-spaces-sides
-	[class*="flex-"]
-		margin-top: 0
-		margin-bottom: 0
+  [class*="flex-"]
+    margin-top: 0
+    margin-bottom: 0
 .grid-spaces-top-bottom
-	[class*="flex-"]
-		margin-right: 0
-		margin-left: 0
+  [class*="flex-"]
+    margin-right: 0
+    margin-left: 0
 .grid-spaces-right
-	[class*="flex-"]
-		margin-top: 0
-		margin-bottom: 0
-		margin-left: 0
+  [class*="flex-"]
+    margin-top: 0
+    margin-bottom: 0
+    margin-left: 0
 .grid-spaces-left
-	[class*="flex-"]
-		margin-top: 0
-		margin-bottom: 0
-		margin-right: 0
+  [class*="flex-"]
+    margin-top: 0
+    margin-bottom: 0
+    margin-right: 0
 .grid-spaces-top
-	[class*="flex-"]
-		margin-bottom: 0
-		margin-right: 0
-		margin-left: 0
+  [class*="flex-"]
+    margin-bottom: 0
+    margin-right: 0
+    margin-left: 0
 .grid-spaces-bottom
-	[class*="flex-"]
-		margin-top: 0
-		margin-right: 0
-		margin-left: 0
+  [class*="flex-"]
+    margin-top: 0
+    margin-right: 0
+    margin-left: 0
 
 
 /// Order
 @for $i from 1 through 12
-	.#{$class-order}-#{$i}
+  .#{$class-order}-#{$i}
 
-		order: $i
+    order: $i
 
 // General Grid class
 .full-screen
-	position: absolute
-	height: 100%
-	width: 100%
-	left: 0
-	top: 0
+  position: absolute
+  height: 100%
+  width: 100%
+  left: 0
+  top: 0
 
 .full-width
   width: 100
@@ -347,11 +347,11 @@
   height: 100
 
 .scroll-y
-	overflow: hidden
-	overflow-y: scroll!important
+  overflow: hidden
+  overflow-y: scroll!important
 
 .scroll-x
-	overflow: hidden
-	overflow-x: scroll!important
+  overflow: hidden
+  overflow-x: scroll!important
 
 /// End Grid System
