@@ -1,0 +1,20 @@
+{
+  "name": "hagrid",
+  "homepage": "https://github.com/rokk3rlabs/hagrid",
+  "authors": [
+    "Diego Santiesteban <gatodeveloper@gmail.com>"
+  ],
+  "description": "Hagrid Framework",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+  }
+}
