@@ -1,4 +1,4 @@
-/// Start Grid System
+/* Hagrid Grid System */
 [class*="cols-"]
   display: block
   margin: 10px
@@ -333,18 +333,27 @@
     order: $i
 
 // General Grid class
-.full-screen
-  position: absolute
-  height: 100%
-  width: 100%
-  left: 0
-  top: 0
+// GRID
+[class*="grid-flex"]
+  text-align: left
+
 
 .full-width
   width: 100
 
 .full-height
   height: 100
+
+.fixed-area
+  position: fixed
+  width: inherit
+
+.full-screen
+  position: absolute
+  height: 100%
+  width: 100%
+  left: 0
+  top: 0
 
 .scroll-y
   overflow: hidden
@@ -354,4 +363,3 @@
   overflow: hidden
   overflow-x: scroll!important
 
-/// End Grid System
