@@ -1901,6 +1901,65 @@ div {
   overflow-x: scroll !important;
 }
 
+/* Hagrid Typograpy */
+.heading, h1,
+.h1, h2,
+.h2, h3,
+.h3, h4,
+.h4, h5,
+.h5, h6,
+.h6 {
+  padding: 0.5em 0;
+  margin: 0;
+  line-height: 1.2em;
+  font-weight: 400;
+}
+.heading.hr, h1.hr,
+.hr.h1, h2.hr,
+.hr.h2, h3.hr,
+.hr.h3, h4.hr,
+.hr.h4, h5.hr,
+.hr.h5, h6.hr,
+.hr.h6, .heading.divider, h1.divider,
+.divider.h1, h2.divider,
+.divider.h2, h3.divider,
+.divider.h3, h4.divider,
+.divider.h4, h5.divider,
+.divider.h5, h6.divider,
+.divider.h6 {
+  border-bottom: 1px solid;
+}
+
+h1,
+.h1 {
+  font-size: 2.7em;
+}
+
+h2,
+.h2 {
+  font-size: 2.4em;
+}
+
+h3,
+.h3 {
+  font-size: 2.1em;
+}
+
+h4,
+.h4 {
+  font-size: 1.8em;
+}
+
+h5,
+.h5 {
+  font-size: 1.5em;
+}
+
+h6,
+.h6 {
+  font-size: 1.2em;
+}
+
 .btn {
   display: inline-block;
   *display: inline;
