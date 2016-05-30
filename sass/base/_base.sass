@@ -3,6 +3,7 @@
 
 body
   +prefix(font-smoothing, antialiased)
+  font-family: helvetica, Arial, sans-serif
 
 article,
 aside,
@@ -17,3 +18,32 @@ nav,
 section,
 div
   position: relative
+
+
+// Colors
+.color
+  padding: .5em 0
+  text-align: center
+  width: 25%
+  color: #fff
+  +inline-block
+
+@each $color in $colors
+  $key: nth($color, 1)
+  $value: nth($color, 2)
+  .#{$key}-color
+    color: #{$value}
+  .#{$key}-bgc
+    background-color: #{$value}
+
+@each $base-color in $base-colors
+  $key: nth($base-color, 1)
+  $value: nth($base-color, 2)
+  .#{$key}-color
+    color: #{$value}
+  .#{$key}-bgc
+    @extend .color
+    background-color: #{$value}
+  .#{$key}-color-code
+    &:before
+      content: '#{$value}'

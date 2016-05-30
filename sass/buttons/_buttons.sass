@@ -1,154 +1,34 @@
 .btn
+  @extend .default-color
   +inline-block
   padding: .7em 1.5em
-  background: $bkg-default
-  color: $color-default
+  color: #fff
+  background-color: nth(nth($base-colors, 1), 2)
   text-decoration: none
   font-weight: 100
   font-size: 1em
+  font-weight: 400
   margin: .25em
   border: 1px solid rgba(0, 0, 0, .1)
   +prefix(text-shadow, 0 0 1px rgba(0,0,0,.01))
   +prefix(font-smoothing, antialiased)
   +prefix(transition, all .2s)
 
-  &:hover
-    background: darken($bkg-default, 10%)
+  // Color Buttons
+  @each $base-color in $base-colors
+    $key: nth($base-color, 1)
+    $value: nth($base-color, 2)
+    &.btn-#{$key}
+      background-color: #{$value}
+      @if $key == default
+        color: nth(nth($base-colors, 2), 2)
+      &:hover
+        background-color: darken($value, 10%)
 
-  &.btn-link
-    background: transparent
-
-  &.btn-default
-    background: $bkg-default
-    color: $color-default
-
-    &:hover
-      background: darken($bkg-default, 10%)
-
-  &.btn-primary
-    background: $bkg-primary
-    color: $color-primary
-
-    &:hover
-      background: darken($bkg-primary, 10%)
-
-  &.btn-secondary
-    background: $bkg-secondary
-    color: $bkg-secondary
-
-    &:hover
-      background: darken($bkg-secondary, 10%)
-
-  &.btn-info
-    background: $bkg-info
-    color: $bkg-info
-
-    &:hover
-      background: darken($bkg-info, 10%)
-
-  &.btn-alert
-    background: $bkg-alert
-    color: $bkg-alert
-
-    &:hover
-      background: darken($bkg-alert, 10%)
-
-  &.btn-warning
-    background: $bkg-warning
-    color: $bkg-warning
-
-    &:hover
-      background: darken($bkg-warning, 10%)
-
-  &.btn-error
-    background: $bkg-error
-    color: $bkg-error
-
-    &:hover
-      background: darken($bkg-error, 10%)
-
-  &.btn-orange
-    background: $orange
-    border-color: $orange
-    color: $orange
-
-    &:hover
-      background: darken($orange, 10%)
-
-  &.btn-yellow
-    background: $yellow
-    border-color: $yellow
-    color: $yellow
-
-    &:hover
-      background: darken($yellow, 10%)
-
-  &.btn-purple
-    background: $purple
-    border-color: $purple
-    color: $purple
-
-    &:hover
-      background: darken($purple, 10%)
-
-  &.btn-brown
-    background: $brown
-    border-color: $brown
-    color: $brown
-
-    &:hover
-      background: darken($brown, 10%)
-
-  &.btn-dark-blue
-    background: $dark-blue
-    border-color: $dark-blue
-    color: $dark-blue
-
-    &:hover
-      background: darken($dark-blue, 10%)
-
-  &.btn-red
-    background: $red
-    border-color: $red
-    color: $red
-
-    &:hover
-      background: darken($red, 10%)
-
-  &.btn-pink
-    background: $pink
-    border-color: $pink
-    color: $pink
-
-    &:hover
-      background: darken($pink, 10%)
-
-  &:not(.btn-outline)
-    color: #fff
-
-  &.btn-bigger
-    font-size: 2em
-  &.btn-large
-    font-size: 1.6em
-  &.btn-medium
-    font-size: 1.3em
-  &.btn-small
-    font-size: .8em
-  &.btn-smaller
-    font-size: .5em
-
-  &.btn-corners
-    +prefix(border-radius, $border-radius)
-
-  &.btn-upper
-    +prefix(border-radius, $border-radius)
-    box-shadow: 0 -4px 0 0 rgba(0, 0, 0, .2) inset
-    //border-bottom: 5px solid rgba(0, 0, 0, .2)
-
-  &.btn-outline
-    background: transparent
-    border-radius: 100px
-    border-width: 3px
-    border-style: solid
+  // Size Buttons
+  @for $i from 1 to length($base-sizes)+1
+    $key: nth($base-sizes, $i)
+    &.btn-#{$key}
+      font-size: .4em+(.2*$i)
 
 
