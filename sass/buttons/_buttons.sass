@@ -2,17 +2,24 @@
   @extend .default-color
   +inline-block
   padding: .7em 1.5em
-  color: #fff
+  color: nth(nth($base-colors, 2), 2)
   background-color: nth(nth($base-colors, 1), 2)
   text-decoration: none
   font-weight: 100
   font-size: 1em
   font-weight: 400
   margin: .25em
+  border-radius: 4px
+  position: relative
   border: 1px solid rgba(0, 0, 0, .1)
   +prefix(text-shadow, 0 0 1px rgba(0,0,0,.01))
   +prefix(font-smoothing, antialiased)
-  +prefix(transition, all .2s)
+  +prefix(transition, background .2s)
+  &:hover
+    background-color: darken(nth(nth($base-colors, 1), 2), 5%)
+
+  &[class*="btn-"]
+    color: #fff
 
   // Color Buttons
   @each $base-color in $base-colors
@@ -23,7 +30,7 @@
       @if $key == default
         color: nth(nth($base-colors, 2), 2)
       &:hover
-        background-color: darken($value, 10%)
+        background-color: darken($value, 5%)
 
   // Size Buttons
   @for $i from 1 to length($base-sizes)+1
@@ -31,4 +38,38 @@
     &.btn-#{$key}
       font-size: .4em+(.2*$i)
 
+  // Flat Buttons
+  &.btn-flat
+    border-radius: 0
+    border: 1px solid rgba(0, 0, 0, .01)
+
+  // Upper Button
+  &.btn-upper
+    +prefix(border-radius, $border-radius)
+    //box-shadow: 0 -4px 0 0 rgba(0, 0, 0, .2) inset
+    border-bottom: 4px solid rgba(0, 0, 0, .2)
+
+
+  // Outline Button
+  &.btn-outline
+    background: transparent
+    border-radius: 100px
+    border-width: 3px
+    border-style: solid
+
+    @each $base-color in $base-colors
+      $key: nth($base-color, 1)
+      $value: nth($base-color, 2)
+      &.btn-#{$key}
+        border-color: #{$value}
+        @if $key == default
+          color: #333
+        @else
+          color: #{$value}
+        &:hover
+          @if $key == default
+            color: #333
+          @else
+            color: #fff
+          background-color: $value
 

@@ -333,15 +333,15 @@ div {
 }
 
 .default-color, .btn {
-  color: #ECECEC;
+  color: #f8f8f8;
 }
 
 .default-bgc {
-  background-color: #ECECEC;
+  background-color: #f8f8f8;
 }
 
 .default-color-code:before {
-  content: "#ECECEC";
+  content: "#f8f8f8";
 }
 
 .inverse-color {
@@ -381,15 +381,15 @@ div {
 }
 
 .info-color {
-  color: #00AEB3;
+  color: #00BCD4;
 }
 
 .info-bgc {
-  background-color: #00AEB3;
+  background-color: #00BCD4;
 }
 
 .info-color-code:before {
-  content: "#00AEB3";
+  content: "#00BCD4";
 }
 
 .warning-color {
@@ -5557,13 +5557,15 @@ h6,
   display: inline-block;
   *display: inline;
   padding: 0.7em 1.5em;
-  color: #fff;
-  background-color: #ECECEC;
+  color: #3C3C3C;
+  background-color: #f8f8f8;
   text-decoration: none;
   font-weight: 100;
   font-size: 1em;
   font-weight: 400;
   margin: 0.25em;
+  border-radius: 4px;
+  position: relative;
   border: 1px solid rgba(0, 0, 0, 0.1);
   -webkit-text-shadow: 0 0 1px rgba(0, 0, 0, 0.01);
   -moz-text-shadow: 0 0 1px rgba(0, 0, 0, 0.01);
@@ -5575,54 +5577,60 @@ h6,
   -ms-font-smoothing: antialiased;
   -o-font-smoothing: antialiased;
   font-smoothing: antialiased;
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -ms-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  transition: all 0.2s;
+  -webkit-transition: background 0.2s;
+  -moz-transition: background 0.2s;
+  -ms-transition: background 0.2s;
+  -o-transition: background 0.2s;
+  transition: background 0.2s;
+}
+.btn:hover {
+  background-color: #ebebeb;
+}
+.btn[class*="btn-"] {
+  color: #fff;
 }
 .btn.btn-default {
-  background-color: #ECECEC;
+  background-color: #f8f8f8;
   color: #3C3C3C;
 }
 .btn.btn-default:hover {
-  background-color: lightgray;
+  background-color: #ebebeb;
 }
 .btn.btn-inverse {
   background-color: #3C3C3C;
 }
 .btn.btn-inverse:hover {
-  background-color: #232323;
+  background-color: #2f2f2f;
 }
 .btn.btn-primary {
   background-color: #2D6CC9;
 }
 .btn.btn-primary:hover {
-  background-color: #24569f;
+  background-color: #2861b4;
 }
 .btn.btn-secondary {
   background-color: #31C290;
 }
 .btn.btn-secondary:hover {
-  background-color: #279972;
+  background-color: #2cae81;
 }
 .btn.btn-info {
-  background-color: #00AEB3;
+  background-color: #00BCD4;
 }
 .btn.btn-info:hover {
-  background-color: #007c80;
+  background-color: #00a5bb;
 }
 .btn.btn-warning {
   background-color: #E68523;
 }
 .btn.btn-warning:hover {
-  background-color: #c06b16;
+  background-color: #d77818;
 }
 .btn.btn-error {
   background-color: #C53030;
 }
 .btn.btn-error:hover {
-  background-color: #9c2626;
+  background-color: #b02b2b;
 }
 .btn.btn-xs {
   font-size: 0.6em;
@@ -5638,6 +5646,80 @@ h6,
 }
 .btn.btn-lg {
   font-size: 1.4em;
+}
+.btn.btn-flat {
+  border-radius: 0;
+  border: 1px solid rgba(0, 0, 0, 0.01);
+}
+.btn.btn-upper {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  border-bottom: 4px solid rgba(0, 0, 0, 0.2);
+}
+.btn.btn-outline {
+  background: transparent;
+  border-radius: 100px;
+  border-width: 3px;
+  border-style: solid;
+}
+.btn.btn-outline.btn-default {
+  border-color: #f8f8f8;
+  color: #333;
+}
+.btn.btn-outline.btn-default:hover {
+  color: #333;
+  background-color: #f8f8f8;
+}
+.btn.btn-outline.btn-inverse {
+  border-color: #3C3C3C;
+  color: #3C3C3C;
+}
+.btn.btn-outline.btn-inverse:hover {
+  color: #fff;
+  background-color: #3C3C3C;
+}
+.btn.btn-outline.btn-primary {
+  border-color: #2D6CC9;
+  color: #2D6CC9;
+}
+.btn.btn-outline.btn-primary:hover {
+  color: #fff;
+  background-color: #2D6CC9;
+}
+.btn.btn-outline.btn-secondary {
+  border-color: #31C290;
+  color: #31C290;
+}
+.btn.btn-outline.btn-secondary:hover {
+  color: #fff;
+  background-color: #31C290;
+}
+.btn.btn-outline.btn-info {
+  border-color: #00BCD4;
+  color: #00BCD4;
+}
+.btn.btn-outline.btn-info:hover {
+  color: #fff;
+  background-color: #00BCD4;
+}
+.btn.btn-outline.btn-warning {
+  border-color: #E68523;
+  color: #E68523;
+}
+.btn.btn-outline.btn-warning:hover {
+  color: #fff;
+  background-color: #E68523;
+}
+.btn.btn-outline.btn-error {
+  border-color: #C53030;
+  color: #C53030;
+}
+.btn.btn-outline.btn-error:hover {
+  color: #fff;
+  background-color: #C53030;
 }
 
 .list-items {
