@@ -5556,7 +5556,7 @@ h6,
 .btn {
   display: inline-block;
   *display: inline;
-  padding: 0.7em 1.5em;
+  padding: 0.5em 1em;
   color: #3C3C3C;
   background-color: #f8f8f8;
   text-decoration: none;
