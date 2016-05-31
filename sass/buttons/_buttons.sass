@@ -12,7 +12,7 @@
   border-radius: 4px
   position: relative
   text-align: center
-  border: 1px solid rgba(0, 0, 0, .1)
+  border: 1px solid rgba(0, 0, 0, .05)
   +prefix(text-shadow, 0 0 1px rgba(0,0,0,.01))
   +prefix(font-smoothing, antialiased)
   +prefix(transition, background .2s)
@@ -44,12 +44,17 @@
     border-radius: 0
     border: 1px solid rgba(0, 0, 0, .01)
 
+  // Flat Buttons
+  &.btn-shadow
+    border: 1px solid rgba(255, 255, 255, .8)
+    border-radius: 2px
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, .1)
+
   // Upper Button
   &.btn-upper
     +prefix(border-radius, $border-radius)
     //box-shadow: 0 -4px 0 0 rgba(0, 0, 0, .2) inset
     border-bottom: 4px solid rgba(0, 0, 0, .2)
-
 
   // Outline Button
   &.btn-outline
