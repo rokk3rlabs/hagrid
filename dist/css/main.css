@@ -251,7 +251,7 @@ div {
   position: relative;
 }
 
-.color, .default-bgc, .inverse-bgc, .primary-bgc, .secondary-bgc, .info-bgc, .warning-bgc, .error-bgc {
+.color {
   padding: 0.5em 0;
   text-align: center;
   width: 25%;
@@ -332,11 +332,17 @@ div {
   background-color: #DD2F74;
 }
 
+.default-look {
+  background-color: #f8f8f8;
+  color: #333;
+}
+
 .default-color, .btn {
   color: #f8f8f8;
 }
 
-.default-bgc {
+.default-bgc,
+.default {
   background-color: #f8f8f8;
 }
 
@@ -344,11 +350,17 @@ div {
   content: "#f8f8f8";
 }
 
+.inverse-look {
+  background-color: #3C3C3C;
+  color: #fff;
+}
+
 .inverse-color {
   color: #3C3C3C;
 }
 
-.inverse-bgc {
+.inverse-bgc,
+.inverse {
   background-color: #3C3C3C;
 }
 
@@ -356,11 +368,17 @@ div {
   content: "#3C3C3C";
 }
 
+.primary-look {
+  background-color: #2D6CC9;
+  color: #fff;
+}
+
 .primary-color {
   color: #2D6CC9;
 }
 
-.primary-bgc {
+.primary-bgc,
+.primary {
   background-color: #2D6CC9;
 }
 
@@ -368,11 +386,17 @@ div {
   content: "#2D6CC9";
 }
 
+.secondary-look {
+  background-color: #31C290;
+  color: #fff;
+}
+
 .secondary-color {
   color: #31C290;
 }
 
-.secondary-bgc {
+.secondary-bgc,
+.secondary {
   background-color: #31C290;
 }
 
@@ -380,11 +404,17 @@ div {
   content: "#31C290";
 }
 
+.info-look {
+  background-color: #00BCD4;
+  color: #fff;
+}
+
 .info-color {
   color: #00BCD4;
 }
 
-.info-bgc {
+.info-bgc,
+.info {
   background-color: #00BCD4;
 }
 
@@ -392,11 +422,17 @@ div {
   content: "#00BCD4";
 }
 
+.warning-look {
+  background-color: #E68523;
+  color: #fff;
+}
+
 .warning-color {
   color: #E68523;
 }
 
-.warning-bgc {
+.warning-bgc,
+.warning {
   background-color: #E68523;
 }
 
@@ -404,11 +440,17 @@ div {
   content: "#E68523";
 }
 
+.error-look {
+  background-color: #C53030;
+  color: #fff;
+}
+
 .error-color {
   color: #C53030;
 }
 
-.error-bgc {
+.error-bgc,
+.error {
   background-color: #C53030;
 }
 
@@ -5732,6 +5774,51 @@ h6,
 .btn.btn-outline.btn-error:hover {
   color: #fff;
   background-color: #C53030;
+}
+
+.navbar {
+  z-index: 1;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.navbar.navbar-fixed {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+.navbar a,
+.navbar .navbar-text,
+.navbar .navbar-link,
+.navbar .navbar-button {
+  display: inline-block;
+  *display: inline;
+  text-decoration: none;
+  padding: 1em;
+  font-size: 1em;
+  color: inherit;
+}
+.navbar a:hover,
+.navbar .navbar-link:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+.navbar .navbar-brand {
+  font-size: 2em;
+  line-height: 18px;
+  padding: 15px;
+  height: 100%;
+}
+.navbar .navbar-brand small {
+  font-size: 0.5em;
+  padding: 0.5em;
+  line-height: 0;
+}
+.navbar .navbar-brand:hover {
+  background: inherit;
+  color: inherit;
+}
+.navbar.navbar-primary {
+  background: #2D6CC9;
+  color: #fff;
 }
 
 .list-items {

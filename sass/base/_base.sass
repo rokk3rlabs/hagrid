@@ -39,10 +39,16 @@ div
 @each $base-color in $base-colors
   $key: nth($base-color, 1)
   $value: nth($base-color, 2)
-  .#{$key}-color
+  .#{$key}-look
+    background-color: #{$value}
+    @if $key == default
+      color: #333
+    @else
+      color: #fff
+  .#{$key}-color,
     color: #{$value}
-  .#{$key}-bgc
-    @extend .color
+  .#{$key}-bgc,
+  .#{$key},
     background-color: #{$value}
   .#{$key}-color-code
     &:before
