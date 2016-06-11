@@ -5802,13 +5802,13 @@ h6,
   background: rgba(0, 0, 0, 0.2);
 }
 .navbar .navbar-brand {
-  font-size: 2em;
-  line-height: 18px;
-  padding: 15px;
+  font-size: 1.4em;
+  line-height: 0;
+  padding: 1em;
   height: 100%;
 }
 .navbar .navbar-brand small {
-  font-size: 0.5em;
+  font-size: 0.6em;
   padding: 0.5em;
   line-height: 0;
 }
