@@ -5869,6 +5869,14 @@ input[type="submit"] {
   color: #333;
 }
 
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+
 body {
   background-color: #E0E0E0;
 }
