@@ -5862,6 +5862,16 @@ select.block {
   display: block;
 }
 
+button [class*="icon-"],
+[class*="btn-"] [class*="icon-"] {
+  font-size: 1.5em;
+  line-height: 0px;
+  top: -2px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+}
+
 button,
 input[type="submit"] {
   background-color: #fff;
@@ -5875,6 +5885,10 @@ select {
   -ms-appearance: none;
   -o-appearance: none;
   appearance: none;
+}
+
+input[type="radio"]:checked {
+  background-color: red;
 }
 
 body {
