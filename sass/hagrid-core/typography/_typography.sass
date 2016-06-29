@@ -1,0 +1,58 @@
+/* Hagrid Typograpy */
+
+.ff-primary,
+.font-primary
+  font-family: $font-primary
+
+.ff-secondary,
+.font-secondary
+  font-family: $font-secondary
+
+
+.heading
+  padding: $heading-padding
+  margin: 0
+  line-height: $heading-line-height
+  font-weight: 400
+
+  &.hr,
+  &.divider
+    border-bottom: 1px solid
+
+@for $i from 1 through 6
+  #{h}#{$i},
+  .#{h}#{$i}
+    @extend .heading
+    @if $i == 1 and $h1-font-size
+      font-size: $h1-font-size
+      font-weight: $h1-font-weight
+    @else if $i == 2 and $h2-font-size
+      font-size: $h2-font-size
+      font-weight: $h2-font-weight
+    @else if $i == 3 and $h3-font-size
+      font-size: $h3-font-size
+      font-weight: $h3-font-weight
+    @else if $i == 4 and $h4-font-size
+      font-size: $h4-font-size
+      font-weight: $h4-font-weight
+    @else if $i == 5 and $h5-font-size
+      font-size: $h5-font-size
+      font-weight: $h5-font-weight
+    @else if $i == 6 and $h6-font-size
+      font-size: $h6-font-size
+      font-weight: $h6-font-weight
+    @else
+      font-size: #{$heading-font-size-base - ($i*0.3)}$heading-font-size
+
+.font-thin
+  font-weight: 100
+.font-ligth
+  font-weight: 300
+.font-normal
+  font-weight: 400
+.font-medium
+  font-weight: 500
+.font-bold
+  font-weight: 700
+.font-ultra-bold
+  font-weight: 900
