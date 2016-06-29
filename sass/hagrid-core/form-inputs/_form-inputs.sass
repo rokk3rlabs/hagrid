@@ -1,0 +1,49 @@
+input,
+button,
+select
+  border: 0
+  padding: .7em
+  +prefix(box-sizing, border-box)
+
+  &:focus
+    outline: none
+
+  &[type="text"],
+  &[type="number"]
+    box-shadow: 0 -2px 0 0px rgba(0, 0, 0, .2) inset
+    background: transparent
+    color: #333
+    transition: background-color .3s
+
+    &:focus
+      background: rgba(255, 255, 255, .9)
+      box-shadow: 0 -2px 0 0px #2D6CC9 inset
+
+  &.block
+    width: 100%
+    display: block
+
+button,
+[class*="btn-"]
+  [class*="icon-"]
+    font-size: 1.5em
+    line-height: 0px
+    top: -2px
+    display: inline-block
+    position: relative
+    vertical-align: middle
+
+button,
+input[type="submit"]
+  background-color: #fff
+  box-shadow: 0 -2px 0 0px rgba(0, 0, 0, .2) inset
+  color: #333
+
+select
+  +prefix(appearance, none)
+
+input[type="radio"]
+
+  &:checked
+    background-color: red
+

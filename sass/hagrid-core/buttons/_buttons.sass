@@ -1,7 +1,7 @@
 .btn
   @extend .default-color
   +inline-block
-  padding: 0.7em 1em
+  padding: $btn-padding
   line-height: 1em
   color: nth(nth($base-colors, 2), 2)
   background-color: nth(nth($base-colors, 1), 2)
@@ -10,7 +10,8 @@
   font-size: 1em
   font-weight: 400
   margin: .25em
-  border-radius: 4px
+  border-radius: $border-radius
+  text-transform: $btn-text-transform
   position: relative
   text-align: center
   border: 1px solid rgba(0, 0, 0, .05)
@@ -67,8 +68,8 @@
     padding-right: 2em
     padding-left: 2em
     background: transparent
-    border-radius: 100px
-    border-width: 3px
+    border-radius: $btn-outline-border-radius //100px
+    border-width: $btn-outline-border-width //3px
     border-style: solid
 
     @each $base-color in $base-colors
