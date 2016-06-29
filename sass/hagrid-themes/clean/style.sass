@@ -1,8 +1,46 @@
 @import 'vars'
+@import 'webfonts'
 @import '../../hagrid-core/core'
 
-// Custom
+// Custom and Extend
 
 .sections-style-guide
   section
     padding: 1em 0 5em
+
+.colors-preview
+  border-radius: 4px
+  overflow: hidden
+  margin: 0
+  padding: 0
+  position: relative
+  +inline-block
+  line-height: 0
+
+  li
+    +inline-block
+    height: 110px
+    width: 105px
+
+.btn
+  &.btn-sm
+    padding-top: .7em
+    padding-bottom: .5em
+  &.btn-custom
+    @extend .btn-outline
+    background-color: transparent
+    border-color: #fff
+    color: #fff
+
+    &:hover,
+    &.btn-hover
+      background-color: rgba(255, 255, 255, 0.5)
+
+    &:active,
+    &.btn-active
+      background-color: transparent
+      border-color: rgba(255, 255, 255, 0.75)
+
+    &.btn-disable
+      cursor: not-allowed
+      opacity: .35

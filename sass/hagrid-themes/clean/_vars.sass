@@ -2,13 +2,13 @@
 $i0: 0
 
 // Font
-$font-primary: Arial, Helvetica, Sans-serif // Primary font family
+$font-primary: MuseoSans-500, Arial, Helvetica, Sans-serif // Primary font family
 $font-secondary: Helvetica neue, Helvetica, Arial, Sans-serif // Secondary font family
 
 // Body
 $body-bkcolor: #fff // Body Background Color
 $body-color: #5e616f // Body Background Color
-$body-font-size: 100%
+$body-font-size: 20px
 $body-font-weight: 300
 $body-line-weight: 100%
 
@@ -37,6 +37,8 @@ $p-small: 14px
 
 
 // Colors
+$init-percent-darken: 12%
+$init-percent-lighten: 11%
 $dark-grey: #777
 $gray: #eee
 $yellow: #D39756
@@ -50,13 +52,29 @@ $red: #AE0001
 $pink: #DD2F74
 $colors: yellow $yellow, orange $orange, purple $purple, dark-purple $dark-purple, dark-blue $dark-blue, brown $brown, grey $grey, red $red, pink $pink
 $color-default: #f2f2f3//#ECECEC
+$color-default-darken: 12%
+$color-default-lighten: 11%
 $color-inverse: #5e616f
+$color-inverse-darken: 12%
+$color-inverse-lighten: 11%
 $color-primary: #3F51B5
+$color-primary-darken: 12%
+$color-primary-lighten: 11%
 $color-secondary: #00BCD4//#1FC757
+$color-secondary-darken: 12%
+$color-secondary-lighten: 11%
 $color-info: #005e6a//#00B5E7//#1F91BF//#6E2CDD
+$color-info-darken: 12%
+$color-info-lighten: 11%
 $color-warning: #E68523
+$color-warning-darken: 12%
+$color-warning-lighten: 11%
 $color-error: #ec407a
+$color-error-darken: 12%
+$color-error-lighten: 11%
 $base-colors: default $color-default, inverse $color-inverse, primary $color-primary, secondary $color-secondary, info $color-info, warning $color-warning, error $color-error
+$colors-percent: "default" ("darken" 12%, "lighten" 12%), "inverse" ("darken" 12%, "lighten" 12%), "primary" ("darken" 12%, "lighten" 12%), "secondary" ("darken" 12%, "lighten" 12%), "info" ("darken" 12%, "lighten" 12%), "warning" ("darken" 12%, "lighten" 12%), "error" ("darken" 12%, "lighten" 12%)
+	
 
 // Sizes
 $base-sizes: xs, sm, df, md, lg
@@ -95,7 +113,12 @@ $border-radius: 0
 $btn-outline-border-radius: 0
 $btn-outline-border-width: 2px
 $btn-text-transform: uppercase
-$btn-padding: 0.7em 1em
+$btn-padding: 1em 30px .9em
+$btn-font-size: .74em
+$btn-increment-size: .12
+$btn-measure-size: em
+$btn-outline-hover-bkg: false
+$btn-font-weight: bold
 
 // Sizes devices
 $small-device: 640px

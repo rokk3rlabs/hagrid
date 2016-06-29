@@ -7,8 +7,8 @@
   background-color: nth(nth($base-colors, 1), 2)
   text-decoration: none
   font-weight: 100
-  font-size: 1em
-  font-weight: 400
+  font-size: $btn-font-size
+  font-weight: $btn-font-weight
   margin: .25em
   border-radius: $border-radius
   text-transform: $btn-text-transform
@@ -18,8 +18,13 @@
   +prefix(text-shadow, 0 0 1px rgba(0,0,0,.01))
   +prefix(font-smoothing, antialiased)
   +prefix(transition, background .2s)
-  &:hover
+  box-sizing: border-box
+  &:hover,
+  &.btn-hover
     background-color: darken(nth(nth($base-colors, 1), 2), 5%)
+
+  &.btn-disable
+    background-color: #dfdfe2
 
   &[class*="btn-"]
     color: #fff
@@ -32,14 +37,21 @@
       background-color: #{$value}
       @if $key == default
         color: nth(nth($base-colors, 2), 2)
-      &:hover
-        background-color: darken($value, 5%)
+      &:hover,
+      &.btn-hover
+        background-color: darken($value, $init-percent-darken)
+      &:active,
+      &.btn-active,
+        background-color: lighten($value, $init-percent-darken)
+      &.btn-disable
+        background-color: #dfdfe2
+        cursor: not-allowed
 
   // Size Buttons
   @for $i from 1 to length($base-sizes)+1
     $key: nth($base-sizes, $i)
     &.btn-#{$key}
-      font-size: .4em+(.2*$i)
+      font-size: .4+($btn-increment-size*$i)+$btn-measure-size
 
   // Flat Buttons
   &.btn-flat
@@ -81,10 +93,28 @@
           color: #333
         @else
           color: #{$value}
-        &:hover
-          @if $key == default
-            color: #333
-          @else
-            color: #fff
-          background-color: $value
+        @if $btn-outline-hover-bkg == true
+          &:hover,
+          &.btn-hover
+            @if $key == default
+              color: #333
+            @else
+              color: #fff
+            background-color: $value
+        @else
+          &:hover,
+          &.btn-hover
+            color: darken($value, $init-percent-darken)
+            border-color: darken($value, $init-percent-darken)
+            background-color: transparent
+          &:active,
+          &.btn-active
+            color: lighten($value, $init-percent-darken)
+            border-color: lighten($value, $init-percent-darken)
+            background-color: transparent
+          &.btn-disable
+            color: #dfdfe2
+            border-color: #dfdfe2
+            background-color: transparent
+            
 

@@ -6,15 +6,15 @@
   <link rel="stylesheet" href="../../../dist/css/hagrid-themes/clean/style.css">
 </head>
 <body>
-  <div class="sections-style-guide grid-wrap grid-wrap-90">
+  <div class="sections-style-guide">
     <h1 class="align-center">Typography</h1>
-    <section>
+    <section class="grid-wrap grid-wrap-90">
       <h3>0.1 Font Families</h3>
       <div class="ff-primary">
         <p>Museo Sans</p>
         <span class="h2 font-medium"> Aa</span>
-        <span class="h2 font-light"> Aa</span>
-        <span class="h2 font-thin"> Aa</span>
+        <span class="h2 font-light MuseoSans-300"> Aa</span>
+        <span class="h2 font-thin MuseoSans-100"> Aa</span>
         <span class="h2"> AaBbCcDd</span>
       </div>
       <div class="ff-secondary">
@@ -25,7 +25,7 @@
         <span class="h2"> AaBbCcDd</span>
       </div>
     </section>
-    <section>
+    <section class="grid-wrap grid-wrap-90">
       <h3>0.2 Headings</h3>
       <h1>h1 Heading Title</h1>
       <h2>h2 Heading Title</h2>
@@ -34,7 +34,7 @@
       <h5>h5 Heading Title</h5>
       <h6>h6 Heading Title</h6>
     </section>
-    <section>
+    <section class="grid-wrap grid-wrap-90">
       <h3>0.3 Body texts</h3>
       <h4>Paragraphs</h4>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -70,98 +70,137 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nisi ante, maximus at condimentum vel, eleifend sit amet turpis. Quisque scelerisque massa ac semper feugiat. Donec quis lacus suscipit libero dictum congue id sed quam.</p>
       </div>
     </section>
-    <section>
+    <section class="grid-wrap grid-wrap-90">
       <h3>04.Colors</h3>
       <p>Emerge Blue (Primary)</p>
       <ul class="colors-preview">
-        <li class="color-primary"></li>
-        <li class="color-dark-primary"></li>
-        <li class="color-light-primary"></li>
+        <li class="primary-bgc"></li>
+        <li class="primary-bgc primary-darken"></li>
+        <li class="primary-bgc primary-lighten"></li>
       </ul>
       <p>Emerge Teal (Secondary)</p>
       <ul class="colors-preview">
-        <li class="color-secondary"></li>
-        <li class="color-dark-secondary"></li>
-        <li class="color-light-secondary"></li>
+        <li class="secondary-bgc"></li>
+        <li class="secondary-bgc secondary-darken"></li>
+        <li class="secondary-bgc secondary-lighten"></li>
       </ul>
       <p>Headings, texts (Inverse)</p>
       <ul class="colors-preview">
-        <li class="color-secondary"></li>
-        <li class="color-dark-secondary"></li>
-        <li class="color-light-secondary"></li>
+        <li class="inverse-bgc"></li>
+        <li class="inverse-bgc inverse-darken"></li>
+        <li class="inverse-bgc inverse-lighten"></li>
       </ul>
       <p>Headings, texts (Neutral)</p>
       <ul class="colors-preview">
-        <li class="color-secondary"></li>
-        <li class="color-dark-secondary"></li>
-        <li class="color-light-secondary"></li>
+        <li class="default-bgc"></li>
+        <li class="default-bgc default-darken"></li>
+        <li class="default-bgc default-lighten"></li>
       </ul>
       <p>Headings, texts (Info)</p>
       <ul class="colors-preview">
-        <li class="color-secondary"></li>
-        <li class="color-dark-secondary"></li>
-        <li class="color-light-secondary"></li>
+        <li class="info-bgc"></li>
+        <li class="info-bgc info-darken"></li>
+        <li class="info-bgc info-lighten"></li>
       </ul>
       <p>Headings, texts (Warning)</p>
       <ul class="colors-preview">
-        <li class="color-secondary"></li>
-        <li class="color-dark-secondary"></li>
-        <li class="color-light-secondary"></li>
+       <li class="warning-bgc"></li>
+        <li class="warning-bgc warning-darken"></li>
+        <li class="warning-bgc warning-lighten"></li>
       </ul>
       <p>Headings, texts (Error)</p>
       <ul class="colors-preview">
-        <li class="color-secondary"></li>
-        <li class="color-dark-secondary"></li>
-        <li class="color-light-secondary"></li>
+        <li class="error-bgc"></li>
+        <li class="error-bgc error-darken"></li>
+        <li class="error-bgc error-lighten"></li>
       </ul>
     </section>
-    <section>
+    <section class="grid-wrap grid-wrap-90">
       <h3>05.Buttons </h3>
-      <p>Primary</p>
-      <a href="#" class="btn btn-primary">Button Normal</a>
-      <a href="#" class="btn btn-primary btn-hover">Button Hover</a>
-      <a href="#" class="btn btn-primary btn-active">Button Active</a>
-      <a href="#" class="btn btn-primary btn-disable">Button Disable</a>
+      <p>Primary Large</p>
+      <a href="#" class="btn btn-primary btn-lg">Normal</a>
+      <a href="#" class="btn btn-primary btn-lg btn-hover">Hover</a>
+      <a href="#" class="btn btn-primary btn-lg btn-active">Active</a>
+      <a href="#" class="btn btn-primary btn-lg btn-disable">Disable</a>
+      <p>Primary Normal</p>
+      <a href="#" class="btn btn-primary">Normal</a>
+      <a href="#" class="btn btn-primary btn-hover">Hover</a>
+      <a href="#" class="btn btn-primary btn-active">Active</a>
+      <a href="#" class="btn btn-primary btn-disable">Disable</a>
       <p>Primary Small</p>
-      <a href="#" class="btn btn-primary btn-sm">Button Normal</a>
-      <a href="#" class="btn btn-primary btn-sm btn-hover">Button Hover</a>
-      <a href="#" class="btn btn-primary btn-sm btn-active">Button Active</a>
-      <a href="#" class="btn btn-primary btn-sm btn-disable">Button Disable</a>
-      <p>Secondary</p>
-      <a href="#" class="btn btn-secondary">Button Normal</a>
-      <a href="#" class="btn btn-secondary btn-hover">Button Hover</a>
-      <a href="#" class="btn btn-secondary btn-active">Button Active</a>
-      <a href="#" class="btn btn-secondary btn-disable">Button Disable</a>
+      <a href="#" class="btn btn-primary btn-sm">Small</a>
+      <a href="#" class="btn btn-primary btn-sm btn-hover">Hover</a>
+      <a href="#" class="btn btn-primary btn-sm btn-active">Active</a>
+      <a href="#" class="btn btn-primary btn-sm btn-disable">Disable</a>
+      <p>Secondary Large</p>
+      <a href="#" class="btn btn-secondary btn-lg">Normal</a>
+      <a href="#" class="btn btn-secondary btn-lg btn-hover">Hover</a>
+      <a href="#" class="btn btn-secondary btn-lg btn-active">Active</a>
+      <a href="#" class="btn btn-secondary btn-lg btn-disable">Disable</a>
+      <p>Secondary Normal</p>
+      <a href="#" class="btn btn-secondary">Normal</a>
+      <a href="#" class="btn btn-secondary btn-hover">Hover</a>
+      <a href="#" class="btn btn-secondary btn-active">Active</a>
+      <a href="#" class="btn btn-secondary btn-disable">Disable</a>
       <p>Secondary Small</p>
-      <a href="#" class="btn btn-secondary btn-sm">Button Normal</a>
-      <a href="#" class="btn btn-secondary btn-sm btn-hover">Button Hover</a>
-      <a href="#" class="btn btn-secondary btn-sm btn-active">Button Active</a>
-      <a href="#" class="btn btn-secondary btn-sm btn-disable">Button Disable</a>
+      <a href="#" class="btn btn-secondary btn-sm">Normal</a>
+      <a href="#" class="btn btn-secondary btn-sm btn-hover">Hover</a>
+      <a href="#" class="btn btn-secondary btn-sm btn-active">Active</a>
+      <a href="#" class="btn btn-secondary btn-sm btn-disable">Disable</a>
       <p>Primary Outline</p>
-      <a href="#" class="btn btn-primary btn-outline">Button Normal</a>
-      <a href="#" class="btn btn-primary btn-outline btn-hover">Button Hover</a>
-      <a href="#" class="btn btn-primary btn-outline btn-active">Button Active</a>
-      <a href="#" class="btn btn-primary btn-outline btn-disable">Button Disable</a>
+      <a href="#" class="btn btn-primary btn-outline">Normal</a>
+      <a href="#" class="btn btn-primary btn-outline btn-hover">Hover</a>
+      <a href="#" class="btn btn-primary btn-outline btn-active">Active</a>
+      <a href="#" class="btn btn-primary btn-outline btn-disable">Disable</a>
       <p>Primary Small</p>
-      <a href="#" class="btn btn-primary btn-outline btn-sm">Button Normal</a>
-      <a href="#" class="btn btn-primary btn-outline btn-sm btn-hover">Button Hover</a>
-      <a href="#" class="btn btn-primary btn-outline btn-sm btn-active">Button Active</a>
-      <a href="#" class="btn btn-primary btn-outline btn-sm btn-disable">Button Disable</a>
+      <a href="#" class="btn btn-primary btn-outline btn-sm">Normal</a>
+      <a href="#" class="btn btn-primary btn-outline btn-sm btn-hover">Hover</a>
+      <a href="#" class="btn btn-primary btn-outline btn-sm btn-active">Active</a>
+      <a href="#" class="btn btn-primary btn-outline btn-sm btn-disable">Disable</a>
       <p>Secondary</p>
-      <a href="#" class="btn btn-secondary btn-outline">Button Normal</a>
-      <a href="#" class="btn btn-secondary btn-outline btn-hover">Button Hover</a>
-      <a href="#" class="btn btn-secondary btn-outline btn-active">Button Active</a>
-      <a href="#" class="btn btn-secondary btn-outline btn-disable">Button Disable</a>
+      <a href="#" class="btn btn-secondary btn-outline">Normal</a>
+      <a href="#" class="btn btn-secondary btn-outline btn-hover">Hover</a>
+      <a href="#" class="btn btn-secondary btn-outline btn-active">Active</a>
+      <a href="#" class="btn btn-secondary btn-outline btn-disable">Disable</a>
       <p>Secondary Small</p>
-      <a href="#" class="btn btn-secondary btn-outline btn-sm">Button Normal</a>
-      <a href="#" class="btn btn-secondary btn-outline btn-sm btn-hover">Button Hover</a>
-      <a href="#" class="btn btn-secondary btn-outline btn-sm btn-active">Button Active</a>
-      <a href="#" class="btn btn-secondary btn-outline btn-sm btn-disable">Button Disable</a>
+      <a href="#" class="btn btn-secondary btn-outline btn-sm">Normal</a>
+      <a href="#" class="btn btn-secondary btn-outline btn-sm btn-hover">Hover</a>
+      <a href="#" class="btn btn-secondary btn-outline btn-sm btn-active">Active</a>
+      <a href="#" class="btn btn-secondary btn-outline btn-sm btn-disable">Disable</a>
     </section>
-
-
-    </div>
-  </div><!-- end grid wrap-->
+    <section class="secondary-bgc default-color">
+      <div class="grid-wrap grid-wrap-90">
+        <p>Custom Big</p>
+        <a href="#" class="btn btn-custom btn-md">Normal</a>
+        <a href="#" class="btn btn-custom btn-md btn-hover">Hover</a>
+        <a href="#" class="btn btn-custom btn-md btn-active">Active</a>
+        <a href="#" class="btn btn-custom btn-md btn-disable">Disable</a>
+        <p>Custom Normal</p>
+        <a href="#" class="btn btn-custom">Normal</a>
+        <a href="#" class="btn btn-custom btn-hover">Hover</a>
+        <a href="#" class="btn btn-custom btn-active">Active</a>
+        <a href="#" class="btn btn-custom btn-disable">Disable</a>
+        <p>Custom small</p>
+        <a href="#" class="btn btn-custom btn-sm">Normal</a>
+        <a href="#" class="btn btn-custom btn-sm btn-hover">Hover</a>
+        <a href="#" class="btn btn-custom btn-sm btn-active">Active</a>
+        <a href="#" class="btn btn-custom btn-sm btn-disable">Disable</a>
+      </div>
+    </section>
+     <section class="grid-wrap grid-wrap-90">
+      <h3>06.Forms & Inputs</h3>
+      <div class="dropdown" style="width: 245px">
+        <a href="#" class="btn btn-primary btn-outline btn-dropdown">Dropdown A<span class="icon-dropdown icon-3d_rotation"></span></a>
+        <ul class="dropdown-menu dropdown-menu-outline">
+          <li><a href="#">Dropdown Menu 1</a></li>
+          <li><a href="#">Dropdown Menu 2</a></li>
+          <li><a href="#">Dropdown Menu 3</a></li>
+          <li><a href="#">Dropdown Menu 4</a></li>
+          <li><a href="#">Dropdown Menu 5</a></li>
+        </ul>
+      </div>
+    </section>
+  </div>
   <script>document.body.innerHTML = document.body.innerHTML.replace(/>\s+</g, "><");</script>
 </body>
 </html>

@@ -52,6 +52,11 @@ div
   .#{$key}-bgc,
   .#{$key},
     background-color: #{$value}
+    &.#{$key}-darken
+      background-color: darken($value, $init-percent-darken)
+    &.#{$key}-lighten
+      background-color: lighten($value, $init-percent-darken)
+
   .#{$key}-color-code
     &:before
       content: '#{$value}'
