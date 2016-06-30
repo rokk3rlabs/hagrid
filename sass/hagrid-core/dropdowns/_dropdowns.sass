@@ -1,57 +1,63 @@
 .dropdown
   +inline-block
+  margin: 0 .5em 
 
   .btn
     width: 100%
     text-align: left
 
-.btn-dropdown
-  padding-right: 3em!important
-  border-width: 1px!important
-  margin: 0
+  .btn-dropdown
+    padding-right: 3em!important
+    border-width: $dropdown-outline__bdw
+    margin: 0
 
-  .icon-dropdown
-    +inline-block
-    width: 2.5em
-    height: 100%
+    .icon-dropdown
+      +inline-block
+      width: 2.5em
+      height: 100%
+      position: absolute
+      //border-left: 1px solid rgba(0, 0, 0, .1)
+      margin-left: .5em
+      top: 50%
+      right: -15px
+
+  .dropdown-menu
+    +border-box
     position: absolute
-    //border-left: 1px solid rgba(0, 0, 0, .1)
-    margin-left: .5em
-    top: 50%
-    right: -15px
-
-.dropdown-menu
-  position: absolute
-  z-index: 1
-  background: #fff
-  display: block
-  width: 100%
-  box-shadow: 0 2px 5px rgba(0,0,0, .2)
-  top: 100%
-  padding: 0
-  margin: 5px 0 0
-  list-style: none
-  min-width: 140px
-  border-radius: 5px
-
-  &.dropdown-menu-outline
-    @extend .primary-color
-    box-shadow: none
-    border-radius: 0
-    border: solid 1px $color-primary
-
-  &:before
-    content: ''
-    border: 10px
-
-  li
+    z-index: 1
+    background: $dropdown-menu__bgc
     display: block
+    width: 100%
+    box-shadow: $dropdown-menu__bxsh
+    top: 100%
+    padding: 0
+    margin: 5px 0 0
+    list-style: none
+    min-width: 140px
+    border-radius: 5px
 
-    a
-      padding: .5em 1em
+    li
       display: block
-      text-decoration: none
-      color: inherit
 
-      &:hover
-        background-color: rgba(0, 0, 0, .02)
+      a
+        padding: $dropdown-menu_item-padding
+        display: block
+        text-decoration: none
+        color: inherit
+
+        &:hover
+          background-color: $dropdown-menu_item-hover
+
+  &.dropdown-outline
+    .btn-dropdown
+      border-width: $dropdown-outline__bdw
+
+    .dropdown-menu
+      @extend .primary-color
+      box-shadow: none
+      border-radius: 0
+      border: solid 1px $color-primary
+
+
+
+

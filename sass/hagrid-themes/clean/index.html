@@ -189,16 +189,92 @@
     </section>
      <section class="grid-wrap grid-wrap-90">
       <h3>06.Forms & Inputs</h3>
-      <div class="dropdown" style="width: 245px">
-        <a href="#" class="btn btn-primary btn-outline btn-dropdown MuseoSans-300">Dropdown A<span class="icon-dropdown icon-3d_rotation"></span></a>
-        <ul class="dropdown-menu dropdown-menu-outline MuseoSans-300">
-          <li><a href="#">Dropdown Menu 1</a></li>
-          <li><a href="#">Dropdown Menu 2</a></li>
-          <li><a href="#">Dropdown Menu 3</a></li>
-          <li><a href="#">Dropdown Menu 4</a></li>
-          <li><a href="#">Dropdown Menu 5</a></li>
-        </ul>
+      <div class="dropdowns-area" style="padding: 1em 0 13em;">
+        <div class="dropdown dropdown-primary dropdown-outline MuseoSans-300" style="width: 245px">
+          <a href="#" class="btn btn-primary btn-outline btn-dropdown">Dropdown A<span class="icon-dropdown icon-3d_rotation"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Dropdown Menu 1</a></li>
+            <li><a href="#">Dropdown Menu 2</a></li>
+            <li><a href="#">Dropdown Menu 3</a></li>
+            <li><a href="#">Dropdown Menu 4</a></li>
+            <li><a href="#">Dropdown Menu 5</a></li>
+          </ul>
+        </div>
+        <div class="dropdown dropdown-primary dropdown-outline dropdown-inverse MuseoSans-300" style="width: 245px">
+          <a href="#" class="btn btn-primary btn-outline btn-dropdown">Dropdown A<span class="icon-dropdown icon-3d_rotation"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Dropdown Menu 1</a></li>
+            <li><a href="#">Dropdown Menu 2</a></li>
+            <li><a href="#">Dropdown Menu 3</a></li>
+            <li><a href="#">Dropdown Menu 4</a></li>
+            <li><a href="#">Dropdown Menu 5</a></li>
+          </ul>
+        </div>
+        <div class="dropdown dropdown-primary dropdown-outline dropdown-simple MuseoSans-300" style="width: 245px">
+          <a href="#" class="btn btn-primary btn-outline btn-dropdown">Dropdown A<span class="icon-dropdown icon-3d_rotation"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Dropdown Menu 1</a></li>
+            <li><a href="#">Dropdown Menu 2</a></li>
+            <li><a href="#">Dropdown Menu 3</a></li>
+            <li><a href="#">Dropdown Menu 4</a></li>
+            <li><a href="#">Dropdown Menu 5</a></li>
+          </ul>
+        </div>
       </div>
+      <p>Input text Normal</p>
+      <div class="input-form input-form-outline">
+        <input type="text" placeholder="Normal">
+      </div>
+      <p>Input text Active (focus in)</p>
+      <div class="input-form input-form-outline">
+        <input type="text" class="input-focus" placeholder="Active">
+      </div>
+      <p>Input text Disable</p>
+      <div class="input-form input-form-outline">
+        <input type="text" class="input-disabled" placeholder="disabled" disabled="disabled">
+      </div>
+      <p>Input text Invalid</p>
+      <div class="input-form input-form-outline">
+        <input type="text" class="input-invalid" placeholder="Invalid">
+      </div>
+
+      <p>Input text Normal</p>
+      <div class="input-form input-form-filled">
+        <input type="text" placeholder="Normal">
+      </div>
+      <p>Input text Active (focus in)</p>
+      <div class="input-form input-form-filled">
+        <input type="text" class="input-focus" placeholder="Active">
+      </div>
+      <p>Input text Disable</p>
+      <div class="input-form input-form-filled">
+        <input type="text" class="input-disabled" placeholder="disabled" disabled="disabled">
+      </div>
+      <p>Input text Invalid</p>
+      <div class="input-form input-form-filled">
+        <input type="text" class="input-invalid" placeholder="Invalid">
+      </div>
+      <p>Checkboxes</p>
+      <div class="input-form input-checkbox">
+        <input type="checkbox" id="checkbox" name="checkbox">
+        <label for="checkbox" class="input-checkbox-icon"></label>
+        <label for="checkbox">Checkbox</label>
+      </div>
+      <p>Radio Buttons</p>
+      <div class="input-form input-radio">
+        <input type="radio" id="radio" name="radio">
+        <label for="radio" class="input-radio-icon"></label>
+        <label for="radio">Radio option 1</label>
+      </div>
+      <br>
+      <div class="input-form input-radio">
+        <input type="radio" id="radio2" name="radio">
+        <label for="radio2" class="input-radio-icon"></label>
+        <label for="radio2">Radio option 2</label>
+      </div>
+    </section>
+     <section class="grid-wrap grid-wrap-90">
+      <h3>07. Other UI elements</h3>
     </section>
   </div>
   <script>document.body.innerHTML = document.body.innerHTML.replace(/>\s+</g, "><");</script>

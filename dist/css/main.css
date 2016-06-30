@@ -391,7 +391,7 @@ div {
   color: #fff;
 }
 
-.primary-color, .dropdown-menu.dropdown-menu-outline {
+.primary-color, .dropdown.dropdown-outline .dropdown-menu {
   color: #2D6CC9;
 }
 
@@ -5973,9 +5973,9 @@ h6,
   color: #fff;
 }
 
-input,
-button,
-select {
+.input-default input,
+.input-default button,
+.input-default select {
   border: 0;
   padding: 0.7em;
   -webkit-box-sizing: border-box;
@@ -5984,38 +5984,37 @@ select {
   -o-box-sizing: border-box;
   box-sizing: border-box;
 }
-input:focus,
-button:focus,
-select:focus {
+.input-default input:focus,
+.input-default button:focus,
+.input-default select:focus {
   outline: none;
 }
-input[type="text"], input[type="number"],
-button[type="text"],
-button[type="number"],
-select[type="text"],
-select[type="number"] {
+.input-default input[type="text"], .input-default input[type="number"],
+.input-default button[type="text"],
+.input-default button[type="number"],
+.input-default select[type="text"],
+.input-default select[type="number"] {
   box-shadow: 0 -2px 0 0px rgba(0, 0, 0, 0.2) inset;
   background: transparent;
   color: #333;
   transition: background-color 0.3s;
 }
-input[type="text"]:focus, input[type="number"]:focus,
-button[type="text"]:focus,
-button[type="number"]:focus,
-select[type="text"]:focus,
-select[type="number"]:focus {
+.input-default input[type="text"]:focus, .input-default input[type="number"]:focus,
+.input-default button[type="text"]:focus,
+.input-default button[type="number"]:focus,
+.input-default select[type="text"]:focus,
+.input-default select[type="number"]:focus {
   background: rgba(255, 255, 255, 0.9);
   box-shadow: 0 -2px 0 0px #2D6CC9 inset;
 }
-input.block,
-button.block,
-select.block {
+.input-default input.block,
+.input-default button.block,
+.input-default select.block {
   width: 100%;
   display: block;
 }
-
-button [class*="icon-"],
-[class*="btn-"] [class*="icon-"] {
+.input-default button [class*="icon-"],
+.input-default [class*="btn-"] [class*="icon-"] {
   font-size: 1.5em;
   line-height: 0px;
   top: -2px;
@@ -6023,41 +6022,420 @@ button [class*="icon-"],
   position: relative;
   vertical-align: middle;
 }
-
-button,
-input[type="submit"] {
+.input-default button,
+.input-default input[type="submit"] {
   background-color: #fff;
   box-shadow: 0 -2px 0 0px rgba(0, 0, 0, 0.2) inset;
   color: #333;
 }
-
-select {
+.input-default select {
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   -o-appearance: none;
   appearance: none;
 }
-
-input[type="radio"]:checked {
+.input-default input[type="radio"]:checked {
   background-color: red;
+}
+
+.input-form.input-form-outline input,
+.input-form.input-form-outline button,
+.input-form.input-form-outline select {
+  border: 1px solid;
+  border-color: #7e818c;
+  padding: 0.5em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.input-form.input-form-outline input::-webkit-input-placeholder,
+.input-form.input-form-outline button::-webkit-input-placeholder,
+.input-form.input-form-outline select::-webkit-input-placeholder {
+  color: #7e818c;
+}
+.input-form.input-form-outline input:-moz-placeholder,
+.input-form.input-form-outline button:-moz-placeholder,
+.input-form.input-form-outline select:-moz-placeholder {
+  color: #7e818c;
+}
+.input-form.input-form-outline input::-moz-placeholder,
+.input-form.input-form-outline button::-moz-placeholder,
+.input-form.input-form-outline select::-moz-placeholder {
+  color: #7e818c;
+}
+.input-form.input-form-outline input:-ms-input-placeholder,
+.input-form.input-form-outline button:-ms-input-placeholder,
+.input-form.input-form-outline select:-ms-input-placeholder {
+  color: #7e818c;
+}
+.input-form.input-form-outline input:active, .input-form.input-form-outline input:focus, .input-form.input-form-outline input.input-focus, .input-form.input-form-outline input.input-active,
+.input-form.input-form-outline button:active,
+.input-form.input-form-outline button:focus,
+.input-form.input-form-outline button.input-focus,
+.input-form.input-form-outline button.input-active,
+.input-form.input-form-outline select:active,
+.input-form.input-form-outline select:focus,
+.input-form.input-form-outline select.input-focus,
+.input-form.input-form-outline select.input-active {
+  border-color: #5e616f;
+  outline: none;
+}
+.input-form.input-form-outline input:active::-webkit-input-placeholder, .input-form.input-form-outline input:focus::-webkit-input-placeholder, .input-form.input-form-outline input.input-focus::-webkit-input-placeholder, .input-form.input-form-outline input.input-active::-webkit-input-placeholder,
+.input-form.input-form-outline button:active::-webkit-input-placeholder,
+.input-form.input-form-outline button:focus::-webkit-input-placeholder,
+.input-form.input-form-outline button.input-focus::-webkit-input-placeholder,
+.input-form.input-form-outline button.input-active::-webkit-input-placeholder,
+.input-form.input-form-outline select:active::-webkit-input-placeholder,
+.input-form.input-form-outline select:focus::-webkit-input-placeholder,
+.input-form.input-form-outline select.input-focus::-webkit-input-placeholder,
+.input-form.input-form-outline select.input-active::-webkit-input-placeholder {
+  color: #5e616f;
+}
+.input-form.input-form-outline input:active:-moz-placeholder, .input-form.input-form-outline input:focus:-moz-placeholder, .input-form.input-form-outline input.input-focus:-moz-placeholder, .input-form.input-form-outline input.input-active:-moz-placeholder,
+.input-form.input-form-outline button:active:-moz-placeholder,
+.input-form.input-form-outline button:focus:-moz-placeholder,
+.input-form.input-form-outline button.input-focus:-moz-placeholder,
+.input-form.input-form-outline button.input-active:-moz-placeholder,
+.input-form.input-form-outline select:active:-moz-placeholder,
+.input-form.input-form-outline select:focus:-moz-placeholder,
+.input-form.input-form-outline select.input-focus:-moz-placeholder,
+.input-form.input-form-outline select.input-active:-moz-placeholder {
+  color: #5e616f;
+}
+.input-form.input-form-outline input:active::-moz-placeholder, .input-form.input-form-outline input:focus::-moz-placeholder, .input-form.input-form-outline input.input-focus::-moz-placeholder, .input-form.input-form-outline input.input-active::-moz-placeholder,
+.input-form.input-form-outline button:active::-moz-placeholder,
+.input-form.input-form-outline button:focus::-moz-placeholder,
+.input-form.input-form-outline button.input-focus::-moz-placeholder,
+.input-form.input-form-outline button.input-active::-moz-placeholder,
+.input-form.input-form-outline select:active::-moz-placeholder,
+.input-form.input-form-outline select:focus::-moz-placeholder,
+.input-form.input-form-outline select.input-focus::-moz-placeholder,
+.input-form.input-form-outline select.input-active::-moz-placeholder {
+  color: #5e616f;
+}
+.input-form.input-form-outline input:active:-ms-input-placeholder, .input-form.input-form-outline input:focus:-ms-input-placeholder, .input-form.input-form-outline input.input-focus:-ms-input-placeholder, .input-form.input-form-outline input.input-active:-ms-input-placeholder,
+.input-form.input-form-outline button:active:-ms-input-placeholder,
+.input-form.input-form-outline button:focus:-ms-input-placeholder,
+.input-form.input-form-outline button.input-focus:-ms-input-placeholder,
+.input-form.input-form-outline button.input-active:-ms-input-placeholder,
+.input-form.input-form-outline select:active:-ms-input-placeholder,
+.input-form.input-form-outline select:focus:-ms-input-placeholder,
+.input-form.input-form-outline select.input-focus:-ms-input-placeholder,
+.input-form.input-form-outline select.input-active:-ms-input-placeholder {
+  color: #5e616f;
+}
+.input-form.input-form-outline input.input-disabled,
+.input-form.input-form-outline button.input-disabled,
+.input-form.input-form-outline select.input-disabled {
+  color: #dfdfe2;
+  border-color: #dfdfe2;
+}
+.input-form.input-form-outline input.input-disabled::-webkit-input-placeholder,
+.input-form.input-form-outline button.input-disabled::-webkit-input-placeholder,
+.input-form.input-form-outline select.input-disabled::-webkit-input-placeholder {
+  color: #dfdfe2;
+}
+.input-form.input-form-outline input.input-disabled:-moz-placeholder,
+.input-form.input-form-outline button.input-disabled:-moz-placeholder,
+.input-form.input-form-outline select.input-disabled:-moz-placeholder {
+  color: #dfdfe2;
+}
+.input-form.input-form-outline input.input-disabled::-moz-placeholder,
+.input-form.input-form-outline button.input-disabled::-moz-placeholder,
+.input-form.input-form-outline select.input-disabled::-moz-placeholder {
+  color: #dfdfe2;
+}
+.input-form.input-form-outline input.input-disabled:-ms-input-placeholder,
+.input-form.input-form-outline button.input-disabled:-ms-input-placeholder,
+.input-form.input-form-outline select.input-disabled:-ms-input-placeholder {
+  color: #dfdfe2;
+}
+.input-form.input-form-outline input.input-invalid,
+.input-form.input-form-outline button.input-invalid,
+.input-form.input-form-outline select.input-invalid {
+  color: #ec407a;
+  border-color: #ec407a;
+}
+.input-form.input-form-outline input.input-invalid::-webkit-input-placeholder,
+.input-form.input-form-outline button.input-invalid::-webkit-input-placeholder,
+.input-form.input-form-outline select.input-invalid::-webkit-input-placeholder {
+  color: #ec407a;
+}
+.input-form.input-form-outline input.input-invalid:-moz-placeholder,
+.input-form.input-form-outline button.input-invalid:-moz-placeholder,
+.input-form.input-form-outline select.input-invalid:-moz-placeholder {
+  color: #ec407a;
+}
+.input-form.input-form-outline input.input-invalid::-moz-placeholder,
+.input-form.input-form-outline button.input-invalid::-moz-placeholder,
+.input-form.input-form-outline select.input-invalid::-moz-placeholder {
+  color: #ec407a;
+}
+.input-form.input-form-outline input.input-invalid:-ms-input-placeholder,
+.input-form.input-form-outline button.input-invalid:-ms-input-placeholder,
+.input-form.input-form-outline select.input-invalid:-ms-input-placeholder {
+  color: #ec407a;
+}
+.input-form.input-form-filled input,
+.input-form.input-form-filled button,
+.input-form.input-form-filled select {
+  border: 1px solid;
+  border-color: #2D6CC9;
+  color: #2D6CC9;
+  padding: 0.5em;
+  background-color: #f2f2f3;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.input-form.input-form-filled input::-webkit-input-placeholder,
+.input-form.input-form-filled button::-webkit-input-placeholder,
+.input-form.input-form-filled select::-webkit-input-placeholder {
+  color: #2D6CC9;
+}
+.input-form.input-form-filled input:-moz-placeholder,
+.input-form.input-form-filled button:-moz-placeholder,
+.input-form.input-form-filled select:-moz-placeholder {
+  color: #2D6CC9;
+}
+.input-form.input-form-filled input::-moz-placeholder,
+.input-form.input-form-filled button::-moz-placeholder,
+.input-form.input-form-filled select::-moz-placeholder {
+  color: #2D6CC9;
+}
+.input-form.input-form-filled input:-ms-input-placeholder,
+.input-form.input-form-filled button:-ms-input-placeholder,
+.input-form.input-form-filled select:-ms-input-placeholder {
+  color: #2D6CC9;
+}
+.input-form.input-form-filled input:active, .input-form.input-form-filled input:focus, .input-form.input-form-filled input.input-focus, .input-form.input-form-filled input.input-active,
+.input-form.input-form-filled button:active,
+.input-form.input-form-filled button:focus,
+.input-form.input-form-filled button.input-focus,
+.input-form.input-form-filled button.input-active,
+.input-form.input-form-filled select:active,
+.input-form.input-form-filled select:focus,
+.input-form.input-form-filled select.input-focus,
+.input-form.input-form-filled select.input-active {
+  border-color: #2D6CC9;
+  color: #2D6CC9;
+  outline: none;
+}
+.input-form.input-form-filled input:active::-webkit-input-placeholder, .input-form.input-form-filled input:focus::-webkit-input-placeholder, .input-form.input-form-filled input.input-focus::-webkit-input-placeholder, .input-form.input-form-filled input.input-active::-webkit-input-placeholder,
+.input-form.input-form-filled button:active::-webkit-input-placeholder,
+.input-form.input-form-filled button:focus::-webkit-input-placeholder,
+.input-form.input-form-filled button.input-focus::-webkit-input-placeholder,
+.input-form.input-form-filled button.input-active::-webkit-input-placeholder,
+.input-form.input-form-filled select:active::-webkit-input-placeholder,
+.input-form.input-form-filled select:focus::-webkit-input-placeholder,
+.input-form.input-form-filled select.input-focus::-webkit-input-placeholder,
+.input-form.input-form-filled select.input-active::-webkit-input-placeholder {
+  color: #2D6CC9;
+}
+.input-form.input-form-filled input:active:-moz-placeholder, .input-form.input-form-filled input:focus:-moz-placeholder, .input-form.input-form-filled input.input-focus:-moz-placeholder, .input-form.input-form-filled input.input-active:-moz-placeholder,
+.input-form.input-form-filled button:active:-moz-placeholder,
+.input-form.input-form-filled button:focus:-moz-placeholder,
+.input-form.input-form-filled button.input-focus:-moz-placeholder,
+.input-form.input-form-filled button.input-active:-moz-placeholder,
+.input-form.input-form-filled select:active:-moz-placeholder,
+.input-form.input-form-filled select:focus:-moz-placeholder,
+.input-form.input-form-filled select.input-focus:-moz-placeholder,
+.input-form.input-form-filled select.input-active:-moz-placeholder {
+  color: #2D6CC9;
+}
+.input-form.input-form-filled input:active::-moz-placeholder, .input-form.input-form-filled input:focus::-moz-placeholder, .input-form.input-form-filled input.input-focus::-moz-placeholder, .input-form.input-form-filled input.input-active::-moz-placeholder,
+.input-form.input-form-filled button:active::-moz-placeholder,
+.input-form.input-form-filled button:focus::-moz-placeholder,
+.input-form.input-form-filled button.input-focus::-moz-placeholder,
+.input-form.input-form-filled button.input-active::-moz-placeholder,
+.input-form.input-form-filled select:active::-moz-placeholder,
+.input-form.input-form-filled select:focus::-moz-placeholder,
+.input-form.input-form-filled select.input-focus::-moz-placeholder,
+.input-form.input-form-filled select.input-active::-moz-placeholder {
+  color: #2D6CC9;
+}
+.input-form.input-form-filled input:active:-ms-input-placeholder, .input-form.input-form-filled input:focus:-ms-input-placeholder, .input-form.input-form-filled input.input-focus:-ms-input-placeholder, .input-form.input-form-filled input.input-active:-ms-input-placeholder,
+.input-form.input-form-filled button:active:-ms-input-placeholder,
+.input-form.input-form-filled button:focus:-ms-input-placeholder,
+.input-form.input-form-filled button.input-focus:-ms-input-placeholder,
+.input-form.input-form-filled button.input-active:-ms-input-placeholder,
+.input-form.input-form-filled select:active:-ms-input-placeholder,
+.input-form.input-form-filled select:focus:-ms-input-placeholder,
+.input-form.input-form-filled select.input-focus:-ms-input-placeholder,
+.input-form.input-form-filled select.input-active:-ms-input-placeholder {
+  color: #2D6CC9;
+}
+.input-form.input-form-filled input.input-disabled,
+.input-form.input-form-filled button.input-disabled,
+.input-form.input-form-filled select.input-disabled {
+  color: #dfdfe2;
+  border-color: #dfdfe2;
+}
+.input-form.input-form-filled input.input-disabled::-webkit-input-placeholder,
+.input-form.input-form-filled button.input-disabled::-webkit-input-placeholder,
+.input-form.input-form-filled select.input-disabled::-webkit-input-placeholder {
+  color: #dfdfe2;
+}
+.input-form.input-form-filled input.input-disabled:-moz-placeholder,
+.input-form.input-form-filled button.input-disabled:-moz-placeholder,
+.input-form.input-form-filled select.input-disabled:-moz-placeholder {
+  color: #dfdfe2;
+}
+.input-form.input-form-filled input.input-disabled::-moz-placeholder,
+.input-form.input-form-filled button.input-disabled::-moz-placeholder,
+.input-form.input-form-filled select.input-disabled::-moz-placeholder {
+  color: #dfdfe2;
+}
+.input-form.input-form-filled input.input-disabled:-ms-input-placeholder,
+.input-form.input-form-filled button.input-disabled:-ms-input-placeholder,
+.input-form.input-form-filled select.input-disabled:-ms-input-placeholder {
+  color: #dfdfe2;
+}
+.input-form.input-form-filled input.input-invalid,
+.input-form.input-form-filled button.input-invalid,
+.input-form.input-form-filled select.input-invalid {
+  color: #ec407a;
+  border-color: #ec407a;
+}
+.input-form.input-form-filled input.input-invalid::-webkit-input-placeholder,
+.input-form.input-form-filled button.input-invalid::-webkit-input-placeholder,
+.input-form.input-form-filled select.input-invalid::-webkit-input-placeholder {
+  color: #ec407a;
+}
+.input-form.input-form-filled input.input-invalid:-moz-placeholder,
+.input-form.input-form-filled button.input-invalid:-moz-placeholder,
+.input-form.input-form-filled select.input-invalid:-moz-placeholder {
+  color: #ec407a;
+}
+.input-form.input-form-filled input.input-invalid::-moz-placeholder,
+.input-form.input-form-filled button.input-invalid::-moz-placeholder,
+.input-form.input-form-filled select.input-invalid::-moz-placeholder {
+  color: #ec407a;
+}
+.input-form.input-form-filled input.input-invalid:-ms-input-placeholder,
+.input-form.input-form-filled button.input-invalid:-ms-input-placeholder,
+.input-form.input-form-filled select.input-invalid:-ms-input-placeholder {
+  color: #ec407a;
+}
+.input-form.input-checkbox .input-checkbox-icon,
+.input-form.input-checkbox label {
+  display: inline-block;
+  *display: inline;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.input-form.input-checkbox .input-checkbox-icon {
+  width: 25px;
+  height: 25px;
+  border: 1px solid;
+  border-color: #bfc0c5;
+  margin-right: 20px;
+}
+.input-form.input-checkbox input[type="checkbox"] {
+  display: none;
+}
+.input-form.input-checkbox input[type="checkbox"] + .input-checkbox-icon {
+  position: relative;
+}
+.input-form.input-checkbox input[type="checkbox"] + .input-checkbox-icon:before {
+  content: "";
+  position: absolute;
+  opacity: 0;
+  display: inline-block;
+  *display: inline;
+  top: 29%;
+  left: 20%;
+  width: 12px;
+  height: 4px;
+  border: 3px solid #bfc0c5;
+  border-right: 0;
+  border-top: 0;
+  transform: rotate(-45deg);
+}
+.input-form.input-checkbox input[type="checkbox"]:checked + .input-checkbox-icon {
+  border-color: #2D6CC9;
+}
+.input-form.input-checkbox input[type="checkbox"]:checked + .input-checkbox-icon:before {
+  opacity: 1;
+  border-color: #2D6CC9;
+}
+.input-form.input-radio .input-radio-icon,
+.input-form.input-radio label {
+  display: inline-block;
+  *display: inline;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.input-form.input-radio .input-radio-icon {
+  width: 25px;
+  height: 25px;
+  border: 1px solid;
+  border-color: #bfc0c5;
+  margin-right: 20px;
+  border-radius: 25px;
+}
+.input-form.input-radio input[type="radio"] {
+  display: none;
+}
+.input-form.input-radio input[type="radio"] + .input-radio-icon {
+  position: relative;
+}
+.input-form.input-radio input[type="radio"] + .input-radio-icon:before {
+  content: "";
+  position: absolute;
+  opacity: 0;
+  display: inline-block;
+  *display: inline;
+  top: 29%;
+  left: 20%;
+  width: 12px;
+  height: 4px;
+  border: 3px solid #bfc0c5;
+  border-right: 0;
+  border-top: 0;
+  transform: rotate(-45deg);
+}
+.input-form.input-radio input[type="radio"]:checked + .input-radio-icon {
+  border-color: #2D6CC9;
+  background-color: #2D6CC9;
+}
+.input-form.input-radio input[type="radio"]:checked + .input-radio-icon:before {
+  opacity: 1;
+  border-color: #2D6CC9;
 }
 
 .dropdown {
   display: inline-block;
   *display: inline;
+  margin: 0 0.5em;
 }
 .dropdown .btn {
   width: 100%;
   text-align: left;
 }
-
-.btn-dropdown {
+.dropdown .btn-dropdown {
   padding-right: 3em !important;
-  border-width: 1px !important;
+  border-width: 1px;
   margin: 0;
 }
-.btn-dropdown .icon-dropdown {
+.dropdown .btn-dropdown .icon-dropdown {
   display: inline-block;
   *display: inline;
   width: 2.5em;
@@ -6067,8 +6445,12 @@ input[type="radio"]:checked {
   top: 50%;
   right: -15px;
 }
-
-.dropdown-menu {
+.dropdown .dropdown-menu {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
   position: absolute;
   z-index: 1;
   background: #fff;
@@ -6082,26 +6464,25 @@ input[type="radio"]:checked {
   min-width: 140px;
   border-radius: 5px;
 }
-.dropdown-menu.dropdown-menu-outline {
-  box-shadow: none;
-  border-radius: 0;
-  border: solid 1px #2D6CC9;
-}
-.dropdown-menu:before {
-  content: "";
-  border: 10px;
-}
-.dropdown-menu li {
+.dropdown .dropdown-menu li {
   display: block;
 }
-.dropdown-menu li a {
+.dropdown .dropdown-menu li a {
   padding: 0.5em 1em;
   display: block;
   text-decoration: none;
   color: inherit;
 }
-.dropdown-menu li a:hover {
+.dropdown .dropdown-menu li a:hover {
   background-color: rgba(0, 0, 0, 0.02);
+}
+.dropdown.dropdown-outline .btn-dropdown {
+  border-width: 1px;
+}
+.dropdown.dropdown-outline .dropdown-menu {
+  box-shadow: none;
+  border-radius: 0;
+  border: solid 1px #2D6CC9;
 }
 
 .list-items {
