@@ -114,9 +114,25 @@
   .#{$class-layout}-#{$i}0,
   .#{$class-flex}-#{$i}0,
   .grid-wrap-#{$i}0,
-  .width-#{$i}0,
+  .width-#{$i}0
+  .layout-#{$i}0
     width: (($i*10)/100)*100%
 
+  @media screen and (min-width: $md-device)
+    .layout-lg-#{$i}0
+      width: (($i*10)/100)*100%
+
+  @media screen and (min-width: $sm-device) and (max-width: $md-device)
+    .layout-md-#{$i}0
+      width: (($i*10)/100)*100%
+  
+  @media screen and (min-width: $xs-device) and (max-width: $sm-device)
+    .layout-sm-#{$i}0,
+      width: (($i*10)/100)*100%
+
+  @media screen and (max-width: $xs-device)
+    .layout-xs-#{$i}0
+      width: (($i*10)/100)*100%
 
 /// Boxes
 @for $i from 1 through 12
@@ -207,12 +223,35 @@
 
   /// Layout, flex, width
   @for $i from 1 through 10
-    .#{$class-layout}-#{$i}0,
     .#{$class-flex}-#{$i}0,
     .width-#{$i}0,
+    .#{$class-layout}-#{$i}0
 
       &:before
         content: "#{$i}0%"
+
+    @media screen and (min-width: $md-device)
+      .#{$class-layout}-lg-#{$i}0
+        &:before
+          content: "#{$i}0%"
+
+
+    @media screen and (min-width: $sm-device) and (max-width: $md-device)
+      .#{$class-layout}-md-#{$i}0
+        &:before
+          content: "#{$i}0%"
+
+
+    @media screen and (min-width: $xs-device) and (max-width: $sm-device)
+      .#{$class-layout}-sm-#{$i}0
+        &:before
+          content: "#{$i}0%"
+
+
+    @media screen and (max-width: $xs-device)
+      .#{$class-layout}-xs-#{$i}0
+        &:before
+          content: "#{$i}0%"
 
 
   /// Boxes
@@ -244,6 +283,7 @@
 // FLEX BOX
 [class*="grid-flex"],
 [class*="support-flex"],
+[class*="grid-system"]
   display: flex
   margin: 0
   vertical-align: top
@@ -280,50 +320,50 @@
     &.#{$align-content}-#{$i}
       align-content: #{$i}
 
-  &.grid-spaces
-    [class*="flex-"]
+  &.gutters
+    [class*="layout-"]
       margin: 1em
 
 
 @for $i from 1 through 3
-  [grid-spaces="#{$i}0px"]
-    [class*="flex-"]
+  [gutters="#{$i}0px"]
+    [class*="layout-"]
       margin: #{$i}0px
-  [grid-spaces="#{$i}em"]
-    [class*="flex-"]
+  [gutters="#{$i}em"]
+    [class*="layout-"]
       margin: #{$i}em
-  [grid-spaces="#{$i}rem"]
-    [class*="flex-"]
+  [gutters="#{$i}rem"]
+    [class*="layout-"]
       margin: #{$i}rem
-  [grid-spaces="#{$i}0%"]
-    [class*="flex-"]
+  [gutters="#{$i}0%"]
+    [class*="layout-"]
       margin: #{$i}0%
 
-.grid-spaces-sides
-  [class*="flex-"]
+.gutters-sides
+  [class*="layout-"]
     margin-top: 0
     margin-bottom: 0
-.grid-spaces-top-bottom
-  [class*="flex-"]
+.gutters-top-bottom
+  [class*="layout-"]
     margin-right: 0
     margin-left: 0
-.grid-spaces-right
-  [class*="flex-"]
+.gutters-right
+  [class*="layout-"]
     margin-top: 0
     margin-bottom: 0
     margin-left: 0
-.grid-spaces-left
-  [class*="flex-"]
+.gutters-left
+  [class*="layout-"]
     margin-top: 0
     margin-bottom: 0
     margin-right: 0
-.grid-spaces-top
-  [class*="flex-"]
+.gutters-top
+  [class*="layout-"]
     margin-bottom: 0
     margin-right: 0
     margin-left: 0
-.grid-spaces-bottom
-  [class*="flex-"]
+.gutters-bottom
+  [class*="layout-"]
     margin-top: 0
     margin-right: 0
     margin-left: 0
