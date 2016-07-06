@@ -2604,6 +2604,51 @@ div {
   overflow-x: scroll !important;
 }
 
+@media screen and (min-width: 1200px) {
+  html .gs-block-lg,
+  body .gs-block-lg {
+    display: block;
+  }
+  html .gs-block-lg [class*="layout-"],
+  body .gs-block-lg [class*="layout-"] {
+    width: auto;
+    display: block;
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+  html .gs-block-md,
+  body .gs-block-md {
+    display: block;
+  }
+  html .gs-block-md [class*="layout-"],
+  body .gs-block-md [class*="layout-"] {
+    width: auto;
+    display: block;
+  }
+}
+@media screen and (min-width: 460px) and (max-width: 700px) {
+  html .gs-block-sm,
+  body .gs-block-sm {
+    display: block;
+  }
+  html .gs-block-sm [class*="layout-"],
+  body .gs-block-sm [class*="layout-"] {
+    width: auto;
+    display: block;
+  }
+}
+@media screen and (max-width: 460px) {
+  html .gs-block-xs,
+  body .gs-block-xs {
+    display: block;
+  }
+  html .gs-block-xs [class*="layout-"],
+  body .gs-block-xs [class*="layout-"] {
+    width: auto;
+    display: block;
+  }
+}
+
 @font-face {
   font-family: 'hagrid';
   src: url("./fonts/hagrid.eot?ynwl17");

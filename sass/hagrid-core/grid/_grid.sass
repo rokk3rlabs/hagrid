@@ -125,7 +125,7 @@
   @media screen and (min-width: $sm-device) and (max-width: $md-device)
     .layout-md-#{$i}0
       width: (($i*10)/100)*100%
-  
+
   @media screen and (min-width: $xs-device) and (max-width: $sm-device)
     .layout-sm-#{$i}0,
       width: (($i*10)/100)*100%
@@ -280,6 +280,7 @@
       &:before
         content: ''
 
+
 // FLEX BOX
 [class*="grid-flex"],
 [class*="support-flex"],
@@ -405,4 +406,32 @@
 .scroll-x
   overflow: hidden
   overflow-x: scroll!important
+
+
+html,
+body
+  @media screen and (min-width: $md-device)
+    .gs-block-lg
+      display: block
+      [class*="layout-"]
+        width: auto
+        display: block
+  @media screen and (min-width: $sm-device) and (max-width: $md-device)
+    .gs-block-md
+      display: block
+      [class*="layout-"]
+        width: auto
+        display: block
+  @media screen and (min-width: $xs-device) and (max-width: $sm-device)
+    .gs-block-sm
+      display: block
+      [class*="layout-"]
+        width: auto
+        display: block
+  @media screen and (max-width: $xs-device)
+    .gs-block-xs
+      display: block
+      [class*="layout-"]
+        width: auto
+        display: block
 

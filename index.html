@@ -8,7 +8,7 @@
 <body>
   <div class="grid-wrap grid-wrap-90">
 
-    <div class="grid-system justify-content-flex-start" hagrid-debug>
+    <div class="grid-system gs-block-xs gs-block-md" hagrid-debug>
       <div class="layout-xs-100 layout-sm-50 layout-md-60 layout-lg-80"></div>
       <div class="layout-xs-100 layout-sm-50 layout-md-40 layout-lg-20"></div>
     </div>
@@ -16,161 +16,161 @@
     <h1 class="align-center">Hagrid!</h1>
     <h2>Grid System</h2>
 
-    <div class="grid-layout" hagrid-debug>
+    <div class="grid-system gutters gs-block-xs" gutters="10px" hagrid-debug>
       <div class="layout-50"></div>
       <div class="layout-20"></div>
       <div class="layout-30"></div>
     </div>
     <h3>Grid Flex Examples</h3>
     <p>Flex order</p>
-    <div class="grid-flex" hagrid-debug debug-empty>
-      <div class="flex-50 order-2">
+    <div class="grid-system" hagrid-debug debug-empty>
+      <div class="layout-50 order-2">
         <p class="before">1</p>
       </div>
-      <div class="flex-20 order-3">
+      <div class="layout-20 order-3">
         <p class="before">2</p>
       </div>
-      <div class="flex-30 order-1">
+      <div class="layout-30 order-1">
         <p class="before">3</p>
       </div>
     </div>
     <p>Margins</p>
-    <div class="grid-flex grid-spaces-top-bottom" grid-spaces="30px" hagrid-debug>
-      <div class="flex-30"></div>
-      <div class="flex-70"></div>
+    <div class="grid-system grid-spaces-top-bottom" grid-spaces="30px" hagrid-debug>
+      <div class="layout-30"></div>
+      <div class="layout-70"></div>
     </div>
     <p>Flex align (left)</p>
-    <div class="grid-flex justify-content-flex-start" hagrid-debug>
-      <div class="flex-30"></div>
-      <div class="flex-20"></div>
-      <div class="flex-30"></div>
+    <div class="grid-system justify-content-flex-start" hagrid-debug>
+      <div class="layout-30"></div>
+      <div class="layout-20"></div>
+      <div class="layout-30"></div>
     </div>
     <p>Flex align (center)</p>
-    <div class="grid-flex justify-content-center" hagrid-debug>
-      <div class="flex-30"></div>
-      <div class="flex-20"></div>
-      <div class="flex-30"></div>
+    <div class="grid-system justify-content-center" hagrid-debug>
+      <div class="layout-30"></div>
+      <div class="layout-20"></div>
+      <div class="layout-30"></div>
     </div>
     <p>Flex align (right)</p>
-    <div class="grid-flex justify-content-flex-end" hagrid-debug>
-      <div class="flex-30"></div>
-      <div class="flex-20"></div>
-      <div class="flex-30"></div>
+    <div class="grid-system justify-content-flex-end" hagrid-debug>
+      <div class="layout-30"></div>
+      <div class="layout-20"></div>
+      <div class="layout-30"></div>
     </div>
     <p>Flex align (justify)</p>
-    <div class="grid-flex justify-content-space-between" hagrid-debug>
-      <div class="flex-30"></div>
-      <div class="flex-20"></div>
-      <div class="flex-30"></div>
+    <div class="grid-system justify-content-space-between" hagrid-debug>
+      <div class="layout-30"></div>
+      <div class="layout-20"></div>
+      <div class="layout-30"></div>
     </div>
     <p>Flex align (center justify)</p>
-    <div class="grid-flex justify-content-space-around" hagrid-debug>
-      <div class="flex-30"></div>
-      <div class="flex-20"></div>
-      <div class="flex-30"></div>
+    <div class="grid-system justify-content-space-around" hagrid-debug>
+      <div class="layout-30"></div>
+      <div class="layout-20"></div>
+      <div class="layout-30"></div>
     </div>
     <p>Flex Vertical align (top)</p>
-    <div class="grid-flex align-items-flex-start" hagrid-debug style="height: 100px">
-      <div class="flex-50"></div>
-      <div class="flex-20"></div>
-      <div class="flex-30"></div>
+    <div class="grid-system align-items-flex-start" hagrid-debug style="height: 100px">
+      <div class="layout-50"></div>
+      <div class="layout-20"></div>
+      <div class="layout-30"></div>
     </div>
     <p>Flex Vertical align (middle)</p>
-    <div class="grid-flex align-items-center" hagrid-debug style="height: 100px">
-      <div class="flex-50"></div>
-      <div class="flex-20"></div>
-      <div class="flex-30"></div>
+    <div class="grid-system align-items-center" hagrid-debug style="height: 100px">
+      <div class="layout-50"></div>
+      <div class="layout-20"></div>
+      <div class="layout-30"></div>
     </div>
     <p>Flex Vertical align (bottom)</p>
-    <div class="grid-flex align-items-flex-end" hagrid-debug style="height: 100px">
-      <div class="flex-50"></div>
-      <div class="flex-20"></div>
-      <div class="flex-30"></div>
+    <div class="grid-system align-items-flex-end" hagrid-debug style="height: 100px">
+      <div class="layout-50"></div>
+      <div class="layout-20"></div>
+      <div class="layout-30"></div>
     </div>
     <p>Flex Vertical align (stretch)</p>
-    <div class="grid-flex align-items-stretch" hagrid-debug style="height: 100px">
-      <div class="flex-50"></div>
-      <div class="flex-20"></div>
-      <div class="flex-30"></div>
+    <div class="grid-system align-items-stretch" hagrid-debug style="height: 100px">
+      <div class="layout-50"></div>
+      <div class="layout-20"></div>
+      <div class="layout-30"></div>
     </div>
     <p>Flex Vertical align top(center)</p>
-    <div class="grid-flex align-items-stretch" hagrid-debug style="height: 100px">
-      <div class="flex-50"></div>
-      <div class="flex-20 align-self-flex-start"></div>
-      <div class="flex-30"></div>
+    <div class="grid-system align-items-stretch" hagrid-debug style="height: 100px">
+      <div class="layout-50"></div>
+      <div class="layout-20 align-self-flex-start"></div>
+      <div class="layout-30"></div>
     </div>
     <p>Flex Vertical align self(center)</p>
-    <div class="grid-flex align-items-stretch" hagrid-debug style="height: 100px">
-      <div class="flex-50"></div>
-      <div class="flex-20 align-self-center"></div>
-      <div class="flex-30"></div>
+    <div class="grid-system align-items-stretch" hagrid-debug style="height: 100px">
+      <div class="layout-50"></div>
+      <div class="layout-20 align-self-center"></div>
+      <div class="layout-30"></div>
     </div>
     <p>Flex Vertical align self(bottom)</p>
-    <div class="grid-flex align-items-stretch" hagrid-debug style="height: 100px">
-      <div class="flex-50"></div>
-      <div class="flex-20 align-self-flex-end"></div>
-      <div class="flex-30"></div>
+    <div class="grid-system align-items-stretch" hagrid-debug style="height: 100px">
+      <div class="layout-50"></div>
+      <div class="layout-20 align-self-flex-end"></div>
+      <div class="layout-30"></div>
     </div>
     <p>Flex Vertical align (baseline)</p>
-    <div class="grid-flex align-items-baseline" hagrid-debug debug-empty style="height: 100px">
-      <div class="flex-50"><h2>text</h2></div>
-      <div class="flex-30"><p>text</p></div>
-      <div class="flex-20"><h4>text</h4></div>
+    <div class="grid-system align-items-baseline" hagrid-debug debug-empty style="height: 100px">
+      <div class="layout-50"><h2>text</h2></div>
+      <div class="layout-30"><p>text</p></div>
+      <div class="layout-20"><h4>text</h4></div>
     </div>
     <p>Flex Align Content (top)</p>
-    <div class="grid-flex align-content-flex-start flex-wrap-wrap" hagrid-debug style="height: 300px">
-      <div class="flex-30"></div>
-      <div class="flex-10"></div>
-      <div class="flex-60"></div>
-      <div class="flex-50"></div>
-      <div class="flex-50"></div>
-      <div class="flex-30"></div>
-      <div class="flex-10"></div>
+    <div class="grid-system align-content-flex-start flex-wrap-wrap" hagrid-debug style="height: 300px">
+      <div class="layout-30"></div>
+      <div class="layout-10"></div>
+      <div class="layout-60"></div>
+      <div class="layout-50"></div>
+      <div class="layout-50"></div>
+      <div class="layout-30"></div>
+      <div class="layout-10"></div>
     </div>
     <p>Flex Align Content (center)</p>
-    <div class="grid-flex align-content-center flex-wrap-wrap" hagrid-debug style="height: 300px">
-      <div class="flex-30"></div>
-      <div class="flex-10"></div>
-      <div class="flex-60"></div>
-      <div class="flex-50"></div>
-      <div class="flex-50"></div>
-      <div class="flex-30"></div>
-      <div class="flex-10"></div>
+    <div class="grid-system align-content-center flex-wrap-wrap" hagrid-debug style="height: 300px">
+      <div class="layout-30"></div>
+      <div class="layout-10"></div>
+      <div class="layout-60"></div>
+      <div class="layout-50"></div>
+      <div class="layout-50"></div>
+      <div class="layout-30"></div>
+      <div class="layout-10"></div>
     </div>
     <p>Flex Align Content (bottom)</p>
-    <div class="grid-flex align-content-flex-end flex-wrap-wrap" hagrid-debug style="height: 300px">
-      <div class="flex-30"></div>
-      <div class="flex-10"></div>
-      <div class="flex-60"></div>
-      <div class="flex-50"></div>
-      <div class="flex-50"></div>
-      <div class="flex-30"></div>
-      <div class="flex-10"></div>
+    <div class="grid-system align-content-flex-end flex-wrap-wrap" hagrid-debug style="height: 300px">
+      <div class="layout-30"></div>
+      <div class="layout-10"></div>
+      <div class="layout-60"></div>
+      <div class="layout-50"></div>
+      <div class="layout-50"></div>
+      <div class="layout-30"></div>
+      <div class="layout-10"></div>
     </div>
     <p>Nested Grid Example 1</p>
-    <div class="grid-flex align-content-flex-end flex-wrap-wrap" hagrid-debug debug-empty style="height: 200px">
-      <div class="flex-50"></div>
-      <div class="flex-50 grid-flex">
-        <div class="flex-50 grid-flex">
-          <div class="flex-50"></div>
-          <div class="flex-50"></div>
+    <div class="grid-system align-content-flex-end flex-wrap-wrap" hagrid-debug debug-empty style="height: 200px">
+      <div class="layout-50"></div>
+      <div class="layout-50 grid-system">
+        <div class="layout-50 grid-system">
+          <div class="layout-50"></div>
+          <div class="layout-50"></div>
         </div>
-        <div class="flex-50"></div>
+        <div class="layout-50"></div>
       </div>
     </div>
     <p>Nested Grid Example 2</p>
-    <div class="grid-flex align-content-flex-end flex-wrap-wrap" hagrid-debug debug-empty style="height: 200px">
-      <div class="flex-30 grid-flex">
-        <div class="flex-50"></div>
-        <div class="flex-50"></div>
+    <div class="grid-system align-content-flex-end flex-wrap-wrap" hagrid-debug debug-empty style="height: 200px">
+      <div class="layout-30 grid-system">
+        <div class="layout-50"></div>
+        <div class="layout-50"></div>
       </div>
-      <div class="flex-70">
+      <div class="layout-70">
       </div>
     </div>
   </div><!-- end grid wrap-->
   <div class="grid-wrap grid-wrap-90">
     <h2>Colors</h2>
-    <span class="colors brown">#322723</span>
+    <!--<span class="colors brown">#322723</span>
     <span class="colors yellow">#D39756</span>
     <span class="colors red">#AE0001</span>
     <span class="colors orange">#AF482C</span>
@@ -178,7 +178,7 @@
     <span class="colors dark-purple">#291413</span>
     <span class="colors dark-blue">#002223</span>
     <span class="colors grey">#A8BAC8</span>
-    <span class="colors pink">#DD2F74</span>
+    <span class="colors pink">#DD2F74</span>-->
     <h2>Buttons defaults</h2>
     <a href="#" class="btn">Button default</a>
     <a href="#" class="btn">Button inverse</a>
@@ -297,31 +297,30 @@
       <a href="">Item C</a>
     </nav>
 
-    <nav class="navbar grid-flex default-look">
-      <div class="flex-50">
+    <nav class="navbar grid-system default-look">
+      <div class="layout-50">
         <a href="">Item A</a>
         <a href="">Item B</a>
         <a href="">Item C</a>
       </div>
-      <div class="flex-50 align-right">
+      <div class="layout-50 align-right">
         <a href="">Item A</a>
         <a href="">Item B</a>
         <a href="">Item C</a>
       </div>
     </nav>
-    <nav class="navbar grid-flex inverse-look">
-      <div class="flex-30">
+    <nav class="navbar grid-system inverse-look">
+      <div class="layout-30">
         <a href="">Item A</a>
         <a href="">Item B</a>
         <a href="">Item C</a>
       </div>
-      <div class="flex-40">
+      <div class="layout-40">
         <a href="">Item A</a>
         <a href="">Item B</a>
         <a href="">Item C</a>
       </div>
-      <div class="flex-30 align-right">
-        <input type="text" placeholder="Default Value">
+      <div class="layout-30 align-right">
       </div>
     </nav>
     <nav class="navbar primary-look">
