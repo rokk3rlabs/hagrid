@@ -20,13 +20,18 @@
       margin-left: .5em
       top: 50%
       right: -15px
+    
+    &.active + .dropdown-menu,
+    &:hover + .dropdown-menu
+      display: block
 
+  
   .dropdown-menu
     +border-box
+    display: none
     position: absolute
     z-index: 1
     background: $dropdown-menu__bgc
-    display: block
     width: 100%
     box-shadow: $dropdown-menu__bxsh
     top: 100%
@@ -57,7 +62,6 @@
       box-shadow: none
       border-radius: 0
       border: solid 1px $color-primary
-
 
 
 
