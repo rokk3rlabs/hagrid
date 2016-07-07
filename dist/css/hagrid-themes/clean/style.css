@@ -2544,89 +2544,89 @@ div {
 [class*="grid-system"].align-content-stretch {
   align-content: stretch;
 }
-[class*="grid-flex"].gutters [class*="layout-"],
-[class*="support-flex"].gutters [class*="layout-"],
-[class*="grid-system"].gutters [class*="layout-"] {
+[class*="grid-flex"].gutters > [class*="layout-"],
+[class*="support-flex"].gutters > [class*="layout-"],
+[class*="grid-system"].gutters > [class*="layout-"] {
   margin: 1em;
 }
 
-[gutters="10px"] [class*="layout-"] {
+[gutters="10px"] > [class*="layout-"] {
   margin: 10px;
 }
 
-[gutters="1em"] [class*="layout-"] {
+[gutters="1em"] > [class*="layout-"] {
   margin: 1em;
 }
 
-[gutters="1rem"] [class*="layout-"] {
+[gutters="1rem"] > [class*="layout-"] {
   margin: 1rem;
 }
 
-[gutters="10%"] [class*="layout-"] {
+[gutters="10%"] > [class*="layout-"] {
   margin: 10%;
 }
 
-[gutters="20px"] [class*="layout-"] {
+[gutters="20px"] > [class*="layout-"] {
   margin: 20px;
 }
 
-[gutters="2em"] [class*="layout-"] {
+[gutters="2em"] > [class*="layout-"] {
   margin: 2em;
 }
 
-[gutters="2rem"] [class*="layout-"] {
+[gutters="2rem"] > [class*="layout-"] {
   margin: 2rem;
 }
 
-[gutters="20%"] [class*="layout-"] {
+[gutters="20%"] > [class*="layout-"] {
   margin: 20%;
 }
 
-[gutters="30px"] [class*="layout-"] {
+[gutters="30px"] > [class*="layout-"] {
   margin: 30px;
 }
 
-[gutters="3em"] [class*="layout-"] {
+[gutters="3em"] > [class*="layout-"] {
   margin: 3em;
 }
 
-[gutters="3rem"] [class*="layout-"] {
+[gutters="3rem"] > [class*="layout-"] {
   margin: 3rem;
 }
 
-[gutters="30%"] [class*="layout-"] {
+[gutters="30%"] > [class*="layout-"] {
   margin: 30%;
 }
 
-.gutters-sides [class*="layout-"] {
+.gutters-sides > [class*="layout-"] {
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.gutters-top-bottom [class*="layout-"] {
+.gutters-top-bottom > [class*="layout-"] {
   margin-right: 0;
   margin-left: 0;
 }
 
-.gutters-right [class*="layout-"] {
+.gutters-right > [class*="layout-"] {
   margin-top: 0;
   margin-bottom: 0;
   margin-left: 0;
 }
 
-.gutters-left [class*="layout-"] {
+.gutters-left > [class*="layout-"] {
   margin-top: 0;
   margin-bottom: 0;
   margin-right: 0;
 }
 
-.gutters-top [class*="layout-"] {
+.gutters-top > [class*="layout-"] {
   margin-bottom: 0;
   margin-right: 0;
   margin-left: 0;
 }
 
-.gutters-bottom [class*="layout-"] {
+.gutters-bottom > [class*="layout-"] {
   margin-top: 0;
   margin-right: 0;
   margin-left: 0;

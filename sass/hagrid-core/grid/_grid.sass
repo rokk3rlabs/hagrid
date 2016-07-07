@@ -322,49 +322,49 @@
       align-content: #{$i}
 
   &.gutters
-    [class*="layout-"]
+    > [class*="layout-"]
       margin: 1em
 
 
 @for $i from 1 through 3
   [gutters="#{$i}0px"]
-    [class*="layout-"]
+    > [class*="layout-"]
       margin: #{$i}0px
   [gutters="#{$i}em"]
-    [class*="layout-"]
+    > [class*="layout-"]
       margin: #{$i}em
   [gutters="#{$i}rem"]
-    [class*="layout-"]
+    > [class*="layout-"]
       margin: #{$i}rem
   [gutters="#{$i}0%"]
-    [class*="layout-"]
+    > [class*="layout-"]
       margin: #{$i}0%
 
 .gutters-sides
-  [class*="layout-"]
+  > [class*="layout-"]
     margin-top: 0
     margin-bottom: 0
 .gutters-top-bottom
-  [class*="layout-"]
+  > [class*="layout-"]
     margin-right: 0
     margin-left: 0
 .gutters-right
-  [class*="layout-"]
+  > [class*="layout-"]
     margin-top: 0
     margin-bottom: 0
     margin-left: 0
 .gutters-left
-  [class*="layout-"]
+  > [class*="layout-"]
     margin-top: 0
     margin-bottom: 0
     margin-right: 0
 .gutters-top
-  [class*="layout-"]
+  > [class*="layout-"]
     margin-bottom: 0
     margin-right: 0
     margin-left: 0
 .gutters-bottom
-  [class*="layout-"]
+  > [class*="layout-"]
     margin-top: 0
     margin-right: 0
     margin-left: 0
