@@ -284,7 +284,8 @@
 // FLEX BOX
 [class*="grid-flex"],
 [class*="support-flex"],
-[class*="grid-system"]
+[class*="grid-system"],
+[class*="gs"],
   display: flex
   margin: 0
   vertical-align: top
@@ -324,6 +325,10 @@
   &.gutters
     > [class*="layout-"]
       margin: 1em
+
+  [class*="layout-auto"]
+    width: 100%
+
 
 
 @for $i from 1 through 3
