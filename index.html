@@ -2,20 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hagrid!</title>
   <link rel="stylesheet" href="dist/css/main.css">
 </head>
 <body>
-  <div class="grid-wrap grid-wrap-90">
-
-    <div class="grid-system gs-block-xs gs-block-md" hagrid-debug>
+  <div class="gs-wrap">
+    <h1 class="align-center">Hagrid!</h1>
+    <div class="gs gs-block-xs gs-block-md" hagrid-debug>
       <div class="layout-xs-100 layout-sm-50 layout-md-60 layout-lg-80"></div>
       <div class="layout-xs-100 layout-sm-50 layout-md-40 layout-lg-20"></div>
     </div>
-
-    <h1 class="align-center">Hagrid!</h1>
     <h2>Grid System</h2>
-
     <div class="grid-system gutters-sides gs-block-xs" gutters="10px" hagrid-debug debug-empty>
       <div class="layout-50 grid-system">
         <div class="layout-40"></div>
@@ -24,6 +22,7 @@
       <div class="layout-20"></div>
       <div class="layout-30"></div>
     </div>
+
     <h3>Grid Flex Examples</h3>
     <p>Flex order</p>
     <div class="grid-system" hagrid-debug debug-empty>
@@ -404,14 +403,7 @@
         </article>
       </div>
     </section>
-  </div><!-- end grid wrap-->
-
-
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
+  </div><!-- .gs-wrap-->
   <script>document.body.innerHTML = document.body.innerHTML.replace(/>\s+</g, "><");</script>
 </body>
 </html>

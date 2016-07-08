@@ -628,6 +628,11 @@ div {
   margin: 0;
 }
 
+.gs-wrap {
+  padding: 0 1em;
+  margin: auto;
+}
+
 .grid-wrap {
   display: block;
   margin: auto;
@@ -2319,8 +2324,8 @@ div {
 
 [class*="grid-flex"],
 [class*="support-flex"],
-[class*="grid-system"],
-[class*="gs"] {
+.grid-system,
+.gs {
   display: flex;
   margin: 0;
   vertical-align: top;
@@ -2332,188 +2337,188 @@ div {
 }
 [class*="grid-flex"].flex-direction-row,
 [class*="support-flex"].flex-direction-row,
-[class*="grid-system"].flex-direction-row,
-[class*="gs"].flex-direction-row {
+.grid-system.flex-direction-row,
+.gs.flex-direction-row {
   flex-direction: row;
 }
 [class*="grid-flex"].flex-direction-row-inverse,
 [class*="support-flex"].flex-direction-row-inverse,
-[class*="grid-system"].flex-direction-row-inverse,
-[class*="gs"].flex-direction-row-inverse {
+.grid-system.flex-direction-row-inverse,
+.gs.flex-direction-row-inverse {
   flex-direction: row-inverse;
 }
 [class*="grid-flex"].flex-direction-column,
 [class*="support-flex"].flex-direction-column,
-[class*="grid-system"].flex-direction-column,
-[class*="gs"].flex-direction-column {
+.grid-system.flex-direction-column,
+.gs.flex-direction-column {
   flex-direction: column;
 }
 [class*="grid-flex"].flex-direction-column-inverse,
 [class*="support-flex"].flex-direction-column-inverse,
-[class*="grid-system"].flex-direction-column-inverse,
-[class*="gs"].flex-direction-column-inverse {
+.grid-system.flex-direction-column-inverse,
+.gs.flex-direction-column-inverse {
   flex-direction: column-inverse;
 }
 [class*="grid-flex"].flex-wrap-wrap,
 [class*="support-flex"].flex-wrap-wrap,
-[class*="grid-system"].flex-wrap-wrap,
-[class*="gs"].flex-wrap-wrap {
+.grid-system.flex-wrap-wrap,
+.gs.flex-wrap-wrap {
   flex-wrap: wrap;
 }
 [class*="grid-flex"].flex-wrap-nowrap,
 [class*="support-flex"].flex-wrap-nowrap,
-[class*="grid-system"].flex-wrap-nowrap,
-[class*="gs"].flex-wrap-nowrap {
+.grid-system.flex-wrap-nowrap,
+.gs.flex-wrap-nowrap {
   flex-wrap: nowrap;
 }
 [class*="grid-flex"].flex-wrap-wrap-reverse,
 [class*="support-flex"].flex-wrap-wrap-reverse,
-[class*="grid-system"].flex-wrap-wrap-reverse,
-[class*="gs"].flex-wrap-wrap-reverse {
+.grid-system.flex-wrap-wrap-reverse,
+.gs.flex-wrap-wrap-reverse {
   flex-wrap: wrap-reverse;
 }
 [class*="grid-flex"].justify-content-flex-start,
 [class*="support-flex"].justify-content-flex-start,
-[class*="grid-system"].justify-content-flex-start,
-[class*="gs"].justify-content-flex-start {
+.grid-system.justify-content-flex-start,
+.gs.justify-content-flex-start {
   justify-content: flex-start;
 }
 [class*="grid-flex"].justify-content-flex-end,
 [class*="support-flex"].justify-content-flex-end,
-[class*="grid-system"].justify-content-flex-end,
-[class*="gs"].justify-content-flex-end {
+.grid-system.justify-content-flex-end,
+.gs.justify-content-flex-end {
   justify-content: flex-end;
 }
 [class*="grid-flex"].justify-content-center,
 [class*="support-flex"].justify-content-center,
-[class*="grid-system"].justify-content-center,
-[class*="gs"].justify-content-center {
+.grid-system.justify-content-center,
+.gs.justify-content-center {
   justify-content: center;
 }
 [class*="grid-flex"].justify-content-space-between,
 [class*="support-flex"].justify-content-space-between,
-[class*="grid-system"].justify-content-space-between,
-[class*="gs"].justify-content-space-between {
+.grid-system.justify-content-space-between,
+.gs.justify-content-space-between {
   justify-content: space-between;
 }
 [class*="grid-flex"].justify-content-space-around,
 [class*="support-flex"].justify-content-space-around,
-[class*="grid-system"].justify-content-space-around,
-[class*="gs"].justify-content-space-around {
+.grid-system.justify-content-space-around,
+.gs.justify-content-space-around {
   justify-content: space-around;
 }
 [class*="grid-flex"].align-items-flex-start,
 [class*="support-flex"].align-items-flex-start,
-[class*="grid-system"].align-items-flex-start,
-[class*="gs"].align-items-flex-start {
+.grid-system.align-items-flex-start,
+.gs.align-items-flex-start {
   align-items: flex-start;
 }
 [class*="grid-flex"].align-items-flex-end,
 [class*="support-flex"].align-items-flex-end,
-[class*="grid-system"].align-items-flex-end,
-[class*="gs"].align-items-flex-end {
+.grid-system.align-items-flex-end,
+.gs.align-items-flex-end {
   align-items: flex-end;
 }
 [class*="grid-flex"].align-items-center,
 [class*="support-flex"].align-items-center,
-[class*="grid-system"].align-items-center,
-[class*="gs"].align-items-center {
+.grid-system.align-items-center,
+.gs.align-items-center {
   align-items: center;
 }
 [class*="grid-flex"].align-items-baseline,
 [class*="support-flex"].align-items-baseline,
-[class*="grid-system"].align-items-baseline,
-[class*="gs"].align-items-baseline {
+.grid-system.align-items-baseline,
+.gs.align-items-baseline {
   align-items: baseline;
 }
 [class*="grid-flex"].align-items-stretch,
 [class*="support-flex"].align-items-stretch,
-[class*="grid-system"].align-items-stretch,
-[class*="gs"].align-items-stretch {
+.grid-system.align-items-stretch,
+.gs.align-items-stretch {
   align-items: stretch;
 }
 [class*="grid-flex"] .align-self-auto,
 [class*="support-flex"] .align-self-auto,
-[class*="grid-system"] .align-self-auto,
-[class*="gs"] .align-self-auto {
+.grid-system .align-self-auto,
+.gs .align-self-auto {
   align-self: auto;
 }
 [class*="grid-flex"] .align-self-flex-start,
 [class*="support-flex"] .align-self-flex-start,
-[class*="grid-system"] .align-self-flex-start,
-[class*="gs"] .align-self-flex-start {
+.grid-system .align-self-flex-start,
+.gs .align-self-flex-start {
   align-self: flex-start;
 }
 [class*="grid-flex"] .align-self-flex-end,
 [class*="support-flex"] .align-self-flex-end,
-[class*="grid-system"] .align-self-flex-end,
-[class*="gs"] .align-self-flex-end {
+.grid-system .align-self-flex-end,
+.gs .align-self-flex-end {
   align-self: flex-end;
 }
 [class*="grid-flex"] .align-self-center,
 [class*="support-flex"] .align-self-center,
-[class*="grid-system"] .align-self-center,
-[class*="gs"] .align-self-center {
+.grid-system .align-self-center,
+.gs .align-self-center {
   align-self: center;
 }
 [class*="grid-flex"] .align-self-baseline,
 [class*="support-flex"] .align-self-baseline,
-[class*="grid-system"] .align-self-baseline,
-[class*="gs"] .align-self-baseline {
+.grid-system .align-self-baseline,
+.gs .align-self-baseline {
   align-self: baseline;
 }
 [class*="grid-flex"] .align-self-stretch,
 [class*="support-flex"] .align-self-stretch,
-[class*="grid-system"] .align-self-stretch,
-[class*="gs"] .align-self-stretch {
+.grid-system .align-self-stretch,
+.gs .align-self-stretch {
   align-self: stretch;
 }
 [class*="grid-flex"].align-content-flex-start,
 [class*="support-flex"].align-content-flex-start,
-[class*="grid-system"].align-content-flex-start,
-[class*="gs"].align-content-flex-start {
+.grid-system.align-content-flex-start,
+.gs.align-content-flex-start {
   align-content: flex-start;
 }
 [class*="grid-flex"].align-content-flex-end,
 [class*="support-flex"].align-content-flex-end,
-[class*="grid-system"].align-content-flex-end,
-[class*="gs"].align-content-flex-end {
+.grid-system.align-content-flex-end,
+.gs.align-content-flex-end {
   align-content: flex-end;
 }
 [class*="grid-flex"].align-content-center,
 [class*="support-flex"].align-content-center,
-[class*="grid-system"].align-content-center,
-[class*="gs"].align-content-center {
+.grid-system.align-content-center,
+.gs.align-content-center {
   align-content: center;
 }
 [class*="grid-flex"].align-content-space-between,
 [class*="support-flex"].align-content-space-between,
-[class*="grid-system"].align-content-space-between,
-[class*="gs"].align-content-space-between {
+.grid-system.align-content-space-between,
+.gs.align-content-space-between {
   align-content: space-between;
 }
 [class*="grid-flex"].align-content-space-around,
 [class*="support-flex"].align-content-space-around,
-[class*="grid-system"].align-content-space-around,
-[class*="gs"].align-content-space-around {
+.grid-system.align-content-space-around,
+.gs.align-content-space-around {
   align-content: space-around;
 }
 [class*="grid-flex"].align-content-stretch,
 [class*="support-flex"].align-content-stretch,
-[class*="grid-system"].align-content-stretch,
-[class*="gs"].align-content-stretch {
+.grid-system.align-content-stretch,
+.gs.align-content-stretch {
   align-content: stretch;
 }
 [class*="grid-flex"].gutters > [class*="layout-"],
 [class*="support-flex"].gutters > [class*="layout-"],
-[class*="grid-system"].gutters > [class*="layout-"],
-[class*="gs"].gutters > [class*="layout-"] {
+.grid-system.gutters > [class*="layout-"],
+.gs.gutters > [class*="layout-"] {
   margin: 1em;
 }
 [class*="grid-flex"] [class*="layout-auto"],
 [class*="support-flex"] [class*="layout-auto"],
-[class*="grid-system"] [class*="layout-auto"],
-[class*="gs"] [class*="layout-auto"] {
+.grid-system [class*="layout-auto"],
+.gs [class*="layout-auto"] {
   width: 100%;
 }
 
@@ -2680,6 +2685,11 @@ div {
 .scroll-x {
   overflow: hidden;
   overflow-x: scroll !important;
+}
+
+.centered {
+  display: block;
+  margin: auto;
 }
 
 @media screen and (min-width: 1200px) {

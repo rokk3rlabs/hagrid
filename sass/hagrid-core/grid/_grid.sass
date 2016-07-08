@@ -40,6 +40,10 @@
 *.col-set
   margin: 0
 
+.gs-wrap
+  padding: 0 1em
+  margin: auto
+
 .grid-wrap
   display: block
   margin: auto
@@ -283,8 +287,8 @@
 // FLEX BOX
 [class*="grid-flex"],
 [class*="support-flex"],
-[class*="grid-system"],
-[class*="gs"],
+.grid-system,
+.gs,
   display: flex
   margin: 0
   vertical-align: top
@@ -374,6 +378,7 @@
     margin-left: 0
 
 
+
 /// Order
 @for $i from 1 through 12
   .#{$class-order}-#{$i}
@@ -410,6 +415,11 @@
 .scroll-x
   overflow: hidden
   overflow-x: scroll!important
+
+.centered
+  display: block
+  margin: auto
+
 
 
 html,
