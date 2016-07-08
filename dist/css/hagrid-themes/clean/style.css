@@ -844,6 +844,10 @@ div {
   height: 100%;
 }
 
+.layout-10,
+.flex-10,
+.grid-wrap-10,
+.width-10,
 .layout-10 {
   width: 10%;
 }
@@ -868,6 +872,10 @@ div {
     width: 10%;
   }
 }
+.layout-20,
+.flex-20,
+.grid-wrap-20,
+.width-20,
 .layout-20 {
   width: 20%;
 }
@@ -892,6 +900,10 @@ div {
     width: 20%;
   }
 }
+.layout-30,
+.flex-30,
+.grid-wrap-30,
+.width-30,
 .layout-30 {
   width: 30%;
 }
@@ -916,6 +928,10 @@ div {
     width: 30%;
   }
 }
+.layout-40,
+.flex-40,
+.grid-wrap-40,
+.width-40,
 .layout-40 {
   width: 40%;
 }
@@ -940,6 +956,10 @@ div {
     width: 40%;
   }
 }
+.layout-50,
+.flex-50,
+.grid-wrap-50,
+.width-50,
 .layout-50 {
   width: 50%;
 }
@@ -964,6 +984,10 @@ div {
     width: 50%;
   }
 }
+.layout-60,
+.flex-60,
+.grid-wrap-60,
+.width-60,
 .layout-60 {
   width: 60%;
 }
@@ -988,6 +1012,10 @@ div {
     width: 60%;
   }
 }
+.layout-70,
+.flex-70,
+.grid-wrap-70,
+.width-70,
 .layout-70 {
   width: 70%;
 }
@@ -1012,6 +1040,10 @@ div {
     width: 70%;
   }
 }
+.layout-80,
+.flex-80,
+.grid-wrap-80,
+.width-80,
 .layout-80 {
   width: 80%;
 }
@@ -1036,6 +1068,10 @@ div {
     width: 80%;
   }
 }
+.layout-90,
+.flex-90,
+.grid-wrap-90,
+.width-90,
 .layout-90 {
   width: 90%;
 }
@@ -1060,6 +1096,10 @@ div {
     width: 90%;
   }
 }
+.layout-100,
+.flex-100,
+.grid-wrap-100,
+.width-100,
 .layout-100 {
   width: 100%;
 }
@@ -6315,6 +6355,7 @@ h6,
   position: relative;
   text-align: center;
   border: 1px solid rgba(0, 0, 0, 0.05);
+  cursor: pointer;
   -webkit-text-shadow: 0 0 1px rgba(0, 0, 0, 0.01);
   -moz-text-shadow: 0 0 1px rgba(0, 0, 0, 0.01);
   -ms-text-shadow: 0 0 1px rgba(0, 0, 0, 0.01);
