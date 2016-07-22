@@ -2626,10 +2626,10 @@ div {
 .gs.gutters > [class*="layout-"] {
   margin: 1em;
 }
-[class*="grid-flex"] [class="layout-auto"],
-[class*="support-flex"] [class="layout-auto"],
-.grid-system [class="layout-auto"],
-.gs [class="layout-auto"] {
+[class*="grid-flex"] [class*="layout-auto"],
+[class*="support-flex"] [class*="layout-auto"],
+.grid-system [class*="layout-auto"],
+.gs [class*="layout-auto"] {
   width: 100%;
 }
 [class*="grid-flex"].sticky-sides > [class*="layout-"]:first-child, [class*="grid-flex"].sticky-sides > [class*="layout-"].first-child,
