@@ -329,8 +329,22 @@
     > [class*="layout-"]
       margin: 1em
 
-  [class*="layout-auto"]
+  [class="layout-auto"]
     width: 100%
+
+  &.sticky-sides
+
+    > [class*="layout-"]
+      &:first-child,
+      &.first-child
+        margin-left: 0
+
+      &:last-child,
+      &.last-child
+        margin-right: 0
+
+
+
 
 
 
