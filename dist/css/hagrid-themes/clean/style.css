@@ -6703,9 +6703,8 @@ h6,
   font-size: 1em;
   color: inherit;
 }
-.navbar a:hover,
-.navbar .navbar-link:hover,
-.navbar *:not(.no-link):hover {
+.navbar a:not(.no-link):hover,
+.navbar .navbar-link:not(.no-link):hover {
   background-color: rgba(0, 0, 0, 0.2);
 }
 .navbar .navbar-brand {
