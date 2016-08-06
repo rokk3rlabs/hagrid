@@ -7354,11 +7354,13 @@ h6,
 .badge {
   background: #fff;
   color: #333;
-  padding: 0.1em;
+  padding: 0.2em;
   border-radius: 100%;
-  min-width: 1.2em;
+  min-width: 1.4em;
   height: 100%;
   margin: 0 0.1em;
+  font-size: 0.8em;
+  line-height: 1.1em;
   display: inline-block;
   *display: inline;
 }
