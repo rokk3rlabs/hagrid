@@ -37,6 +37,12 @@
       background-color: #{$value}
       @if $key == default
         color: nth(nth($base-colors, 2), 2)
+        .badge
+          background: nth(nth($base-colors, 2), 2)
+
+      .badge
+        color: $value
+
       &:hover,
       &.btn-hover
         background-color: darken($value, $init-percent-darken)
@@ -46,6 +52,8 @@
       &.btn-disable
         background-color: #dfdfe2
         cursor: not-allowed
+
+
 
   // Size Buttons
   @for $i from 1 to length($base-sizes)+1
@@ -116,5 +124,5 @@
             color: #dfdfe2
             border-color: #dfdfe2
             background-color: transparent
-            
+
 
