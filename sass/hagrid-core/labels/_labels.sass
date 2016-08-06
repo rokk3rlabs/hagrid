@@ -1,0 +1,49 @@
+.label
+  @extend .default-color
+  +inline-block
+  padding: .2em .5em
+  line-height: 1em
+  color: nth(nth($base-colors, 2), 2)
+  background-color: nth(nth($base-colors, 1), 2)
+  text-decoration: none
+  font-size: $btn-font-size
+  font-weight: $btn-font-weight
+  margin: .25em
+  border-radius: $border-radius
+  text-transform: $btn-text-transform
+  position: relative
+  text-align: center
+  border: 1px solid rgba(0, 0, 0, .05)
+  cursor: pointer
+  +prefix(text-shadow, 0 0 1px rgba(0,0,0,.01))
+  +prefix(font-smoothing, antialiased)
+  +prefix(transition, background .2s)
+  +border-box
+
+  &.label-disable
+    background-color: #dfdfe2
+
+  &[class*="label-"]
+    color: #fff
+
+  // Color Buttons
+  @each $base-color in $base-colors
+    $key: nth($base-color, 1)
+    $value: nth($base-color, 2)
+    &.label-#{$key}
+      background-color: #{$value}
+      @if $key == default
+        color: nth(nth($base-colors, 2), 2)
+        .badge
+          background: nth(nth($base-colors, 2), 2)
+
+      .badge
+        color: $value
+
+
+  @for $i from 1 to length($base-sizes)+1
+    $key: nth($base-sizes, $i)
+    &.label-#{$key}
+      font-size: .4+($btn-increment-size*$i)+$btn-measure-size
+
+

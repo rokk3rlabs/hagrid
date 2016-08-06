@@ -1,0 +1,70 @@
+// Margins And Paddings
+
+.m-reset
+  margin-top: 0
+  margin-right: 0
+  margin-bottom: 0
+  margin-left: 0
+
+.p-reset
+  padding-top: 0
+  padding-right: 0
+  padding-bottom: 0
+  padding-left: 0
+
+
+@each $base-measurement in $base-measurements
+  $key: nth($base-measurement, 1)
+  $value: nth($base-measurement, 2)
+
+
+  @for $i from 1 through 3
+    $value_base: 1
+    $root_class: '.m-'+$key+'.m-'
+    @if $key == 'px' or $key == 'percent'
+      $value_base: 10
+    @if $key == 'px'
+      $root_class: '.m-'
+
+    $value_iterate: ($value_base*$i)
+    #{$root_class}#{$value_iterate}
+      margin: #{$value_iterate}#{$value}
+
+    #{$root_class}#{$value_iterate}-y
+      margin-top: #{$value_iterate}#{$value}
+      margin-bottom: #{$value_iterate}#{$value}
+    #{$root_class}#{$value_iterate}-x
+      margin-left: #{$value_iterate}#{$value}
+      margin-right: #{$value_iterate}#{$value}
+
+    #{$root_class}#{$value_iterate}-left
+      margin-left: #{$value_iterate}#{$value}
+
+    #{$root_class}#{$value_iterate}-right
+      margin-right: #{$value_iterate}#{$value}
+
+  @for $i from 1 through 3
+    $value_base: 1
+    $root_class: '.p-'+$key+'.p-'
+    @if $key == 'px' or $key ==  'percent'
+      $value_base: 10
+    @if $key == 'px'
+      $root_class: '.p-'
+
+    $value_iterate: ($value_base*$i)
+    #{$root_class}#{$value_iterate}
+      padding: #{$value_iterate}#{$value}
+
+    #{$root_class}#{$value_iterate}-y
+      padding-top: #{$value_iterate}#{$value}
+      padding-bottom: #{$value_iterate}#{$value}
+    #{$root_class}#{$value_iterate}-x
+      padding-left: #{$value_iterate}#{$value}
+      padding-right: #{$value_iterate}#{$value}
+
+    #{$root_class}#{$value_iterate}-left
+      padding-left: #{$value_iterate}#{$value}
+
+    #{$root_class}#{$value_iterate}-right
+      padding-right: #{$value_iterate}#{$value}
+
