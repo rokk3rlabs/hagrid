@@ -20,13 +20,10 @@
   +prefix(transition, background .2s)
   +border-box
 
-  &.label-disable
-    background-color: #dfdfe2
-
   &[class*="label-"]
     color: #fff
 
-  // Color Buttons
+  // Colors
   @each $base-color in $base-colors
     $key: nth($base-color, 1)
     $value: nth($base-color, 2)

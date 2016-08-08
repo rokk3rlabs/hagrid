@@ -1,23 +1,23 @@
 /*
 Error: Undefined variable: "$base-measurements".
-        on line 16 of /Users/gatodev/www/hagrid/sass/hagrid-core/helpers/_helpers.sass
+        on line 42 of /Users/gatodev/www/hagrid/sass/hagrid-core/helpers/_helpers.sass
         from line 7 of /Users/gatodev/www/hagrid/sass/hagrid-core/_core.sass
         from line 3 of /Users/gatodev/www/hagrid/sass/hagrid-themes/clean/style.sass
 
-11: .colors-preview
-12:   border-radius: 4px
-13:   overflow: hidden
-14:   margin: 0
-15:   padding: 0
-16:   position: relative
-17:   +inline-block
-18:   line-height: 0
-19: 
-20:   li
-21:     +inline-block
+37:       background-color: rgba(255, 255, 255, 0.5)
+38: 
+39:     &:active,
+40:     &.btn-active
+41:       background-color: transparent
+42:       border-color: rgba(255, 255, 255, 0.75)
+43: 
+44:     &.btn-disable
+45:       cursor: not-allowed
+46:       opacity: .35
+47: 
 
 Backtrace:
-/Users/gatodev/www/hagrid/sass/hagrid-core/helpers/_helpers.sass:16
+/Users/gatodev/www/hagrid/sass/hagrid-core/helpers/_helpers.sass:42
 /Users/gatodev/www/hagrid/sass/hagrid-core/_core.sass:7
 /Users/gatodev/www/hagrid/sass/hagrid-themes/clean/style.sass:3
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/script/tree/variable.rb:49:in `_perform'
@@ -86,4 +86,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$base-measurements\".\A         on line 16 of /Users/gatodev/www/hagrid/sass/hagrid-core/helpers/_helpers.sass\A         from line 7 of /Users/gatodev/www/hagrid/sass/hagrid-core/_core.sass\A         from line 3 of /Users/gatodev/www/hagrid/sass/hagrid-themes/clean/style.sass\A \A 11: .colors-preview\A 12:   border-radius: 4px\A 13:   overflow: hidden\A 14:   margin: 0\A 15:   padding: 0\A 16:   position: relative\A 17:   +inline-block\A 18:   line-height: 0\A 19: \A 20:   li\A 21:     +inline-block"; }
+  content: "Error: Undefined variable: \"$base-measurements\".\A         on line 42 of /Users/gatodev/www/hagrid/sass/hagrid-core/helpers/_helpers.sass\A         from line 7 of /Users/gatodev/www/hagrid/sass/hagrid-core/_core.sass\A         from line 3 of /Users/gatodev/www/hagrid/sass/hagrid-themes/clean/style.sass\A \A 37:       background-color: rgba(255, 255, 255, 0.5)\A 38: \A 39:     &:active,\A 40:     &.btn-active\A 41:       background-color: transparent\A 42:       border-color: rgba(255, 255, 255, 0.75)\A 43: \A 44:     &.btn-disable\A 45:       cursor: not-allowed\A 46:       opacity: .35\A 47: "; }

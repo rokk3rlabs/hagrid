@@ -558,6 +558,47 @@ div {
   *display: inline;
 }
 
+.hide,
+.hidden,
+.d-none {
+  display: none;
+}
+
+.block,
+.d-block {
+  display: block;
+}
+
+.inline-block,
+.d-inline-block {
+  display: inline-block;
+}
+
+.flex,
+.d-flex {
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  -o-display: flex;
+  display: flex;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.align-justify {
+  text-align: justify;
+}
+
 .m-reset {
   margin-top: 0;
   margin-right: 0;
@@ -7763,9 +7804,6 @@ h6,
   -o-box-sizing: border-box;
   box-sizing: border-box;
 }
-.label.label-disable {
-  background-color: #dfdfe2;
-}
 .label[class*="label-"] {
   color: #fff;
 }
@@ -7829,4 +7867,18 @@ h6,
 }
 .label.label-lg {
   font-size: 1.4em;
+}
+
+.img {
+  text-align: center;
+  margin: 0;
+  display: inline-block;
+  *display: inline;
+}
+.img img {
+  max-width: 100%;
+  height: auto;
+}
+.img.img-circle img {
+  border-radius: 100%;
 }
