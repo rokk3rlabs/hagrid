@@ -569,6 +569,11 @@ div {
   display: block;
 }
 
+.inline,
+.d-inline {
+  display: inline;
+}
+
 .inline-block,
 .d-inline-block {
   display: inline-block;

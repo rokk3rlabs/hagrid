@@ -1,12 +1,9 @@
 /*
 Error: Undefined variable: "$base-measurements".
-        on line 42 of /Users/gatodev/www/hagrid/sass/hagrid-core/helpers/_helpers.sass
+        on line 45 of /Users/gatodev/www/hagrid/sass/hagrid-core/helpers/_helpers.sass
         from line 7 of /Users/gatodev/www/hagrid/sass/hagrid-core/_core.sass
         from line 3 of /Users/gatodev/www/hagrid/sass/hagrid-themes/clean/style.sass
 
-37:       background-color: rgba(255, 255, 255, 0.5)
-38: 
-39:     &:active,
 40:     &.btn-active
 41:       background-color: transparent
 42:       border-color: rgba(255, 255, 255, 0.75)
@@ -15,9 +12,12 @@ Error: Undefined variable: "$base-measurements".
 45:       cursor: not-allowed
 46:       opacity: .35
 47: 
+48: .dropdown
+49:   &.dropdown-inverse
+50:     .btn-dropdown
 
 Backtrace:
-/Users/gatodev/www/hagrid/sass/hagrid-core/helpers/_helpers.sass:42
+/Users/gatodev/www/hagrid/sass/hagrid-core/helpers/_helpers.sass:45
 /Users/gatodev/www/hagrid/sass/hagrid-core/_core.sass:7
 /Users/gatodev/www/hagrid/sass/hagrid-themes/clean/style.sass:3
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/script/tree/variable.rb:49:in `_perform'
@@ -86,4 +86,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$base-measurements\".\A         on line 42 of /Users/gatodev/www/hagrid/sass/hagrid-core/helpers/_helpers.sass\A         from line 7 of /Users/gatodev/www/hagrid/sass/hagrid-core/_core.sass\A         from line 3 of /Users/gatodev/www/hagrid/sass/hagrid-themes/clean/style.sass\A \A 37:       background-color: rgba(255, 255, 255, 0.5)\A 38: \A 39:     &:active,\A 40:     &.btn-active\A 41:       background-color: transparent\A 42:       border-color: rgba(255, 255, 255, 0.75)\A 43: \A 44:     &.btn-disable\A 45:       cursor: not-allowed\A 46:       opacity: .35\A 47: "; }
+  content: "Error: Undefined variable: \"$base-measurements\".\A         on line 45 of /Users/gatodev/www/hagrid/sass/hagrid-core/helpers/_helpers.sass\A         from line 7 of /Users/gatodev/www/hagrid/sass/hagrid-core/_core.sass\A         from line 3 of /Users/gatodev/www/hagrid/sass/hagrid-themes/clean/style.sass\A \A 40:     &.btn-active\A 41:       background-color: transparent\A 42:       border-color: rgba(255, 255, 255, 0.75)\A 43: \A 44:     &.btn-disable\A 45:       cursor: not-allowed\A 46:       opacity: .35\A 47: \A 48: .dropdown\A 49:   &.dropdown-inverse\A 50:     .btn-dropdown"; }
