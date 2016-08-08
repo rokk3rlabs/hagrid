@@ -558,29 +558,29 @@ div {
   *display: inline;
 }
 
-.hide,
-.hidden,
-.d-none {
+*.hide,
+*.hidden,
+*.d-none {
   display: none;
 }
 
-.block,
-.d-block {
+*.block,
+*.d-block {
   display: block;
 }
 
-.inline,
-.d-inline {
+*.inline,
+*.d-inline {
   display: inline;
 }
 
-.inline-block,
-.d-inline-block {
+*.inline-block,
+*.d-inline-block {
   display: inline-block;
 }
 
-.flex,
-.d-flex {
+*.flex,
+*.d-flex {
   -webkit-display: flex;
   -moz-display: flex;
   -ms-display: flex;
@@ -7888,5 +7888,5 @@ h6,
   border-radius: 100%;
 }
 .img.img-radius img {
-  border-radius: 4px;
+  border-radius: 5px;
 }
