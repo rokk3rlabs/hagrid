@@ -191,7 +191,7 @@
       <h3>06.Forms & Inputs</h3>
       <div class="dropdowns-area" style="padding: 1em 0 13em;">
         <div class="dropdown dropdown-primary dropdown-outline MuseoSans-300" style="width: 245px">
-          <a href="#" class="btn btn-primary btn-outline btn-dropdown">Dropdown A<span class="icon-dropdown icon-3d_rotation"></span></a>
+          <a href="#" class="btn btn-primary btn-outline btn-dropdown" hagrid-trigger>Dropdown A<span class="icon-dropdown icon-3d_rotation"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#">Dropdown Menu 1</a></li>
             <li><a href="#">Dropdown Menu 2</a></li>
@@ -201,7 +201,7 @@
           </ul>
         </div>
         <div class="dropdown dropdown-primary dropdown-outline dropdown-inverse MuseoSans-300" style="width: 245px">
-          <a href="#" class="btn btn-primary btn-outline btn-dropdown">Dropdown A<span class="icon-dropdown icon-3d_rotation"></span></a>
+          <a href="#" class="btn btn-primary btn-outline btn-dropdown" hagrid-trigger>Dropdown A<span class="icon-dropdown icon-3d_rotation"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#">Dropdown Menu 1</a></li>
             <li><a href="#">Dropdown Menu 2</a></li>
@@ -211,7 +211,7 @@
           </ul>
         </div>
         <div class="dropdown dropdown-primary dropdown-outline dropdown-simple MuseoSans-300" style="width: 245px">
-          <a href="#" class="btn btn-primary btn-outline btn-dropdown">Dropdown A<span class="icon-dropdown icon-3d_rotation"></span></a>
+          <a href="#" class="btn btn-primary btn-outline btn-dropdown" hagrid-trigger>Dropdown A<span class="icon-dropdown icon-3d_rotation"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#">Dropdown Menu 1</a></li>
             <li><a href="#">Dropdown Menu 2</a></li>
@@ -256,19 +256,19 @@
       </div>
       <p>Checkboxes</p>
       <div class="input-form input-checkbox">
-        <input type="checkbox" id="checkbox" name="checkbox">
+        <input type="checkbox" id="checkbox" name="checkbox" hagrid-trigger>
         <label for="checkbox" class="input-checkbox-icon"></label>
         <label for="checkbox">Checkbox</label>
       </div>
       <p>Radio Buttons</p>
       <div class="input-form input-radio">
-        <input type="radio" id="radio" name="radio">
+        <input type="radio" id="radio" name="radio" hagrid-trigger>
         <label for="radio" class="input-radio-icon"></label>
         <label for="radio">Radio option 1</label>
       </div>
       <br>
       <div class="input-form input-radio">
-        <input type="radio" id="radio2" name="radio">
+        <input type="radio" id="radio2" name="radio" hagrid-trigger>
         <label for="radio2" class="input-radio-icon"></label>
         <label for="radio2">Radio option 2</label>
       </div>
@@ -279,4 +279,5 @@
   </div>
   <script>document.body.innerHTML = document.body.innerHTML.replace(/>\s+</g, "><");</script>
 </body>
+<script src="../../../js/hagrid.js"></script>
 </html>

@@ -20,12 +20,16 @@
       margin-left: .5em
       top: 50%
       right: -15px
-    
-    &.active + .dropdown-menu,
-    &:hover + .dropdown-menu
+
+  &.support-hover
+    .btn-dropdown
+      &:hover + .dropdown-menu
+        display: block
+
+  &.active
+    .dropdown-menu
       display: block
 
-  
   .dropdown-menu
     +border-box
     display: none

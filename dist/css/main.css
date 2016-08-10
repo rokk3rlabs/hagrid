@@ -6702,7 +6702,8 @@ h6,
 .input-form.input-form-outline button,
 .input-form.input-form-outline select {
   border: 1px solid;
-  border-color: #7e818c;
+  border-color: #dfdfe2;
+  color: #5e616f;
   padding: 0.5em;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -6713,22 +6714,22 @@ h6,
 .input-form.input-form-outline input::-webkit-input-placeholder,
 .input-form.input-form-outline button::-webkit-input-placeholder,
 .input-form.input-form-outline select::-webkit-input-placeholder {
-  color: #7e818c;
+  color: #9ea0a9;
 }
 .input-form.input-form-outline input:-moz-placeholder,
 .input-form.input-form-outline button:-moz-placeholder,
 .input-form.input-form-outline select:-moz-placeholder {
-  color: #7e818c;
+  color: #9ea0a9;
 }
 .input-form.input-form-outline input::-moz-placeholder,
 .input-form.input-form-outline button::-moz-placeholder,
 .input-form.input-form-outline select::-moz-placeholder {
-  color: #7e818c;
+  color: #9ea0a9;
 }
 .input-form.input-form-outline input:-ms-input-placeholder,
 .input-form.input-form-outline button:-ms-input-placeholder,
 .input-form.input-form-outline select:-ms-input-placeholder {
-  color: #7e818c;
+  color: #9ea0a9;
 }
 .input-form.input-form-outline input:active, .input-form.input-form-outline input:focus, .input-form.input-form-outline input.input-focus, .input-form.input-form-outline input.input-active,
 .input-form.input-form-outline button:active,
@@ -6739,7 +6740,8 @@ h6,
 .input-form.input-form-outline select:focus,
 .input-form.input-form-outline select.input-focus,
 .input-form.input-form-outline select.input-active {
-  border-color: #5e616f;
+  border-color: #bfc0c5;
+  color: #5e616f;
   outline: none;
 }
 .input-form.input-form-outline input:active::-webkit-input-placeholder, .input-form.input-form-outline input:focus::-webkit-input-placeholder, .input-form.input-form-outline input.input-focus::-webkit-input-placeholder, .input-form.input-form-outline input.input-active::-webkit-input-placeholder,
@@ -6997,9 +6999,14 @@ h6,
 .input-form.input-checkbox .input-checkbox-icon {
   width: 25px;
   height: 25px;
-  border: 1px solid;
+  border: 2px solid;
   border-color: #bfc0c5;
   margin-right: 20px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .input-form.input-checkbox input[type="checkbox"] {
   display: none;
@@ -7008,6 +7015,11 @@ h6,
   position: relative;
 }
 .input-form.input-checkbox input[type="checkbox"] + .input-checkbox-icon:before {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
   content: "";
   position: absolute;
   opacity: 0;
@@ -7015,8 +7027,8 @@ h6,
   *display: inline;
   top: 29%;
   left: 20%;
-  width: 15px;
-  height: 6px;
+  width: 0;
+  height: 36%;
   border: 3px solid #bfc0c5;
   border-right: 0;
   border-top: 0;
@@ -7027,6 +7039,7 @@ h6,
 }
 .input-form.input-checkbox input[type="checkbox"]:checked + .input-checkbox-icon:before {
   opacity: 1;
+  width: 66%;
   border-color: #2D6CC9;
 }
 .input-form.input-radio .input-radio-icon,
@@ -7055,29 +7068,23 @@ h6,
 }
 .input-form.input-radio input[type="radio"] + .input-radio-icon {
   position: relative;
+  box-shadow: 0 0 0 0 #2D6CC9 inset, 0 0 0 0 #2D6CC9;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .input-form.input-radio input[type="radio"] + .input-radio-icon:before {
   content: "";
-  position: absolute;
-  opacity: 0;
-  display: inline-block;
-  *display: inline;
-  top: 29%;
-  left: 20%;
-  width: 12px;
-  height: 4px;
-  border: 3px solid #bfc0c5;
-  border-right: 0;
-  border-top: 0;
-  transform: rotate(-45deg);
 }
 .input-form.input-radio input[type="radio"]:checked + .input-radio-icon {
   border-color: #2D6CC9;
   background-color: #2D6CC9;
+  box-shadow: 0 0 0 1px #2D6CC9 inset, 0 0 0 3px #fff inset;
 }
 .input-form.input-radio input[type="radio"]:checked + .input-radio-icon:before {
   opacity: 1;
-  border-color: #2D6CC9;
 }
 
 .dropdown {
@@ -7104,7 +7111,10 @@ h6,
   top: 50%;
   right: -15px;
 }
-.dropdown .btn-dropdown.active + .dropdown-menu, .dropdown .btn-dropdown:hover + .dropdown-menu {
+.dropdown.support-hover .btn-dropdown:hover + .dropdown-menu {
+  display: block;
+}
+.dropdown.active .dropdown-menu {
   display: block;
 }
 .dropdown .dropdown-menu {
