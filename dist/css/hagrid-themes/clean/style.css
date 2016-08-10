@@ -7301,7 +7301,7 @@ h6,
 .dropdown.support-hover .btn-dropdown:hover + .dropdown-menu {
   display: block;
 }
-.dropdown.active .dropdown-menu {
+.dropdown.open .dropdown-menu, .dropdown.active .dropdown-menu {
   display: block;
 }
 .dropdown .dropdown-menu {
