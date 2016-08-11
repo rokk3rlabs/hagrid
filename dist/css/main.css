@@ -7025,11 +7025,11 @@ h6,
   opacity: 0;
   display: inline-block;
   *display: inline;
-  top: 20%;
+  top: 30%;
   left: 15%;
   width: 70%;
-  height: 40%;
-  border: 0.1em solid #bfc0c5;
+  height: 30%;
+  border: 2px solid #bfc0c5;
   border-right: 0;
   border-top: 0;
   transform: rotate(-45deg);
@@ -7065,6 +7065,10 @@ h6,
 .input-form.input-checkbox.input-checkbox-sm input[type="checkbox"] + .input-checkbox-icon {
   width: 17px;
   height: 17px;
+  border-width: 1px;
+}
+.input-form.input-checkbox.input-checkbox-sm input[type="checkbox"] + .input-checkbox-icon:before {
+  border-width: 1px;
 }
 .input-form.input-radio .input-radio-icon,
 .input-form.input-radio label {
