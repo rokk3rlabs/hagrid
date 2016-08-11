@@ -7189,11 +7189,11 @@ h6,
   border: 2px solid;
   border-color: #bfc0c5;
   margin-right: 20px;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .input-form.input-checkbox input[type="checkbox"] {
   display: none;
@@ -7202,11 +7202,11 @@ h6,
   position: relative;
 }
 .input-form.input-checkbox input[type="checkbox"] + .input-checkbox-icon:before {
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
   content: "";
   position: absolute;
   opacity: 0;
