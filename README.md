@@ -19,7 +19,8 @@
 * Animations (TODO)
 
 ## Examples
-    * Landing Page
+
+* Landing Page
 
 ## Setup build
 
