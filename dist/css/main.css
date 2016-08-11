@@ -7066,6 +7066,7 @@ h6,
   width: 17px;
   height: 17px;
   border-width: 1px;
+  margin-right: 20px;
 }
 .input-form.input-checkbox.input-checkbox-sm input[type="checkbox"] + .input-checkbox-icon:before {
   border-width: 1px;
