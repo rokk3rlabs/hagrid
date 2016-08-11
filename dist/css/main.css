@@ -7116,6 +7116,22 @@ h6,
   opacity: 1;
 }
 
+.input-group-addon {
+  display: flex;
+}
+.input-group-addon .input-addon {
+  display: inline-block;
+  *display: inline;
+  vertical-align: middle;
+  height: 100%;
+  min-width: 2em;
+  text-align: center;
+  background: #dfdfe2;
+  border: 1px solid;
+  border-color: #dfdfe2;
+  padding: 0.6em 0.5em 0.4em;
+}
+
 .dropdown {
   display: inline-block;
   *display: inline;
