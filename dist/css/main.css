@@ -7027,20 +7027,40 @@ h6,
   *display: inline;
   top: 29%;
   left: 20%;
-  width: 0;
+  width: 66%;
   height: 36%;
   border: 3px solid #bfc0c5;
   border-right: 0;
   border-top: 0;
   transform: rotate(-45deg);
 }
+.input-form.input-checkbox input[type="checkbox"] + .input-checkbox-icon:after {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  content: "";
+  opacity: 1;
+  opacity: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: 0;
+  background: #fff;
+}
 .input-form.input-checkbox input[type="checkbox"]:checked + .input-checkbox-icon {
   border-color: #2D6CC9;
 }
 .input-form.input-checkbox input[type="checkbox"]:checked + .input-checkbox-icon:before {
   opacity: 1;
-  width: 66%;
   border-color: #2D6CC9;
+}
+.input-form.input-checkbox input[type="checkbox"]:checked + .input-checkbox-icon:after {
+  opacity: 1;
+  position: absolute;
+  width: 0;
+  background: #fff;
 }
 .input-form.input-radio .input-radio-icon,
 .input-form.input-radio label {
@@ -7056,8 +7076,8 @@ h6,
   user-select: none;
 }
 .input-form.input-radio .input-radio-icon {
-  width: 25px;
-  height: 25px;
+  width: 23px;
+  height: 23px;
   border: 1px solid;
   border-color: #bfc0c5;
   margin-right: 20px;
@@ -7068,12 +7088,12 @@ h6,
 }
 .input-form.input-radio input[type="radio"] + .input-radio-icon {
   position: relative;
-  box-shadow: 0 0 0 0 #2D6CC9 inset, 0 0 0 0 #2D6CC9;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
+  box-shadow: 0 0 0 0 #2D6CC9 inset, 0 0 0 15px white inset;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .input-form.input-radio input[type="radio"] + .input-radio-icon:before {
   content: "";
@@ -7081,7 +7101,7 @@ h6,
 .input-form.input-radio input[type="radio"]:checked + .input-radio-icon {
   border-color: #2D6CC9;
   background-color: #2D6CC9;
-  box-shadow: 0 0 0 1px #2D6CC9 inset, 0 0 0 3px #fff inset;
+  box-shadow: 0 0 0 1px #2D6CC9 inset, 0 0 0 4px white inset;
 }
 .input-form.input-radio input[type="radio"]:checked + .input-radio-icon:before {
   opacity: 1;
