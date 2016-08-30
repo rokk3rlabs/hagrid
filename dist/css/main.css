@@ -7068,12 +7068,12 @@ h6,
 }
 .input-form.input-radio input[type="radio"] + .input-radio-icon {
   position: relative;
-  box-shadow: 0 0 0 0 #2D6CC9 inset, 0 0 0 0 #2D6CC9;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
+  box-shadow: 0 0 0 0 #2D6CC9 inset, 0 0 0 6px #fff inset;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .input-form.input-radio input[type="radio"] + .input-radio-icon:before {
   content: "";
