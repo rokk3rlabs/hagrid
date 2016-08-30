@@ -7440,6 +7440,14 @@ h6,
   margin-right: 10px;
 }
 
+.m-10-top {
+  margin-top: 10px;
+}
+
+.m-10-bottom {
+  margin-bottom: 10px;
+}
+
 .m-20 {
   margin: 20px;
 }
@@ -7460,6 +7468,14 @@ h6,
 
 .m-20-right {
   margin-right: 20px;
+}
+
+.m-20-top {
+  margin-top: 20px;
+}
+
+.m-20-bottom {
+  margin-bottom: 20px;
 }
 
 .m-30 {
@@ -7484,6 +7500,14 @@ h6,
   margin-right: 30px;
 }
 
+.m-30-top {
+  margin-top: 30px;
+}
+
+.m-30-bottom {
+  margin-bottom: 30px;
+}
+
 .p-10 {
   padding: 10px;
 }
@@ -7504,6 +7528,14 @@ h6,
 
 .p-10-right {
   padding-right: 10px;
+}
+
+.p-10-top {
+  padding-top: 10px;
+}
+
+.p-10-bottom {
+  padding-bttom: 10px;
 }
 
 .p-20 {
@@ -7528,6 +7560,14 @@ h6,
   padding-right: 20px;
 }
 
+.p-20-top {
+  padding-top: 20px;
+}
+
+.p-20-bottom {
+  padding-bttom: 20px;
+}
+
 .p-30 {
   padding: 30px;
 }
@@ -7548,6 +7588,14 @@ h6,
 
 .p-30-right {
   padding-right: 30px;
+}
+
+.p-30-top {
+  padding-top: 30px;
+}
+
+.p-30-bottom {
+  padding-bttom: 30px;
 }
 
 .m-em.m-1 {
@@ -7572,6 +7620,14 @@ h6,
   margin-right: 1em;
 }
 
+.m-em.m-1-top {
+  margin-top: 1em;
+}
+
+.m-em.m-1-bottom {
+  margin-bottom: 1em;
+}
+
 .m-em.m-2 {
   margin: 2em;
 }
@@ -7592,6 +7648,14 @@ h6,
 
 .m-em.m-2-right {
   margin-right: 2em;
+}
+
+.m-em.m-2-top {
+  margin-top: 2em;
+}
+
+.m-em.m-2-bottom {
+  margin-bottom: 2em;
 }
 
 .m-em.m-3 {
@@ -7616,6 +7680,14 @@ h6,
   margin-right: 3em;
 }
 
+.m-em.m-3-top {
+  margin-top: 3em;
+}
+
+.m-em.m-3-bottom {
+  margin-bottom: 3em;
+}
+
 .p-em.p-1 {
   padding: 1em;
 }
@@ -7636,6 +7708,14 @@ h6,
 
 .p-em.p-1-right {
   padding-right: 1em;
+}
+
+.p-em.p-1-top {
+  padding-top: 1em;
+}
+
+.p-em.p-1-bottom {
+  padding-bttom: 1em;
 }
 
 .p-em.p-2 {
@@ -7660,6 +7740,14 @@ h6,
   padding-right: 2em;
 }
 
+.p-em.p-2-top {
+  padding-top: 2em;
+}
+
+.p-em.p-2-bottom {
+  padding-bttom: 2em;
+}
+
 .p-em.p-3 {
   padding: 3em;
 }
@@ -7680,6 +7768,14 @@ h6,
 
 .p-em.p-3-right {
   padding-right: 3em;
+}
+
+.p-em.p-3-top {
+  padding-top: 3em;
+}
+
+.p-em.p-3-bottom {
+  padding-bttom: 3em;
 }
 
 .m-percent.m-10 {
@@ -7704,6 +7800,14 @@ h6,
   margin-right: 10%;
 }
 
+.m-percent.m-10-top {
+  margin-top: 10%;
+}
+
+.m-percent.m-10-bottom {
+  margin-bottom: 10%;
+}
+
 .m-percent.m-20 {
   margin: 20%;
 }
@@ -7724,6 +7828,14 @@ h6,
 
 .m-percent.m-20-right {
   margin-right: 20%;
+}
+
+.m-percent.m-20-top {
+  margin-top: 20%;
+}
+
+.m-percent.m-20-bottom {
+  margin-bottom: 20%;
 }
 
 .m-percent.m-30 {
@@ -7748,6 +7860,14 @@ h6,
   margin-right: 30%;
 }
 
+.m-percent.m-30-top {
+  margin-top: 30%;
+}
+
+.m-percent.m-30-bottom {
+  margin-bottom: 30%;
+}
+
 .p-percent.p-10 {
   padding: 10%;
 }
@@ -7768,6 +7888,14 @@ h6,
 
 .p-percent.p-10-right {
   padding-right: 10%;
+}
+
+.p-percent.p-10-top {
+  padding-top: 10%;
+}
+
+.p-percent.p-10-bottom {
+  padding-bttom: 10%;
 }
 
 .p-percent.p-20 {
@@ -7792,6 +7920,14 @@ h6,
   padding-right: 20%;
 }
 
+.p-percent.p-20-top {
+  padding-top: 20%;
+}
+
+.p-percent.p-20-bottom {
+  padding-bttom: 20%;
+}
+
 .p-percent.p-30 {
   padding: 30%;
 }
@@ -7812,6 +7948,14 @@ h6,
 
 .p-percent.p-30-right {
   padding-right: 30%;
+}
+
+.p-percent.p-30-top {
+  padding-top: 30%;
+}
+
+.p-percent.p-30-bottom {
+  padding-bttom: 30%;
 }
 
 .m-rem.m-1 {
@@ -7836,6 +7980,14 @@ h6,
   margin-right: 1rem;
 }
 
+.m-rem.m-1-top {
+  margin-top: 1rem;
+}
+
+.m-rem.m-1-bottom {
+  margin-bottom: 1rem;
+}
+
 .m-rem.m-2 {
   margin: 2rem;
 }
@@ -7856,6 +8008,14 @@ h6,
 
 .m-rem.m-2-right {
   margin-right: 2rem;
+}
+
+.m-rem.m-2-top {
+  margin-top: 2rem;
+}
+
+.m-rem.m-2-bottom {
+  margin-bottom: 2rem;
 }
 
 .m-rem.m-3 {
@@ -7880,6 +8040,14 @@ h6,
   margin-right: 3rem;
 }
 
+.m-rem.m-3-top {
+  margin-top: 3rem;
+}
+
+.m-rem.m-3-bottom {
+  margin-bottom: 3rem;
+}
+
 .p-rem.p-1 {
   padding: 1rem;
 }
@@ -7900,6 +8068,14 @@ h6,
 
 .p-rem.p-1-right {
   padding-right: 1rem;
+}
+
+.p-rem.p-1-top {
+  padding-top: 1rem;
+}
+
+.p-rem.p-1-bottom {
+  padding-bttom: 1rem;
 }
 
 .p-rem.p-2 {
@@ -7924,6 +8100,14 @@ h6,
   padding-right: 2rem;
 }
 
+.p-rem.p-2-top {
+  padding-top: 2rem;
+}
+
+.p-rem.p-2-bottom {
+  padding-bttom: 2rem;
+}
+
 .p-rem.p-3 {
   padding: 3rem;
 }
@@ -7944,4 +8128,12 @@ h6,
 
 .p-rem.p-3-right {
   padding-right: 3rem;
+}
+
+.p-rem.p-3-top {
+  padding-top: 3rem;
+}
+
+.p-rem.p-3-bottom {
+  padding-bttom: 3rem;
 }
