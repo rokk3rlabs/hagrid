@@ -1,23 +1,26 @@
 # hagrid-framework
 
 ## Add first web elements
-    * Grid system (in progress)
-    * Buttons(TODO)
-    * Input forms(TODO)
-    * Typography(TODO)
-    * Glyphicons(TODO)
-    * Tables(TODO)
-    * Images(TODO)
-    * Alerts (TODO)
+
+* Grid system (in progress)
+* Buttons(TODO)
+* Input forms(TODO)
+* Typography(TODO)
+* Glyphicons(TODO)
+* Tables(TODO)
+* Images(TODO)
+* Alerts (TODO)
 
 ## Utilities
-    * Gutters (TODO)
-    * Responsive (TODO)
-    * Theming (TODO)
-    * Animations (TODO)
+
+* Gutters (TODO)
+* Responsive (TODO)
+* Theming (TODO)
+* Animations (TODO)
 
 ## Examples
-    * Landing Page
+
+* Landing Page
 
 ## Setup build
 

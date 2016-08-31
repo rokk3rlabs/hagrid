@@ -63,6 +63,7 @@
       margin-top: #{$value_iterate}#{$value}
       margin-bottom: #{$value_iterate}#{$value}
     #{$root_class}#{$value_iterate}-x
+
       margin-left: #{$value_iterate}#{$value}
       margin-right: #{$value_iterate}#{$value}
 
@@ -71,6 +72,12 @@
 
     #{$root_class}#{$value_iterate}-right
       margin-right: #{$value_iterate}#{$value}
+
+    #{$root_class}#{$value_iterate}-top
+      margin-top: #{$value_iterate}#{$value}
+
+    #{$root_class}#{$value_iterate}-bottom
+      margin-bottom: #{$value_iterate}#{$value}
 
   @for $i from 1 through 3
     $value_base: 1
@@ -87,6 +94,7 @@
     #{$root_class}#{$value_iterate}-y
       padding-top: #{$value_iterate}#{$value}
       padding-bottom: #{$value_iterate}#{$value}
+
     #{$root_class}#{$value_iterate}-x
       padding-left: #{$value_iterate}#{$value}
       padding-right: #{$value_iterate}#{$value}
@@ -96,4 +104,10 @@
 
     #{$root_class}#{$value_iterate}-right
       padding-right: #{$value_iterate}#{$value}
+
+    #{$root_class}#{$value_iterate}-top
+      padding-top: #{$value_iterate}#{$value}
+
+    #{$root_class}#{$value_iterate}-bottom
+      padding-bottom: #{$value_iterate}#{$value}
 
