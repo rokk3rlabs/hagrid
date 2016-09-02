@@ -122,21 +122,7 @@
   .layout-#{$i}0
     width: (($i*10)/100)*100%
 
-  @media screen and (min-width: $md-device)
-    .layout-lg-#{$i}0
-      width: (($i*10)/100)*100%
 
-  @media screen and (min-width: $sm-device) and (max-width: $md-device)
-    .layout-md-#{$i}0
-      width: (($i*10)/100)*100%
-
-  @media screen and (min-width: $xs-device) and (max-width: $sm-device)
-    .layout-sm-#{$i}0,
-      width: (($i*10)/100)*100%
-
-  @media screen and (max-width: $xs-device)
-    .layout-xs-#{$i}0
-      width: (($i*10)/100)*100%
 
 /// Boxes
 @for $i from 1 through 12
@@ -344,7 +330,6 @@
         margin-right: 0
 
 
-
 @for $i from 1 through 3
   [gutters="#{$i}0px"]
     > [class*="layout-"]
@@ -459,4 +444,28 @@ body
       [class*="layout-"]
         width: auto
         display: block
+
+  /// Layouts, Flex, width
+  @for $i from 1 through 10
+    .#{$class-layout}-#{$i}0,
+    .#{$class-flex}-#{$i}0,
+    .grid-wrap-#{$i}0,
+    .width-#{$i}0,
+    .layout-#{$i}0
+
+  @media screen and (min-width: $md-device)
+    .layout-lg-#{$i}0
+      width: (($i*10)/100)*100%
+
+  @media screen and (min-width: $sm-device) and (max-width: $md-device)
+    .layout-md-#{$i}0
+      width: (($i*10)/100)*100%
+
+  @media screen and (min-width: $xs-device) and (max-width: $sm-device)
+    .layout-sm-#{$i}0,
+      width: (($i*10)/100)*100%
+
+  @media screen and (max-width: $xs-device)
+    .layout-xs-#{$i}0
+      width: (($i*10)/100)*100%
 
