@@ -2621,366 +2621,302 @@ div {
 }
 
 @media screen and (min-width: 1200px) {
-  html .layout-lg-10,
   body .layout-lg-10 {
     width: 10%;
   }
 }
 @media screen and (min-width: 700px) and (max-width: 1200px) {
-  html .layout-md-10,
   body .layout-md-10 {
     width: 10%;
   }
 }
 @media screen and (min-width: 460px) and (max-width: 700px) {
-  html .layout-sm-10,
   body .layout-sm-10 {
     width: 10%;
   }
 }
 @media screen and (max-width: 460px) {
-  html .layout-xs-10,
   body .layout-xs-10 {
     width: 10%;
   }
 }
 @media screen and (min-width: 1200px) {
-  html .layout-lg-20,
   body .layout-lg-20 {
     width: 20%;
   }
 }
 @media screen and (min-width: 700px) and (max-width: 1200px) {
-  html .layout-md-20,
   body .layout-md-20 {
     width: 20%;
   }
 }
 @media screen and (min-width: 460px) and (max-width: 700px) {
-  html .layout-sm-20,
   body .layout-sm-20 {
     width: 20%;
   }
 }
 @media screen and (max-width: 460px) {
-  html .layout-xs-20,
   body .layout-xs-20 {
     width: 20%;
   }
 }
 @media screen and (min-width: 1200px) {
-  html .layout-lg-30,
   body .layout-lg-30 {
     width: 30%;
   }
 }
 @media screen and (min-width: 700px) and (max-width: 1200px) {
-  html .layout-md-30,
   body .layout-md-30 {
     width: 30%;
   }
 }
 @media screen and (min-width: 460px) and (max-width: 700px) {
-  html .layout-sm-30,
   body .layout-sm-30 {
     width: 30%;
   }
 }
 @media screen and (max-width: 460px) {
-  html .layout-xs-30,
   body .layout-xs-30 {
     width: 30%;
   }
 }
 @media screen and (min-width: 1200px) {
-  html .layout-lg-40,
   body .layout-lg-40 {
     width: 40%;
   }
 }
 @media screen and (min-width: 700px) and (max-width: 1200px) {
-  html .layout-md-40,
   body .layout-md-40 {
     width: 40%;
   }
 }
 @media screen and (min-width: 460px) and (max-width: 700px) {
-  html .layout-sm-40,
   body .layout-sm-40 {
     width: 40%;
   }
 }
 @media screen and (max-width: 460px) {
-  html .layout-xs-40,
   body .layout-xs-40 {
     width: 40%;
   }
 }
 @media screen and (min-width: 1200px) {
-  html .layout-lg-50,
   body .layout-lg-50 {
     width: 50%;
   }
 }
 @media screen and (min-width: 700px) and (max-width: 1200px) {
-  html .layout-md-50,
   body .layout-md-50 {
     width: 50%;
   }
 }
 @media screen and (min-width: 460px) and (max-width: 700px) {
-  html .layout-sm-50,
   body .layout-sm-50 {
     width: 50%;
   }
 }
 @media screen and (max-width: 460px) {
-  html .layout-xs-50,
   body .layout-xs-50 {
     width: 50%;
   }
 }
 @media screen and (min-width: 1200px) {
-  html .layout-lg-60,
   body .layout-lg-60 {
     width: 60%;
   }
 }
 @media screen and (min-width: 700px) and (max-width: 1200px) {
-  html .layout-md-60,
   body .layout-md-60 {
     width: 60%;
   }
 }
 @media screen and (min-width: 460px) and (max-width: 700px) {
-  html .layout-sm-60,
   body .layout-sm-60 {
     width: 60%;
   }
 }
 @media screen and (max-width: 460px) {
-  html .layout-xs-60,
   body .layout-xs-60 {
     width: 60%;
   }
 }
 @media screen and (min-width: 1200px) {
-  html .layout-lg-70,
   body .layout-lg-70 {
     width: 70%;
   }
 }
 @media screen and (min-width: 700px) and (max-width: 1200px) {
-  html .layout-md-70,
   body .layout-md-70 {
     width: 70%;
   }
 }
 @media screen and (min-width: 460px) and (max-width: 700px) {
-  html .layout-sm-70,
   body .layout-sm-70 {
     width: 70%;
   }
 }
 @media screen and (max-width: 460px) {
-  html .layout-xs-70,
   body .layout-xs-70 {
     width: 70%;
   }
 }
 @media screen and (min-width: 1200px) {
-  html .layout-lg-80,
   body .layout-lg-80 {
     width: 80%;
   }
 }
 @media screen and (min-width: 700px) and (max-width: 1200px) {
-  html .layout-md-80,
   body .layout-md-80 {
     width: 80%;
   }
 }
 @media screen and (min-width: 460px) and (max-width: 700px) {
-  html .layout-sm-80,
   body .layout-sm-80 {
     width: 80%;
   }
 }
 @media screen and (max-width: 460px) {
-  html .layout-xs-80,
   body .layout-xs-80 {
     width: 80%;
   }
 }
 @media screen and (min-width: 1200px) {
-  html .layout-lg-90,
   body .layout-lg-90 {
     width: 90%;
   }
 }
 @media screen and (min-width: 700px) and (max-width: 1200px) {
-  html .layout-md-90,
   body .layout-md-90 {
     width: 90%;
   }
 }
 @media screen and (min-width: 460px) and (max-width: 700px) {
-  html .layout-sm-90,
   body .layout-sm-90 {
     width: 90%;
   }
 }
 @media screen and (max-width: 460px) {
-  html .layout-xs-90,
   body .layout-xs-90 {
     width: 90%;
   }
 }
 @media screen and (min-width: 1200px) {
-  html .layout-lg-100,
   body .layout-lg-100 {
     width: 100%;
   }
 }
 @media screen and (min-width: 700px) and (max-width: 1200px) {
-  html .layout-md-100,
   body .layout-md-100 {
     width: 100%;
   }
 }
 @media screen and (min-width: 460px) and (max-width: 700px) {
-  html .layout-sm-100,
   body .layout-sm-100 {
     width: 100%;
   }
 }
 @media screen and (max-width: 460px) {
-  html .layout-xs-100,
   body .layout-xs-100 {
     width: 100%;
   }
 }
 @media screen and (min-width: 1200px) {
-  html .gs-block-lg,
   body .gs-block-lg {
     display: block;
   }
-  html .gs-block-lg [class*="layout-"],
   body .gs-block-lg [class*="layout-"] {
     width: auto;
     display: block;
   }
-  html .align-lg-left,
   body .align-lg-left {
     text-align: left;
   }
-  html .align-lg-center,
   body .align-lg-center {
     text-align: center;
   }
-  html .align-lg-right,
   body .align-lg-right {
     text-align: right;
   }
-  html .hide-lg,
   body .hide-lg {
     display: none;
   }
-  html .show-lg,
-  body .show-lg {
+  body .show-lg,
+  body .block-lg {
     display: block;
   }
 }
 @media screen and (min-width: 700px) and (max-width: 1200px) {
-  html .gs-block-md,
   body .gs-block-md {
     display: block;
   }
-  html .gs-block-md [class*="layout-"],
   body .gs-block-md [class*="layout-"] {
     width: auto;
     display: block;
   }
-  html .align-md-left,
   body .align-md-left {
     text-align: left;
   }
-  html .align-md-center,
   body .align-md-center {
     text-align: center;
   }
-  html .align-md-right,
   body .align-md-right {
     text-align: right;
   }
-  html .hide-md,
   body .hide-md {
     display: none;
   }
-  html .show-md,
-  body .show-md {
+  body .show-md,
+  body .block-md {
     display: block;
   }
 }
 @media screen and (min-width: 460px) and (max-width: 700px) {
-  html .gs-block-sm,
   body .gs-block-sm {
     display: block;
   }
-  html .gs-block-sm [class*="layout-"],
   body .gs-block-sm [class*="layout-"] {
     width: auto;
     display: block;
   }
-  html .align-sm-left,
   body .align-sm-left {
     text-align: left;
   }
-  html .align-sm-center,
   body .align-sm-center {
     text-align: center;
   }
-  html .align-sm-right,
   body .align-sm-right {
     text-align: right;
   }
-  html .hide-sm,
   body .hide-sm {
     display: none;
   }
-  html .show-sm,
-  body .show-sm {
+  body .show-sm,
+  body .block-sm {
     display: block;
   }
 }
 @media screen and (max-width: 460px) {
-  html .gs-block-xs,
   body .gs-block-xs {
     display: block;
   }
-  html .gs-block-xs [class*="layout-"],
   body .gs-block-xs [class*="layout-"] {
     width: auto;
     display: block;
   }
-  html .align-xs-left,
   body .align-xs-left {
     text-align: left;
   }
-  html .align-xs-center,
   body .align-xs-center {
     text-align: center;
   }
-  html .align-xs-right,
   body .align-xs-right {
     text-align: right;
   }
-  html .hide-xs,
   body .hide-xs {
     display: none;
   }
-  html .show-xs,
-  body .show-xs {
+  body .show-xs,
+  body .block-xs {
     display: block;
   }
 }

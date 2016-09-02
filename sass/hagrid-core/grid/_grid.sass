@@ -417,7 +417,6 @@
 
 
 
-html,
 body
   /// Layouts, Flex, width
   @for $i from 1 through 10
@@ -460,7 +459,8 @@ body
     .hide-lg
       display: none
 
-    .show-lg
+    .show-lg,
+    .block-lg
       display: block
 
   @media screen and (min-width: $sm-device) and (max-width: $md-device)
@@ -480,7 +480,8 @@ body
     .hide-md
       display: none
 
-    .show-md
+    .show-md,
+    .block-md
       display: block
 
   @media screen and (min-width: $xs-device) and (max-width: $sm-device)
@@ -500,7 +501,8 @@ body
     .hide-sm
       display: none
 
-    .show-sm
+    .show-sm,
+    .block-sm
       display: block
 
   @media screen and (max-width: $xs-device)
@@ -517,10 +519,10 @@ body
     .align-xs-right
       text-align: right
 
-
     .hide-xs
       display: none
 
-    .show-xs
+    .show-xs,
+    .block-xs
       display: block
 
