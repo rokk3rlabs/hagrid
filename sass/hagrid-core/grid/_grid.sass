@@ -442,29 +442,85 @@ body
     @media screen and (max-width: $xs-device)
       .layout-xs-#{$i}0
         width: (($i*10)/100)*100%
-      
+
   @media screen and (min-width: $md-device)
     .gs-block-lg
       display: block
       [class*="layout-"]
         width: auto
         display: block
+
+    .align-lg-left
+      text-align: left
+    .align-lg-center
+      text-align: center
+    .align-lg-right
+      text-align: right
+
+    .hide-lg
+      display: none
+
+    .show-lg
+      display: block
+
   @media screen and (min-width: $sm-device) and (max-width: $md-device)
     .gs-block-md
       display: block
       [class*="layout-"]
         width: auto
         display: block
+
+    .align-md-left
+      text-align: left
+    .align-md-center
+      text-align: center
+    .align-md-right
+      text-align: right
+
+    .hide-md
+      display: none
+
+    .show-md
+      display: block
+
   @media screen and (min-width: $xs-device) and (max-width: $sm-device)
     .gs-block-sm
       display: block
       [class*="layout-"]
         width: auto
         display: block
+
+    .align-sm-left
+      text-align: left
+    .align-sm-center
+      text-align: center
+    .align-sm-right
+      text-align: right
+
+    .hide-sm
+      display: none
+
+    .show-sm
+      display: block
+
   @media screen and (max-width: $xs-device)
     .gs-block-xs
       display: block
       [class*="layout-"]
         width: auto
         display: block
+
+    .align-xs-left
+      text-align: left
+    .align-xs-center
+      text-align: center
+    .align-xs-right
+      text-align: right
+
+
+    .hide-xs
+      display: none
+
+    .show-xs
+      display: block
 
