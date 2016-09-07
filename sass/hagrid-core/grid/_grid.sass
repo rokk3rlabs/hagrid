@@ -310,23 +310,23 @@
     &.#{$align-content}-#{$i}
       align-content: #{$i}
 
-  &.gutters
-    > [class*="layout-"]
-      margin: 1em
+.gutters
+  > [class*="layout-"]
+    margin: 1em
 
-  [class*="layout-auto"]
-    width: 100%
+[class*="layout-auto"]
+  width: 100%
 
-  &.sticky-sides
+.sticky-sides
 
-    > [class*="layout-"]
-      &:first-child,
-      &.first-child
-        margin-left: 0
+  > [class*="layout-"]
+    &:first-child,
+    &.first-child
+      margin-left: 0
 
-      &:last-child,
-      &.last-child
-        margin-right: 0
+    &:last-child,
+    &.last-child
+      margin-right: 0
 
 
 @for $i from 1 through 3
@@ -343,10 +343,12 @@
     > [class*="layout-"]
       margin: #{$i}0%
 
+.gutters-x,
 .gutters-sides
   > [class*="layout-"]
     margin-top: 0
     margin-bottom: 0
+.gutters-y,
 .gutters-top-bottom
   > [class*="layout-"]
     margin-right: 0
@@ -427,21 +429,37 @@ body
     .layout-#{$i}0
 
     @media screen and (min-width: $md-device)
+      .gutters-lg
+        > [class*="layout-"]
+          margin: 1em
+
       .layout-lg-#{$i}0
       .width-lg-#{$i}0
         width: (($i*10)/100)*100%
 
     @media screen and (min-width: $sm-device) and (max-width: $md-device)
+      .gutters-md
+        > [class*="layout-"]
+          margin: 1em
+
       .layout-md-#{$i}0
       .width-md-#{$i}0
         width: (($i*10)/100)*100%
 
     @media screen and (min-width: $xs-device) and (max-width: $sm-device)
+      .gutters-sm
+        > [class*="layout-"]
+          margin: 1em
+
       .layout-sm-#{$i}0,
       .width-sm-#{$i}0,
         width: (($i*10)/100)*100%
 
     @media screen and (max-width: $xs-device)
+      .gutters-xs
+        > [class*="layout-"]
+          margin: 1em
+
       .layout-xs-#{$i}0
       .width-xs-#{$i}0
         width: (($i*10)/100)*100%
