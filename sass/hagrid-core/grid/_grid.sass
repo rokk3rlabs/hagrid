@@ -428,18 +428,22 @@ body
 
     @media screen and (min-width: $md-device)
       .layout-lg-#{$i}0
+      .width-lg-#{$i}0
         width: (($i*10)/100)*100%
 
     @media screen and (min-width: $sm-device) and (max-width: $md-device)
       .layout-md-#{$i}0
+      .width-md-#{$i}0
         width: (($i*10)/100)*100%
 
     @media screen and (min-width: $xs-device) and (max-width: $sm-device)
       .layout-sm-#{$i}0,
+      .width-sm-#{$i}0,
         width: (($i*10)/100)*100%
 
     @media screen and (max-width: $xs-device)
       .layout-xs-#{$i}0
+      .width-xs-#{$i}0
         width: (($i*10)/100)*100%
 
   @media screen and (min-width: $md-device)
