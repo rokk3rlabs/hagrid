@@ -471,11 +471,22 @@ body
         width: auto
         display: block
 
-    .align-lg-left
+    .sticky-sides-lg
+
+      > [class*="layout-"]
+        &:first-child,
+        &.first-child
+          margin-left: 0
+
+        &:last-child,
+        &.last-child
+          margin-right: 0
+
+    .align-left-lg
       text-align: left
-    .align-lg-center
+    .align-center-lg
       text-align: center
-    .align-lg-right
+    .align-right-lg
       text-align: right
 
     .hide-lg
@@ -492,11 +503,22 @@ body
         width: auto
         display: block
 
-    .align-md-left
+    .sticky-sides-md
+
+      > [class*="layout-"]
+        &:first-child,
+        &.first-child
+          margin-left: 0
+
+        &:last-child,
+        &.last-child
+          margin-right: 0
+
+    .align-left-md
       text-align: left
-    .align-md-center
+    .align-center-md
       text-align: center
-    .align-md-right
+    .align-right-md
       text-align: right
 
     .hide-md
@@ -513,11 +535,22 @@ body
         width: auto
         display: block
 
-    .align-sm-left
+    .sticky-sides-sm
+
+      > [class*="layout-"]
+        &:first-child,
+        &.first-child
+          margin-left: 0
+
+        &:last-child,
+        &.last-child
+          margin-right: 0
+
+    .align-left-sm
       text-align: left
-    .align-sm-center
+    .align-center-sm
       text-align: center
-    .align-sm-right
+    .align-right-sm
       text-align: right
 
     .hide-sm
@@ -534,11 +567,22 @@ body
         width: auto
         display: block
 
-    .align-xs-left
+    .sticky-sides-xs
+
+      > [class*="layout-"]
+        &:first-child,
+        &.first-child
+          margin-left: 0
+
+        &:last-child,
+        &.last-child
+          margin-right: 0
+
+    .align-left-xs
       text-align: left
-    .align-xs-center
+    .align-center-xs
       text-align: center
-    .align-xs-right
+    .align-right-xs
       text-align: right
 
     .hide-xs

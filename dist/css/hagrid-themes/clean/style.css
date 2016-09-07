@@ -2945,13 +2945,19 @@ div {
     width: auto;
     display: block;
   }
-  body .align-lg-left {
+  body .sticky-sides-lg > [class*="layout-"]:first-child, body .sticky-sides-lg > [class*="layout-"].first-child {
+    margin-left: 0;
+  }
+  body .sticky-sides-lg > [class*="layout-"]:last-child, body .sticky-sides-lg > [class*="layout-"].last-child {
+    margin-right: 0;
+  }
+  body .align-left-lg {
     text-align: left;
   }
-  body .align-lg-center {
+  body .align-center-lg {
     text-align: center;
   }
-  body .align-lg-right {
+  body .align-right-lg {
     text-align: right;
   }
   body .hide-lg {
@@ -2970,13 +2976,19 @@ div {
     width: auto;
     display: block;
   }
-  body .align-md-left {
+  body .sticky-sides-md > [class*="layout-"]:first-child, body .sticky-sides-md > [class*="layout-"].first-child {
+    margin-left: 0;
+  }
+  body .sticky-sides-md > [class*="layout-"]:last-child, body .sticky-sides-md > [class*="layout-"].last-child {
+    margin-right: 0;
+  }
+  body .align-left-md {
     text-align: left;
   }
-  body .align-md-center {
+  body .align-center-md {
     text-align: center;
   }
-  body .align-md-right {
+  body .align-right-md {
     text-align: right;
   }
   body .hide-md {
@@ -2995,13 +3007,19 @@ div {
     width: auto;
     display: block;
   }
-  body .align-sm-left {
+  body .sticky-sides-sm > [class*="layout-"]:first-child, body .sticky-sides-sm > [class*="layout-"].first-child {
+    margin-left: 0;
+  }
+  body .sticky-sides-sm > [class*="layout-"]:last-child, body .sticky-sides-sm > [class*="layout-"].last-child {
+    margin-right: 0;
+  }
+  body .align-left-sm {
     text-align: left;
   }
-  body .align-sm-center {
+  body .align-center-sm {
     text-align: center;
   }
-  body .align-sm-right {
+  body .align-right-sm {
     text-align: right;
   }
   body .hide-sm {
@@ -3020,13 +3038,19 @@ div {
     width: auto;
     display: block;
   }
-  body .align-xs-left {
+  body .sticky-sides-xs > [class*="layout-"]:first-child, body .sticky-sides-xs > [class*="layout-"].first-child {
+    margin-left: 0;
+  }
+  body .sticky-sides-xs > [class*="layout-"]:last-child, body .sticky-sides-xs > [class*="layout-"].last-child {
+    margin-right: 0;
+  }
+  body .align-left-xs {
     text-align: left;
   }
-  body .align-xs-center {
+  body .align-center-xs {
     text-align: center;
   }
-  body .align-xs-right {
+  body .align-right-xs {
     text-align: right;
   }
   body .hide-xs {
