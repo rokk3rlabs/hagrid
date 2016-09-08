@@ -2942,6 +2942,13 @@ div {
     display: block;
   }
   body .gs-block-lg [class*="layout-"] {
+    width: auto;
+    display: block;
+  }
+  body .gs-block2-lg {
+    display: block;
+  }
+  body .gs-block2-lg [class*="layout-"] {
     width: 100%;
     display: block;
   }
@@ -2973,6 +2980,13 @@ div {
     display: block;
   }
   body .gs-block-md [class*="layout-"] {
+    width: auto;
+    display: block;
+  }
+  body .gs-block2-md {
+    display: block;
+  }
+  body .gs-block2-md [class*="layout-"] {
     width: 100%;
     display: block;
   }
@@ -3004,6 +3018,13 @@ div {
     display: block;
   }
   body .gs-block-sm [class*="layout-"] {
+    width: auto;
+    display: block;
+  }
+  body .gs-block2-sm {
+    display: block;
+  }
+  body .gs-block2-sm [class*="layout-"] {
     width: 100%;
     display: block;
   }
@@ -3035,6 +3056,13 @@ div {
     display: block;
   }
   body .gs-block-xs [class*="layout-"] {
+    width: auto;
+    display: block;
+  }
+  body .gs-block2-xs {
+    display: block;
+  }
+  body .gs-block2-xs [class*="layout-"] {
     width: 100%;
     display: block;
   }
