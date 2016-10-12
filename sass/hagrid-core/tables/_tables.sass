@@ -1,0 +1,70 @@
+table
+  &.table
+    width: 100%
+    border: 1px solid rgba(0,0,0,.1)
+    border-radius: 4px
+    border-collapse: separate
+    border-spacing: 0
+
+    thead
+      font-weight: 400
+
+      tr
+        border-collapse: separate
+
+        td,
+        th
+          border-bottom: 1px solid rgba(0, 0, 0, .1)
+          border-right: 1px solid rgba(0, 0, 0, .1)
+
+          &:last-child
+            border-right: 0
+
+        &:nth-child(2n)
+  
+
+    tr
+      vertical-align: top
+      border-collapse: separate
+
+      &:hover
+        background-color: rgba(0, 0, 0, .03)
+        
+        td
+          &:hover
+            background-color: rgba(0, 0, 0, .03)
+      
+
+    td,
+    th
+      padding: .7em
+      vertical-align: top
+      border-bottom: 1px solid rgba(0, 0, 0, .1)
+      border-right: 1px solid rgba(0, 0, 0, .1)
+
+      &:last-child
+        border-right: 0
+
+    .first-col
+      background-color: rgba(0, 0, 0, .03)
+      width: 20%
+
+
+    &.table-title
+      thead
+        background-color: rgba(0, 0, 0, 0.03)
+
+    &.table-first-column
+      tr
+        td:first-child
+          background-color: rgba(0, 0, 0, 0.03)
+
+    &.table-row-odd
+      tr:nth-child(odd)
+        td
+          background-color: rgba(0, 0, 0, 0.03)
+
+    &.table-row-even
+      tr:nth-child(even)
+        td
+          background-color: rgba(0, 0, 0, 0.03)
