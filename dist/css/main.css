@@ -7617,7 +7617,7 @@ table.table .first-col {
 table.table.table-title thead {
   background-color: rgba(0, 0, 0, 0.03);
 }
-table.table.table-first-column table tr td:first-child {
+table.table.table-first-column tbody tr td:first-child {
   background-color: rgba(0, 0, 0, 0.03);
 }
 table.table.table-row-odd tbody tr:nth-child(odd) td {
