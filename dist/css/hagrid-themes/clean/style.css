@@ -7788,7 +7788,7 @@ table.table tr:hover td:hover {
 }
 table.table td,
 table.table th {
-  padding: 0.7em;
+  padding: 0.8em;
   vertical-align: top;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   border-right: 1px solid rgba(0, 0, 0, 0.1);
@@ -7824,6 +7824,22 @@ table.table.table-borderless {
 }
 table.table.table-borderless tbody tr:last-child td {
   border-bottom: 0;
+}
+table.table.table-xs td,
+table.table.table-xs th {
+  padding: 0.4em;
+}
+table.table.table-sm td,
+table.table.table-sm th {
+  padding: 0.6em;
+}
+table.table.table-md td,
+table.table.table-md th {
+  padding: 0.8em;
+}
+table.table.table-lg td,
+table.table.table-lg th {
+  padding: 1em;
 }
 
 .img {
