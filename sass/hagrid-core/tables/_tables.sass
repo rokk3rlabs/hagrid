@@ -55,16 +55,38 @@ table
         background-color: rgba(0, 0, 0, 0.03)
 
     &.table-first-column
-      tr
-        td:first-child
-          background-color: rgba(0, 0, 0, 0.03)
+      table
+        tr
+          td:first-child
+            background-color: rgba(0, 0, 0, 0.03)
 
     &.table-row-odd
-      tr:nth-child(odd)
-        td
-          background-color: rgba(0, 0, 0, 0.03)
+      tbody
+        tr:nth-child(odd)
+          td
+            background-color: rgba(0, 0, 0, 0.03)
 
     &.table-row-even
-      tr:nth-child(even)
-        td
-          background-color: rgba(0, 0, 0, 0.03)
+      tbody
+        tr:nth-child(even)
+          td
+            background-color: rgba(0, 0, 0, 0.03)
+
+    &.table-col-odd
+      tbody
+        tr
+          td:nth-child(odd)
+            background-color: rgba(0, 0, 0, 0.03)
+
+    &.table-col-even
+      tbody
+        tr
+          td:nth-child(even)
+            background-color: rgba(0, 0, 0, 0.03)
+
+    &.table-borderless
+      border: none
+      tbody
+        tr:last-child
+          td
+            border-bottom: 0
