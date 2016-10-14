@@ -108,15 +108,13 @@
     content: "fifth"
 
 
-/// Layouts, Flex, width
 @for $i from 1 through 10
   .height-#{$i}0,
     height: (($i*10)/100)*100%
 
-/// Layouts, Flex, width
 @for $i from 1 through 10
   .#{$class-layout}-#{$i}0,
-  .#{$class-flex}-#{$i}0,
+  .#{$class-lay}-#{$i}0,
   .grid-wrap-#{$i}0,
   .width-#{$i}0,
   .layout-#{$i}0
@@ -176,7 +174,7 @@
   [class*="cols-"],
   [class*="grid-col-"],
   [class*="layout-"],
-  [class*="flex-"],
+  [class*="lay-"],
   [class*="grid-for"] .grid-box,
   .grid-box
     text-align: center
@@ -211,7 +209,7 @@
 
   /// Layout, flex, width
   @for $i from 1 through 10
-    .#{$class-flex}-#{$i}0,
+    .#{$class-lay}-#{$i}0,
     .width-#{$i}0,
     .#{$class-layout}-#{$i}0
 
@@ -270,7 +268,6 @@
 
 
 // FLEX BOX
-[class*="grid-flex"],
 [class*="support-flex"],
 .grid-system,
 .gs,
@@ -314,9 +311,12 @@
   > [class*="layout-"]
     margin: 1em
 
+// layout Auto
+[class*="lay-auto"],
 [class*="layout-auto"]
   width: 100%
 
+// Sticky Sides
 .sticky-sides
 
   > [class*="layout-"]
@@ -379,51 +379,14 @@
 /// Order
 @for $i from 1 through 12
   .#{$class-order}-#{$i}
-
     order: $i
-
-// General Grid class
-// GRID
-[class*="grid-flex"]
-  text-align: left
-
-
-.full-width
-  width: 100%
-
-.full-height
-  height: 100%
-
-.fixed-area
-  position: fixed
-  width: inherit
-
-.full-screen
-  position: absolute
-  height: 100%
-  width: 100%
-  left: 0
-  top: 0
-
-.scroll-y
-  overflow: hidden
-  overflow-y: scroll!important
-
-.scroll-x
-  overflow: hidden
-  overflow-x: scroll!important
-
-.centered
-  display: block
-  margin: auto
-
 
 
 body
-  /// Layouts, Flex, width
+  /// Layouts, width
   @for $i from 1 through 10
     .#{$class-layout}-#{$i}0,
-    .#{$class-flex}-#{$i}0,
+    .#{$class-lay}-#{$i}0,
     .grid-wrap-#{$i}0,
     .width-#{$i}0,
     .layout-#{$i}0
@@ -433,7 +396,7 @@ body
         > [class*="layout-"]
           margin: 1em
 
-      .layout-lg-#{$i}0
+      .layout-lg-#{$i}0,
       .width-lg-#{$i}0
         width: (($i*10)/100)*100%
 
@@ -442,7 +405,7 @@ body
         > [class*="layout-"]
           margin: 1em
 
-      .layout-md-#{$i}0
+      .layout-md-#{$i}0,
       .width-md-#{$i}0
         width: (($i*10)/100)*100%
 
@@ -452,7 +415,7 @@ body
           margin: 1em
 
       .layout-sm-#{$i}0,
-      .width-sm-#{$i}0,
+      .width-sm-#{$i}0
         width: (($i*10)/100)*100%
 
     @media screen and (max-width: $xs-device)
@@ -460,9 +423,10 @@ body
         > [class*="layout-"]
           margin: 1em
 
-      .layout-xs-#{$i}0
+      .layout-xs-#{$i}0,
       .width-xs-#{$i}0
         width: (($i*10)/100)*100%
+
 
   @media screen and (min-width: $md-device)
     .gs-block-lg
@@ -579,17 +543,43 @@ body
       display: block
 
   @media screen and (max-width: $xs-device)
-    .gs-block-xs
-      display: block
-      [class*="layout-"]
+    
+    .gs:not(.keep-lay),
+    .grid-system:not(.keep-lay)
+      > [class*="layout-"],
+      > [class*="lay-"]
         width: auto
         display: block
 
-    .gs-block2-xs
+    .gs:not(.keep-lay),
+    .grid-system:not(.keep-lay)
       display: block
-      [class*="layout-"]
-        width: 100%
-        display: block
+      &.gs-force
+        > [class*="layout-"],
+        > [class*="lay-"]
+          width: 100%
+          display: block
+
+    .gs:not(.keep-gutters),
+    .grid-system:not(.keep-gutters)
+      background: red!important
+      > [class*="layout-"],
+      > [class*="lay-"]
+        margin: 0
+
+    .gs:not(.keep-gutters),
+    .grid-system:not(.keep-gutters)
+      &.gs-auto
+        > [class*="layout-"],
+        > [class*="lay-"]
+          margin: 0
+
+    .keep-gutters:not(.keep-lay)
+      &.sticky-sides:not(.keep-lay)
+        > [class*="layout-"],
+        > [class*="lay-"]
+          margin-left: 0
+          margin-right: 0
 
     .sticky-sides-xs
 
