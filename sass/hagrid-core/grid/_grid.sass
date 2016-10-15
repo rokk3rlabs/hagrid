@@ -184,7 +184,6 @@
 
 
 body
-  /// Layouts, Width
   @for $i from 1 through 20
     .#{$class-layout}-#{(1*$i/20)*100},
     .#{$class-lay}-#{(1*$i/20)*100},
@@ -197,10 +196,10 @@ body
         > [class*="#{$class-layout}-"]
           margin: 1em
 
-      .#{$class-layout}-lg-#{$i}0,
-      .#{$class-lay}-lg-#{$i}0,
-      .w-lg-#{$i}0
-        width: (($i*10)/100)*100%
+      .#{$class-layout}-lg-#{(1*$i/20)*100},
+      .#{$class-lay}-lg-#{(1*$i/20)*100},
+      .w-lg-#{(1*$i/20)*100}
+        width: (($i*5)/100)*100%
 
     @media screen and (min-width: $sm-device) and (max-width: $md-device)
       .gutters-md
@@ -208,10 +207,10 @@ body
         > [class*="#{$class-layout}-"]
           margin: 1em
 
-      .#{$class-layout}-md-#{$i}0,
-      .#{$class-lay}-md-#{$i}0,
-      .w-md-#{$i}0
-        width: (($i*10)/100)*100%
+      .#{$class-layout}-md-#{(1*$i/20)*100},
+      .#{$class-lay}-md-#{(1*$i/20)*100},
+      .w-md-#{(1*$i/20)*100}
+        width: (($i*5)/100)*100%
 
     @media screen and (min-width: $xs-device) and (max-width: $sm-device)
       .gutters-sm
@@ -219,10 +218,10 @@ body
         > [class*="#{$class-layout}-"]
           margin: 1em
 
-      .#{$class-layout}-sm-#{$i}0,
-      .#{$class-lay}-sm-#{$i}0,
-      .w-sm-#{$i}0
-        width: (($i*10)/100)*100%
+      .#{$class-layout}-sm-#{(1*$i/20)*100},
+      .#{$class-lay}-sm-#{(1*$i/20)*100},
+      .w-sm-#{(1*$i/20)*100}
+        width: (($i*5)/100)*100%
 
     @media screen and (max-width: $xs-device)
       .gutters-xs
@@ -230,26 +229,37 @@ body
         > [class*="#{$class-layout}-"]
           margin: 1em
 
-      .#{$class-lay}-xs-#{$i}0,
-      .#{$class-layout}-xs-#{$i}0,
-      .w-xs-#{$i}0
-        width: (($i*10)/100)*100%
+      .#{$class-lay}-xs-#{(1*$i/20)*100},
+      .#{$class-layout}-xs-#{(1*$i/20)*100},
+      .w-xs-#{(1*$i/20)*100}
+        width: (($i*5)/100)*100%
 
 
   @media screen and (min-width: $md-device)
-    .gs-block-lg
+    .gs-block_auto-lg
       display: block
-      [class*="#{$class-lay}-"],
-      [class*="#{$class-layout}-"]
+      [class*="#{$class-layout}-"],
+      [class*="#{$class-lay}-"]
         width: auto
         display: block
 
-    .gs-block2-lg
+    .gs-block_full-lg
       display: block
-      [class*="#{$class-lay}-"],
-      [class*="#{$class-layout}-"]
+      [class*="#{$class-layout}-"],
+      [class*="#{$class-lay}-"]
         width: 100%
         display: block
+
+    .gs-block-lg
+      display: flex
+      flex-wrap: wrap
+      [class*="#{$class-layout}-"],
+      [class*="#{$class-lay}-"]
+        width: 100%
+
+    @for $i from 1 through 12
+      .#{$class-order}-lg-#{$i}
+        order: $i
 
     .sticky-sides-lg
 
@@ -279,19 +289,30 @@ body
 
   @media screen and (min-width: $sm-device) and (max-width: $md-device)
 
-    .gs-block-md
+    .gs-block_auto-md
       display: block
       [class*="#{$class-layout}-"],
       [class*="#{$class-lay}-"]
         width: auto
         display: block
 
-    .gs-block2-md
+    .gs-block_full-md
       display: block
       [class*="#{$class-layout}-"],
       [class*="#{$class-lay}-"]
         width: 100%
         display: block
+
+    .gs-block-md
+      display: flex
+      flex-wrap: wrap
+      [class*="#{$class-layout}-"],
+      [class*="#{$class-lay}-"]
+        width: 100%
+
+    @for $i from 1 through 12
+      .#{$class-order}-md-#{$i}
+        order: $i
 
     .sticky-sides-md
 
@@ -323,19 +344,30 @@ body
 
   @media screen and (min-width: $xs-device) and (max-width: $sm-device)
 
-    .gs-block-sm
+    .gs-block_auto-sm
       display: block
       [class*="#{$class-layout}-"],
       [class*="#{$class-lay}-"]
         width: auto
         display: block
 
-    .gs-block2-sm
+    .gs-block_full-sm
       display: block
       [class*="#{$class-layout}-"],
       [class*="#{$class-lay}-"]
         width: 100%
         display: block
+
+    .gs-block-sm
+      display: flex
+      flex-wrap: wrap
+      [class*="#{$class-layout}-"],
+      [class*="#{$class-lay}-"]
+        width: 100%
+
+    @for $i from 1 through 12
+      .#{$class-order}-sm-#{$i}
+        order: $i
 
     .sticky-sides-sm
 
@@ -366,16 +398,16 @@ body
       display: block
 
   @media screen and (max-width: $xs-device)
-    
-    .gs:not(.keep-lay),
-    .grid-system:not(.keep-lay)
+
+    .gs:not(.keep-lay):not(.keep-order),
+    .grid-system:not(.keep-lay):not(.keep-order)
       > [class*="#{$class-layout}-"],
       > [class*="#{$class-lay}"]
         width: auto
         display: block
 
-    .gs:not(.keep-lay),
-    .grid-system:not(.keep-lay)
+    .gs:not(.keep-lay):not(.keep-order),
+    .grid-system:not(.keep-lay):not(.keep-order)
       display: block
       &.gs-force
         > [class*="#{$class-layout}-"],
@@ -402,6 +434,37 @@ body
         > [class*="#{$class-lay}"]
           margin-left: 0
           margin-right: 0
+
+    .keep-order
+      flex-wrap: wrap
+      > [class*="#{$class-layout}-"],
+      > [class*="#{$class-lay}"]
+        width: 100%
+
+    .gs-block_auto-xs
+      display: block
+      [class*="#{$class-layout}-"],
+      [class*="#{$class-lay}-"]
+        width: auto
+        display: block
+
+    .gs-block_full-xs
+      display: block
+      [class*="#{$class-layout}-"],
+      [class*="#{$class-lay}-"]
+        width: 100%
+        display: block
+
+    .gs-block-xs
+      display: flex
+      flex-wrap: wrap
+      [class*="#{$class-layout}-"],
+      [class*="#{$class-lay}-"]
+        width: 100%
+
+    @for $i from 1 through 12
+      .#{$class-order}-xs-#{$i}
+        order: $i
 
     .sticky-sides-xs
 
