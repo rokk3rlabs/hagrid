@@ -259,6 +259,12 @@ body
       [class*="#{$class-lay}-"]
         width: 100%
 
+      &.sticky-sides
+        [class*="#{$class-layout}-"],
+        [class*="#{$class-lay}-"]
+          margin-left: 0
+          margin-right: 0
+
     @for $i from 1 through 12
       .#{$class-order}-lg-#{$i}
         order: $i
@@ -311,6 +317,12 @@ body
       [class*="#{$class-layout}-"],
       [class*="#{$class-lay}-"]
         width: 100%
+
+      &.sticky-sides
+        [class*="#{$class-layout}-"],
+        [class*="#{$class-lay}-"]
+          margin-left: 0
+          margin-right: 0
 
     @for $i from 1 through 12
       .#{$class-order}-md-#{$i}
@@ -367,6 +379,13 @@ body
       [class*="#{$class-lay}-"]
         width: 100%
 
+      &.sticky-sides
+        [class*="#{$class-layout}-"],
+        [class*="#{$class-lay}-"]
+          margin-left: 0
+          margin-right: 0
+
+
     @for $i from 1 through 12
       .#{$class-order}-sm-#{$i}
         order: $i
@@ -402,20 +421,13 @@ body
   @media screen and (max-width: $xs-device)
 
     .gs:not(.keep-lay):not(.keep-order),
-    .grid-system:not(.keep-lay):not(.keep-order)
+    .grid-system:not(.keep-lay):not(.keep-order),
+    .gs-block-xs
+      display: flex
+      flex-wrap: wrap
       > [class*="#{$class-layout}-"],
       > [class*="#{$class-lay}"]
-        width: auto
-        display: block
-
-    .gs:not(.keep-lay):not(.keep-order),
-    .grid-system:not(.keep-lay):not(.keep-order)
-      display: block
-      &.gs-force
-        > [class*="#{$class-layout}-"],
-        > [class*="#{$class-lay}"]
-          width: 100%
-          display: block
+        width: 100%
 
     .gs:not(.keep-gutters),
     .grid-system:not(.keep-gutters)
@@ -423,8 +435,6 @@ body
       > [class*="#{$class-lay}"]
         margin: 0
 
-    .gs:not(.keep-gutters),
-    .grid-system:not(.keep-gutters)
       &.gs-auto
         > [class*="#{$class-layout}-"],
         > [class*="#{$class-lay}"]
@@ -456,13 +466,6 @@ body
       [class*="#{$class-lay}-"]
         width: 100%
         display: block
-
-    .gs-block-xs
-      display: flex
-      flex-wrap: wrap
-      [class*="#{$class-layout}-"],
-      [class*="#{$class-lay}-"]
-        width: 100%
 
     @for $i from 1 through 12
       .#{$class-order}-xs-#{$i}

@@ -9,7 +9,7 @@
 </head>
 <body>
   <h1 class="align-center">Grid System</h1>
-  <!-- Start first layout -->
+  <!-- Start layout -->
   <h6>Default behavior</h6>
   <div class="gs-wrap primary-bgc">
     <header class="gs gutters" hagrid-debug debug-empty>
@@ -34,9 +34,9 @@
       <div class="lay-25"><p class="before">Footer 4</p></div>
     </footer>
   </div>
-  <!-- End first layout -->
+  <!-- End layout -->
   
-  <!-- Start first layout -->
+  <!-- Start layout -->
   <h6>Keep Layout</h6>
   <div class="gs-wrap secondary-bgc">
     <header class="gs gutters sticky-sides keep-lay keep-gutters" hagrid-debug debug-empty>
@@ -61,9 +61,9 @@
       <div class="lay-25"><p class="before">Footer 4</p></div>
     </footer>
   </div>
-  <!-- End first layout -->
+  <!-- End layout -->
   
-  <!-- Start first layout -->
+  <!-- Start layout -->
   <h6>Transform Layout</h6>
   <div class="info-bgc">
     <header class="gs gutters keep-lay keep-gutters" hagrid-debug debug-empty>
@@ -88,9 +88,9 @@
       <div class="lay-25 lay-xs-30"><p class="before">Footer 4</p></div>
     </footer>
   </div>
-  <!-- End first layout -->
+  <!-- End layout -->
 
-  <!-- Start first layout -->
+  <!-- Start layout -->
   <h6>Order Layout</h6>
   <div class="warning-bgc">
     <header class="gs gutters keep-lay keep-gutters" hagrid-debug debug-empty>
@@ -115,9 +115,9 @@
       <div class="lay-25 order-xs-1 order-sm-2"><p class="before">Footer 4</p></div>
     </footer>
   </div>
-  <!-- End first layout -->
+  <!-- End layout -->
 
-  <!-- Start first layout -->
+  <!-- Start layout -->
   <h6>Hide Layout</h6>
   <div class="error-bgc">
     <header class="gs gutters keep-lay keep-gutters" hagrid-debug debug-empty>
@@ -141,7 +141,43 @@
       <div class="lay lay-lg-60"><p class="before">Footer 3</p></div>
     </footer>
   </div>
-  <!-- End first layout -->
+  <!-- End layout -->
+
+  <!-- Start layout -->
+  <h6>Nested Layout</h6>
+  <div class="inverse-bgc">
+    <header class="gs gutters keep-lay keep-gutters" hagrid-debug debug-empty>
+      <div class="lay-70"><p class="before">Logo</p></div>
+      <div class="lay-30"><p class="before">Menu</p></div>
+    </header>
+    <section class="gs gutters keep-lay keep-gutters" hagrid-debug debug-empty>
+      <div class="layout-100"><p class="before">Hero Banner</p></div>
+    </section>
+    <section class="gs gutters gs-block-sm keep-gutters" hagrid-debug debug-empty>
+        <aside class="lay-30 ">
+          <p class="before">Sidebar</p>
+        </aside>
+        <main class="lay-70 gs gutters gs-block-sm gs-block-md keep-gutters">
+          <div class="lay-40">
+            <p class="before">Main 1</p>
+          </div>
+          <div class="lay-60 gs gutters gutters-sides sticky-sides">
+            <div class="lay-50">
+              <p class="before">Main 1.1</p>
+            </div>
+            <div class="lay-50 hide-xs">
+            <p class="before">Main 1.2</p>
+          </div>
+          </div>
+        </main>
+    </section>
+    <footer class="gs gutters keep-lay keep-gutters" hagrid-debug debug-empty>
+      <div class="lay lay-lg-20"><p class="before">Footer 1</p></div>
+      <div class="lay lay-lg-20"><p class="before">Footer 2</p></div>
+      <div class="lay lay-lg-60"><p class="before">Footer 3</p></div>
+    </footer>
+  </div>
+  <!-- End layout -->
 
   
 </body>

@@ -2087,6 +2087,11 @@ div {
   body .gs-block-lg [class*="lay-"] {
     width: 100%;
   }
+  body .gs-block-lg.sticky-sides [class*="layout-"],
+  body .gs-block-lg.sticky-sides [class*="lay-"] {
+    margin-left: 0;
+    margin-right: 0;
+  }
   body .order-lg-1 {
     order: 1;
   }
@@ -2174,6 +2179,11 @@ div {
   body .gs-block-md [class*="layout-"],
   body .gs-block-md [class*="lay-"] {
     width: 100%;
+  }
+  body .gs-block-md.sticky-sides [class*="layout-"],
+  body .gs-block-md.sticky-sides [class*="lay-"] {
+    margin-left: 0;
+    margin-right: 0;
   }
   body .order-md-1 {
     order: 1;
@@ -2263,6 +2273,11 @@ div {
   body .gs-block-sm [class*="lay-"] {
     width: 100%;
   }
+  body .gs-block-sm.sticky-sides [class*="layout-"],
+  body .gs-block-sm.sticky-sides [class*="lay-"] {
+    margin-left: 0;
+    margin-right: 0;
+  }
   body .order-sm-1 {
     order: 1;
   }
@@ -2327,23 +2342,19 @@ div {
   }
 }
 @media screen and (max-width: 460px) {
+  body .gs:not(.keep-lay):not(.keep-order),
+  body .grid-system:not(.keep-lay):not(.keep-order),
+  body .gs-block-xs {
+    display: flex;
+    flex-wrap: wrap;
+  }
   body .gs:not(.keep-lay):not(.keep-order) > [class*="layout-"],
   body .gs:not(.keep-lay):not(.keep-order) > [class*="lay"],
   body .grid-system:not(.keep-lay):not(.keep-order) > [class*="layout-"],
-  body .grid-system:not(.keep-lay):not(.keep-order) > [class*="lay"] {
-    width: auto;
-    display: block;
-  }
-  body .gs:not(.keep-lay):not(.keep-order),
-  body .grid-system:not(.keep-lay):not(.keep-order) {
-    display: block;
-  }
-  body .gs:not(.keep-lay):not(.keep-order).gs-force > [class*="layout-"],
-  body .gs:not(.keep-lay):not(.keep-order).gs-force > [class*="lay"],
-  body .grid-system:not(.keep-lay):not(.keep-order).gs-force > [class*="layout-"],
-  body .grid-system:not(.keep-lay):not(.keep-order).gs-force > [class*="lay"] {
+  body .grid-system:not(.keep-lay):not(.keep-order) > [class*="lay"],
+  body .gs-block-xs > [class*="layout-"],
+  body .gs-block-xs > [class*="lay"] {
     width: 100%;
-    display: block;
   }
   body .gs:not(.keep-gutters) > [class*="layout-"],
   body .gs:not(.keep-gutters) > [class*="lay"],
@@ -2384,14 +2395,6 @@ div {
   body .gs-block_full-xs [class*="lay-"] {
     width: 100%;
     display: block;
-  }
-  body .gs-block-xs {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  body .gs-block-xs [class*="layout-"],
-  body .gs-block-xs [class*="lay-"] {
-    width: 100%;
   }
   body .order-xs-1 {
     order: 1;
