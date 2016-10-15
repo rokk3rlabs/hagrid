@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hagrid!</title>
+  <link rel="stylesheet" href="../dist/css/main.css">
+  <link rel="stylesheet" href="../dist/css/debug/debug.css">
+</head>
+<body>
+  <h1 class="align-center">Grid System</h1>
+  <!-- Start first layout -->
+  <h6>Default behavior</h6>
+  <div class="primary-bgc">
+    <header class="gs gutters" hagrid-debug debug-empty>
+      <div class="lay-30"><p class="before">Logo</p></div>
+      <div class="lay-70"><p class="before">Menu</p></div>
+    </header>
+    <section class="gs gutters" hagrid-debug debug-empty>
+      <div class="lay-100"><p class="before">Hero Banner</p></div>
+    </section>
+    <section class="gs gutters" hagrid-debug debug-empty>
+        <aside class="lay-30">
+            <p class="before">Sidebar</p>
+        </aside>
+        <main class="lay-70">
+            <p class="before">Main content</p>
+        </main>
+    </section>
+    <footer class="gs gutters" hagrid-debug debug-empty>
+      <div class="lay-25"><p class="before">Footer 1</p></div>
+      <div class="lay-25"><p class="before">Footer 2</p></div>
+      <div class="lay-25"><p class="before">Footer 3</p></div>
+      <div class="lay-25"><p class="before">Footer 4</p></div>
+    </footer>
+  </div>
+  <!-- End first layout -->
+  
+  <!-- Start first layout -->
+  <h6>Keep Layout</h6>
+  <div class="secondary-bgc">
+    <header class="gs gutters keep-lay keep-gutters" hagrid-debug debug-empty>
+      <div class="lay-30"><p class="before">Logo</p></div>
+      <div class="lay-70"><p class="before">Menu</p></div>
+    </header>
+    <section class="gs gutters keep-lay keep-gutters" hagrid-debug debug-empty>
+      <div class="lay-100"><p class="before">Hero Banner</p></div>
+    </section>
+    <section class="gs gutters keep-lay keep-gutters" hagrid-debug debug-empty>
+        <aside class="lay-30">
+            <p class="before">Sidebar</p>
+        </aside>
+        <main class="lay-70">
+            <p class="before">Main content</p>
+        </main>
+    </section>
+    <footer class="gs gutters keep-lay keep-gutters" hagrid-debug debug-empty>
+      <div class="lay-25"><p class="before">Footer 1</p></div>
+      <div class="lay-25"><p class="before">Footer 2</p></div>
+      <div class="lay-25"><p class="before">Footer 3</p></div>
+      <div class="lay-25"><p class="before">Footer 4</p></div>
+    </footer>
+  </div>
+  <!-- End first layout -->
+  
+  <!-- Start first layout -->
+  <h6>Transform Layout</h6>
+  <div class="info-bgc">
+    <header class="gs gutters keep-lay keep-gutters" hagrid-debug debug-empty>
+      <div class="lay-70 lay-xs-70 lay-sm-30 lay-md-80 lay-lg-10""><p class="before">Logo</p></div>
+      <div class="lay-30 lay-xs-30 lay-sm-70 lay-md-20 lay-lg-90""><p class="before">Menu</p></div>
+    </header>
+    <section class="gs gutters keep-lay keep-gutters" hagrid-debug debug-empty>
+      <div class="layout-100"><p class="before">Hero Banner</p></div>
+    </section>
+    <section class="gs gutters keep-gutters" hagrid-debug debug-empty>
+        <aside class="lay-30">
+            <p class="before">Sidebar</p>
+        </aside>
+        <main class="lay-70">
+            <p class="before">Main content</p>
+        </main>
+    </section>
+    <footer class="gs gutters keep-lay" hagrid-debug debug-empty>
+      <div class="lay-25 lay-xs-30"><p class="before">Footer 1</p></div>
+      <div class="lay-25 lay-xs-20"><p class="before">Footer 2</p></div>
+      <div class="lay-25 lay-xs-20"><p class="before">Footer 3</p></div>
+      <div class="lay-25 lay-xs-30"><p class="before">Footer 4</p></div>
+    </footer>
+  </div>
+  <!-- End first layout -->
+
+  <!-- Start first layout -->
+  <h6>Order Layout</h6>
+  <div class="warning-bgc">
+    <header class="gs gutters keep-lay keep-gutters" hagrid-debug debug-empty>
+      <div class="lay-70 order-2"><p class="before">Logo</p></div>
+      <div class="lay-30 order-1"><p class="before">Menu</p></div>
+    </header>
+    <section class="gs gutters keep-lay keep-gutters" hagrid-debug debug-empty>
+      <div class="layout-100"><p class="before">Hero Banner</p></div>
+    </section>
+    <section class="gs gutters keep-gutters" hagrid-debug debug-empty>
+        <aside class="lay-30 order-xs-2">
+            <p class="before">Sidebar</p>
+        </aside>
+        <main class="lay-70 order-xs-1">
+            <p class="before">Main content</p>
+        </main>
+    </section>
+    <footer class="gs gutters keep-lay" hagrid-debug debug-empty>
+      <div class="lay-25 lay-xs-30"><p class="before">Footer 1</p></div>
+      <div class="lay-25 lay-xs-20"><p class="before">Footer 2</p></div>
+      <div class="lay-25 lay-xs-20"><p class="before">Footer 3</p></div>
+      <div class="lay-25 lay-xs-30"><p class="before">Footer 4</p></div>
+    </footer>
+  </div>
+  <!-- End first layout -->
+
+  
+</body>
+</html>

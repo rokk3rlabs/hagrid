@@ -1,0 +1,103 @@
+/******************/
+/**** Debugger ***/
+/****************/
+
+[hagrid-debug]
+
+  [class*="cols-"],
+  [class*="grid-col-"],
+  [class*="layout-"],
+  [class*="lay-"],
+  [class*="grid-for"] .grid-box,
+  .grid-box
+    text-align: center
+    background-color: $bkcolor-cols
+    min-height: 60px
+    outline: 1px solid rgba(0, 0, 0, .09)
+    color: #fff
+    overflow: hidden
+
+    &:before,
+    .before
+      display: block
+      text-align: center
+      line-height: 60px
+      font-family: arial
+      font-weight: bold
+      font-size: 18px
+      padding: 0
+      margin: 0
+
+      @media screen and (max-width: $small-device)
+        font-size: 12px
+
+  &.grid-flex
+    background: $grey
+
+  *.col-set
+    background-color: transparent
+
+    &:before
+      display: none
+
+  /// Layout, flex, width
+  @for $i from 1 through 20
+    .#{$class-lay}-#{(1*$i/20)*100},
+    .#{$class-layout}-#{(1*$i/20)*100}
+
+      &:before
+        content: "#{(1*$i/20)*100}%"
+
+    @media screen and (min-width: $md-device)
+      .#{$class-lay}-lg-#{(1*$i/20)*100},
+      .#{$class-layout}-lg-#{(1*$i/20)*100}
+        &:before
+          content: "#{(1*$i/20)*100}%"
+
+
+    @media screen and (min-width: $sm-device) and (max-width: $md-device)
+      .#{$class-lay}-md-#{(1*$i/20)*100},
+      .#{$class-layout}-md-#{(1*$i/20)*100}
+        &:before
+          content: "#{(1*$i/20)*100}%"
+
+
+    @media screen and (min-width: $xs-device) and (max-width: $sm-device)
+      .#{$class-lay}-sm-#{(1*$i/20)*100},
+      .#{$class-layout}-sm-#{(1*$i/20)*100}
+        &:before
+          content: "#{(1*$i/20)*100}%"
+
+
+    @media screen and (max-width: $xs-device)
+      .#{$class-lay}-xs-#{(1*$i/20)*100},
+      .#{$class-layout}-xs-#{(1*$i/20)*100}
+        &:before
+          content: "#{(1*$i/20)*100}%"
+
+
+  /// Boxes
+  @for $i from 1 through 12
+    .#{$class-mod}-#{$i},
+    &.#{$class-mod}-#{$i}
+
+      .grid-box
+
+        &:before
+          content: "#{$i}"
+
+
+  // cols normal
+  @for $i from 1 through 12
+    .#{$class-cols}-#{$i}
+
+      &:before
+        content: "#{$i}"
+
+
+    $i0: $i
+
+  &[debug-empty]
+    *
+      &:before
+        content: ''
