@@ -704,4 +704,5 @@
 }
 [hagrid-debug][debug-empty] *:before {
   content: "";
+  display: none;
 }

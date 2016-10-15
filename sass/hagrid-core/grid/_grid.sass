@@ -63,9 +63,8 @@
 
 
 // FlexBox properties of Grid System
-[class*="support-flex"],
 .grid-system,
-.gs,
+.gs
   display: flex
   margin: 0
   vertical-align: top
@@ -83,7 +82,10 @@
 
   // Flex justify
   @each $i in $justify-content-list
-    &.#{$justify-content}-#{$i}
+    $count : index($justify-content-list, $i)
+    $gs-align: nth($gs-justify-content-list, $count)
+    &.#{$justify-content}-#{$i},
+    &.gs-#{$gs-align}
       justify-content: #{$i}
 
   // Flex align-items
@@ -255,13 +257,13 @@ body
     .gs-block-lg
       display: flex
       flex-wrap: wrap
-      [class*="#{$class-layout}-"],
-      [class*="#{$class-lay}-"]
+      > [class*="#{$class-layout}-"],
+      > [class*="#{$class-lay}-"]
         width: 100%
 
       &.sticky-sides
-        [class*="#{$class-layout}-"],
-        [class*="#{$class-lay}-"]
+        > [class*="#{$class-layout}-"],
+        > [class*="#{$class-lay}-"]
           margin-left: 0
           margin-right: 0
 
@@ -314,13 +316,13 @@ body
     .gs-block-md
       display: flex
       flex-wrap: wrap
-      [class*="#{$class-layout}-"],
-      [class*="#{$class-lay}-"]
+      > [class*="#{$class-layout}-"],
+      > [class*="#{$class-lay}-"]
         width: 100%
 
       &.sticky-sides
-        [class*="#{$class-layout}-"],
-        [class*="#{$class-lay}-"]
+        > [class*="#{$class-layout}-"],
+        > [class*="#{$class-lay}-"]
           margin-left: 0
           margin-right: 0
 
@@ -375,13 +377,13 @@ body
     .gs-block-sm
       display: flex
       flex-wrap: wrap
-      [class*="#{$class-layout}-"],
-      [class*="#{$class-lay}-"]
+      > [class*="#{$class-layout}-"],
+      > [class*="#{$class-lay}-"]
         width: 100%
 
       &.sticky-sides
-        [class*="#{$class-layout}-"],
-        [class*="#{$class-lay}-"]
+        > [class*="#{$class-layout}-"],
+        > [class*="#{$class-lay}-"]
           margin-left: 0
           margin-right: 0
 
@@ -455,15 +457,15 @@ body
 
     .gs-block_auto-xs
       display: block
-      [class*="#{$class-layout}-"],
-      [class*="#{$class-lay}-"]
+      > [class*="#{$class-layout}-"],
+      > [class*="#{$class-lay}-"]
         width: auto
         display: block
 
     .gs-block_full-xs
       display: block
-      [class*="#{$class-layout}-"],
-      [class*="#{$class-lay}-"]
+      > [class*="#{$class-layout}-"],
+      > [class*="#{$class-lay}-"]
         width: 100%
         display: block
 
