@@ -11,7 +11,7 @@
   <h1 class="align-center">Grid System</h1>
   <!-- Start first layout -->
   <h6>Default behavior</h6>
-  <div class="primary-bgc">
+  <div class="gs-wrap primary-bgc">
     <header class="gs gutters" hagrid-debug debug-empty>
       <div class="lay-30"><p class="before">Logo</p></div>
       <div class="lay-70"><p class="before">Menu</p></div>
@@ -38,15 +38,15 @@
   
   <!-- Start first layout -->
   <h6>Keep Layout</h6>
-  <div class="secondary-bgc">
-    <header class="gs gutters keep-lay keep-gutters" hagrid-debug debug-empty>
+  <div class="gs-wrap secondary-bgc">
+    <header class="gs gutters sticky-sides keep-lay keep-gutters" hagrid-debug debug-empty>
       <div class="lay-30"><p class="before">Logo</p></div>
       <div class="lay-70"><p class="before">Menu</p></div>
     </header>
-    <section class="gs gutters keep-lay keep-gutters" hagrid-debug debug-empty>
+    <section class="gs gutters sticky-sides keep-lay keep-gutters" hagrid-debug debug-empty>
       <div class="lay-100"><p class="before">Hero Banner</p></div>
     </section>
-    <section class="gs gutters keep-lay keep-gutters" hagrid-debug debug-empty>
+    <section class="gs gutters sticky-sides keep-lay keep-gutters" hagrid-debug debug-empty>
         <aside class="lay-30">
             <p class="before">Sidebar</p>
         </aside>
@@ -54,7 +54,7 @@
             <p class="before">Main content</p>
         </main>
     </section>
-    <footer class="gs gutters keep-lay keep-gutters" hagrid-debug debug-empty>
+    <footer class="gs gutters sticky-sides keep-lay keep-gutters" hagrid-debug debug-empty>
       <div class="lay-25"><p class="before">Footer 1</p></div>
       <div class="lay-25"><p class="before">Footer 2</p></div>
       <div class="lay-25"><p class="before">Footer 3</p></div>
@@ -109,10 +109,10 @@
         </main>
     </section>
     <footer class="gs gutters keep-lay" hagrid-debug debug-empty>
-      <div class="lay-25 lay-xs-30"><p class="before">Footer 1</p></div>
-      <div class="lay-25 lay-xs-20"><p class="before">Footer 2</p></div>
-      <div class="lay-25 lay-xs-20"><p class="before">Footer 3</p></div>
-      <div class="lay-25 lay-xs-30"><p class="before">Footer 4</p></div>
+      <div class="lay-25 order-xs-4 order-sm-3"><p class="before">Footer 1</p></div>
+      <div class="lay-25 order-xs-3 order-sm-4"><p class="before">Footer 2</p></div>
+      <div class="lay-25 order-xs-2 order-sm-1"><p class="before">Footer 3</p></div>
+      <div class="lay-25 order-xs-1 order-sm-2"><p class="before">Footer 4</p></div>
     </footer>
   </div>
   <!-- End first layout -->
