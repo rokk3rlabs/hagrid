@@ -6,6 +6,8 @@
 [hagrid-debug] [class*="layout-"],
 [hagrid-debug] [class*="lay-"],
 [hagrid-debug] [class*="grid-for"] .grid-box,
+[hagrid-debug] .layout,
+[hagrid-debug] .lay,
 [hagrid-debug] .grid-box {
   text-align: center;
   background-color: #7F90A9;
@@ -24,6 +26,10 @@
 [hagrid-debug] [class*="lay-"] .before,
 [hagrid-debug] [class*="grid-for"] .grid-box:before,
 [hagrid-debug] [class*="grid-for"] .grid-box .before,
+[hagrid-debug] .layout:before,
+[hagrid-debug] .layout .before,
+[hagrid-debug] .lay:before,
+[hagrid-debug] .lay .before,
 [hagrid-debug] .grid-box:before,
 [hagrid-debug] .grid-box .before {
   display: block;
@@ -46,6 +52,10 @@
   [hagrid-debug] [class*="lay-"] .before,
   [hagrid-debug] [class*="grid-for"] .grid-box:before,
   [hagrid-debug] [class*="grid-for"] .grid-box .before,
+  [hagrid-debug] .layout:before,
+  [hagrid-debug] .layout .before,
+  [hagrid-debug] .lay:before,
+  [hagrid-debug] .lay .before,
   [hagrid-debug] .grid-box:before,
   [hagrid-debug] .grid-box .before {
     font-size: 12px;

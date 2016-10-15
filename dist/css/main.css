@@ -1024,6 +1024,8 @@ div {
   margin: 1em;
 }
 
+.lay,
+.layout,
 [class*="lay-auto"],
 [class*="layout-auto"] {
   width: 100%;
