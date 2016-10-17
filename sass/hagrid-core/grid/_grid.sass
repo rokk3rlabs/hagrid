@@ -135,16 +135,28 @@
 
 @for $i from 1 through 3
   [gutters="#{$i}0px"]
-    > [class*="layout-"]
+    > [class*="layout-"],
+    > [class*="lay-"],
+    > .#{$class-lay},
+    > .#{$class-layout}
       margin: #{$i}0px
   [gutters="#{$i}em"]
-    > [class*="layout-"]
+    > [class*="layout-"],
+    > [class*="lay-"],
+    > .#{$class-lay},
+    > .#{$class-layout}
       margin: #{$i}em
   [gutters="#{$i}rem"]
-    > [class*="layout-"]
+    > [class*="layout-"],
+    > [class*="lay-"],
+    > .#{$class-lay},
+    > .#{$class-layout}
       margin: #{$i}rem
   [gutters="#{$i}0%"]
-    > [class*="layout-"]
+    > [class*="layout-"],
+    > [class*="lay-"],
+    > .#{$class-lay},
+    > .#{$class-layout}
       margin: #{$i}0%
 
 .gutters-x,
@@ -202,7 +214,6 @@
   .#{$class-order}-#{$i}
     order: $i
 
-
 body
   @for $i from 1 through 20
     .#{$class-layout}-#{(1*$i/20)*100},
@@ -213,7 +224,9 @@ body
     @media screen and (min-width: $md-device)
       .gutters-lg
         > [class*="#{$class-lay}-"],
-        > [class*="#{$class-layout}-"]
+        > [class*="#{$class-layout}-"],
+        > .#{$class-lay},
+        > .#{$class-layout}
           margin: 1em
 
       .#{$class-layout}-lg-#{(1*$i/20)*100},
@@ -224,7 +237,9 @@ body
     @media screen and (min-width: $sm-device) and (max-width: $md-device)
       .gutters-md
         > [class*="#{$class-lay}-"],
-        > [class*="#{$class-layout}-"]
+        > [class*="#{$class-layout}-"],
+        > .#{$class-lay},
+        > .#{$class-layout}
           margin: 1em
 
       .#{$class-layout}-md-#{(1*$i/20)*100},
@@ -235,7 +250,9 @@ body
     @media screen and (min-width: $xs-device) and (max-width: $sm-device)
       .gutters-sm
         > [class*="#{$class-lay}-"],
-        > [class*="#{$class-layout}-"]
+        > [class*="#{$class-layout}-"],
+        > .#{$class-lay},
+        > .#{$class-layout}
           margin: 1em
 
       .#{$class-layout}-sm-#{(1*$i/20)*100},
@@ -246,7 +263,9 @@ body
     @media screen and (max-width: $xs-device)
       .gutters-xs
         > [class*="#{$class-lay}-"],
-        > [class*="#{$class-layout}-"]
+        > [class*="#{$class-layout}-"],
+        > .#{$class-lay},
+        > .#{$class-layout}
           margin: 1em
 
       .#{$class-lay}-xs-#{(1*$i/20)*100},
@@ -258,28 +277,36 @@ body
   @media screen and (min-width: $md-device)
     .gs-block_auto-lg
       display: block
-      [class*="#{$class-layout}-"],
-      [class*="#{$class-lay}-"]
+      > [class*="#{$class-lay}-"],
+      > [class*="#{$class-layout}-"],
+      > .#{$class-lay},
+      > .#{$class-layout}
         width: auto
         display: block
 
     .gs-block_full-lg
       display: block
-      [class*="#{$class-layout}-"],
-      [class*="#{$class-lay}-"]
+      > [class*="#{$class-lay}-"],
+      > [class*="#{$class-layout}-"],
+      > .#{$class-lay},
+      > .#{$class-layout}
         width: 100%
         display: block
 
     .gs-block-lg
       display: flex
       flex-wrap: wrap
+      > [class*="#{$class-lay}-"],
       > [class*="#{$class-layout}-"],
-      > [class*="#{$class-lay}-"]
+      > .#{$class-lay},
+      > .#{$class-layout}
         width: 100%
 
       &.sticky-sides
+        > [class*="#{$class-lay}-"],
         > [class*="#{$class-layout}-"],
-        > [class*="#{$class-lay}-"]
+        > .#{$class-lay},
+        > .#{$class-layout}
           margin-left: 0
           margin-right: 0
 
@@ -290,7 +317,9 @@ body
     .sticky-sides-lg
 
       > [class*="#{$class-lay}-"].gs-block-sm,
-      > [class*="#{$class-layout}-"].gs-block-sm
+      > [class*="#{$class-layout}-"].gs-block-sm,
+      > .#{$class-layout}.gs-block-sm,
+      > .#{$class-layout}.gs-block-sm
         &:first-child,
         &.first-child
           margin-left: 0
@@ -317,28 +346,36 @@ body
 
     .gs-block_auto-md
       display: block
-      [class*="#{$class-layout}-"],
-      [class*="#{$class-lay}-"]
+      > [class*="#{$class-lay}-"],
+      > [class*="#{$class-layout}-"],
+      > .#{$class-lay},
+      > .#{$class-layout}
         width: auto
         display: block
 
     .gs-block_full-md
       display: block
-      [class*="#{$class-layout}-"],
-      [class*="#{$class-lay}-"]
+      > [class*="#{$class-lay}-"],
+      > [class*="#{$class-layout}-"],
+      > .#{$class-lay},
+      > .#{$class-layout}
         width: 100%
         display: block
 
     .gs-block-md
       display: flex
       flex-wrap: wrap
+      > [class*="#{$class-lay}-"],
       > [class*="#{$class-layout}-"],
-      > [class*="#{$class-lay}-"]
+      > .#{$class-lay},
+      > .#{$class-layout}
         width: 100%
 
       &.sticky-sides
+        > [class*="#{$class-lay}-"],
         > [class*="#{$class-layout}-"],
-        > [class*="#{$class-lay}-"]
+        > .#{$class-lay},
+        > .#{$class-layout}
           margin-left: 0
           margin-right: 0
 
@@ -348,8 +385,10 @@ body
 
     .sticky-sides-md
 
+      > [class*="#{$class-lay}-"],
       > [class*="#{$class-layout}-"],
-      > [class*="#{$class-lay}-"]
+      > .#{$class-lay},
+      > .#{$class-layout}
         &:first-child,
         &.first-child
           margin-left: 0
@@ -378,28 +417,36 @@ body
 
     .gs-block_auto-sm
       display: block
-      [class*="#{$class-layout}-"],
-      [class*="#{$class-lay}-"]
+      > [class*="#{$class-lay}-"],
+      > [class*="#{$class-layout}-"]
+      > .#{$class-lay},
+      > .#{$class-layout}
         width: auto
         display: block
 
     .gs-block_full-sm
       display: block
-      [class*="#{$class-layout}-"],
-      [class*="#{$class-lay}-"]
+      > [class*="#{$class-lay}-"],
+      > [class*="#{$class-layout}-"],
+      > .#{$class-lay},
+      > .#{$class-layout}
         width: 100%
         display: block
 
     .gs-block-sm
       display: flex
       flex-wrap: wrap
+      > [class*="#{$class-lay}-"],
       > [class*="#{$class-layout}-"],
-      > [class*="#{$class-lay}-"]
+      > .#{$class-lay},
+      > .#{$class-layout}
         width: 100%
 
       &.sticky-sides
+        > [class*="#{$class-lay}-"],
         > [class*="#{$class-layout}-"],
-        > [class*="#{$class-lay}-"]
+        > .#{$class-lay},
+        > .#{$class-layout}
           margin-left: 0
           margin-right: 0
 
@@ -410,8 +457,10 @@ body
 
     .sticky-sides-sm
 
+      > [class*="#{$class-lay}-"],
       > [class*="#{$class-layout}-"],
-      > [class*="#{$class-lay}-"]
+      > .#{$class-lay},
+      > .#{$class-layout}
         &:first-child,
         &.first-child
           margin-left: 0
@@ -443,45 +492,59 @@ body
     .gs-block-xs
       display: flex
       flex-wrap: wrap
+      > [class*="#{$class-lay}-"],
       > [class*="#{$class-layout}-"],
-      > [class*="#{$class-lay}"]
+      > .#{$class-lay},
+      > .#{$class-layout}
         width: 100%
 
     .gs:not(.keep-gutters),
     .grid-system:not(.keep-gutters)
+      > [class*="#{$class-lay}-"],
       > [class*="#{$class-layout}-"],
-      > [class*="#{$class-lay}"]
+      > .#{$class-lay},
+      > .#{$class-layout}
         margin: 0
 
       &.gs-auto
+        > [class*="#{$class-lay}-"],
         > [class*="#{$class-layout}-"],
-        > [class*="#{$class-lay}"]
+        > .#{$class-lay},
+        > .#{$class-layout}
           margin: 0
 
     .keep-gutters:not(.keep-lay)
       &.sticky-sides:not(.keep-lay)
+        > [class*="#{$class-lay}-"],
         > [class*="#{$class-layout}-"],
-        > [class*="#{$class-lay}"]
+        > .#{$class-lay},
+        > .#{$class-layout}
           margin-left: 0
           margin-right: 0
 
     .keep-order
       flex-wrap: wrap
+      > [class*="#{$class-lay}-"],
       > [class*="#{$class-layout}-"],
-      > [class*="#{$class-lay}"]
+      > .#{$class-lay},
+      > .#{$class-layout}
         width: 100%
 
     .gs-block_auto-xs
       display: block
+      > [class*="#{$class-lay}-"],
       > [class*="#{$class-layout}-"],
-      > [class*="#{$class-lay}-"]
+      > .#{$class-lay},
+      > .#{$class-layout}
         width: auto
         display: block
 
     .gs-block_full-xs
       display: block
+      > [class*="#{$class-lay}-"],
       > [class*="#{$class-layout}-"],
-      > [class*="#{$class-lay}-"]
+      > .#{$class-lay},
+      > .#{$class-layout}
         width: 100%
         display: block
 
@@ -491,8 +554,10 @@ body
 
     .sticky-sides-xs
 
+      > [class*="#{$class-lay}-"],
       > [class*="#{$class-layout}-"],
-      > [class*="#{$class-lay}"]
+      > .#{$class-lay},
+      > .#{$class-layout}
         &:first-child,
         &.first-child
           margin-left: 0
