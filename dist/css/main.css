@@ -995,7 +995,9 @@ div {
 }
 
 .gutters > [class*="lay-"],
-.gutters > [class*="layout-"] {
+.gutters > [class*="layout-"],
+.gutters > .lay,
+.gutters > .layout {
   margin: 1em;
 }
 
@@ -1008,12 +1010,20 @@ div {
 
 .sticky-sides > [class*="lay-"]:first-child, .sticky-sides > [class*="lay-"].first-child,
 .sticky-sides > [class*="layout-"]:first-child,
-.sticky-sides > [class*="layout-"].first-child {
+.sticky-sides > [class*="layout-"].first-child,
+.sticky-sides > .lay:first-child,
+.sticky-sides > .lay.first-child,
+.sticky-sides > .layout:first-child,
+.sticky-sides > .layout.first-child {
   margin-left: 0;
 }
 .sticky-sides > [class*="lay-"]:last-child, .sticky-sides > [class*="lay-"].last-child,
 .sticky-sides > [class*="layout-"]:last-child,
-.sticky-sides > [class*="layout-"].last-child {
+.sticky-sides > [class*="layout-"].last-child,
+.sticky-sides > .lay:last-child,
+.sticky-sides > .lay.last-child,
+.sticky-sides > .layout:last-child,
+.sticky-sides > .layout.last-child {
   margin-right: 0;
 }
 
@@ -1067,43 +1077,59 @@ div {
 
 .gutters-x > [class*="lay-"],
 .gutters-x > [class*="layout-"],
+.gutters-x > .lay,
+.gutters-x > .layout,
 .gutters-sides > [class*="lay-"],
-.gutters-sides > [class*="layout-"] {
+.gutters-sides > [class*="layout-"],
+.gutters-sides > .lay,
+.gutters-sides > .layout {
   margin-top: 0;
   margin-bottom: 0;
 }
 
 .gutters-y > [class*="lay-"],
 .gutters-y > [class*="layout-"],
+.gutters-y > .lay,
+.gutters-y > .layout,
 .gutters-top-bottom > [class*="lay-"],
-.gutters-top-bottom > [class*="layout-"] {
+.gutters-top-bottom > [class*="layout-"],
+.gutters-top-bottom > .lay,
+.gutters-top-bottom > .layout {
   margin-right: 0;
   margin-left: 0;
 }
 
 .gutters-right > [class*="lay-"],
-.gutters-right > [class*="layout-"] {
+.gutters-right > [class*="layout-"],
+.gutters-right > .lay,
+.gutters-right > .layout {
   margin-top: 0;
   margin-bottom: 0;
   margin-left: 0;
 }
 
 .gutters-left > [class*="lay-"],
-.gutters-left > [class*="layout-"] {
+.gutters-left > [class*="layout-"],
+.gutters-left > .lay,
+.gutters-left > .layout {
   margin-top: 0;
   margin-bottom: 0;
   margin-right: 0;
 }
 
 .gutters-top > [class*="lay-"],
-.gutters-top > [class*="layout-"] {
+.gutters-top > [class*="layout-"],
+.gutters-top > .lay,
+.gutters-top > .layout {
   margin-bottom: 0;
   margin-right: 0;
   margin-left: 0;
 }
 
 .gutters-bottom > [class*="lay-"],
-.gutters-bottom > [class*="layout-"] {
+.gutters-bottom > [class*="layout-"],
+.gutters-bottom > .lay,
+.gutters-bottom > .layout {
   margin-top: 0;
   margin-right: 0;
   margin-left: 0;

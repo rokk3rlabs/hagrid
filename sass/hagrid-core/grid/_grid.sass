@@ -105,7 +105,9 @@
 
 .gutters
   > [class*="#{$class-lay}-"],
-  > [class*="#{$class-layout}-"]
+  > [class*="#{$class-layout}-"],
+  > .#{$class-lay},
+  > .#{$class-layout}
     margin: 1em
 
 // layout Auto
@@ -120,6 +122,8 @@
 
   > [class*="#{$class-lay}-"],
   > [class*="#{$class-layout}-"],
+  > .#{$class-lay},
+  > .#{$class-layout}
     &:first-child,
     &.first-child
       margin-left: 0
@@ -147,35 +151,47 @@
 .gutters-sides
   > [class*="#{$class-lay}-"],
   > [class*="#{$class-layout}-"],
+  > .#{$class-lay},
+  > .#{$class-layout}
     margin-top: 0
     margin-bottom: 0
 .gutters-y,
 .gutters-top-bottom
   > [class*="#{$class-lay}-"],
-  > [class*="#{$class-layout}-"]
+  > [class*="#{$class-layout}-"],
+  > .#{$class-lay},
+  > .#{$class-layout}
     margin-right: 0
     margin-left: 0
 .gutters-right
   > [class*="#{$class-lay}-"],
-  > [class*="#{$class-layout}-"]
+  > [class*="#{$class-layout}-"],
+  > .#{$class-lay},
+  > .#{$class-layout}
     margin-top: 0
     margin-bottom: 0
     margin-left: 0
 .gutters-left
   > [class*="#{$class-lay}-"],
-  > [class*="#{$class-layout}-"]
+  > [class*="#{$class-layout}-"],
+  > .#{$class-lay},
+  > .#{$class-layout}
     margin-top: 0
     margin-bottom: 0
     margin-right: 0
 .gutters-top
   > [class*="#{$class-lay}-"],
-  > [class*="#{$class-layout}-"]
+  > [class*="#{$class-layout}-"],
+  > .#{$class-lay},
+  > .#{$class-layout}
     margin-bottom: 0
     margin-right: 0
     margin-left: 0
 .gutters-bottom
   > [class*="#{$class-lay}-"],
-  > [class*="#{$class-layout}-"]
+  > [class*="#{$class-layout}-"],
+  > .#{$class-lay},
+  > .#{$class-layout}
     margin-top: 0
     margin-right: 0
     margin-left: 0
