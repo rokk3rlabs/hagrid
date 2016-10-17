@@ -85,6 +85,38 @@
   display: block
   margin: auto
 
+// Texts
+
+.td-none
+  text-decoration: none
+
+.underline,
+.td-underline,
+  text-decoration: underline
+
+.uppercase,
+.tt-uppercase
+  text-transform: uppercase
+
+.lowercase,
+.tt-lowercase
+  text-transform: lowercase
+
+.capitalize,
+.tt-capitalize
+  text-transform: capitalize
+
+.normal-text,
+.tt-normal
+  text-transform: normal
+
+
+// Lists
+
+.reset-list
+  padding: 0
+  margin: 0
+  list-style: none
 
 @each $base-measurement in $base-measurements
   $key: nth($base-measurement, 1)

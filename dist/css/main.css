@@ -7541,6 +7541,41 @@ table.table.table-lg th {
   margin: auto;
 }
 
+.td-none {
+  text-decoration: none;
+}
+
+.underline,
+.td-underline {
+  text-decoration: underline;
+}
+
+.uppercase,
+.tt-uppercase {
+  text-transform: uppercase;
+}
+
+.lowercase,
+.tt-lowercase {
+  text-transform: lowercase;
+}
+
+.capitalize,
+.tt-capitalize {
+  text-transform: capitalize;
+}
+
+.normal-text,
+.tt-normal {
+  text-transform: normal;
+}
+
+.reset-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
 .m-10 {
   margin: 10px;
 }
