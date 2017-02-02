@@ -7181,20 +7181,65 @@ h6,
   border: solid 1px #2D6CC9;
 }
 
-.list-items {
+ul.list {
   padding: 0;
   margin: 0;
 }
-.list-items li {
+ul.list li {
   display: block;
+  padding: 0.7em 1em;
+  margin-bottom: 0.7em;
 }
-.list-items li a {
+ul.list li a {
   display: block;
-  padding: 0.5em;
   border-bottom: 1px solid #F2F2F2;
+  color: inherit;
+  text-decoration: none;
 }
-.list-items li:last-child a {
+ul.list li:last-child a {
   border-bottom: none;
+}
+ul.list.list-primary li {
+  border-left: 3px solid #2D6CC9;
+}
+ul.list.list-secondary li {
+  border-left: 3px solid #31C290;
+}
+ul.list.list-error li {
+  border-left: 3px solid #C53030;
+}
+
+ul.list-group {
+  border: 1px solid #f8f8f8;
+  border-radius: 3px;
+}
+ul.list-group li {
+  border-bottom: 1px solid #f8f8f8;
+  margin-bottom: 0;
+}
+ul.list-group li:first-child, ul.list-group li.first-child {
+  border-top: 0;
+}
+ul.list-group li:last-child, ul.list-group li.last-child {
+  border-bottom: 0;
+}
+ul.list-group.list-primary {
+  border: 1px solid #2D6CC9;
+  border-radius: 3px;
+}
+ul.list-group.list-primary li {
+  border-bottom: 1px solid #2D6CC9;
+  margin-bottom: 0;
+}
+ul.list-group.list-primary li:first-child, ul.list-group.list-primary li.first-child {
+  border-top: 0;
+}
+ul.list-group.list-primary li:last-child, ul.list-group.list-primary li.last-child {
+  border-bottom: 0;
+}
+ul.list-group.list-primary li a:hover {
+  background-color: #2D6CC9;
+  color: white;
 }
 
 .badge {

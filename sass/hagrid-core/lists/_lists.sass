@@ -1,14 +1,68 @@
-.list-items
+ul.list
   padding: 0
   margin: 0
   li
     display: block
+    padding: .7em 1em
+    margin-bottom: .7em
 
     a
       display: block
-      padding: .5em
       border-bottom: 1px solid #F2F2F2
+      color: inherit
+      text-decoration: none
 
     &:last-child
       a
         border-bottom: none
+
+  &.list-primary
+    li
+      border-left: 3px solid $color-primary
+  &.list-secondary
+    li
+      border-left: 3px solid $color-secondary
+  &.list-error
+    li
+      border-left: 3px solid $color-error
+
+
+ul.list-group
+  border: 1px solid $color-default
+  border-radius: 3px
+
+  li
+    border-bottom: 1px solid $color-default
+    margin-bottom: 0
+
+    &:first-child,
+    &.first-child
+      border-top: 0
+
+    &:last-child,
+    &.last-child
+      border-bottom: 0
+
+  &.list-primary
+    border: 1px solid $color-primary
+    border-radius: 3px
+
+    li
+      border-bottom: 1px solid $color-primary
+      margin-bottom: 0
+
+      &:first-child,
+      &.first-child
+        border-top: 0
+
+      &:last-child,
+      &.last-child
+        border-bottom: 0
+      
+      a
+        &:hover
+          background-color: $color-primary
+          color: white
+
+
+
