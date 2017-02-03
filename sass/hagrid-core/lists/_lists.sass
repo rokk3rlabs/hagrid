@@ -107,16 +107,25 @@ ul
   &.list-arrow
     list-style: none
     li
-      padding: 0 0 0 20px
+      padding: .3em 1em
       position: relative
 
       &:before
+        content: "\203A"
         position: absolute
         left: 0
-        content: "\203A"
-        width: .5em
-        height: .5em
-        top: .25em
+        top: 0
+        font-size: 1.5em
+        line-height: 1em
+
+    // Colors
+    @each $base-color in $base-colors
+      $key: nth($base-color, 1)
+      $value: nth($base-color, 2)
+      &.list-#{$key}
+        li
+          &:before
+            color: #{$value}
 
   &.list-check
     list-style: none
@@ -192,9 +201,9 @@ ul
       position: relative
 
       &:before
+        content: ""
         position: absolute
         left: 0
-        content: ''
         width: .5em
         height: .5em
         top: .25em

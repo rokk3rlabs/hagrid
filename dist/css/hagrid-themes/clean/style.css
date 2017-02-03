@@ -7585,16 +7585,37 @@ ul.list-arrow {
   list-style: none;
 }
 ul.list-arrow li {
-  padding: 0 0 0 20px;
+  padding: 0.3em 1em;
   position: relative;
 }
 ul.list-arrow li:before {
+  content: "›";
   position: absolute;
   left: 0;
-  content: "›";
-  width: 0.5em;
-  height: 0.5em;
-  top: 0.25em;
+  top: 0;
+  font-size: 1.5em;
+  line-height: 1em;
+}
+ul.list-arrow.list-default li:before {
+  color: #f2f2f3;
+}
+ul.list-arrow.list-inverse li:before {
+  color: #5e616f;
+}
+ul.list-arrow.list-primary li:before {
+  color: #3F51B5;
+}
+ul.list-arrow.list-secondary li:before {
+  color: #00BCD4;
+}
+ul.list-arrow.list-info li:before {
+  color: #005e6a;
+}
+ul.list-arrow.list-warning li:before {
+  color: #E68523;
+}
+ul.list-arrow.list-error li:before {
+  color: #ec407a;
 }
 ul.list-check {
   list-style: none;
@@ -7711,9 +7732,9 @@ ul.list-cube li {
   position: relative;
 }
 ul.list-cube li:before {
+  content: "";
   position: absolute;
   left: 0;
-  content: "";
   width: 0.5em;
   height: 0.5em;
   top: 0.25em;
