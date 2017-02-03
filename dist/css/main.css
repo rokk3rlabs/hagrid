@@ -7434,16 +7434,37 @@ ul.list-check {
   list-style: none;
 }
 ul.list-check li {
-  padding: 0 0 0 20px;
+  padding: 0.3em 1em;
   position: relative;
 }
 ul.list-check li:before {
+  content: "✓";
   position: absolute;
   left: 0;
-  content: "✓";
-  width: 0.5em;
-  height: 0.5em;
-  top: 0.25em;
+  top: 0.4em;
+  font-size: 1em;
+  line-height: 1em;
+}
+ul.list-check.list-default li:before {
+  color: #f8f8f8;
+}
+ul.list-check.list-inverse li:before {
+  color: #3C3C3C;
+}
+ul.list-check.list-primary li:before {
+  color: #2D6CC9;
+}
+ul.list-check.list-secondary li:before {
+  color: #31C290;
+}
+ul.list-check.list-info li:before {
+  color: #00BCD4;
+}
+ul.list-check.list-warning li:before {
+  color: #E68523;
+}
+ul.list-check.list-error li:before {
+  color: #C53030;
 }
 ul.list-dot, ul.list-disc {
   list-style: none;
