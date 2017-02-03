@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Import Normalize */
 /*! normalize.css v3.0.0 | MIT License | git.io/normalize */
 /*! normalize.css v3.0.0 | HTML5 Display Definitions | MIT License | git.io/normalize */
@@ -7181,14 +7182,17 @@ h6,
   border: solid 1px #2D6CC9;
 }
 
+ul {
+  display: inline-block;
+  *display: inline;
+}
 ul.list {
-  padding: 0;
+  padding: 1em 0.7em;
   margin: 0;
 }
 ul.list li {
   display: block;
   padding: 0.7em 1em;
-  margin-bottom: 0.7em;
 }
 ul.list li a {
   display: block;
@@ -7196,22 +7200,10 @@ ul.list li a {
   color: inherit;
   text-decoration: none;
 }
-ul.list li:last-child a {
-  border-bottom: none;
-}
-ul.list.list-primary li {
-  border-left: 3px solid #2D6CC9;
-}
-ul.list.list-secondary li {
-  border-left: 3px solid #31C290;
-}
-ul.list.list-error li {
-  border-left: 3px solid #C53030;
-}
-
 ul.list-group {
   border: 1px solid #f8f8f8;
   border-radius: 3px;
+  padding: 0;
 }
 ul.list-group li {
   border-bottom: 1px solid #f8f8f8;
@@ -7223,6 +7215,44 @@ ul.list-group li:first-child, ul.list-group li.first-child {
 ul.list-group li:last-child, ul.list-group li.last-child {
   border-bottom: 0;
 }
+ul.list-group.list-default {
+  border: 1px solid #f8f8f8;
+  border-radius: 3px;
+}
+ul.list-group.list-default li {
+  border-bottom: 1px solid #f8f8f8;
+  margin-bottom: 0;
+  color: #f8f8f8;
+}
+ul.list-group.list-default li:first-child, ul.list-group.list-default li.first-child {
+  border-top: 0;
+}
+ul.list-group.list-default li:last-child, ul.list-group.list-default li.last-child {
+  border-bottom: 0;
+}
+ul.list-group.list-default li a:hover {
+  background-color: #f8f8f8;
+  color: white;
+}
+ul.list-group.list-inverse {
+  border: 1px solid #3C3C3C;
+  border-radius: 3px;
+}
+ul.list-group.list-inverse li {
+  border-bottom: 1px solid #3C3C3C;
+  margin-bottom: 0;
+  color: #3C3C3C;
+}
+ul.list-group.list-inverse li:first-child, ul.list-group.list-inverse li.first-child {
+  border-top: 0;
+}
+ul.list-group.list-inverse li:last-child, ul.list-group.list-inverse li.last-child {
+  border-bottom: 0;
+}
+ul.list-group.list-inverse li a:hover {
+  background-color: #3C3C3C;
+  color: white;
+}
 ul.list-group.list-primary {
   border: 1px solid #2D6CC9;
   border-radius: 3px;
@@ -7230,6 +7260,7 @@ ul.list-group.list-primary {
 ul.list-group.list-primary li {
   border-bottom: 1px solid #2D6CC9;
   margin-bottom: 0;
+  color: #2D6CC9;
 }
 ul.list-group.list-primary li:first-child, ul.list-group.list-primary li.first-child {
   border-top: 0;
@@ -7240,6 +7271,334 @@ ul.list-group.list-primary li:last-child, ul.list-group.list-primary li.last-chi
 ul.list-group.list-primary li a:hover {
   background-color: #2D6CC9;
   color: white;
+}
+ul.list-group.list-secondary {
+  border: 1px solid #31C290;
+  border-radius: 3px;
+}
+ul.list-group.list-secondary li {
+  border-bottom: 1px solid #31C290;
+  margin-bottom: 0;
+  color: #31C290;
+}
+ul.list-group.list-secondary li:first-child, ul.list-group.list-secondary li.first-child {
+  border-top: 0;
+}
+ul.list-group.list-secondary li:last-child, ul.list-group.list-secondary li.last-child {
+  border-bottom: 0;
+}
+ul.list-group.list-secondary li a:hover {
+  background-color: #31C290;
+  color: white;
+}
+ul.list-group.list-info {
+  border: 1px solid #00BCD4;
+  border-radius: 3px;
+}
+ul.list-group.list-info li {
+  border-bottom: 1px solid #00BCD4;
+  margin-bottom: 0;
+  color: #00BCD4;
+}
+ul.list-group.list-info li:first-child, ul.list-group.list-info li.first-child {
+  border-top: 0;
+}
+ul.list-group.list-info li:last-child, ul.list-group.list-info li.last-child {
+  border-bottom: 0;
+}
+ul.list-group.list-info li a:hover {
+  background-color: #00BCD4;
+  color: white;
+}
+ul.list-group.list-warning {
+  border: 1px solid #E68523;
+  border-radius: 3px;
+}
+ul.list-group.list-warning li {
+  border-bottom: 1px solid #E68523;
+  margin-bottom: 0;
+  color: #E68523;
+}
+ul.list-group.list-warning li:first-child, ul.list-group.list-warning li.first-child {
+  border-top: 0;
+}
+ul.list-group.list-warning li:last-child, ul.list-group.list-warning li.last-child {
+  border-bottom: 0;
+}
+ul.list-group.list-warning li a:hover {
+  background-color: #E68523;
+  color: white;
+}
+ul.list-group.list-error {
+  border: 1px solid #C53030;
+  border-radius: 3px;
+}
+ul.list-group.list-error li {
+  border-bottom: 1px solid #C53030;
+  margin-bottom: 0;
+  color: #C53030;
+}
+ul.list-group.list-error li:first-child, ul.list-group.list-error li.first-child {
+  border-top: 0;
+}
+ul.list-group.list-error li:last-child, ul.list-group.list-error li.last-child {
+  border-bottom: 0;
+}
+ul.list-group.list-error li a:hover {
+  background-color: #C53030;
+  color: white;
+}
+ul.list-border-left {
+  padding: 0.5em 0.7em;
+  margin: 0;
+}
+ul.list-border-left li {
+  display: block;
+  padding: 0.5em 1em;
+  margin-bottom: 0.7em;
+  border-left: 2px solid #3C3C3C;
+}
+ul.list-border-left li.list-default li {
+  border-left-color: #f8f8f8;
+}
+ul.list-border-left li.list-inverse li {
+  border-left-color: #3C3C3C;
+}
+ul.list-border-left li.list-primary li {
+  border-left-color: #2D6CC9;
+}
+ul.list-border-left li.list-secondary li {
+  border-left-color: #31C290;
+}
+ul.list-border-left li.list-info li {
+  border-left-color: #00BCD4;
+}
+ul.list-border-left li.list-warning li {
+  border-left-color: #E68523;
+}
+ul.list-border-left li.list-error li {
+  border-left-color: #C53030;
+}
+ul.list-divider {
+  padding: 1em 0.7em;
+}
+ul.list-divider li {
+  padding-right: 0;
+  padding-left: 0;
+  border-bottom: 1px solid #3C3C3C;
+  margin-bottom: 0;
+}
+ul.list-divider li:first-child, ul.list-divider li.first-child {
+  border-top: 0;
+}
+ul.list-divider li:last-child, ul.list-divider li.last-child {
+  border-bottom: 0;
+}
+ul.list-arrow {
+  list-style: none;
+}
+ul.list-arrow li {
+  padding: 0 0 0 20px;
+  position: relative;
+}
+ul.list-arrow li:before {
+  position: absolute;
+  left: 0;
+  content: "›";
+  width: 0.5em;
+  height: 0.5em;
+  top: 0.25em;
+}
+ul.list-check {
+  list-style: none;
+}
+ul.list-check li {
+  padding: 0 0 0 20px;
+  position: relative;
+}
+ul.list-check li:before {
+  position: absolute;
+  left: 0;
+  content: "✓";
+  width: 0.5em;
+  height: 0.5em;
+  top: 0.25em;
+}
+ul.list-dot, ul.list-disc {
+  list-style: none;
+}
+ul.list-dot li, ul.list-disc li {
+  padding: 0 0 0 20px;
+  position: relative;
+  border-left-width: 0;
+}
+ul.list-dot li:before, ul.list-disc li:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 0.5em;
+  height: 0.5em;
+  top: 0.25em;
+  border: 1px solid #3C3C3C;
+  background-color: #3C3C3C;
+  border-radius: 10px;
+}
+ul.list-dot.list-default li:before, ul.list-disc.list-default li:before {
+  border: 1px solid #f8f8f8;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+}
+ul.list-dot.list-inverse li:before, ul.list-disc.list-inverse li:before {
+  border: 1px solid #3C3C3C;
+  background-color: #3C3C3C;
+  border-radius: 10px;
+}
+ul.list-dot.list-primary li:before, ul.list-disc.list-primary li:before {
+  border: 1px solid #2D6CC9;
+  background-color: #2D6CC9;
+  border-radius: 10px;
+}
+ul.list-dot.list-secondary li:before, ul.list-disc.list-secondary li:before {
+  border: 1px solid #31C290;
+  background-color: #31C290;
+  border-radius: 10px;
+}
+ul.list-dot.list-info li:before, ul.list-disc.list-info li:before {
+  border: 1px solid #00BCD4;
+  background-color: #00BCD4;
+  border-radius: 10px;
+}
+ul.list-dot.list-warning li:before, ul.list-disc.list-warning li:before {
+  border: 1px solid #E68523;
+  background-color: #E68523;
+  border-radius: 10px;
+}
+ul.list-dot.list-error li:before, ul.list-disc.list-error li:before {
+  border: 1px solid #C53030;
+  background-color: #C53030;
+  border-radius: 10px;
+}
+ul.list-circle {
+  list-style: none;
+}
+ul.list-circle li {
+  padding: 0 0 0 20px;
+  position: relative;
+}
+ul.list-circle li:before {
+  position: absolute;
+  left: 0;
+  content: "";
+  width: 0.5em;
+  height: 0.5em;
+  top: 0.25em;
+  border: 1px solid #3C3C3C;
+  border-radius: 10px;
+}
+ul.list-circle.list-default li:before {
+  border: 1px solid #f8f8f8;
+}
+ul.list-circle.list-inverse li:before {
+  border: 1px solid #3C3C3C;
+}
+ul.list-circle.list-primary li:before {
+  border: 1px solid #2D6CC9;
+}
+ul.list-circle.list-secondary li:before {
+  border: 1px solid #31C290;
+}
+ul.list-circle.list-info li:before {
+  border: 1px solid #00BCD4;
+}
+ul.list-circle.list-warning li:before {
+  border: 1px solid #E68523;
+}
+ul.list-circle.list-error li:before {
+  border: 1px solid #C53030;
+}
+ul.list-cube {
+  list-style: none;
+}
+ul.list-cube li {
+  padding: 0 0 0 20px;
+  position: relative;
+}
+ul.list-cube li:before {
+  position: absolute;
+  left: 0;
+  content: "";
+  width: 0.5em;
+  height: 0.5em;
+  top: 0.25em;
+  background-color: #3C3C3C;
+  border: 1px solid #3C3C3C;
+  border-radius: 2px;
+}
+ul.list-cube.list-default li:before {
+  background-color: #f8f8f8;
+  border: 1px solid #f8f8f8;
+}
+ul.list-cube.list-inverse li:before {
+  background-color: #3C3C3C;
+  border: 1px solid #3C3C3C;
+}
+ul.list-cube.list-primary li:before {
+  background-color: #2D6CC9;
+  border: 1px solid #2D6CC9;
+}
+ul.list-cube.list-secondary li:before {
+  background-color: #31C290;
+  border: 1px solid #31C290;
+}
+ul.list-cube.list-info li:before {
+  background-color: #00BCD4;
+  border: 1px solid #00BCD4;
+}
+ul.list-cube.list-warning li:before {
+  background-color: #E68523;
+  border: 1px solid #E68523;
+}
+ul.list-cube.list-error li:before {
+  background-color: #C53030;
+  border: 1px solid #C53030;
+}
+ul.list-square {
+  list-style: none;
+}
+ul.list-square li {
+  padding: 0 0 0 20px;
+  position: relative;
+}
+ul.list-square li:before {
+  position: absolute;
+  left: 0;
+  content: "";
+  width: 0.5em;
+  height: 0.5em;
+  top: 0.25em;
+  border: 1px solid #3C3C3C;
+  border-radius: 2px;
+}
+ul.list-square.list-default li:before {
+  border: 1px solid #f8f8f8;
+}
+ul.list-square.list-inverse li:before {
+  border: 1px solid #3C3C3C;
+}
+ul.list-square.list-primary li:before {
+  border: 1px solid #2D6CC9;
+}
+ul.list-square.list-secondary li:before {
+  border: 1px solid #31C290;
+}
+ul.list-square.list-info li:before {
+  border: 1px solid #00BCD4;
+}
+ul.list-square.list-warning li:before {
+  border: 1px solid #E68523;
+}
+ul.list-square.list-error li:before {
+  border: 1px solid #C53030;
 }
 
 .badge {
