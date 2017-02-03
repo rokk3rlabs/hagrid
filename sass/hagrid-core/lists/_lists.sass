@@ -104,6 +104,14 @@ ul
       &.last-child
         border-bottom: 0
 
+    // Colors
+    @each $base-color in $base-colors
+      $key: nth($base-color, 1)
+      $value: nth($base-color, 2)
+      &.list-#{$key}
+        li
+          border-bottom-color: #{$value}
+
   &.list-arrow
     list-style: none
     li

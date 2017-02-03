@@ -7394,6 +7394,27 @@ ul.list-divider li:first-child, ul.list-divider li.first-child {
 ul.list-divider li:last-child, ul.list-divider li.last-child {
   border-bottom: 0;
 }
+ul.list-divider.list-default li {
+  border-bottom-color: #f8f8f8;
+}
+ul.list-divider.list-inverse li {
+  border-bottom-color: #3C3C3C;
+}
+ul.list-divider.list-primary li {
+  border-bottom-color: #2D6CC9;
+}
+ul.list-divider.list-secondary li {
+  border-bottom-color: #31C290;
+}
+ul.list-divider.list-info li {
+  border-bottom-color: #00BCD4;
+}
+ul.list-divider.list-warning li {
+  border-bottom-color: #E68523;
+}
+ul.list-divider.list-error li {
+  border-bottom-color: #C53030;
+}
 ul.list-arrow {
   list-style: none;
 }
