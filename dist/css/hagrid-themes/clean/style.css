@@ -7383,7 +7383,6 @@ ul.list li {
 }
 ul.list li a {
   display: block;
-  border-bottom: 1px solid #F2F2F2;
   color: inherit;
   text-decoration: none;
 }
