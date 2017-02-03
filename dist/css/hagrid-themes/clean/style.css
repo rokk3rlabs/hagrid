@@ -7545,25 +7545,25 @@ ul.list-border-left li {
   margin-bottom: 0.7em;
   border-left: 2px solid #5e616f;
 }
-ul.list-border-left li.list-default li {
+ul.list-border-left.list-default li {
   border-left-color: #f2f2f3;
 }
-ul.list-border-left li.list-inverse li {
+ul.list-border-left.list-inverse li {
   border-left-color: #5e616f;
 }
-ul.list-border-left li.list-primary li {
+ul.list-border-left.list-primary li {
   border-left-color: #3F51B5;
 }
-ul.list-border-left li.list-secondary li {
+ul.list-border-left.list-secondary li {
   border-left-color: #00BCD4;
 }
-ul.list-border-left li.list-info li {
+ul.list-border-left.list-info li {
   border-left-color: #005e6a;
 }
-ul.list-border-left li.list-warning li {
+ul.list-border-left.list-warning li {
   border-left-color: #E68523;
 }
-ul.list-border-left li.list-error li {
+ul.list-border-left.list-error li {
   border-left-color: #ec407a;
 }
 ul.list-divider {

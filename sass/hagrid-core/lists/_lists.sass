@@ -79,13 +79,13 @@ ul
       margin-bottom: .7em
       border-left: 2px solid $color-inverse
 
-      // Colors
-      @each $base-color in $base-colors
-        $key: nth($base-color, 1)
-        $value: nth($base-color, 2)
-        &.list-#{$key}
-          li
-            border-left-color: #{$value}
+    // Colors
+    @each $base-color in $base-colors
+      $key: nth($base-color, 1)
+      $value: nth($base-color, 2)
+      &.list-#{$key}
+        li
+          border-left-color: #{$value}
       
   &.list-divider
     padding: 1em .7em
