@@ -46,6 +46,14 @@
   input[type="radio"]
 
 .input-form
+  &.input-form-disabled
+    input
+      cursor: not-allowed
+    
+  .input-disabled,
+  input[disabled]
+    cursor: not-allowed
+
   &.input-form-outline
     input,
     button,

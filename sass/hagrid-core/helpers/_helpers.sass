@@ -73,6 +73,9 @@
   left: 0
   top: 0
 
+
+// Scroll
+
 .scroll-y
   overflow: hidden
   overflow-y: scroll!important
@@ -117,6 +120,26 @@
   padding: 0
   margin: 0
   list-style: none
+
+
+// Actions
+.unclickable-area,
+.disable-area
+  position: relative
+
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+
+.disable-area
+  cursor: not-allowed
+  &:before
+    z-index: 1
+    background: rgba(0, 0, 0, .2)
 
 @each $base-measurement in $base-measurements
   $key: nth($base-measurement, 1)

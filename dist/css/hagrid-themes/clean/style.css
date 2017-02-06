@@ -6865,6 +6865,13 @@ h6,
   appearance: none;
 }
 
+.input-form.input-form-disabled input {
+  cursor: not-allowed;
+}
+.input-form .input-disabled,
+.input-form input[disabled] {
+  cursor: not-allowed;
+}
 .input-form.input-form-outline input,
 .input-form.input-form-outline button,
 .input-form.input-form-outline select {
@@ -8227,6 +8234,28 @@ table.table.table-lg th {
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+.unclickable-area,
+.disable-area {
+  position: relative;
+}
+.unclickable-area:before,
+.disable-area:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.disable-area {
+  cursor: not-allowed;
+}
+.disable-area:before {
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .m-10 {
