@@ -2,26 +2,131 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Hagrid Input forms</title>
+  <title>Hagrid Inputs & forms</title>
   <link rel="stylesheet" href="../../dist/css/main.css">
   <link rel="stylesheet" href="../../dist/css/debug/debug.css">
 </head>
 <body>
   <div class="gs-wrap">
-    <h1 class="align-center">Input forms</h1>
-    <h3>.input-form > input</h3>
-    <div class="input-form input-form-outline">
-      <input type="text" placeholder="Normal">
-    </div>
-    <h3>.input-form > input</h3>
-    <div class="input-form input-form-outline input-form-invalid">
-      <input type="text" placeholder="Normal" class="input-invalid">
-    </div>
-    <h3>.input-form > input</h3>
-    <div class="input-form input-form-outline input-form-disabled">
-      <input type="text" placeholder="Normal" class="input-disabled" disabled="disabled">
-    </div>
+
+    <h1 class="align-center">Inputs & forms</h1>
+    
+    <section>
+      <h4>Single input</h4>
+      <p>.input.input-primary > input[type="text"]</p>
+      <div class="input input-primary">
+        <input type="text" placeholder="Normal">
+      </div>
+      <p>.input.input-secondary > input[type="text"]</p>
+      <div class="input input-secondary">
+        <input type="text" placeholder="Normal">
+      </div>
+      <p>.input.input-inverse > input[type="text"]</p>
+      <div class="input input-inverse">
+        <input type="text" placeholder="Normal">
+      </div>
+      <p>.input.input-default > input[type="text"]</p>
+      <div class="input input-default">
+        <input type="text" placeholder="Normal">
+      </div>
+      <p>.input.input-info > input[type="text"]</p>
+      <div class="input input-info">
+        <input type="text" placeholder="Normal">
+      </div>
+      <p>.input.input-warning > input[type="text"]</p>
+      <div class="input input-warning">
+        <input type="text" placeholder="Normal">
+      </div>
+      <p>.input.input-error > input[type="text"]</p>
+      <div class="input input-error">
+        <input type="text" placeholder="Normal">
+      </div>
+      
+    </section>
+
+    <section>
+      <h4>Single input form</h4>
+      <p>.input > input</p>
+      <div class="input">
+        <input type="text" placeholder="Normal">
+      </div>
+      <p>.input > input</p>
+      <div class="input input-invalid">
+        <input type="text" placeholder="Invalid" class="input-invalid">
+      </div>
+      <p>.input > input</p>
+      <div class="input input-disabled">
+        <input type="text" placeholder="Disabled" class="input-disabled" disabled="disabled">
+      </div>
+    </section>
+
+    <section>
+      <h4>Outline Input form</h4>
+      <p>.input.input-outline.input-primary > input</p>
+      <div class="input input-outline input-primary">
+        <input type="text" placeholder="Normal">
+      </div>
+      <p>.input.input-outline.input-secondary > input</p>
+      <div class="input input-outline input-secondary">
+        <input type="text" placeholder="Normal">
+      </div>
+      <p>.input.input-outline.input-inverse > input</p>
+      <div class="input input-outline input-inverse">
+        <input type="text" placeholder="Normal">
+      </div>
+      <p>.input.input-outline.input-default > input</p>
+      <div class="input input-outline input-default">
+        <input type="text" placeholder="Normal">
+      </div>
+      <p>.input.input-outline.input-warning > input</p>
+      <div class="input input-outline input-warning">
+        <input type="text" placeholder="Normal">
+      </div>
+      <p>.input.input-outline.input-error > input</p>
+      <div class="input input-outline input-error">
+        <input type="text" placeholder="Normal">
+      </div>
+    </section>
+
+    <section>
+      <h4>Filled Input form</h4>
+      <p>.input.input-filled.input-primary > input</p>
+      <div class="input input-filled input-primary">
+        <input type="text" placeholder="Normal">
+      </div>
+      <p>.input.input-filled.input-secondary > input</p>
+      <div class="input input-filled input-secondary">
+        <input type="text" placeholder="Normal">
+      </div>
+      <p>.input.input-filled.input-inverse > input</p>
+      <div class="input input-filled input-inverse">
+        <input type="text" placeholder="Normal">
+      </div>
+      <p>.input.input-filled.input-default > input</p>
+      <div class="input input-filled input-default">
+        <input type="text" placeholder="Normal">
+      </div>
+      <p>.input.input-filled.input-warning > input</p>
+      <div class="input input-filled input-warning">
+        <input type="text" placeholder="Normal">
+      </div>
+      <p>.input.input-filled.input-error > input</p>
+      <div class="input input-filled input-error">
+        <input type="text" placeholder="Normal">
+      </div>
+    </section>
 
   </div>
+
+  <!-- Styles for this page. -->
+  <style>
+    body{
+      background-color: #eee
+    }
+    section{
+      padding: 0 0 3em
+    }
+
+  </style>
 </body>
 </html>

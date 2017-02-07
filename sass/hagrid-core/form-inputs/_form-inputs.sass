@@ -1,4 +1,4 @@
-.input-default
+.input-default__
   input,
   button,
   select
@@ -45,8 +45,8 @@
 
   input[type="radio"]
 
-.input-form
-  &.input-form-disabled
+.input
+  &.input-disabled
     input
       cursor: not-allowed
     
@@ -54,39 +54,111 @@
   input[disabled]
     cursor: not-allowed
 
-  &.input-form-outline
+  &.input-block
     input,
     button,
     select
-      border: 1px solid
+      width: 100%
+
+  input,
+  button,
+  select
+    border: 1px solid
+    border-color: #dfdfe2
+    color: #5e616f
+    padding: $input-padding
+    +placeholder-color(#9ea0a9)
+    +border-box
+
+    &:focus
+      outline: none
+
+    &.input-disabled_
+      color: #dfdfe2
       border-color: #dfdfe2
-      color: #5e616f
-      padding: $input-padding
-      +placeholder-color(#9ea0a9)
-      +border-box
+      +placeholder-color(#dfdfe2)
+
+    &.input-invalid_
+      color: #ec407a
+      border-color: #ec407a
+      +placeholder-color(#ec407a)
 
 
-      &:active,
-      &:focus,
-      &.input-focus,
-      &.input-active
-        border-color: #bfc0c5
-        color: #5e616f
-        outline: none
-        +placeholder-color(#5e616f)
+  @each $base-color in $base-colors
+    $key: nth($base-color, 1)
+    $value: nth($base-color, 2)
+    &.input-#{$key}
 
-      &.input-disabled
-        color: #dfdfe2
-        border-color: #dfdfe2
-        +placeholder-color(#dfdfe2)
+      input
+        &[type="text"],
+        &[type="email"],
+        &[type="password"],
+        &[type="date"],
+        &[type="number"]
+          border: none
+          box-shadow: 0 -2px 0 0px rgba(0, 0, 0, .2) inset
+          background: transparent
+          color: #333
+          transition: background-color .3s
+          box-shadow: 0 -2px 0 0px $value inset
 
-      &.input-invalid
-        color: #ec407a
-        border-color: #ec407a
-        +placeholder-color(#ec407a)
+          &:active,
+          &:focus,
+          &.input-focus,
+          &.input-active
+            color: $value
+            background: rgba(255, 255, 255, .9)
+            box-shadow: 0 -2px 0 0px darken($value,5) inset
 
 
-  &.input-form-filled
+  // Primary modifier
+  &.input-filled
+    @each $base-color in $base-colors
+      $key: nth($base-color, 1)
+      $value: nth($base-color, 2)
+      &.input-#{$key}
+        input,
+        button,
+        select
+          +placeholder-color(#fff)
+          border: 1px solid
+          border-color: darken($value, 10)
+          color: #fff
+          background-color: $value
+
+          &:active,
+          &:focus,
+          &.input-focus,
+          &.input-active
+            +placeholder-color(#fff)
+            border-color: darken($value, 20)
+            color: #fff
+            outline: none
+
+  &.input-outline
+    @each $base-color in $base-colors
+      $key: nth($base-color, 1)
+      $value: nth($base-color, 2)
+      &.input-#{$key}
+        input,
+        button,
+        select
+          +placeholder-color($value)
+          border: 1px solid
+          border-color: darken($value, 10)
+          color: $value
+          background-color: transparent
+
+          &:active,
+          &:focus,
+          &.input-focus,
+          &.input-active
+            +placeholder-color($value)
+            border-color: darken($value, 20)
+            color: $value
+            outline: none
+
+  &.input-filled_old
     input,
     button,
     select
