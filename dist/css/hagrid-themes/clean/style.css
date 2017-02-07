@@ -6802,69 +6802,6 @@ h6,
   border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
-.input-default__ input,
-.input-default__ button,
-.input-default__ select {
-  border: 0;
-  padding: 0.7em;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  box-sizing: border-box;
-}
-.input-default__ input:focus,
-.input-default__ button:focus,
-.input-default__ select:focus {
-  outline: none;
-}
-.input-default__ input[type="text"], .input-default__ input[type="number"],
-.input-default__ button[type="text"],
-.input-default__ button[type="number"],
-.input-default__ select[type="text"],
-.input-default__ select[type="number"] {
-  box-shadow: 0 -2px 0 0px rgba(0, 0, 0, 0.2) inset;
-  background: transparent;
-  color: #333;
-  transition: background-color 0.3s;
-}
-.input-default__ input[type="text"]:focus, .input-default__ input[type="number"]:focus,
-.input-default__ button[type="text"]:focus,
-.input-default__ button[type="number"]:focus,
-.input-default__ select[type="text"]:focus,
-.input-default__ select[type="number"]:focus {
-  background: rgba(255, 255, 255, 0.9);
-  box-shadow: 0 -2px 0 0px #2D6CC9 inset;
-}
-.input-default__ input.block,
-.input-default__ button.block,
-.input-default__ select.block {
-  width: 100%;
-  display: block;
-}
-.input-default__ button [class*="icon-"],
-.input-default__ [class*="btn-"] [class*="icon-"] {
-  font-size: 1.5em;
-  line-height: 0px;
-  top: -2px;
-  display: inline-block;
-  position: relative;
-  vertical-align: middle;
-}
-.input-default__ button,
-.input-default__ input[type="submit"] {
-  background-color: #fff;
-  box-shadow: 0 -2px 0 0px rgba(0, 0, 0, 0.2) inset;
-  color: #333;
-}
-.input-default__ select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  -o-appearance: none;
-  appearance: none;
-}
-
 .input.input-disabled input {
   cursor: not-allowed;
 }
@@ -6876,10 +6813,19 @@ h6,
 .input.input-block button,
 .input.input-block select {
   width: 100%;
+  display: block;
+}
+.input select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
 }
 .input input,
 .input button,
 .input select {
+  border: 0;
   border: 1px solid;
   border-color: #dfdfe2;
   color: #5e616f;
@@ -6967,6 +6913,21 @@ h6,
 .input select.input-invalid_:-ms-input-placeholder {
   color: #ec407a;
 }
+.input.input-xs input[type="text"], .input.input-xs input[type="email"], .input.input-xs input[type="password"], .input.input-xs input[type="date"], .input.input-xs input[type="number"] {
+  font-size: 0.52em;
+}
+.input.input-sm input[type="text"], .input.input-sm input[type="email"], .input.input-sm input[type="password"], .input.input-sm input[type="date"], .input.input-sm input[type="number"] {
+  font-size: 0.64em;
+}
+.input.input-df input[type="text"], .input.input-df input[type="email"], .input.input-df input[type="password"], .input.input-df input[type="date"], .input.input-df input[type="number"] {
+  font-size: 0.76em;
+}
+.input.input-md input[type="text"], .input.input-md input[type="email"], .input.input-md input[type="password"], .input.input-md input[type="date"], .input.input-md input[type="number"] {
+  font-size: 0.88em;
+}
+.input.input-lg input[type="text"], .input.input-lg input[type="email"], .input.input-lg input[type="password"], .input.input-lg input[type="date"], .input.input-lg input[type="number"] {
+  font-size: 1em;
+}
 .input.input-default input[type="text"], .input.input-default input[type="email"], .input.input-default input[type="password"], .input.input-default input[type="date"], .input.input-default input[type="number"] {
   border: none;
   box-shadow: 0 -2px 0 0px rgba(0, 0, 0, 0.2) inset;
@@ -6976,7 +6937,7 @@ h6,
   box-shadow: 0 -2px 0 0px #f2f2f3 inset;
 }
 .input.input-default input[type="text"]:active, .input.input-default input[type="text"]:focus, .input.input-default input[type="text"].input-focus, .input.input-default input[type="text"].input-active, .input.input-default input[type="email"]:active, .input.input-default input[type="email"]:focus, .input.input-default input[type="email"].input-focus, .input.input-default input[type="email"].input-active, .input.input-default input[type="password"]:active, .input.input-default input[type="password"]:focus, .input.input-default input[type="password"].input-focus, .input.input-default input[type="password"].input-active, .input.input-default input[type="date"]:active, .input.input-default input[type="date"]:focus, .input.input-default input[type="date"].input-focus, .input.input-default input[type="date"].input-active, .input.input-default input[type="number"]:active, .input.input-default input[type="number"]:focus, .input.input-default input[type="number"].input-focus, .input.input-default input[type="number"].input-active {
-  color: #f2f2f3;
+  color: #5e616f;
   background: rgba(255, 255, 255, 0.9);
   box-shadow: 0 -2px 0 0px #e5e5e7 inset;
 }
