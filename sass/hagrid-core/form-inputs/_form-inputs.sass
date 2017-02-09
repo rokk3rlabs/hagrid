@@ -31,15 +31,15 @@
     &:focus
       outline: none
 
-    &.input-disabled_
+    &.input-disabled
       color: #dfdfe2
       border-color: #dfdfe2
       +placeholder-color(#dfdfe2)
 
-    &.input-invalid_
-      color: #ec407a
-      border-color: #ec407a
-      +placeholder-color(#ec407a)
+    &.input-invalid
+      color: $color-error
+      border-color: $color-error
+      +placeholder-color($color-error)
 
   // Size Inputs
   @for $i from 1 to length($base-sizes)+1
@@ -82,31 +82,6 @@
             background: rgba(255, 255, 255, .9)
             box-shadow: 0 -2px 0 0px darken($value,5) inset
 
-
-  // Primary modifier
-  &.input-filled
-    @each $base-color in $base-colors
-      $key: nth($base-color, 1)
-      $value: nth($base-color, 2)
-      &.input-#{$key}
-        input,
-        button,
-        select
-          +placeholder-color(#fff)
-          border: 1px solid
-          border-color: darken($value, 10)
-          color: #fff
-          background-color: $value
-
-          &:active,
-          &:focus,
-          &.input-focus,
-          &.input-active
-            +placeholder-color(#fff)
-            border-color: darken($value, 20)
-            color: #fff
-            outline: none
-
   &.input-outline
     @each $base-color in $base-colors
       $key: nth($base-color, 1)
@@ -120,6 +95,11 @@
           border-color: darken($value, 10)
           color: $value
           background-color: transparent
+          box-shadow: none
+
+          @if $key == default
+            color: nth(nth($base-colors, 2), 2)
+            +placeholder-color(nth(nth($base-colors, 2), 2))
 
           &:active,
           &:focus,
@@ -130,37 +110,48 @@
             color: $value
             outline: none
 
-  &.input-filled_old
-    input,
-    button,
-    select
-      border: 1px solid
-      border-color: $color-primary
-      color: $color-primary
-      padding: $input-padding
-      background-color: #f2f2f3
-      +placeholder-color($color-primary)
-      +border-box
+            @if $key == default
+              color: nth(nth($base-colors, 2), 2)
+              +placeholder-color(nth(nth($base-colors, 2), 2))
 
 
-      &:active,
-      &:focus,
-      &.input-focus,
-      &.input-active
-        border-color: $color-primary
-        color: $color-primary
-        outline: none
-        +placeholder-color($color-primary)
 
-      &.input-disabled
-        color: #dfdfe2
-        border-color: #dfdfe2
-        +placeholder-color(#dfdfe2)
+  &.input-filled
+    @each $base-color in $base-colors
+      $key: nth($base-color, 1)
+      $value: nth($base-color, 2)
+      &.input-#{$key}
+        input,
+        button,
+        select
+          +placeholder-color(#fff)
+          border: 1px solid
+          border-color: darken($value, 10)
+          color: #fff
+          background-color: $value
+          box-shadow: none
 
-      &.input-invalid
-        color: #ec407a
-        border-color: #ec407a
-        +placeholder-color(#ec407a)
+          @if $key == default
+            color: nth(nth($base-colors, 2), 2)
+            +placeholder-color(nth(nth($base-colors, 2), 2))
+
+          &:active,
+          &:focus,
+          &.input-focus,
+          &.input-active
+            +placeholder-color(#fff)
+            border-color: darken($value, 10)
+            background-color: lighten($value, 5)
+            color: #fff
+            outline: none
+            box-shadow: none
+
+            @if $key == default
+              color: nth(nth($base-colors, 2), 2)
+              background-color: darken($value, 5)
+              +placeholder-color(nth(nth($base-colors, 2), 2))
+
+  
 
   &.input-checkbox
     .input-checkbox-icon,

@@ -10,9 +10,25 @@
   <div class="gs-wrap">
 
     <h1 class="align-center">Inputs & forms</h1>
-    
+
     <section>
       <h4>Single input</h4>
+      <p>.input > input</p>
+      <div class="input">
+        <input type="text" placeholder="Normal">
+      </div>
+      <p>.input.input-invalid > input.input-invalid</p>
+      <div class="input input-invalid">
+        <input type="text" placeholder="Invalid" class="input-invalid">
+      </div>
+      <p>.input.input-disabled > input.input-disabled</p>
+      <div class="input input-disabled">
+        <input type="text" placeholder="Disabled" class="input-disabled" disabled="disabled">
+      </div>
+    </section>
+    
+    <section>
+      <h4>Colors input</h4>
       <p>.input.input-primary > input[type="text"]</p>
       <div class="input input-primary">
         <input type="text" placeholder="Normal">
@@ -44,7 +60,7 @@
     </section>
 
     <section>
-      <h4>Single input</h4>
+      <h4>Size input</h4>
       <p>.input.input-primary.input-xs > input[type="text"]</p>
       <div class="input input-primary input-xs">
         <input type="text" placeholder="Normal">
@@ -76,23 +92,7 @@
     </section>
 
     <section>
-      <h4>Single input form</h4>
-      <p>.input > input</p>
-      <div class="input">
-        <input type="text" placeholder="Normal">
-      </div>
-      <p>.input > input</p>
-      <div class="input input-invalid">
-        <input type="text" placeholder="Invalid" class="input-invalid">
-      </div>
-      <p>.input > input</p>
-      <div class="input input-disabled">
-        <input type="text" placeholder="Disabled" class="input-disabled" disabled="disabled">
-      </div>
-    </section>
-
-    <section>
-      <h4>Outline Input form</h4>
+      <h4>Outline Input</h4>
       <p>.input.input-outline.input-primary > input</p>
       <div class="input input-outline input-primary">
         <input type="text" placeholder="Normal">
