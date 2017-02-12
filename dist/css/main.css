@@ -6615,6 +6615,397 @@ h6,
   border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
+.breadcrumb {
+  display: inline-block;
+  *display: inline;
+  overflow: hidden;
+}
+.breadcrumb a,
+.breadcrumb .breadcrumb-item {
+  display: inline-block;
+  *display: inline;
+  position: relative;
+  margin-right: 15px;
+  line-height: 100%;
+  text-decoration: none;
+  font-size: 14px;
+  background: #2D6CC9;
+  padding: 10px 15px;
+  color: #fff;
+  -webkit-transition: background 0.3s;
+  -moz-transition: background 0.3s;
+  -ms-transition: background 0.3s;
+  -o-transition: background 0.3s;
+  transition: background 0.3s;
+}
+.breadcrumb a:first-child, .breadcrumb a.first-child,
+.breadcrumb .breadcrumb-item:first-child,
+.breadcrumb .breadcrumb-item.first-child {
+  border-radius: 5px 0 0 5px;
+}
+.breadcrumb a:first-child:before, .breadcrumb a.first-child:before,
+.breadcrumb .breadcrumb-item:first-child:before,
+.breadcrumb .breadcrumb-item.first-child:before {
+  display: none;
+}
+.breadcrumb a:last-child, .breadcrumb a.last-child,
+.breadcrumb .breadcrumb-item:last-child,
+.breadcrumb .breadcrumb-item.last-child {
+  border-radius: 0 5px 5px 0;
+}
+.breadcrumb a:last-child:after, .breadcrumb a.last-child:after,
+.breadcrumb .breadcrumb-item:last-child:after,
+.breadcrumb .breadcrumb-item.last-child:after {
+  display: none;
+}
+.breadcrumb a:before, .breadcrumb a:after,
+.breadcrumb .breadcrumb-item:before,
+.breadcrumb .breadcrumb-item:after {
+  -webkit-transition: border-color 0.3s;
+  -moz-transition: border-color 0.3s;
+  -ms-transition: border-color 0.3s;
+  -o-transition: border-color 0.3s;
+  transition: border-color 0.3s;
+}
+.breadcrumb a:before,
+.breadcrumb .breadcrumb-item:before {
+  content: "";
+  position: absolute;
+  -webkit-transition: border-color 0.3s;
+  -moz-transition: border-color 0.3s;
+  -ms-transition: border-color 0.3s;
+  -o-transition: border-color 0.3s;
+  transition: border-color 0.3s;
+  z-index: 1;
+  left: -15px;
+  top: 0;
+  height: 100%;
+  width: 0;
+  background: transparent;
+  border: 16px solid #2D6CC9;
+  border-left-width: 15px;
+  border-left-color: transparent;
+  border-right-width: 0;
+}
+.breadcrumb a:after,
+.breadcrumb .breadcrumb-item:after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  right: -15px;
+  top: 0;
+  height: 100%;
+  width: 0;
+  background: transparent;
+  border: 16px solid transparent;
+  border-left-width: 15px;
+  border-left-color: #2D6CC9;
+  border-right-width: 0;
+}
+.breadcrumb a:hover,
+.breadcrumb .breadcrumb-item:hover {
+  background-color: #3c79d3;
+}
+.breadcrumb a:hover:before,
+.breadcrumb .breadcrumb-item:hover:before {
+  border-top-color: #3c79d3;
+  border-bottom-color: #3c79d3;
+}
+.breadcrumb a:hover:after,
+.breadcrumb .breadcrumb-item:hover:after {
+  border-left-color: #3c79d3;
+}
+.breadcrumb a.current,
+.breadcrumb .breadcrumb-item.current {
+  background-color: #2861b4;
+}
+.breadcrumb a.current:before,
+.breadcrumb .breadcrumb-item.current:before {
+  border-top-color: #2861b4;
+  border-bottom-color: #2861b4;
+}
+.breadcrumb a.current:after,
+.breadcrumb .breadcrumb-item.current:after {
+  border-left-color: #2861b4;
+}
+.breadcrumb.breadcrumb-default a,
+.breadcrumb.breadcrumb-default .breadcrumb-item {
+  color: #333;
+}
+.breadcrumb.breadcrumb-default a,
+.breadcrumb.breadcrumb-default .breadcrumb-item {
+  background-color: #f8f8f8;
+}
+.breadcrumb.breadcrumb-default a:before,
+.breadcrumb.breadcrumb-default .breadcrumb-item:before {
+  border-top-color: #f8f8f8;
+  border-bottom-color: #f8f8f8;
+}
+.breadcrumb.breadcrumb-default a:after,
+.breadcrumb.breadcrumb-default .breadcrumb-item:after {
+  border-left-color: #f8f8f8;
+}
+.breadcrumb.breadcrumb-default a:hover,
+.breadcrumb.breadcrumb-default .breadcrumb-item:hover {
+  background-color: white;
+}
+.breadcrumb.breadcrumb-default a:hover:before,
+.breadcrumb.breadcrumb-default .breadcrumb-item:hover:before {
+  border-top-color: white;
+  border-bottom-color: white;
+}
+.breadcrumb.breadcrumb-default a:hover:after,
+.breadcrumb.breadcrumb-default .breadcrumb-item:hover:after {
+  border-left-color: white;
+}
+.breadcrumb.breadcrumb-default a.current,
+.breadcrumb.breadcrumb-default .breadcrumb-item.current {
+  background-color: #ebebeb;
+}
+.breadcrumb.breadcrumb-default a.current:before,
+.breadcrumb.breadcrumb-default .breadcrumb-item.current:before {
+  border-top-color: #ebebeb;
+  border-bottom-color: #ebebeb;
+}
+.breadcrumb.breadcrumb-default a.current:after,
+.breadcrumb.breadcrumb-default .breadcrumb-item.current:after {
+  border-left-color: #ebebeb;
+}
+.breadcrumb.breadcrumb-inverse a,
+.breadcrumb.breadcrumb-inverse .breadcrumb-item {
+  background-color: #3C3C3C;
+}
+.breadcrumb.breadcrumb-inverse a:before,
+.breadcrumb.breadcrumb-inverse .breadcrumb-item:before {
+  border-top-color: #3C3C3C;
+  border-bottom-color: #3C3C3C;
+}
+.breadcrumb.breadcrumb-inverse a:after,
+.breadcrumb.breadcrumb-inverse .breadcrumb-item:after {
+  border-left-color: #3C3C3C;
+}
+.breadcrumb.breadcrumb-inverse a:hover,
+.breadcrumb.breadcrumb-inverse .breadcrumb-item:hover {
+  background-color: #494949;
+}
+.breadcrumb.breadcrumb-inverse a:hover:before,
+.breadcrumb.breadcrumb-inverse .breadcrumb-item:hover:before {
+  border-top-color: #494949;
+  border-bottom-color: #494949;
+}
+.breadcrumb.breadcrumb-inverse a:hover:after,
+.breadcrumb.breadcrumb-inverse .breadcrumb-item:hover:after {
+  border-left-color: #494949;
+}
+.breadcrumb.breadcrumb-inverse a.current,
+.breadcrumb.breadcrumb-inverse .breadcrumb-item.current {
+  background-color: #2f2f2f;
+}
+.breadcrumb.breadcrumb-inverse a.current:before,
+.breadcrumb.breadcrumb-inverse .breadcrumb-item.current:before {
+  border-top-color: #2f2f2f;
+  border-bottom-color: #2f2f2f;
+}
+.breadcrumb.breadcrumb-inverse a.current:after,
+.breadcrumb.breadcrumb-inverse .breadcrumb-item.current:after {
+  border-left-color: #2f2f2f;
+}
+.breadcrumb.breadcrumb-primary a,
+.breadcrumb.breadcrumb-primary .breadcrumb-item {
+  background-color: #2D6CC9;
+}
+.breadcrumb.breadcrumb-primary a:before,
+.breadcrumb.breadcrumb-primary .breadcrumb-item:before {
+  border-top-color: #2D6CC9;
+  border-bottom-color: #2D6CC9;
+}
+.breadcrumb.breadcrumb-primary a:after,
+.breadcrumb.breadcrumb-primary .breadcrumb-item:after {
+  border-left-color: #2D6CC9;
+}
+.breadcrumb.breadcrumb-primary a:hover,
+.breadcrumb.breadcrumb-primary .breadcrumb-item:hover {
+  background-color: #3c79d3;
+}
+.breadcrumb.breadcrumb-primary a:hover:before,
+.breadcrumb.breadcrumb-primary .breadcrumb-item:hover:before {
+  border-top-color: #3c79d3;
+  border-bottom-color: #3c79d3;
+}
+.breadcrumb.breadcrumb-primary a:hover:after,
+.breadcrumb.breadcrumb-primary .breadcrumb-item:hover:after {
+  border-left-color: #3c79d3;
+}
+.breadcrumb.breadcrumb-primary a.current,
+.breadcrumb.breadcrumb-primary .breadcrumb-item.current {
+  background-color: #2861b4;
+}
+.breadcrumb.breadcrumb-primary a.current:before,
+.breadcrumb.breadcrumb-primary .breadcrumb-item.current:before {
+  border-top-color: #2861b4;
+  border-bottom-color: #2861b4;
+}
+.breadcrumb.breadcrumb-primary a.current:after,
+.breadcrumb.breadcrumb-primary .breadcrumb-item.current:after {
+  border-left-color: #2861b4;
+}
+.breadcrumb.breadcrumb-secondary a,
+.breadcrumb.breadcrumb-secondary .breadcrumb-item {
+  background-color: #31C290;
+}
+.breadcrumb.breadcrumb-secondary a:before,
+.breadcrumb.breadcrumb-secondary .breadcrumb-item:before {
+  border-top-color: #31C290;
+  border-bottom-color: #31C290;
+}
+.breadcrumb.breadcrumb-secondary a:after,
+.breadcrumb.breadcrumb-secondary .breadcrumb-item:after {
+  border-left-color: #31C290;
+}
+.breadcrumb.breadcrumb-secondary a:hover,
+.breadcrumb.breadcrumb-secondary .breadcrumb-item:hover {
+  background-color: #3ece9d;
+}
+.breadcrumb.breadcrumb-secondary a:hover:before,
+.breadcrumb.breadcrumb-secondary .breadcrumb-item:hover:before {
+  border-top-color: #3ece9d;
+  border-bottom-color: #3ece9d;
+}
+.breadcrumb.breadcrumb-secondary a:hover:after,
+.breadcrumb.breadcrumb-secondary .breadcrumb-item:hover:after {
+  border-left-color: #3ece9d;
+}
+.breadcrumb.breadcrumb-secondary a.current,
+.breadcrumb.breadcrumb-secondary .breadcrumb-item.current {
+  background-color: #2cae81;
+}
+.breadcrumb.breadcrumb-secondary a.current:before,
+.breadcrumb.breadcrumb-secondary .breadcrumb-item.current:before {
+  border-top-color: #2cae81;
+  border-bottom-color: #2cae81;
+}
+.breadcrumb.breadcrumb-secondary a.current:after,
+.breadcrumb.breadcrumb-secondary .breadcrumb-item.current:after {
+  border-left-color: #2cae81;
+}
+.breadcrumb.breadcrumb-info a,
+.breadcrumb.breadcrumb-info .breadcrumb-item {
+  background-color: #00BCD4;
+}
+.breadcrumb.breadcrumb-info a:before,
+.breadcrumb.breadcrumb-info .breadcrumb-item:before {
+  border-top-color: #00BCD4;
+  border-bottom-color: #00BCD4;
+}
+.breadcrumb.breadcrumb-info a:after,
+.breadcrumb.breadcrumb-info .breadcrumb-item:after {
+  border-left-color: #00BCD4;
+}
+.breadcrumb.breadcrumb-info a:hover,
+.breadcrumb.breadcrumb-info .breadcrumb-item:hover {
+  background-color: #00d3ee;
+}
+.breadcrumb.breadcrumb-info a:hover:before,
+.breadcrumb.breadcrumb-info .breadcrumb-item:hover:before {
+  border-top-color: #00d3ee;
+  border-bottom-color: #00d3ee;
+}
+.breadcrumb.breadcrumb-info a:hover:after,
+.breadcrumb.breadcrumb-info .breadcrumb-item:hover:after {
+  border-left-color: #00d3ee;
+}
+.breadcrumb.breadcrumb-info a.current,
+.breadcrumb.breadcrumb-info .breadcrumb-item.current {
+  background-color: #00a5bb;
+}
+.breadcrumb.breadcrumb-info a.current:before,
+.breadcrumb.breadcrumb-info .breadcrumb-item.current:before {
+  border-top-color: #00a5bb;
+  border-bottom-color: #00a5bb;
+}
+.breadcrumb.breadcrumb-info a.current:after,
+.breadcrumb.breadcrumb-info .breadcrumb-item.current:after {
+  border-left-color: #00a5bb;
+}
+.breadcrumb.breadcrumb-warning a,
+.breadcrumb.breadcrumb-warning .breadcrumb-item {
+  background-color: #E68523;
+}
+.breadcrumb.breadcrumb-warning a:before,
+.breadcrumb.breadcrumb-warning .breadcrumb-item:before {
+  border-top-color: #E68523;
+  border-bottom-color: #E68523;
+}
+.breadcrumb.breadcrumb-warning a:after,
+.breadcrumb.breadcrumb-warning .breadcrumb-item:after {
+  border-left-color: #E68523;
+}
+.breadcrumb.breadcrumb-warning a:hover,
+.breadcrumb.breadcrumb-warning .breadcrumb-item:hover {
+  background-color: #e9923a;
+}
+.breadcrumb.breadcrumb-warning a:hover:before,
+.breadcrumb.breadcrumb-warning .breadcrumb-item:hover:before {
+  border-top-color: #e9923a;
+  border-bottom-color: #e9923a;
+}
+.breadcrumb.breadcrumb-warning a:hover:after,
+.breadcrumb.breadcrumb-warning .breadcrumb-item:hover:after {
+  border-left-color: #e9923a;
+}
+.breadcrumb.breadcrumb-warning a.current,
+.breadcrumb.breadcrumb-warning .breadcrumb-item.current {
+  background-color: #d77818;
+}
+.breadcrumb.breadcrumb-warning a.current:before,
+.breadcrumb.breadcrumb-warning .breadcrumb-item.current:before {
+  border-top-color: #d77818;
+  border-bottom-color: #d77818;
+}
+.breadcrumb.breadcrumb-warning a.current:after,
+.breadcrumb.breadcrumb-warning .breadcrumb-item.current:after {
+  border-left-color: #d77818;
+}
+.breadcrumb.breadcrumb-error a,
+.breadcrumb.breadcrumb-error .breadcrumb-item {
+  background-color: #C53030;
+}
+.breadcrumb.breadcrumb-error a:before,
+.breadcrumb.breadcrumb-error .breadcrumb-item:before {
+  border-top-color: #C53030;
+  border-bottom-color: #C53030;
+}
+.breadcrumb.breadcrumb-error a:after,
+.breadcrumb.breadcrumb-error .breadcrumb-item:after {
+  border-left-color: #C53030;
+}
+.breadcrumb.breadcrumb-error a:hover,
+.breadcrumb.breadcrumb-error .breadcrumb-item:hover {
+  background-color: #d03e3e;
+}
+.breadcrumb.breadcrumb-error a:hover:before,
+.breadcrumb.breadcrumb-error .breadcrumb-item:hover:before {
+  border-top-color: #d03e3e;
+  border-bottom-color: #d03e3e;
+}
+.breadcrumb.breadcrumb-error a:hover:after,
+.breadcrumb.breadcrumb-error .breadcrumb-item:hover:after {
+  border-left-color: #d03e3e;
+}
+.breadcrumb.breadcrumb-error a.current,
+.breadcrumb.breadcrumb-error .breadcrumb-item.current {
+  background-color: #b02b2b;
+}
+.breadcrumb.breadcrumb-error a.current:before,
+.breadcrumb.breadcrumb-error .breadcrumb-item.current:before {
+  border-top-color: #b02b2b;
+  border-bottom-color: #b02b2b;
+}
+.breadcrumb.breadcrumb-error a.current:after,
+.breadcrumb.breadcrumb-error .breadcrumb-item.current:after {
+  border-left-color: #b02b2b;
+}
+
 .input.input-disabled input {
   cursor: not-allowed;
 }
