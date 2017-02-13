@@ -6625,12 +6625,12 @@ h6,
   display: inline-block;
   *display: inline;
   position: relative;
-  margin-right: 15px;
+  margin-right: 1em;
   line-height: 100%;
   text-decoration: none;
   font-size: 14px;
   background: #2D6CC9;
-  padding: 10px 15px;
+  padding: 0.5em 1em;
   color: #fff;
   -webkit-transition: background 0.3s;
   -moz-transition: background 0.3s;
@@ -6677,13 +6677,13 @@ h6,
   -o-transition: border-color 0.3s;
   transition: border-color 0.3s;
   z-index: 1;
-  left: -15px;
+  left: -1em;
   top: 0;
   height: 100%;
   width: 0;
   background: transparent;
-  border: 16px solid #2D6CC9;
-  border-left-width: 15px;
+  border: 1em solid #2D6CC9;
+  border-left-width: 1em;
   border-left-color: transparent;
   border-right-width: 0;
 }
@@ -6692,13 +6692,13 @@ h6,
   content: "";
   position: absolute;
   z-index: 2;
-  right: -15px;
+  right: -1em;
   top: 0;
   height: 100%;
   width: 0;
   background: transparent;
-  border: 16px solid transparent;
-  border-left-width: 15px;
+  border: 1em solid transparent;
+  border-left-width: 1em;
   border-left-color: #2D6CC9;
   border-right-width: 0;
 }
@@ -6717,16 +6717,16 @@ h6,
 }
 .breadcrumb a.current,
 .breadcrumb .breadcrumb-item.current {
-  background-color: #2861b4;
+  background-color: #1a3f76;
 }
 .breadcrumb a.current:before,
 .breadcrumb .breadcrumb-item.current:before {
-  border-top-color: #2861b4;
-  border-bottom-color: #2861b4;
+  border-top-color: #1a3f76;
+  border-bottom-color: #1a3f76;
 }
 .breadcrumb a.current:after,
 .breadcrumb .breadcrumb-item.current:after {
-  border-left-color: #2861b4;
+  border-left-color: #1a3f76;
 }
 .breadcrumb.breadcrumb-default a,
 .breadcrumb.breadcrumb-default .breadcrumb-item {
@@ -7004,6 +7004,66 @@ h6,
 .breadcrumb.breadcrumb-error a.current:after,
 .breadcrumb.breadcrumb-error .breadcrumb-item.current:after {
   border-left-color: #b02b2b;
+}
+.breadcrumb.breadcrumb-xs a,
+.breadcrumb.breadcrumb-xs .breadcrumb-item {
+  font-size: 0.6em;
+}
+.breadcrumb.breadcrumb-xs a:before,
+.breadcrumb.breadcrumb-xs .breadcrumb-item:before {
+  left: -0.95em;
+}
+.breadcrumb.breadcrumb-xs a:after,
+.breadcrumb.breadcrumb-xs .breadcrumb-item:after {
+  right: -0.95em;
+}
+.breadcrumb.breadcrumb-sm a,
+.breadcrumb.breadcrumb-sm .breadcrumb-item {
+  font-size: 0.8em;
+}
+.breadcrumb.breadcrumb-sm a:before,
+.breadcrumb.breadcrumb-sm .breadcrumb-item:before {
+  left: -0.95em;
+}
+.breadcrumb.breadcrumb-sm a:after,
+.breadcrumb.breadcrumb-sm .breadcrumb-item:after {
+  right: -0.95em;
+}
+.breadcrumb.breadcrumb-md a,
+.breadcrumb.breadcrumb-md .breadcrumb-item {
+  font-size: 1em;
+}
+.breadcrumb.breadcrumb-md a:before,
+.breadcrumb.breadcrumb-md .breadcrumb-item:before {
+  left: -0.95em;
+}
+.breadcrumb.breadcrumb-md a:after,
+.breadcrumb.breadcrumb-md .breadcrumb-item:after {
+  right: -0.95em;
+}
+.breadcrumb.breadcrumb-lg a,
+.breadcrumb.breadcrumb-lg .breadcrumb-item {
+  font-size: 1.2em;
+}
+.breadcrumb.breadcrumb-lg a:before,
+.breadcrumb.breadcrumb-lg .breadcrumb-item:before {
+  left: -0.95em;
+}
+.breadcrumb.breadcrumb-lg a:after,
+.breadcrumb.breadcrumb-lg .breadcrumb-item:after {
+  right: -0.95em;
+}
+.breadcrumb.breadcrumb-xl a,
+.breadcrumb.breadcrumb-xl .breadcrumb-item {
+  font-size: 1.4em;
+}
+.breadcrumb.breadcrumb-xl a:before,
+.breadcrumb.breadcrumb-xl .breadcrumb-item:before {
+  left: -0.95em;
+}
+.breadcrumb.breadcrumb-xl a:after,
+.breadcrumb.breadcrumb-xl .breadcrumb-item:after {
+  right: -0.95em;
 }
 
 .input.input-disabled input {
