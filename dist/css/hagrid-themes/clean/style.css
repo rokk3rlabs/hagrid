@@ -1,11 +1,11 @@
 /*
 Error: Undefined variable: "$breadcrumb-increment-size".
-        on line 128 of /Users/gato/www/hagrid/sass/hagrid-core/breadcrumbs/_breadcrumbs.sass
+        on line 129 of /Users/gato/www/hagrid/sass/hagrid-core/breadcrumbs/_breadcrumbs.sass
         from line 13 of /Users/gato/www/hagrid/sass/hagrid-core/_core.sass
         from line 3 of /Users/gato/www/hagrid/sass/hagrid-themes/clean/style.sass
 
 Backtrace:
-/Users/gato/www/hagrid/sass/hagrid-core/breadcrumbs/_breadcrumbs.sass:128
+/Users/gato/www/hagrid/sass/hagrid-core/breadcrumbs/_breadcrumbs.sass:129
 /Users/gato/www/hagrid/sass/hagrid-core/_core.sass:13
 /Users/gato/www/hagrid/sass/hagrid-themes/clean/style.sass:3
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/tree/variable.rb:49:in `_perform'
@@ -127,4 +127,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$breadcrumb-increment-size\".\A         on line 128 of /Users/gato/www/hagrid/sass/hagrid-core/breadcrumbs/_breadcrumbs.sass\A         from line 13 of /Users/gato/www/hagrid/sass/hagrid-core/_core.sass\A         from line 3 of /Users/gato/www/hagrid/sass/hagrid-themes/clean/style.sass"; }
+  content: "Error: Undefined variable: \"$breadcrumb-increment-size\".\A         on line 129 of /Users/gato/www/hagrid/sass/hagrid-core/breadcrumbs/_breadcrumbs.sass\A         from line 13 of /Users/gato/www/hagrid/sass/hagrid-core/_core.sass\A         from line 3 of /Users/gato/www/hagrid/sass/hagrid-themes/clean/style.sass"; }
