@@ -1,0 +1,140 @@
+.breadcrumb
+  +inline-block
+  overflow: hidden
+
+  a,
+  .breadcrumb-item
+    +inline-block
+    position: relative
+    margin-right: 1em
+    line-height: 100%
+    text-decoration: none
+    font-size: 14px
+    background: $color-primary
+    //padding: 10px 15_px
+    padding: .5em 1em
+    color: #fff
+    +prefix(transition, background .3s)
+
+
+    &:first-child,
+    &.first-child
+      border-radius: 5px 0 0 5px
+      &:before
+        display: none 
+
+    &:last-child,
+    &.last-child
+      border-radius: 0 5px 5px 0
+      &:after
+        display: none 
+    
+    &:before,
+    &:after
+      +prefix(transition, border-color .3s)
+
+    &:before
+      content: ''
+      position: absolute
+      +prefix(transition, border-color .3s)
+      z-index: 1
+      left: -1em
+      top: 0
+      height: 100%
+      width: 0
+      background: transparent
+      border: 1em solid $color-primary
+      border-left-width: 1em
+      border-left-color: transparent
+      border-right-width: 0
+
+    &:after
+      content: ''
+      position: absolute
+      z-index: 2
+      right: -1em
+      top: 0
+      height: 100%
+      width: 0
+      background: transparent
+      border: 1em solid transparent
+      border-left-width: 1em
+      border-left-color: $color-primary
+      border-right-width: 0
+
+
+    &:hover
+      background-color: lighten($color-primary, 5)
+      &:before
+        border-top-color: lighten($color-primary, 5)
+        border-bottom-color: lighten($color-primary, 5)
+
+      &:after
+        border-left-color: lighten($color-primary, 5)
+
+    &.current
+      background-color: darken($color-primary, 20)
+      &:before
+        border-top-color: darken($color-primary, 20)
+        border-bottom-color: darken($color-primary, 20)
+
+      &:after
+        border-left-color: darken($color-primary, 20)
+
+  @each $base-color in $base-colors
+    $key: nth($base-color, 1)
+    $value: nth($base-color, 2)
+    &.breadcrumb-#{$key}
+      @if $key == default
+        a,
+        .breadcrumb-item
+          color: #333
+      a,
+      .breadcrumb-item
+        background-color: $value
+
+
+        &:before
+          border-top-color: $value
+          border-bottom-color: $value
+
+        &:after
+          border-left-color: $value
+
+        &:hover
+          background-color: lighten($value, 5)
+          &:before
+            border-top-color: lighten($value, 5)
+            border-bottom-color: lighten($value, 5)
+
+          &:after
+            border-left-color: lighten($value, 5)
+
+        &.current
+          background-color: darken($value, 5)
+          &:before
+            border-top-color: darken($value, 5)
+            border-bottom-color: darken($value, 5)
+
+          &:after
+            border-left-color: darken($value, 5)
+
+  // Size Buttons
+  @for $i from 1 to length($base-sizes)+1
+    $key: nth($base-sizes, $i)
+    &.breadcrumb-#{$key}
+      a,
+      .breadcrumb-item
+        font-size: .4+($breadcrumb-increment-size*$i)+$breadcrumb-measure-size
+
+        &:before
+          left: -.95em
+
+        &:after
+          right: -.95em
+
+
+
+
+
+
