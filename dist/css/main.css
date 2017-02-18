@@ -7007,7 +7007,7 @@ h6,
 }
 .breadcrumb.breadcrumb-xs a,
 .breadcrumb.breadcrumb-xs .breadcrumb-item {
-  font-size: 0.6em;
+  font-size: 0.7em;
 }
 .breadcrumb.breadcrumb-xs a:before,
 .breadcrumb.breadcrumb-xs .breadcrumb-item:before {
@@ -7019,7 +7019,7 @@ h6,
 }
 .breadcrumb.breadcrumb-sm a,
 .breadcrumb.breadcrumb-sm .breadcrumb-item {
-  font-size: 0.9em;
+  font-size: 1em;
 }
 .breadcrumb.breadcrumb-sm a:before,
 .breadcrumb.breadcrumb-sm .breadcrumb-item:before {
@@ -7031,7 +7031,7 @@ h6,
 }
 .breadcrumb.breadcrumb-md a,
 .breadcrumb.breadcrumb-md .breadcrumb-item {
-  font-size: 1.2em;
+  font-size: 1.3em;
 }
 .breadcrumb.breadcrumb-md a:before,
 .breadcrumb.breadcrumb-md .breadcrumb-item:before {
@@ -7043,7 +7043,7 @@ h6,
 }
 .breadcrumb.breadcrumb-lg a,
 .breadcrumb.breadcrumb-lg .breadcrumb-item {
-  font-size: 1.5em;
+  font-size: 1.6em;
 }
 .breadcrumb.breadcrumb-lg a:before,
 .breadcrumb.breadcrumb-lg .breadcrumb-item:before {
@@ -7055,7 +7055,7 @@ h6,
 }
 .breadcrumb.breadcrumb-xl a,
 .breadcrumb.breadcrumb-xl .breadcrumb-item {
-  font-size: 1.8em;
+  font-size: 1.9em;
 }
 .breadcrumb.breadcrumb-xl a:before,
 .breadcrumb.breadcrumb-xl .breadcrumb-item:before {
