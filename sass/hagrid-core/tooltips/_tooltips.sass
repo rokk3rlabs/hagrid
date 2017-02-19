@@ -4,6 +4,12 @@
   cursor: help
   font-weight: bold
 
+  &:hover,
+  &.hover,
+  &.tooltip-show
+    .tooltip-body
+      display: block
+    
   .tooltip-body
     +inline-block
     position: absolute
@@ -14,6 +20,7 @@
     font-family: Helvetica, Arial, sans-serif
     font-weight: 100
     color: #fff
+    //display: none
     border-radius: $border-radius
     z-index: 1
 
@@ -21,6 +28,8 @@
       content: ''
       position: absolute
       border: 10px solid transparent
+      border-top-color: $color-primary
+      border-bottom-color: $color-primary
 
   &.tooltip-top-left,
   &.tooltip-top-center,
@@ -32,7 +41,6 @@
       &:before
         bottom: -10px
         border-bottom: 0
-        border-top-color: $color-primary
 
   &.tooltip-bottom-left,
   &.tooltip-bottom-center,
@@ -44,7 +52,6 @@
       &:before
         top: -10px
         border-top: 0
-        border-bottom-color: $color-primary
 
   &.tooltip-top-left,
   &.tooltip-bottom-left
@@ -72,4 +79,17 @@
 
       &:before
         right: 10px
+
+  @each $base-color in $base-colors
+    $key: nth($base-color, 1)
+    $value: nth($base-color, 2)
+    &.tooltip-#{$key}
+      .tooltip-body
+        background: $value
+        @if $key == light
+          color: #333
+
+        &:before
+          border-top-color: $value
+          border-bottom-color: $value
 
