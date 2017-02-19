@@ -10510,3 +10510,68 @@ table.table.table-lg th {
 .progressbar.progressbar-xl {
   height: 2em;
 }
+
+.tooltip {
+  display: inline-block;
+  *display: inline;
+  position: relative;
+  cursor: help;
+  font-weight: bold;
+}
+.tooltip .tooltip-body {
+  display: inline-block;
+  *display: inline;
+  position: absolute;
+  background: #2D6CC9;
+  padding: 0.7em;
+  min-width: 200px;
+  font-size: 13px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  color: #fff;
+  border-radius: 4px;
+  z-index: 1;
+}
+.tooltip .tooltip-body:before {
+  content: "";
+  position: absolute;
+  border: 10px solid transparent;
+}
+.tooltip.tooltip-top-left .tooltip-body, .tooltip.tooltip-top-center .tooltip-body, .tooltip.tooltip-top-right .tooltip-body {
+  margin-bottom: 10px;
+  bottom: 100%;
+}
+.tooltip.tooltip-top-left .tooltip-body:before, .tooltip.tooltip-top-center .tooltip-body:before, .tooltip.tooltip-top-right .tooltip-body:before {
+  bottom: -10px;
+  border-bottom: 0;
+  border-top-color: #2D6CC9;
+}
+.tooltip.tooltip-bottom-left .tooltip-body, .tooltip.tooltip-bottom-center .tooltip-body, .tooltip.tooltip-bottom-right .tooltip-body {
+  top: 100%;
+  margin-top: 10px;
+}
+.tooltip.tooltip-bottom-left .tooltip-body:before, .tooltip.tooltip-bottom-center .tooltip-body:before, .tooltip.tooltip-bottom-right .tooltip-body:before {
+  top: -10px;
+  border-top: 0;
+  border-bottom-color: #2D6CC9;
+}
+.tooltip.tooltip-top-left .tooltip-body, .tooltip.tooltip-bottom-left .tooltip-body {
+  left: 0;
+}
+.tooltip.tooltip-top-left .tooltip-body:before, .tooltip.tooltip-bottom-left .tooltip-body:before {
+  left: 10px;
+}
+.tooltip.tooltip-top-center .tooltip-body, .tooltip.tooltip-bottom-center .tooltip-body {
+  left: 50%;
+  margin-left: -100px;
+}
+.tooltip.tooltip-top-center .tooltip-body:before, .tooltip.tooltip-bottom-center .tooltip-body:before {
+  left: 50%;
+  margin-left: -5px;
+}
+.tooltip.tooltip-top-right .tooltip-body, .tooltip.tooltip-bottom-right .tooltip-body {
+  right: 0;
+}
+.tooltip.tooltip-top-right .tooltip-body:before, .tooltip.tooltip-bottom-right .tooltip-body:before {
+  right: 10px;
+}

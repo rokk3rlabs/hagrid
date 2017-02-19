@@ -1,1 +1,75 @@
-.tooltips
+.tooltip
+  +inline-block
+  position: relative
+  cursor: help
+  font-weight: bold
+
+  .tooltip-body
+    +inline-block
+    position: absolute
+    background: $color-primary
+    padding: .7em
+    min-width: 200px
+    font-size: 13px
+    font-family: Helvetica, Arial, sans-serif
+    font-weight: 100
+    color: #fff
+    border-radius: $border-radius
+    z-index: 1
+
+    &:before
+      content: ''
+      position: absolute
+      border: 10px solid transparent
+
+  &.tooltip-top-left,
+  &.tooltip-top-center,
+  &.tooltip-top-right
+    .tooltip-body
+      margin-bottom: 10px 
+      bottom: 100%
+
+      &:before
+        bottom: -10px
+        border-bottom: 0
+        border-top-color: $color-primary
+
+  &.tooltip-bottom-left,
+  &.tooltip-bottom-center,
+  &.tooltip-bottom-right
+    .tooltip-body
+      top: 100%
+      margin-top: 10px 
+      
+      &:before
+        top: -10px
+        border-top: 0
+        border-bottom-color: $color-primary
+
+  &.tooltip-top-left,
+  &.tooltip-bottom-left
+    .tooltip-body
+      left: 0
+
+      &:before
+        left: 10px
+
+  &.tooltip-top-center,
+  &.tooltip-bottom-center
+    .tooltip-body
+      left: 50%
+      margin-left: -100px
+
+      &:before
+        left: 50%
+        margin-left: -5px
+
+    
+  &.tooltip-top-right,
+  &.tooltip-bottom-right
+    .tooltip-body
+      right: 0
+
+      &:before
+        right: 10px
+
