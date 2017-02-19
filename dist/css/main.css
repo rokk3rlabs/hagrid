@@ -10393,3 +10393,120 @@ table.table.table-lg th {
   background: #d55353;
   color: #fff;
 }
+
+.progressbar {
+  position: relative;
+  display: block;
+  background: #3C3C3C;
+  height: 1.5em;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 0;
+}
+.progressbar .progressbar-counting {
+  -webkit-transition: 0.3s width;
+  -moz-transition: 0.3s width;
+  -ms-transition: 0.3s width;
+  -o-transition: 0.3s width;
+  transition: 0.3s width;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  min-width: 10%;
+  border-radius: 0 4px 4px 0;
+  background: #2D6CC9;
+}
+.progressbar .progressbar-counting:before {
+  content: attr(data-counting);
+  font-size: 15px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  position: relative;
+  display: block;
+  text-align: center;
+  color: #fff;
+  height: 100%;
+  line-height: 0;
+  width: 100%;
+  top: 50%;
+}
+.progressbar .progressbar-percent {
+  position: relative;
+  display: block;
+  text-align: center;
+  color: #fff;
+  height: 100%;
+  line-height: 0;
+  width: 100%;
+  top: 50%;
+}
+.progressbar.progressbar-default .progressbar-counting {
+  background: #f8f8f8;
+}
+.progressbar.progressbar-default .progressbar-counting:hover:not(.disable) {
+  background: white;
+}
+.progressbar.progressbar-light .progressbar-counting {
+  background: #f8f8f8;
+}
+.progressbar.progressbar-light .progressbar-counting:before {
+  color: #333;
+}
+.progressbar.progressbar-light .progressbar-counting:hover:not(.disable) {
+  background: white;
+}
+.progressbar.progressbar-inverse {
+  background: #f8f8f8;
+}
+.progressbar.progressbar-inverse .progressbar-counting {
+  background: #3C3C3C;
+}
+.progressbar.progressbar-inverse .progressbar-counting:hover:not(.disable) {
+  background: #565656;
+}
+.progressbar.progressbar-primary .progressbar-counting {
+  background: #2D6CC9;
+}
+.progressbar.progressbar-primary .progressbar-counting:hover:not(.disable) {
+  background: #5188d8;
+}
+.progressbar.progressbar-secondary .progressbar-counting {
+  background: #31C290;
+}
+.progressbar.progressbar-secondary .progressbar-counting:hover:not(.disable) {
+  background: #53d3a7;
+}
+.progressbar.progressbar-info .progressbar-counting {
+  background: #00BCD4;
+}
+.progressbar.progressbar-info .progressbar-counting:hover:not(.disable) {
+  background: #08e3ff;
+}
+.progressbar.progressbar-warning .progressbar-counting {
+  background: #E68523;
+}
+.progressbar.progressbar-warning .progressbar-counting:hover:not(.disable) {
+  background: #eb9e51;
+}
+.progressbar.progressbar-error .progressbar-counting {
+  background: #C53030;
+}
+.progressbar.progressbar-error .progressbar-counting:hover:not(.disable) {
+  background: #d55353;
+}
+.progressbar.progressbar-xs {
+  height: 0.6em;
+}
+.progressbar.progressbar-sm {
+  height: 0.9em;
+}
+.progressbar.progressbar-md {
+  height: 1.2em;
+}
+.progressbar.progressbar-lg {
+  height: 1.5em;
+}
+.progressbar.progressbar-xl {
+  height: 1.8em;
+}

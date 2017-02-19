@@ -1,1 +1,65 @@
-.progressbars
+.progressbar
+  position: relative
+  display: block
+  background: $color-inverse
+  height: 1.5em
+  border-radius: $border-radius
+  overflow: hidden
+  border: 0
+
+  .progressbar-counting
+    +prefix(transition, .3s width)
+    position: absolute
+    left: 0
+    top: 0
+    height: 100%
+    min-width: 10%
+    border-radius: 0 $border-radius $border-radius 0
+    background: $color-primary
+
+    &:before
+      content: attr(data-counting)
+      font-size: 15px
+      font-family: Helvetica, Arial, sans-serif
+      font-weight: bold
+      position: relative
+      display: block
+      text-align: center
+      color: #fff 
+      height: 100%
+      line-height: 0
+      width: 100%
+      top: 50%
+
+  .progressbar-percent
+    position: relative
+    display: block
+    text-align: center
+    color: #fff 
+    height: 100%
+    line-height: 0
+    width: 100%
+    top: 50%
+
+  @each $base-color in $base-colors
+    $key: nth($base-color, 1)
+    $value: nth($base-color, 2)
+    &.progressbar-#{$key}
+      @if $key == inverse
+        background: $color-light
+
+      .progressbar-counting
+        background: $value
+
+
+        @if $key == light
+          &:before
+            color: #333
+
+        &:hover:not(.disable)
+          background: lighten($value, 10)
+
+  @for $i from 1 to length($base-sizes)+1
+    $key: nth($base-sizes, $i)
+    &.progressbar-#{$key}
+      height: .3+($pagination-increment-size*$i)+$pagination-measure-size
