@@ -19,7 +19,7 @@
 
     &:before
       content: attr(data-counting)
-      font-size: 15px
+      font-size: .9em
       font-family: Helvetica, Arial, sans-serif
       font-weight: bold
       position: relative
@@ -45,21 +45,25 @@
     $key: nth($base-color, 1)
     $value: nth($base-color, 2)
     &.progressbar-#{$key}
+      //background: darken($value, 10)
+
       @if $key == inverse
         background: $color-light
 
       .progressbar-counting
         background: $value
 
-
         @if $key == light
           &:before
             color: #333
 
-        &:hover:not(.disable)
+      &:hover:not(.disable)
+        //background: lighten($value, 10)
+
+        .progressbar-counting
           background: lighten($value, 10)
 
   @for $i from 1 to length($base-sizes)+1
     $key: nth($base-sizes, $i)
     &.progressbar-#{$key}
-      height: .3+($pagination-increment-size*$i)+$pagination-measure-size
+      height: .5+($pagination-increment-size*$i)+$pagination-measure-size
