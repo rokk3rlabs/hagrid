@@ -1,1 +1,151 @@
 .pagination
+  +flexbox
+  margin: 1em 0
+
+  > *:not(.not)
+    +inline-block
+    +prefix(transition, background-color .3s)
+    cursor: pointer
+    vertical-align: middle
+    text-decoration: none
+    padding: 1em
+    line-height: 0
+    text-align: center
+    background: transparent
+    //color: #fff
+    color: #333
+    margin-right: 1px
+
+    &.disable
+      cursor: not-allowed
+
+    &:last-child,
+    &.last-child
+      margin-right: 0
+
+
+    &.ellipsis
+      cursor: default
+      &:after
+        content: '\2026'
+    
+    &[class*="-next"],
+    &[class*="-prev"]
+      &:before,
+      &:after
+        +inline-block
+        position: relative
+        line-height: 0
+
+    
+    &[class*="-prev"]
+      &:before
+        content: '\00ab'
+
+      &.separate
+        &:before
+          content: '\00ab\00a0'
+    
+    &[class*="-next"]
+      &:after
+        content: '\00bb'
+
+      &.separate
+        &:after
+          content: '\00a0\00bb'
+
+    &:hover:not(.ellipsis):not(.disable),
+    &.current
+      background: darken(#fff, 10)
+
+  @each $base-color in $base-colors
+    $key: nth($base-color, 1)
+    $value: nth($base-color, 2)
+    &.pagination-#{$key}
+      > *:not(.not)
+        //background-color: #{$value}
+        color: #333
+
+        &:hover:not(.ellipsis):not(.disable),
+        &.current
+          background: lighten($value, 10)
+          color: #fff
+          @if $key == light
+            color: #333
+
+  @for $i from 1 to length($base-sizes)+1
+    $key: nth($base-sizes, $i)
+    &.pagination-#{$key}
+      font-size: .3+($pagination-increment-size*$i)+$pagination-measure-size
+
+  &.pagination-filled
+    @each $base-color in $base-colors
+      $key: nth($base-color, 1)
+      $value: nth($base-color, 2)
+      &.pagination-#{$key}
+        > *:not(.not)
+          background-color: #{$value}
+          color: #fff
+          @if $key == light
+            color: #333
+
+          &:hover:not(.ellipsis):not(.disable),
+          &.current
+            background: lighten($value, 10)
+
+  &.pagination-outline
+    @each $base-color in $base-colors
+      $key: nth($base-color, 1)
+      $value: nth($base-color, 2)
+      &.pagination-#{$key}
+        border-width: 1px
+        > *:not(.not)
+          background-color: transparent
+          border: 1px solid
+          border-color: #{$value}
+          border-radius: $border-radius
+          margin-right: .5em
+          color: #{$value}
+          @if $key == light
+            color: #333
+
+          &:hover:not(.ellipsis):not(.disable),
+          &.current
+            background: lighten($value, 10)
+            color: #fff
+            @if $key == light
+              color: #333
+
+  &.pagination-group
+    @each $base-color in $base-colors
+      $key: nth($base-color, 1)
+      $value: nth($base-color, 2)
+      &.pagination-#{$key}
+        +inline-flex
+        border: 1px solid
+        border-color: #{$value}
+        border-radius: $border-radius
+        > *:not(.not)
+          background-color: transparent
+          border-right: 1px solid
+          border-right-color: #{$value}
+          margin-right: 0
+          color: #{$value}
+          @if $key == light
+            color: #333
+
+          &:last-child,
+          &.last-child
+            border-right: none
+
+          &:hover:not(.ellipsis):not(.disable),
+          &.current
+            background: lighten($value, 10)
+            color: #fff
+
+            @if $key == light
+              color: #333
+
+
+
+

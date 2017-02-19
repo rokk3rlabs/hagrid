@@ -39,6 +39,19 @@
        display: inline-block
        *display: inline
 
+@mixin flexbox
+       display: -webkit-box
+       display: -ms-flexbox
+       display: -webkit-flex
+       display: flex
+
+@mixin inline-flex
+       display: -webkit-inline-box
+       display: -moz-inline-flexbox
+       display: -ms-inline-flexbox
+       display: -webkit-inline-flex
+       display: inline-flex
+
 $default-prefixes: webkit moz ms o
 @mixin prefix($property, $value, $prefixes: $default-prefixes) 
        @each $prefix in $prefixes 
@@ -81,8 +94,6 @@ $default-prefixes: webkit moz ms o
        padding: 0
        margin: 0
                                   
-
-
 
 @mixin background($imgpath, $position:0 0, $repeat: no-repeat)
        background: 
