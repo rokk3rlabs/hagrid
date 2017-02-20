@@ -1,1 +1,78 @@
 .alert
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  overflow: hidden
+  background: rgba(0, 0, 0, .3)
+
+  .alert-wrap
+    margin: 1em
+    height: 100%
+    text-align: center
+
+  section.alert-body
+    +inline-block
+    background: #fff
+    color: #333
+    border-radius: $border-radius
+    overflow: hidden
+    text-align: center
+    box-shadow: 0 0 3px rgba(0, 0, 0, .3)
+    max-width: 400px
+    margin-top: -75px
+    top: 50%
+
+  header.alert-header
+    padding: 1em
+    font-size: 1.1em
+
+    b
+      font-weight: bold
+
+  article.alert-content
+    padding: 1em
+
+    *
+      margin: 0
+      padding-bottom: 1em
+
+
+  footer.alert-footer
+    border-top: 3px solid $color-primary
+    a
+      display: block
+      font-weight: bold
+      color: $color-primary
+      padding: 1em
+      text-decoration: none
+
+  @each $base-color in $base-colors
+    $key: nth($base-color, 1)
+    $value: nth($base-color, 2)
+    &.alert-#{$key}
+      @if $key == light
+        section.alert-body
+          color: #333
+
+      @if $key == inverse
+        section.alert-body
+          color: #fff
+          background: #333
+
+      footer.alert-footer
+        border-top: 3px solid $value
+        a
+          color: $value
+
+        @if $key == light
+          border-top: 3px solid #333
+          a
+            color: #333
+
+        @if $key == inverse
+          border-top: 3px solid #fff
+          a
+            color: #fff
+

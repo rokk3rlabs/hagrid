@@ -10635,3 +10635,118 @@ table.table.table-lg th {
   border-top-color: #C53030;
   border-bottom-color: #C53030;
 }
+
+.alert {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.3);
+}
+.alert .alert-wrap {
+  margin: 1em;
+  height: 100%;
+  text-align: center;
+}
+.alert section.alert-body {
+  display: inline-block;
+  *display: inline;
+  background: #fff;
+  color: #333;
+  border-radius: 4px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  margin-top: -75px;
+  top: 50%;
+}
+.alert header.alert-header {
+  padding: 1em;
+  font-size: 1.1em;
+}
+.alert header.alert-header b {
+  font-weight: bold;
+}
+.alert article.alert-content {
+  padding: 1em;
+}
+.alert article.alert-content * {
+  margin: 0;
+  padding-bottom: 1em;
+}
+.alert footer.alert-footer {
+  border-top: 3px solid #2D6CC9;
+}
+.alert footer.alert-footer a {
+  display: block;
+  font-weight: bold;
+  color: #2D6CC9;
+  padding: 1em;
+  text-decoration: none;
+}
+.alert.alert-default footer.alert-footer {
+  border-top: 3px solid #f8f8f8;
+}
+.alert.alert-default footer.alert-footer a {
+  color: #f8f8f8;
+}
+.alert.alert-light section.alert-body {
+  color: #333;
+}
+.alert.alert-light footer.alert-footer {
+  border-top: 3px solid #f8f8f8;
+  border-top: 3px solid #333;
+}
+.alert.alert-light footer.alert-footer a {
+  color: #f8f8f8;
+}
+.alert.alert-light footer.alert-footer a {
+  color: #333;
+}
+.alert.alert-inverse section.alert-body {
+  color: #fff;
+  background: #333;
+}
+.alert.alert-inverse footer.alert-footer {
+  border-top: 3px solid #3C3C3C;
+  border-top: 3px solid #fff;
+}
+.alert.alert-inverse footer.alert-footer a {
+  color: #3C3C3C;
+}
+.alert.alert-inverse footer.alert-footer a {
+  color: #fff;
+}
+.alert.alert-primary footer.alert-footer {
+  border-top: 3px solid #2D6CC9;
+}
+.alert.alert-primary footer.alert-footer a {
+  color: #2D6CC9;
+}
+.alert.alert-secondary footer.alert-footer {
+  border-top: 3px solid #31C290;
+}
+.alert.alert-secondary footer.alert-footer a {
+  color: #31C290;
+}
+.alert.alert-info footer.alert-footer {
+  border-top: 3px solid #00BCD4;
+}
+.alert.alert-info footer.alert-footer a {
+  color: #00BCD4;
+}
+.alert.alert-warning footer.alert-footer {
+  border-top: 3px solid #E68523;
+}
+.alert.alert-warning footer.alert-footer a {
+  color: #E68523;
+}
+.alert.alert-error footer.alert-footer {
+  border-top: 3px solid #C53030;
+}
+.alert.alert-error footer.alert-footer a {
+  color: #C53030;
+}
