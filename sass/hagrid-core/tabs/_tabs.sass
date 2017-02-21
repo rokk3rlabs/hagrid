@@ -1,51 +1,51 @@
 .tab-component
-	margin: 1em 0
+  margin: 1em 0
 
-	.nav-tabs
-		display: flex
-		+reset-list
+  .nav-tabs
+    display: flex
+    +reset-list
 
-		.nav-tab,
-		li
-			cursor: pointer
-			width: 100%
-			text-align: center
-			@extend .default-color
-			+inline-block
-			padding: $btn-padding
-			line-height: 1em
-			color: nth(nth($base-colors, 2), 2)
-			background-color: nth(nth($base-colors, 1), 2)
-			text-decoration: none
-			font-weight: 100
-			font-size: $btn-font-size
-			font-weight: $btn-font-weight
-			margin: 0
-			border-radius: $nav-tabs-border-radius
-			text-transform: $nav-tabs-text-transform
-			position: relative
-			text-align: center
-			border: 1px solid transparent
-			border-bottom: 1px solid rgba(0, 0, 0, .05)
-			border-right: 1px solid rgba(0, 0, 0, .05)
-			+prefix(text-shadow, 0 0 1px rgba(0,0,0,.01))
-			+prefix(font-smoothing, antialiased)
-			+prefix(transition, background .2s)
-			+border-box
+    .nav-tab,
+    li
+      cursor: pointer
+      width: 100%
+      text-align: center
+      @extend .default-color
+      +inline-block
+      padding: $btn-padding
+      line-height: 1em
+      color: nth(nth($base-colors, 2), 2)
+      background-color: nth(nth($base-colors, 1), 2)
+      text-decoration: none
+      font-weight: 100
+      font-size: $btn-font-size
+      font-weight: $btn-font-weight
+      margin: 0
+      border-radius: $nav-tabs-border-radius
+      text-transform: $nav-tabs-text-transform
+      position: relative
+      text-align: center
+      border: 1px solid transparent
+      border-bottom: 1px solid rgba(0, 0, 0, .05)
+      border-right: 1px solid rgba(0, 0, 0, .05)
+      +prefix(text-shadow, 0 0 1px rgba(0,0,0,.01))
+      +prefix(font-smoothing, antialiased)
+      +prefix(transition, background .2s)
+      +border-box
 
-			&:last-child
-				border-right: 1px solid transparent
-			&.active
-				color: $color-primary
-				border-bottom-color: $color-primary
+      &:last-child
+        border-right: 1px solid transparent
+      &.active
+        color: $color-primary
+        border-bottom-color: $color-primary
 
-	.content-tabs
-		//border: 1px solid $color-primary
+  .content-tabs
+    //border: 1px solid $color-primary
 
-		.content-tab
-			display: none
-			&.active 
-				display: block
-	
-	&.tab-component-primary
-		border: 1px solid rgba(0, 0, 0, .05)
+    .content-tab
+      display: none
+      &.active 
+        display: block
+  
+  &.tab-component-primary
+    border: 1px solid rgba(0, 0, 0, .05)
