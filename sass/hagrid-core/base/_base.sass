@@ -26,9 +26,6 @@ section,
 div
   position: relative
 
-
-
-
 // Colors
 .color
   padding: .5em 0
@@ -40,9 +37,9 @@ div
 @each $color in $colors
   $key: nth($color, 1)
   $value: nth($color, 2)
-  .#{$key}-color
+  .#{""+$key}-color
     color: #{$value}
-  .#{$key}-bgc
+  .#{""+$key}-bgc
     background-color: #{$value}
 
 @each $base-color in $base-colors
@@ -67,4 +64,3 @@ div
   .#{$key}-color-code
     &:before
       content: '#{$value}'
-
