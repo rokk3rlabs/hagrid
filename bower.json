@@ -16,5 +16,6 @@
     "tests"
   ],
   "dependencies": {
+    "sizzle": "^2.3.3"
   }
 }
