@@ -6,11 +6,11 @@
   color: nth(nth($base-colors, 2), 2)
   background-color: nth(nth($base-colors, 1), 2)
   text-decoration: none
-  font-size: $btn-font-size
-  font-weight: $btn-font-weight
+  font-size: $label-font-size
+  font-weight: $label-font-weight
   margin: .25em
-  border-radius: $border-radius
-  text-transform: $btn-text-transform
+  border-radius: $label-border-radius
+  text-transform: $label-text-transform
   position: relative
   text-align: center
   border: 1px solid rgba(0, 0, 0, .05)
@@ -41,6 +41,6 @@
   @for $i from 1 to length($base-sizes)+1
     $key: nth($base-sizes, $i)
     &.label-#{$key}
-      font-size: .4+($btn-increment-size*$i)+$btn-measure-size
+      font-size: .4+($label__sizes__increment*$i)+$label__sizes__measure
 
 

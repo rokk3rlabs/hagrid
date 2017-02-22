@@ -4,6 +4,8 @@
 
 ### Features
 
+There is a summary of the main features that hagrid.io support:
+
 - SASS based
 - Different Grid containers
 - Default markup base code, that accomplish from day zero the features provided by reset.css on old frameworks
@@ -84,4 +86,4 @@ You can create themes with the Hagrid, for now you need follow the next steps.
 To see demos and examples please see demos folder on this repository or go to [hagrid.io][1]
 
 
-[1]: http://hagrid.io/ 
+[1]:<http://hagrid.io/>{:target="_blank"}

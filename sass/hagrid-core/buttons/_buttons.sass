@@ -9,7 +9,7 @@
   font-size: $btn-font-size
   font-weight: $btn-font-weight
   margin: .25em
-  border-radius: $border-radius
+  border-radius: $btn-border-radius
   text-transform: $btn-text-transform
   position: relative
   text-align: center
@@ -58,7 +58,7 @@
   @for $i from 1 to length($base-sizes)+1
     $key: nth($base-sizes, $i)
     &.btn-#{$key}
-      font-size: .4+($btn-increment-size*$i)+$btn-measure-size
+      font-size: .4+($btn__sizes__increment*$i)+$btn__sizes__measure
 
   // Flat Buttons
   &.btn-flat
@@ -73,7 +73,7 @@
 
   // Upper Button
   &.btn-upper
-    +prefix(border-radius, $border-radius)
+    +prefix(border-radius, $btn__upper-border-radius)
     //box-shadow: 0 -4px 0 0 rgba(0, 0, 0, .2) inset
     border-bottom: 4px solid rgba(0, 0, 0, .2)
 
@@ -88,8 +88,8 @@
     padding-right: 2em
     padding-left: 2em
     background: transparent
-    border-radius: $btn-outline-border-radius
-    border-width: $btn-outline-border-width
+    border-radius: $btn__outline-border-radius
+    border-width: $btn__outline-border-width
     border-style: solid
 
     @each $base-color in $base-colors
@@ -101,7 +101,7 @@
           color: #333
         @else
           color: #{$value}
-        @if $btn-outline-hover-bkg == true
+        @if $btn__outline-hover-bkg == true
           &:hover,
           &.btn-hover
             @if $key == default
