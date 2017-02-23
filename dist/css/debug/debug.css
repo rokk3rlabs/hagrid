@@ -1,1 +1,708 @@
-[hagrid-debug] [class*="cols-"],[hagrid-debug] [class*="grid-col-"],[hagrid-debug] [class*="layout-"],[hagrid-debug] [class*="lay-"],[hagrid-debug] [class*="grid-for"] .grid-box,[hagrid-debug] .layout,[hagrid-debug] .lay,[hagrid-debug] .grid-box{text-align:center;background-color:#7F90A9;min-height:60px;outline:1px solid rgba(0,0,0,0.09);color:#fff;overflow:hidden}[hagrid-debug] [class*="cols-"]:before,[hagrid-debug] [class*="cols-"] .before,[hagrid-debug] [class*="grid-col-"]:before,[hagrid-debug] [class*="grid-col-"] .before,[hagrid-debug] [class*="layout-"]:before,[hagrid-debug] [class*="layout-"] .before,[hagrid-debug] [class*="lay-"]:before,[hagrid-debug] [class*="lay-"] .before,[hagrid-debug] [class*="grid-for"] .grid-box:before,[hagrid-debug] [class*="grid-for"] .grid-box .before,[hagrid-debug] .layout:before,[hagrid-debug] .layout .before,[hagrid-debug] .lay:before,[hagrid-debug] .lay .before,[hagrid-debug] .grid-box:before,[hagrid-debug] .grid-box .before{display:block;text-align:center;line-height:60px;font-family:arial;font-weight:bold;font-size:18px;padding:0;margin:0}@media screen and (max-width: 640px){[hagrid-debug] [class*="cols-"]:before,[hagrid-debug] [class*="cols-"] .before,[hagrid-debug] [class*="grid-col-"]:before,[hagrid-debug] [class*="grid-col-"] .before,[hagrid-debug] [class*="layout-"]:before,[hagrid-debug] [class*="layout-"] .before,[hagrid-debug] [class*="lay-"]:before,[hagrid-debug] [class*="lay-"] .before,[hagrid-debug] [class*="grid-for"] .grid-box:before,[hagrid-debug] [class*="grid-for"] .grid-box .before,[hagrid-debug] .layout:before,[hagrid-debug] .layout .before,[hagrid-debug] .lay:before,[hagrid-debug] .lay .before,[hagrid-debug] .grid-box:before,[hagrid-debug] .grid-box .before{font-size:12px}}[hagrid-debug].grid-flex{background:#E6E6E6}[hagrid-debug] *.col-set{background-color:transparent}[hagrid-debug] *.col-set:before{display:none}[hagrid-debug] .lay-5:before,[hagrid-debug] .layout-5:before{content:"5%"}@media screen and (min-width: 1200px){[hagrid-debug] .lay-lg-5:before,[hagrid-debug] .layout-lg-5:before{content:"5%"}}@media screen and (min-width: 700px) and (max-width: 1200px){[hagrid-debug] .lay-md-5:before,[hagrid-debug] .layout-md-5:before{content:"5%"}}@media screen and (min-width: 460px) and (max-width: 700px){[hagrid-debug] .lay-sm-5:before,[hagrid-debug] .layout-sm-5:before{content:"5%"}}@media screen and (max-width: 460px){[hagrid-debug] .lay-xs-5:before,[hagrid-debug] .layout-xs-5:before{content:"5%"}}[hagrid-debug] .lay-10:before,[hagrid-debug] .layout-10:before{content:"10%"}@media screen and (min-width: 1200px){[hagrid-debug] .lay-lg-10:before,[hagrid-debug] .layout-lg-10:before{content:"10%"}}@media screen and (min-width: 700px) and (max-width: 1200px){[hagrid-debug] .lay-md-10:before,[hagrid-debug] .layout-md-10:before{content:"10%"}}@media screen and (min-width: 460px) and (max-width: 700px){[hagrid-debug] .lay-sm-10:before,[hagrid-debug] .layout-sm-10:before{content:"10%"}}@media screen and (max-width: 460px){[hagrid-debug] .lay-xs-10:before,[hagrid-debug] .layout-xs-10:before{content:"10%"}}[hagrid-debug] .lay-15:before,[hagrid-debug] .layout-15:before{content:"15%"}@media screen and (min-width: 1200px){[hagrid-debug] .lay-lg-15:before,[hagrid-debug] .layout-lg-15:before{content:"15%"}}@media screen and (min-width: 700px) and (max-width: 1200px){[hagrid-debug] .lay-md-15:before,[hagrid-debug] .layout-md-15:before{content:"15%"}}@media screen and (min-width: 460px) and (max-width: 700px){[hagrid-debug] .lay-sm-15:before,[hagrid-debug] .layout-sm-15:before{content:"15%"}}@media screen and (max-width: 460px){[hagrid-debug] .lay-xs-15:before,[hagrid-debug] .layout-xs-15:before{content:"15%"}}[hagrid-debug] .lay-20:before,[hagrid-debug] .layout-20:before{content:"20%"}@media screen and (min-width: 1200px){[hagrid-debug] .lay-lg-20:before,[hagrid-debug] .layout-lg-20:before{content:"20%"}}@media screen and (min-width: 700px) and (max-width: 1200px){[hagrid-debug] .lay-md-20:before,[hagrid-debug] .layout-md-20:before{content:"20%"}}@media screen and (min-width: 460px) and (max-width: 700px){[hagrid-debug] .lay-sm-20:before,[hagrid-debug] .layout-sm-20:before{content:"20%"}}@media screen and (max-width: 460px){[hagrid-debug] .lay-xs-20:before,[hagrid-debug] .layout-xs-20:before{content:"20%"}}[hagrid-debug] .lay-25:before,[hagrid-debug] .layout-25:before{content:"25%"}@media screen and (min-width: 1200px){[hagrid-debug] .lay-lg-25:before,[hagrid-debug] .layout-lg-25:before{content:"25%"}}@media screen and (min-width: 700px) and (max-width: 1200px){[hagrid-debug] .lay-md-25:before,[hagrid-debug] .layout-md-25:before{content:"25%"}}@media screen and (min-width: 460px) and (max-width: 700px){[hagrid-debug] .lay-sm-25:before,[hagrid-debug] .layout-sm-25:before{content:"25%"}}@media screen and (max-width: 460px){[hagrid-debug] .lay-xs-25:before,[hagrid-debug] .layout-xs-25:before{content:"25%"}}[hagrid-debug] .lay-30:before,[hagrid-debug] .layout-30:before{content:"30%"}@media screen and (min-width: 1200px){[hagrid-debug] .lay-lg-30:before,[hagrid-debug] .layout-lg-30:before{content:"30%"}}@media screen and (min-width: 700px) and (max-width: 1200px){[hagrid-debug] .lay-md-30:before,[hagrid-debug] .layout-md-30:before{content:"30%"}}@media screen and (min-width: 460px) and (max-width: 700px){[hagrid-debug] .lay-sm-30:before,[hagrid-debug] .layout-sm-30:before{content:"30%"}}@media screen and (max-width: 460px){[hagrid-debug] .lay-xs-30:before,[hagrid-debug] .layout-xs-30:before{content:"30%"}}[hagrid-debug] .lay-35:before,[hagrid-debug] .layout-35:before{content:"35%"}@media screen and (min-width: 1200px){[hagrid-debug] .lay-lg-35:before,[hagrid-debug] .layout-lg-35:before{content:"35%"}}@media screen and (min-width: 700px) and (max-width: 1200px){[hagrid-debug] .lay-md-35:before,[hagrid-debug] .layout-md-35:before{content:"35%"}}@media screen and (min-width: 460px) and (max-width: 700px){[hagrid-debug] .lay-sm-35:before,[hagrid-debug] .layout-sm-35:before{content:"35%"}}@media screen and (max-width: 460px){[hagrid-debug] .lay-xs-35:before,[hagrid-debug] .layout-xs-35:before{content:"35%"}}[hagrid-debug] .lay-40:before,[hagrid-debug] .layout-40:before{content:"40%"}@media screen and (min-width: 1200px){[hagrid-debug] .lay-lg-40:before,[hagrid-debug] .layout-lg-40:before{content:"40%"}}@media screen and (min-width: 700px) and (max-width: 1200px){[hagrid-debug] .lay-md-40:before,[hagrid-debug] .layout-md-40:before{content:"40%"}}@media screen and (min-width: 460px) and (max-width: 700px){[hagrid-debug] .lay-sm-40:before,[hagrid-debug] .layout-sm-40:before{content:"40%"}}@media screen and (max-width: 460px){[hagrid-debug] .lay-xs-40:before,[hagrid-debug] .layout-xs-40:before{content:"40%"}}[hagrid-debug] .lay-45:before,[hagrid-debug] .layout-45:before{content:"45%"}@media screen and (min-width: 1200px){[hagrid-debug] .lay-lg-45:before,[hagrid-debug] .layout-lg-45:before{content:"45%"}}@media screen and (min-width: 700px) and (max-width: 1200px){[hagrid-debug] .lay-md-45:before,[hagrid-debug] .layout-md-45:before{content:"45%"}}@media screen and (min-width: 460px) and (max-width: 700px){[hagrid-debug] .lay-sm-45:before,[hagrid-debug] .layout-sm-45:before{content:"45%"}}@media screen and (max-width: 460px){[hagrid-debug] .lay-xs-45:before,[hagrid-debug] .layout-xs-45:before{content:"45%"}}[hagrid-debug] .lay-50:before,[hagrid-debug] .layout-50:before{content:"50%"}@media screen and (min-width: 1200px){[hagrid-debug] .lay-lg-50:before,[hagrid-debug] .layout-lg-50:before{content:"50%"}}@media screen and (min-width: 700px) and (max-width: 1200px){[hagrid-debug] .lay-md-50:before,[hagrid-debug] .layout-md-50:before{content:"50%"}}@media screen and (min-width: 460px) and (max-width: 700px){[hagrid-debug] .lay-sm-50:before,[hagrid-debug] .layout-sm-50:before{content:"50%"}}@media screen and (max-width: 460px){[hagrid-debug] .lay-xs-50:before,[hagrid-debug] .layout-xs-50:before{content:"50%"}}[hagrid-debug] .lay-55:before,[hagrid-debug] .layout-55:before{content:"55%"}@media screen and (min-width: 1200px){[hagrid-debug] .lay-lg-55:before,[hagrid-debug] .layout-lg-55:before{content:"55%"}}@media screen and (min-width: 700px) and (max-width: 1200px){[hagrid-debug] .lay-md-55:before,[hagrid-debug] .layout-md-55:before{content:"55%"}}@media screen and (min-width: 460px) and (max-width: 700px){[hagrid-debug] .lay-sm-55:before,[hagrid-debug] .layout-sm-55:before{content:"55%"}}@media screen and (max-width: 460px){[hagrid-debug] .lay-xs-55:before,[hagrid-debug] .layout-xs-55:before{content:"55%"}}[hagrid-debug] .lay-60:before,[hagrid-debug] .layout-60:before{content:"60%"}@media screen and (min-width: 1200px){[hagrid-debug] .lay-lg-60:before,[hagrid-debug] .layout-lg-60:before{content:"60%"}}@media screen and (min-width: 700px) and (max-width: 1200px){[hagrid-debug] .lay-md-60:before,[hagrid-debug] .layout-md-60:before{content:"60%"}}@media screen and (min-width: 460px) and (max-width: 700px){[hagrid-debug] .lay-sm-60:before,[hagrid-debug] .layout-sm-60:before{content:"60%"}}@media screen and (max-width: 460px){[hagrid-debug] .lay-xs-60:before,[hagrid-debug] .layout-xs-60:before{content:"60%"}}[hagrid-debug] .lay-65:before,[hagrid-debug] .layout-65:before{content:"65%"}@media screen and (min-width: 1200px){[hagrid-debug] .lay-lg-65:before,[hagrid-debug] .layout-lg-65:before{content:"65%"}}@media screen and (min-width: 700px) and (max-width: 1200px){[hagrid-debug] .lay-md-65:before,[hagrid-debug] .layout-md-65:before{content:"65%"}}@media screen and (min-width: 460px) and (max-width: 700px){[hagrid-debug] .lay-sm-65:before,[hagrid-debug] .layout-sm-65:before{content:"65%"}}@media screen and (max-width: 460px){[hagrid-debug] .lay-xs-65:before,[hagrid-debug] .layout-xs-65:before{content:"65%"}}[hagrid-debug] .lay-70:before,[hagrid-debug] .layout-70:before{content:"70%"}@media screen and (min-width: 1200px){[hagrid-debug] .lay-lg-70:before,[hagrid-debug] .layout-lg-70:before{content:"70%"}}@media screen and (min-width: 700px) and (max-width: 1200px){[hagrid-debug] .lay-md-70:before,[hagrid-debug] .layout-md-70:before{content:"70%"}}@media screen and (min-width: 460px) and (max-width: 700px){[hagrid-debug] .lay-sm-70:before,[hagrid-debug] .layout-sm-70:before{content:"70%"}}@media screen and (max-width: 460px){[hagrid-debug] .lay-xs-70:before,[hagrid-debug] .layout-xs-70:before{content:"70%"}}[hagrid-debug] .lay-75:before,[hagrid-debug] .layout-75:before{content:"75%"}@media screen and (min-width: 1200px){[hagrid-debug] .lay-lg-75:before,[hagrid-debug] .layout-lg-75:before{content:"75%"}}@media screen and (min-width: 700px) and (max-width: 1200px){[hagrid-debug] .lay-md-75:before,[hagrid-debug] .layout-md-75:before{content:"75%"}}@media screen and (min-width: 460px) and (max-width: 700px){[hagrid-debug] .lay-sm-75:before,[hagrid-debug] .layout-sm-75:before{content:"75%"}}@media screen and (max-width: 460px){[hagrid-debug] .lay-xs-75:before,[hagrid-debug] .layout-xs-75:before{content:"75%"}}[hagrid-debug] .lay-80:before,[hagrid-debug] .layout-80:before{content:"80%"}@media screen and (min-width: 1200px){[hagrid-debug] .lay-lg-80:before,[hagrid-debug] .layout-lg-80:before{content:"80%"}}@media screen and (min-width: 700px) and (max-width: 1200px){[hagrid-debug] .lay-md-80:before,[hagrid-debug] .layout-md-80:before{content:"80%"}}@media screen and (min-width: 460px) and (max-width: 700px){[hagrid-debug] .lay-sm-80:before,[hagrid-debug] .layout-sm-80:before{content:"80%"}}@media screen and (max-width: 460px){[hagrid-debug] .lay-xs-80:before,[hagrid-debug] .layout-xs-80:before{content:"80%"}}[hagrid-debug] .lay-85:before,[hagrid-debug] .layout-85:before{content:"85%"}@media screen and (min-width: 1200px){[hagrid-debug] .lay-lg-85:before,[hagrid-debug] .layout-lg-85:before{content:"85%"}}@media screen and (min-width: 700px) and (max-width: 1200px){[hagrid-debug] .lay-md-85:before,[hagrid-debug] .layout-md-85:before{content:"85%"}}@media screen and (min-width: 460px) and (max-width: 700px){[hagrid-debug] .lay-sm-85:before,[hagrid-debug] .layout-sm-85:before{content:"85%"}}@media screen and (max-width: 460px){[hagrid-debug] .lay-xs-85:before,[hagrid-debug] .layout-xs-85:before{content:"85%"}}[hagrid-debug] .lay-90:before,[hagrid-debug] .layout-90:before{content:"90%"}@media screen and (min-width: 1200px){[hagrid-debug] .lay-lg-90:before,[hagrid-debug] .layout-lg-90:before{content:"90%"}}@media screen and (min-width: 700px) and (max-width: 1200px){[hagrid-debug] .lay-md-90:before,[hagrid-debug] .layout-md-90:before{content:"90%"}}@media screen and (min-width: 460px) and (max-width: 700px){[hagrid-debug] .lay-sm-90:before,[hagrid-debug] .layout-sm-90:before{content:"90%"}}@media screen and (max-width: 460px){[hagrid-debug] .lay-xs-90:before,[hagrid-debug] .layout-xs-90:before{content:"90%"}}[hagrid-debug] .lay-95:before,[hagrid-debug] .layout-95:before{content:"95%"}@media screen and (min-width: 1200px){[hagrid-debug] .lay-lg-95:before,[hagrid-debug] .layout-lg-95:before{content:"95%"}}@media screen and (min-width: 700px) and (max-width: 1200px){[hagrid-debug] .lay-md-95:before,[hagrid-debug] .layout-md-95:before{content:"95%"}}@media screen and (min-width: 460px) and (max-width: 700px){[hagrid-debug] .lay-sm-95:before,[hagrid-debug] .layout-sm-95:before{content:"95%"}}@media screen and (max-width: 460px){[hagrid-debug] .lay-xs-95:before,[hagrid-debug] .layout-xs-95:before{content:"95%"}}[hagrid-debug] .lay-100:before,[hagrid-debug] .layout-100:before{content:"100%"}@media screen and (min-width: 1200px){[hagrid-debug] .lay-lg-100:before,[hagrid-debug] .layout-lg-100:before{content:"100%"}}@media screen and (min-width: 700px) and (max-width: 1200px){[hagrid-debug] .lay-md-100:before,[hagrid-debug] .layout-md-100:before{content:"100%"}}@media screen and (min-width: 460px) and (max-width: 700px){[hagrid-debug] .lay-sm-100:before,[hagrid-debug] .layout-sm-100:before{content:"100%"}}@media screen and (max-width: 460px){[hagrid-debug] .lay-xs-100:before,[hagrid-debug] .layout-xs-100:before{content:"100%"}}[hagrid-debug] .grid-for-1 .grid-box:before,[hagrid-debug].grid-for-1 .grid-box:before{content:"1"}[hagrid-debug] .grid-for-2 .grid-box:before,[hagrid-debug].grid-for-2 .grid-box:before{content:"2"}[hagrid-debug] .grid-for-3 .grid-box:before,[hagrid-debug].grid-for-3 .grid-box:before{content:"3"}[hagrid-debug] .grid-for-4 .grid-box:before,[hagrid-debug].grid-for-4 .grid-box:before{content:"4"}[hagrid-debug] .grid-for-5 .grid-box:before,[hagrid-debug].grid-for-5 .grid-box:before{content:"5"}[hagrid-debug] .grid-for-6 .grid-box:before,[hagrid-debug].grid-for-6 .grid-box:before{content:"6"}[hagrid-debug] .grid-for-7 .grid-box:before,[hagrid-debug].grid-for-7 .grid-box:before{content:"7"}[hagrid-debug] .grid-for-8 .grid-box:before,[hagrid-debug].grid-for-8 .grid-box:before{content:"8"}[hagrid-debug] .grid-for-9 .grid-box:before,[hagrid-debug].grid-for-9 .grid-box:before{content:"9"}[hagrid-debug] .grid-for-10 .grid-box:before,[hagrid-debug].grid-for-10 .grid-box:before{content:"10"}[hagrid-debug] .grid-for-11 .grid-box:before,[hagrid-debug].grid-for-11 .grid-box:before{content:"11"}[hagrid-debug] .grid-for-12 .grid-box:before,[hagrid-debug].grid-for-12 .grid-box:before{content:"12"}[hagrid-debug] .cols-1:before{content:"1"}[hagrid-debug] .cols-2:before{content:"2"}[hagrid-debug] .cols-3:before{content:"3"}[hagrid-debug] .cols-4:before{content:"4"}[hagrid-debug] .cols-5:before{content:"5"}[hagrid-debug] .cols-6:before{content:"6"}[hagrid-debug] .cols-7:before{content:"7"}[hagrid-debug] .cols-8:before{content:"8"}[hagrid-debug] .cols-9:before{content:"9"}[hagrid-debug] .cols-10:before{content:"10"}[hagrid-debug] .cols-11:before{content:"11"}[hagrid-debug] .cols-12:before{content:"12"}[hagrid-debug][debug-empty] *:before{content:"";display:none}
+/***************** */
+/**** Debugger ** */
+/*************** */
+[hagrid-debug] [class*="cols-"],
+[hagrid-debug] [class*="grid-col-"],
+[hagrid-debug] [class*="layout-"],
+[hagrid-debug] [class*="lay-"],
+[hagrid-debug] [class*="grid-for"] .grid-box,
+[hagrid-debug] .layout,
+[hagrid-debug] .lay,
+[hagrid-debug] .grid-box {
+  text-align: center;
+  background-color: #7F90A9;
+  min-height: 60px;
+  outline: 1px solid rgba(0, 0, 0, 0.09);
+  color: #fff;
+  overflow: hidden;
+}
+[hagrid-debug] [class*="cols-"]:before,
+[hagrid-debug] [class*="cols-"] .before,
+[hagrid-debug] [class*="grid-col-"]:before,
+[hagrid-debug] [class*="grid-col-"] .before,
+[hagrid-debug] [class*="layout-"]:before,
+[hagrid-debug] [class*="layout-"] .before,
+[hagrid-debug] [class*="lay-"]:before,
+[hagrid-debug] [class*="lay-"] .before,
+[hagrid-debug] [class*="grid-for"] .grid-box:before,
+[hagrid-debug] [class*="grid-for"] .grid-box .before,
+[hagrid-debug] .layout:before,
+[hagrid-debug] .layout .before,
+[hagrid-debug] .lay:before,
+[hagrid-debug] .lay .before,
+[hagrid-debug] .grid-box:before,
+[hagrid-debug] .grid-box .before {
+  display: block;
+  text-align: center;
+  line-height: 60px;
+  font-family: arial;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+}
+@media screen and (max-width: 640px) {
+  [hagrid-debug] [class*="cols-"]:before,
+  [hagrid-debug] [class*="cols-"] .before,
+  [hagrid-debug] [class*="grid-col-"]:before,
+  [hagrid-debug] [class*="grid-col-"] .before,
+  [hagrid-debug] [class*="layout-"]:before,
+  [hagrid-debug] [class*="layout-"] .before,
+  [hagrid-debug] [class*="lay-"]:before,
+  [hagrid-debug] [class*="lay-"] .before,
+  [hagrid-debug] [class*="grid-for"] .grid-box:before,
+  [hagrid-debug] [class*="grid-for"] .grid-box .before,
+  [hagrid-debug] .layout:before,
+  [hagrid-debug] .layout .before,
+  [hagrid-debug] .lay:before,
+  [hagrid-debug] .lay .before,
+  [hagrid-debug] .grid-box:before,
+  [hagrid-debug] .grid-box .before {
+    font-size: 12px;
+  }
+}
+[hagrid-debug].grid-flex {
+  background: #E6E6E6;
+}
+[hagrid-debug] *.col-set {
+  background-color: transparent;
+}
+[hagrid-debug] *.col-set:before {
+  display: none;
+}
+[hagrid-debug] .lay-5:before,
+[hagrid-debug] .layout-5:before {
+  content: "5%";
+}
+@media screen and (min-width: 1200px) {
+  [hagrid-debug] .lay-lg-5:before,
+  [hagrid-debug] .layout-lg-5:before {
+    content: "5%";
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+  [hagrid-debug] .lay-md-5:before,
+  [hagrid-debug] .layout-md-5:before {
+    content: "5%";
+  }
+}
+@media screen and (min-width: 460px) and (max-width: 700px) {
+  [hagrid-debug] .lay-sm-5:before,
+  [hagrid-debug] .layout-sm-5:before {
+    content: "5%";
+  }
+}
+@media screen and (max-width: 460px) {
+  [hagrid-debug] .lay-xs-5:before,
+  [hagrid-debug] .layout-xs-5:before {
+    content: "5%";
+  }
+}
+[hagrid-debug] .lay-10:before,
+[hagrid-debug] .layout-10:before {
+  content: "10%";
+}
+@media screen and (min-width: 1200px) {
+  [hagrid-debug] .lay-lg-10:before,
+  [hagrid-debug] .layout-lg-10:before {
+    content: "10%";
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+  [hagrid-debug] .lay-md-10:before,
+  [hagrid-debug] .layout-md-10:before {
+    content: "10%";
+  }
+}
+@media screen and (min-width: 460px) and (max-width: 700px) {
+  [hagrid-debug] .lay-sm-10:before,
+  [hagrid-debug] .layout-sm-10:before {
+    content: "10%";
+  }
+}
+@media screen and (max-width: 460px) {
+  [hagrid-debug] .lay-xs-10:before,
+  [hagrid-debug] .layout-xs-10:before {
+    content: "10%";
+  }
+}
+[hagrid-debug] .lay-15:before,
+[hagrid-debug] .layout-15:before {
+  content: "15%";
+}
+@media screen and (min-width: 1200px) {
+  [hagrid-debug] .lay-lg-15:before,
+  [hagrid-debug] .layout-lg-15:before {
+    content: "15%";
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+  [hagrid-debug] .lay-md-15:before,
+  [hagrid-debug] .layout-md-15:before {
+    content: "15%";
+  }
+}
+@media screen and (min-width: 460px) and (max-width: 700px) {
+  [hagrid-debug] .lay-sm-15:before,
+  [hagrid-debug] .layout-sm-15:before {
+    content: "15%";
+  }
+}
+@media screen and (max-width: 460px) {
+  [hagrid-debug] .lay-xs-15:before,
+  [hagrid-debug] .layout-xs-15:before {
+    content: "15%";
+  }
+}
+[hagrid-debug] .lay-20:before,
+[hagrid-debug] .layout-20:before {
+  content: "20%";
+}
+@media screen and (min-width: 1200px) {
+  [hagrid-debug] .lay-lg-20:before,
+  [hagrid-debug] .layout-lg-20:before {
+    content: "20%";
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+  [hagrid-debug] .lay-md-20:before,
+  [hagrid-debug] .layout-md-20:before {
+    content: "20%";
+  }
+}
+@media screen and (min-width: 460px) and (max-width: 700px) {
+  [hagrid-debug] .lay-sm-20:before,
+  [hagrid-debug] .layout-sm-20:before {
+    content: "20%";
+  }
+}
+@media screen and (max-width: 460px) {
+  [hagrid-debug] .lay-xs-20:before,
+  [hagrid-debug] .layout-xs-20:before {
+    content: "20%";
+  }
+}
+[hagrid-debug] .lay-25:before,
+[hagrid-debug] .layout-25:before {
+  content: "25%";
+}
+@media screen and (min-width: 1200px) {
+  [hagrid-debug] .lay-lg-25:before,
+  [hagrid-debug] .layout-lg-25:before {
+    content: "25%";
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+  [hagrid-debug] .lay-md-25:before,
+  [hagrid-debug] .layout-md-25:before {
+    content: "25%";
+  }
+}
+@media screen and (min-width: 460px) and (max-width: 700px) {
+  [hagrid-debug] .lay-sm-25:before,
+  [hagrid-debug] .layout-sm-25:before {
+    content: "25%";
+  }
+}
+@media screen and (max-width: 460px) {
+  [hagrid-debug] .lay-xs-25:before,
+  [hagrid-debug] .layout-xs-25:before {
+    content: "25%";
+  }
+}
+[hagrid-debug] .lay-30:before,
+[hagrid-debug] .layout-30:before {
+  content: "30%";
+}
+@media screen and (min-width: 1200px) {
+  [hagrid-debug] .lay-lg-30:before,
+  [hagrid-debug] .layout-lg-30:before {
+    content: "30%";
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+  [hagrid-debug] .lay-md-30:before,
+  [hagrid-debug] .layout-md-30:before {
+    content: "30%";
+  }
+}
+@media screen and (min-width: 460px) and (max-width: 700px) {
+  [hagrid-debug] .lay-sm-30:before,
+  [hagrid-debug] .layout-sm-30:before {
+    content: "30%";
+  }
+}
+@media screen and (max-width: 460px) {
+  [hagrid-debug] .lay-xs-30:before,
+  [hagrid-debug] .layout-xs-30:before {
+    content: "30%";
+  }
+}
+[hagrid-debug] .lay-35:before,
+[hagrid-debug] .layout-35:before {
+  content: "35%";
+}
+@media screen and (min-width: 1200px) {
+  [hagrid-debug] .lay-lg-35:before,
+  [hagrid-debug] .layout-lg-35:before {
+    content: "35%";
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+  [hagrid-debug] .lay-md-35:before,
+  [hagrid-debug] .layout-md-35:before {
+    content: "35%";
+  }
+}
+@media screen and (min-width: 460px) and (max-width: 700px) {
+  [hagrid-debug] .lay-sm-35:before,
+  [hagrid-debug] .layout-sm-35:before {
+    content: "35%";
+  }
+}
+@media screen and (max-width: 460px) {
+  [hagrid-debug] .lay-xs-35:before,
+  [hagrid-debug] .layout-xs-35:before {
+    content: "35%";
+  }
+}
+[hagrid-debug] .lay-40:before,
+[hagrid-debug] .layout-40:before {
+  content: "40%";
+}
+@media screen and (min-width: 1200px) {
+  [hagrid-debug] .lay-lg-40:before,
+  [hagrid-debug] .layout-lg-40:before {
+    content: "40%";
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+  [hagrid-debug] .lay-md-40:before,
+  [hagrid-debug] .layout-md-40:before {
+    content: "40%";
+  }
+}
+@media screen and (min-width: 460px) and (max-width: 700px) {
+  [hagrid-debug] .lay-sm-40:before,
+  [hagrid-debug] .layout-sm-40:before {
+    content: "40%";
+  }
+}
+@media screen and (max-width: 460px) {
+  [hagrid-debug] .lay-xs-40:before,
+  [hagrid-debug] .layout-xs-40:before {
+    content: "40%";
+  }
+}
+[hagrid-debug] .lay-45:before,
+[hagrid-debug] .layout-45:before {
+  content: "45%";
+}
+@media screen and (min-width: 1200px) {
+  [hagrid-debug] .lay-lg-45:before,
+  [hagrid-debug] .layout-lg-45:before {
+    content: "45%";
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+  [hagrid-debug] .lay-md-45:before,
+  [hagrid-debug] .layout-md-45:before {
+    content: "45%";
+  }
+}
+@media screen and (min-width: 460px) and (max-width: 700px) {
+  [hagrid-debug] .lay-sm-45:before,
+  [hagrid-debug] .layout-sm-45:before {
+    content: "45%";
+  }
+}
+@media screen and (max-width: 460px) {
+  [hagrid-debug] .lay-xs-45:before,
+  [hagrid-debug] .layout-xs-45:before {
+    content: "45%";
+  }
+}
+[hagrid-debug] .lay-50:before,
+[hagrid-debug] .layout-50:before {
+  content: "50%";
+}
+@media screen and (min-width: 1200px) {
+  [hagrid-debug] .lay-lg-50:before,
+  [hagrid-debug] .layout-lg-50:before {
+    content: "50%";
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+  [hagrid-debug] .lay-md-50:before,
+  [hagrid-debug] .layout-md-50:before {
+    content: "50%";
+  }
+}
+@media screen and (min-width: 460px) and (max-width: 700px) {
+  [hagrid-debug] .lay-sm-50:before,
+  [hagrid-debug] .layout-sm-50:before {
+    content: "50%";
+  }
+}
+@media screen and (max-width: 460px) {
+  [hagrid-debug] .lay-xs-50:before,
+  [hagrid-debug] .layout-xs-50:before {
+    content: "50%";
+  }
+}
+[hagrid-debug] .lay-55:before,
+[hagrid-debug] .layout-55:before {
+  content: "55%";
+}
+@media screen and (min-width: 1200px) {
+  [hagrid-debug] .lay-lg-55:before,
+  [hagrid-debug] .layout-lg-55:before {
+    content: "55%";
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+  [hagrid-debug] .lay-md-55:before,
+  [hagrid-debug] .layout-md-55:before {
+    content: "55%";
+  }
+}
+@media screen and (min-width: 460px) and (max-width: 700px) {
+  [hagrid-debug] .lay-sm-55:before,
+  [hagrid-debug] .layout-sm-55:before {
+    content: "55%";
+  }
+}
+@media screen and (max-width: 460px) {
+  [hagrid-debug] .lay-xs-55:before,
+  [hagrid-debug] .layout-xs-55:before {
+    content: "55%";
+  }
+}
+[hagrid-debug] .lay-60:before,
+[hagrid-debug] .layout-60:before {
+  content: "60%";
+}
+@media screen and (min-width: 1200px) {
+  [hagrid-debug] .lay-lg-60:before,
+  [hagrid-debug] .layout-lg-60:before {
+    content: "60%";
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+  [hagrid-debug] .lay-md-60:before,
+  [hagrid-debug] .layout-md-60:before {
+    content: "60%";
+  }
+}
+@media screen and (min-width: 460px) and (max-width: 700px) {
+  [hagrid-debug] .lay-sm-60:before,
+  [hagrid-debug] .layout-sm-60:before {
+    content: "60%";
+  }
+}
+@media screen and (max-width: 460px) {
+  [hagrid-debug] .lay-xs-60:before,
+  [hagrid-debug] .layout-xs-60:before {
+    content: "60%";
+  }
+}
+[hagrid-debug] .lay-65:before,
+[hagrid-debug] .layout-65:before {
+  content: "65%";
+}
+@media screen and (min-width: 1200px) {
+  [hagrid-debug] .lay-lg-65:before,
+  [hagrid-debug] .layout-lg-65:before {
+    content: "65%";
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+  [hagrid-debug] .lay-md-65:before,
+  [hagrid-debug] .layout-md-65:before {
+    content: "65%";
+  }
+}
+@media screen and (min-width: 460px) and (max-width: 700px) {
+  [hagrid-debug] .lay-sm-65:before,
+  [hagrid-debug] .layout-sm-65:before {
+    content: "65%";
+  }
+}
+@media screen and (max-width: 460px) {
+  [hagrid-debug] .lay-xs-65:before,
+  [hagrid-debug] .layout-xs-65:before {
+    content: "65%";
+  }
+}
+[hagrid-debug] .lay-70:before,
+[hagrid-debug] .layout-70:before {
+  content: "70%";
+}
+@media screen and (min-width: 1200px) {
+  [hagrid-debug] .lay-lg-70:before,
+  [hagrid-debug] .layout-lg-70:before {
+    content: "70%";
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+  [hagrid-debug] .lay-md-70:before,
+  [hagrid-debug] .layout-md-70:before {
+    content: "70%";
+  }
+}
+@media screen and (min-width: 460px) and (max-width: 700px) {
+  [hagrid-debug] .lay-sm-70:before,
+  [hagrid-debug] .layout-sm-70:before {
+    content: "70%";
+  }
+}
+@media screen and (max-width: 460px) {
+  [hagrid-debug] .lay-xs-70:before,
+  [hagrid-debug] .layout-xs-70:before {
+    content: "70%";
+  }
+}
+[hagrid-debug] .lay-75:before,
+[hagrid-debug] .layout-75:before {
+  content: "75%";
+}
+@media screen and (min-width: 1200px) {
+  [hagrid-debug] .lay-lg-75:before,
+  [hagrid-debug] .layout-lg-75:before {
+    content: "75%";
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+  [hagrid-debug] .lay-md-75:before,
+  [hagrid-debug] .layout-md-75:before {
+    content: "75%";
+  }
+}
+@media screen and (min-width: 460px) and (max-width: 700px) {
+  [hagrid-debug] .lay-sm-75:before,
+  [hagrid-debug] .layout-sm-75:before {
+    content: "75%";
+  }
+}
+@media screen and (max-width: 460px) {
+  [hagrid-debug] .lay-xs-75:before,
+  [hagrid-debug] .layout-xs-75:before {
+    content: "75%";
+  }
+}
+[hagrid-debug] .lay-80:before,
+[hagrid-debug] .layout-80:before {
+  content: "80%";
+}
+@media screen and (min-width: 1200px) {
+  [hagrid-debug] .lay-lg-80:before,
+  [hagrid-debug] .layout-lg-80:before {
+    content: "80%";
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+  [hagrid-debug] .lay-md-80:before,
+  [hagrid-debug] .layout-md-80:before {
+    content: "80%";
+  }
+}
+@media screen and (min-width: 460px) and (max-width: 700px) {
+  [hagrid-debug] .lay-sm-80:before,
+  [hagrid-debug] .layout-sm-80:before {
+    content: "80%";
+  }
+}
+@media screen and (max-width: 460px) {
+  [hagrid-debug] .lay-xs-80:before,
+  [hagrid-debug] .layout-xs-80:before {
+    content: "80%";
+  }
+}
+[hagrid-debug] .lay-85:before,
+[hagrid-debug] .layout-85:before {
+  content: "85%";
+}
+@media screen and (min-width: 1200px) {
+  [hagrid-debug] .lay-lg-85:before,
+  [hagrid-debug] .layout-lg-85:before {
+    content: "85%";
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+  [hagrid-debug] .lay-md-85:before,
+  [hagrid-debug] .layout-md-85:before {
+    content: "85%";
+  }
+}
+@media screen and (min-width: 460px) and (max-width: 700px) {
+  [hagrid-debug] .lay-sm-85:before,
+  [hagrid-debug] .layout-sm-85:before {
+    content: "85%";
+  }
+}
+@media screen and (max-width: 460px) {
+  [hagrid-debug] .lay-xs-85:before,
+  [hagrid-debug] .layout-xs-85:before {
+    content: "85%";
+  }
+}
+[hagrid-debug] .lay-90:before,
+[hagrid-debug] .layout-90:before {
+  content: "90%";
+}
+@media screen and (min-width: 1200px) {
+  [hagrid-debug] .lay-lg-90:before,
+  [hagrid-debug] .layout-lg-90:before {
+    content: "90%";
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+  [hagrid-debug] .lay-md-90:before,
+  [hagrid-debug] .layout-md-90:before {
+    content: "90%";
+  }
+}
+@media screen and (min-width: 460px) and (max-width: 700px) {
+  [hagrid-debug] .lay-sm-90:before,
+  [hagrid-debug] .layout-sm-90:before {
+    content: "90%";
+  }
+}
+@media screen and (max-width: 460px) {
+  [hagrid-debug] .lay-xs-90:before,
+  [hagrid-debug] .layout-xs-90:before {
+    content: "90%";
+  }
+}
+[hagrid-debug] .lay-95:before,
+[hagrid-debug] .layout-95:before {
+  content: "95%";
+}
+@media screen and (min-width: 1200px) {
+  [hagrid-debug] .lay-lg-95:before,
+  [hagrid-debug] .layout-lg-95:before {
+    content: "95%";
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+  [hagrid-debug] .lay-md-95:before,
+  [hagrid-debug] .layout-md-95:before {
+    content: "95%";
+  }
+}
+@media screen and (min-width: 460px) and (max-width: 700px) {
+  [hagrid-debug] .lay-sm-95:before,
+  [hagrid-debug] .layout-sm-95:before {
+    content: "95%";
+  }
+}
+@media screen and (max-width: 460px) {
+  [hagrid-debug] .lay-xs-95:before,
+  [hagrid-debug] .layout-xs-95:before {
+    content: "95%";
+  }
+}
+[hagrid-debug] .lay-100:before,
+[hagrid-debug] .layout-100:before {
+  content: "100%";
+}
+@media screen and (min-width: 1200px) {
+  [hagrid-debug] .lay-lg-100:before,
+  [hagrid-debug] .layout-lg-100:before {
+    content: "100%";
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+  [hagrid-debug] .lay-md-100:before,
+  [hagrid-debug] .layout-md-100:before {
+    content: "100%";
+  }
+}
+@media screen and (min-width: 460px) and (max-width: 700px) {
+  [hagrid-debug] .lay-sm-100:before,
+  [hagrid-debug] .layout-sm-100:before {
+    content: "100%";
+  }
+}
+@media screen and (max-width: 460px) {
+  [hagrid-debug] .lay-xs-100:before,
+  [hagrid-debug] .layout-xs-100:before {
+    content: "100%";
+  }
+}
+[hagrid-debug] .grid-for-1 .grid-box:before, [hagrid-debug].grid-for-1 .grid-box:before {
+  content: "1";
+}
+[hagrid-debug] .grid-for-2 .grid-box:before, [hagrid-debug].grid-for-2 .grid-box:before {
+  content: "2";
+}
+[hagrid-debug] .grid-for-3 .grid-box:before, [hagrid-debug].grid-for-3 .grid-box:before {
+  content: "3";
+}
+[hagrid-debug] .grid-for-4 .grid-box:before, [hagrid-debug].grid-for-4 .grid-box:before {
+  content: "4";
+}
+[hagrid-debug] .grid-for-5 .grid-box:before, [hagrid-debug].grid-for-5 .grid-box:before {
+  content: "5";
+}
+[hagrid-debug] .grid-for-6 .grid-box:before, [hagrid-debug].grid-for-6 .grid-box:before {
+  content: "6";
+}
+[hagrid-debug] .grid-for-7 .grid-box:before, [hagrid-debug].grid-for-7 .grid-box:before {
+  content: "7";
+}
+[hagrid-debug] .grid-for-8 .grid-box:before, [hagrid-debug].grid-for-8 .grid-box:before {
+  content: "8";
+}
+[hagrid-debug] .grid-for-9 .grid-box:before, [hagrid-debug].grid-for-9 .grid-box:before {
+  content: "9";
+}
+[hagrid-debug] .grid-for-10 .grid-box:before, [hagrid-debug].grid-for-10 .grid-box:before {
+  content: "10";
+}
+[hagrid-debug] .grid-for-11 .grid-box:before, [hagrid-debug].grid-for-11 .grid-box:before {
+  content: "11";
+}
+[hagrid-debug] .grid-for-12 .grid-box:before, [hagrid-debug].grid-for-12 .grid-box:before {
+  content: "12";
+}
+[hagrid-debug] .cols-1:before {
+  content: "1";
+}
+[hagrid-debug] .cols-2:before {
+  content: "2";
+}
+[hagrid-debug] .cols-3:before {
+  content: "3";
+}
+[hagrid-debug] .cols-4:before {
+  content: "4";
+}
+[hagrid-debug] .cols-5:before {
+  content: "5";
+}
+[hagrid-debug] .cols-6:before {
+  content: "6";
+}
+[hagrid-debug] .cols-7:before {
+  content: "7";
+}
+[hagrid-debug] .cols-8:before {
+  content: "8";
+}
+[hagrid-debug] .cols-9:before {
+  content: "9";
+}
+[hagrid-debug] .cols-10:before {
+  content: "10";
+}
+[hagrid-debug] .cols-11:before {
+  content: "11";
+}
+[hagrid-debug] .cols-12:before {
+  content: "12";
+}
+[hagrid-debug][debug-empty] *:before {
+  content: "";
+  display: none;
+}
