@@ -6263,14 +6263,14 @@ h6,
 .btn {
   display: inline-block;
   *display: inline;
-  padding: .7em 1em;
+  padding: 0.7em 1em;
   line-height: 1em;
   color: #f8f8f8;
   background-color: #f8f8f8;
   text-decoration: none;
   font-size: 1em;
   font-weight: 400;
-  margin: .25em;
+  margin: 0.25em;
   border-radius: 4px;
   text-transform: normal;
   position: relative;
@@ -6287,11 +6287,11 @@ h6,
   -ms-font-smoothing: antialiased;
   -o-font-smoothing: antialiased;
   font-smoothing: antialiased;
-  -webkit-transition: background .2s;
-  -moz-transition: background .2s;
-  -ms-transition: background .2s;
-  -o-transition: background .2s;
-  transition: background .2s;
+  -webkit-transition: background 0.2s;
+  -moz-transition: background 0.2s;
+  -ms-transition: background 0.2s;
+  -o-transition: background 0.2s;
+  transition: background 0.2s;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -6478,7 +6478,7 @@ h6,
 .btn.btn-outline {
   padding-right: 2em;
   padding-left: 2em;
-  background: transparent;
+  background-color: transparent;
   border-radius: 100px;
   border-width: 3px;
   border-style: solid;
@@ -6609,7 +6609,7 @@ h6,
   text-align: center;
   display: inline-block;
   *display: inline;
-  padding: .7em 1em;
+  padding: 0.7em 1em;
   line-height: 1em;
   color: #f8f8f8;
   background-color: #f8f8f8;
@@ -10653,7 +10653,7 @@ table.table.table-lg th {
 .alert section.alert-body {
   display: inline-block;
   *display: inline;
-  background: #fff;
+  background-color: #fff;
   color: #333;
   border-radius: 4px;
   overflow: hidden;

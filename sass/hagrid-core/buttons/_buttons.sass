@@ -73,7 +73,7 @@
 
   // Upper Button
   &.btn-upper
-    +prefix(border-radius, $btn__upper-border-radius)
+    +prefix(border-radius, $btn-upper-border-radius)
     //box-shadow: 0 -4px 0 0 rgba(0, 0, 0, .2) inset
     border-bottom: 4px solid rgba(0, 0, 0, .2)
 
@@ -87,9 +87,9 @@
   &.btn-outline
     padding-right: 2em
     padding-left: 2em
-    background: transparent
-    border-radius: $btn__outline-border-radius
-    border-width: $btn__outline-border-width
+    background-color: transparent
+    border-radius: $btn-outline-border-radius
+    border-width: $btn-outline-border-width
     border-style: solid
 
     @each $base-color in $base-colors
@@ -101,7 +101,7 @@
           color: #333
         @else
           color: #{$value}
-        @if $btn__outline-hover-bkg == true
+        @if $btn-outline-hover-bkg == true
           &:hover,
           &.btn-hover
             @if $key == default
