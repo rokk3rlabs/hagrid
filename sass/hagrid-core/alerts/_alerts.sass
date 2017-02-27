@@ -54,12 +54,12 @@
     &.alert-#{$key}
       @if $key == light
         section.alert-body
-          color: #333
+          color: $alert__light__colors__exception
 
       @if $key == inverse
         section.alert-body
-          color: #fff
-          background: #333
+          color: $alert__inverse__colors__exception
+          background: $alert__background__colors__exception
 
       footer.alert-footer
         border-top: 3px solid $value
@@ -67,11 +67,11 @@
           color: $value
 
         @if $key == light
-          border-top: 3px solid #333
+          border-top: 3px solid $alert__light__colors__exception
           a
-            color: #333
+            color: $alert__light__colors__exception
 
         @if $key == inverse
-          border-top: 3px solid #fff
+          border-top: 3px solid $alert__inverse__colors__exception
           a
-            color: #fff
+            color: $alert__inverse__colors__exception

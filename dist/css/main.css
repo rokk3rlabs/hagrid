@@ -6701,7 +6701,7 @@ h6,
 .breadcrumb a:last-child, .breadcrumb a.last-child,
 .breadcrumb .breadcrumb-item:last-child,
 .breadcrumb .breadcrumb-item.last-child {
-  border-radius: 0 5px 5px 0;
+  border-radius: 5px 0 0 5px;
 }
 .breadcrumb a:last-child:after, .breadcrumb a.last-child:after,
 .breadcrumb .breadcrumb-item:last-child:after,
