@@ -10644,8 +10644,20 @@ table.table.table-lg th {
   height: 100%;
   overflow: hidden;
   background: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  top: -100%;
+  transition: opacity 0.3s;
+}
+.alert.alert-show {
+  opacity: 1;
+  top: 0;
+}
+.alert.alert-show .alert-wrap {
+  bottom: 0;
 }
 .alert .alert-wrap {
+  transition: bottom 0.3s;
+  bottom: -100%;
   margin: 1em;
   height: 100%;
   text-align: center;
