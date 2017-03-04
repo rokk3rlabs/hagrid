@@ -1,28 +1,23 @@
 'use strict';
 
 window.hagrid = (function(){
-  var $q = require('sizzle');
-  //var $q = require('html.js');
+  /**
+   * Depenencies
+   * @type {import}
+   */
+  var u = require('umbrellajs').u;
+
+  /**
+   * hagrid variables
+   */
   var hagrid;
 
-
-  function _addClass(clss,el){
-    if (el.classList){
-      el.classList.add(clss);
-    }else{
-      el.className += ' ' + clss;
-    }
-  }
-
-  function _removeClass(clss, el){
-    return el.classList.remove(clss);
-  }
-
-  function _toggleClass(clss, el){
-    var el = el || this.selector;
-    return el.classList.toggle('active');
-  }
-
+  /**
+   * Parents
+   * @param  {String} ps Parent selector string
+   * @param  {Object} t  This object
+   * @return {Object}    Parent selector
+   */
   function _parents(ps, t) {
     var el = t || this.selector;
     var ps = document.querySelector(componentSelectors) || document;
@@ -37,52 +32,46 @@ window.hagrid = (function(){
     return parents;
   }
 
+  /**
+   * Hagrid parent root component
+   * @param  {Object} el html element
+   * @return {Object}    Parent element
+   */
   function _parentComponent(el){
     var parent = el.parentNode;
     var i = 0;
-    var hasAttr = _hasAttr(parent, 'hagrid-component');
+    var hasAttr = u(parent).attr('hagrid-component');
     while (!hasAttr || i > 10){
       var o = parent;
       parent = o.parentNode;
-      hasAttr = _hasAttr(parent, 'hagrid-component');
+      hasAttr = u(parent).attr('hagrid-component');
       i++;
     }
     return parent;
   }
 
+  /**
+   * Get hagrid component
+   * @param  {String} el Element string
+   * @return {fn}    component function
+   */
   function _getComponent(el){
-    var hagridTarget = _getAttr(el, 'hagrid-target');
-    var parentTarget = (!!hagridTarget) ? null : _parentComponent(el);
-    var hagridRole = _getAttr(el, 'hagrid-role');
-    var elTarget = (!!hagridTarget) ? $q(hagridTarget)[0] :parentTarget;
-    var firstElement = elTarget;
-    var componentType = _getAttr(firstElement, 'hagrid-component');
-    var component = components[componentType][hagridRole];
+    var hagridTarget = u(el).attr('hagrid-target'),
+        parentTarget = (!!hagridTarget) ? null : _parentComponent(el),
+        hagridRole = u(el).attr('hagrid-role'),
+        elTarget = (!!hagridTarget) ? u(hagridTarget).first() :parentTarget,
+        firstElement = elTarget,
+        componentType = u(firstElement).attr('hagrid-component'),
+        component = components[componentType][hagridRole];
+
     component(firstElement);
   }
 
-  function _getAttr(el, attr){
-    return el.getAttribute(attr);
-  }
-
-  function _getAttrs(el){
-    return el.attributes;
-  }
-
-  function _hasAttr(el, attr){
-    var el = el || {};
-    var listAttr =  el.attributes || [];
-    var exist = false;
-    Array.prototype.slice.call(listAttr).forEach(function(i) {
-      if(i.name == attr){
-        exist = true;
-      }
-    });
-    return exist;
-  }
-
+  /**
+   * Alert Hagrid Component
+   * @return {null}
+   */
   var alerts = function(){
-
     return {
         component: {
           tpl: function(title, message, option){
@@ -107,10 +96,10 @@ window.hagrid = (function(){
           rootElement: '.alert',
         },
         open: function(el){
-          _addClass('alert-show', el);
+          u(el).addClass('alert-show');
         },
         close: function(el){
-          _removeClass('alert-show', el);
+          u(el).removeClass('alert-show');
         },
         launch: function(options){
           var html = this.component.tpl('test', 'test', {});
@@ -126,36 +115,60 @@ window.hagrid = (function(){
       }
   }
 
+  /**
+   * Hagrid Components
+   * @type {Object}
+   */
   var components = {
-    alert: alerts()
+    alert: alerts(),
+    modals: modals()
   };
-
   
+  /**
+   * Binding hagrid click event
+   * @param  {null}
+   * @return {null} 
+   */
   var bodyEvent = (function(){
     document.body.addEventListener("click", function(e) {
       if(e.target.tagName.toLowerCase() === 'a') e.preventDefault();
       var el = e.target;
-      var isHagridComponent = _hasAttr(el, 'hagrid-role');
+      var isHagridComponent = u(el).attr('hagrid-role');
       if(isHagridComponent){
         _getComponent(el);        
       }
     });
   })();
 
+  /**
+   * Event body change
+   * @param  {fn}
+   * @return {null}
+   */
   var bodyChange = (function(){
     document.body.addEventListener("change", function(e) {
       console.log(e.target);
     });
   })();
 
+  /**
+   * Event body load
+   * @param  {fn}
+   * @return {null}
+   */
   var bodyLoad = (function(){
-     document.addEventListener("DOMContentLoaded", function(event) {
-      console.log("DOM fully loaded and parsed 2");
+     document.addEventListener("DOMContentLoaded", function(e) {
+      console.log(e.target);
     });
   })();
 
 
+  /**
+   * Hagrid main function
+   * @type {Object}
+   */
   hagrid = {
+    $: u,
     createEl : function addElement () { 
       var el = '<a href="" class="btn btn-inverse" hagrid-target="#alert3" hagrid-role="open">Launch alert</a>';
       var newDiv = document.createElement("div"); 
@@ -163,10 +176,8 @@ window.hagrid = (function(){
       var currentDiv = document.getElementById("div1"); 
       document.body.insertBefore(newDiv, currentDiv); 
     },
-    alerts: alerts
-
+    component: components
   }
-
   return hagrid;
 
 })();
