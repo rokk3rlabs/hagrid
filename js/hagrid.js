@@ -116,12 +116,57 @@ window.hagrid = (function(){
   }
 
   /**
+   * Modal Hagrid Component
+   * @return {null}
+   */
+  var modals = function(){
+    return {
+        component: {
+          tpl: function(title, message, option){
+            return ['', ''].join('')
+          },
+          rootElement: '.modal',
+        },
+        open: function(el){
+          u(el).addClass('modal-show');
+        },
+        close: function(el){
+          u(el).removeClass('modal-show');
+        },
+        launch: function(options){}
+      }
+  }
+
+  /**
+   * Tooltip Hagrid Component
+   * @return {null}
+   */
+  var tooltips = function(){
+    return {
+        component: {
+          tpl: function(title, message, option){
+            return ['', ''].join('')
+          },
+          rootElement: '.tooltip',
+        },
+        open: function(el){
+          u(el).addClass('tooltip-show');
+        },
+        close: function(el){
+          u(el).removeClass('tooltip-show');
+        },
+        launch: function(options){}
+      }
+  }
+
+  /**
    * Hagrid Components
    * @type {Object}
    */
   var components = {
     alert: alerts(),
-    modals: modals()
+    modal: modals(),
+    tooltip: tooltips(),
   };
   
   /**
