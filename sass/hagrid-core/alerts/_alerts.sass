@@ -6,8 +6,20 @@
   height: 100%
   overflow: hidden
   background: rgba(0, 0, 0, .3)
+  opacity: 0
+  top: -100%
+  transition: opacity .3s 
+
+  &.alert-show
+    opacity: 1
+    top: 0
+
+    .alert-wrap
+      bottom: 0
 
   .alert-wrap
+    transition: bottom .3s 
+    bottom: -100%
     margin: 1em
     height: 100%
     text-align: center

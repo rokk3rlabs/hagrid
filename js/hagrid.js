@@ -1,109 +1,228 @@
 'use strict';
+
 window.hagrid = (function(){
+  /**
+   * Depenencies
+   * @type {import}
+   */
+  var u = require('umbrellajs').u;
 
-  var $DOM;
+  /**
+   * hagrid variables
+   */
+  var hagrid;
 
-  var components = [
-    {
-      el: 'dropdowns',
-      parent: '.dropdown',
-      trigger: '.btn-dropdown'
-    },
-    {
-      el: 'radios',
-      parent: '.radio',
-      trigger: 'input[type="radio"]'
-    },
-  ];
-
-  var componentSelectors = '.dropdown';
-  /*for(var i = 0; i < components.length; i++){
-    var  component = components[i];
-    var lastSelector = (i == components.length - 1);
-    var end = (lastSelector) ? '' : ', ';
-    componentSelectors +=  component.parent + end
-  }*/
-
-
-  var query = function(s){
-    return document.querySelector(s);
-  }
-
-  var queryAll = function(s){
-    return document.querySelectorAll(s);
-  };
-
-  var addClass = function(c,s){
-    if (this.selector.classList){
-      this.selector.classList.add(c);
-    }else{
-      this.selector.className += ' ' + c;
-    }
-  }
-
-  var parents = function(ps, t) {
-
+  /**
+   * Parents
+   * @param  {String} ps Parent selector string
+   * @param  {Object} t  This object
+   * @return {Object}    Parent selector
+   */
+  function _parents(ps, t) {
     var el = t || this.selector;
     var ps = document.querySelector(componentSelectors) || document;
-
     var parents = [];
     var parent = el.parentNode;
-
     while (parent !== ps) {
-        var o = parent;
-        parents.push(o);
-        parent = o.parentNode;
+      var o = parent;
+      parents.push(o);
+      parent = o.parentNode;
     }
     parents.push(ps);
-
     return parents;
   }
 
-  var toggleClass = function(c,t){
-    var el = t || this.selector;
-    return el.classList.toggle('active');
-  }
-
-  var children = function(s, t){
-    var el = t || this.selector;
-    return el.querySelector(':scope > '+ s)
-  }
-
-  function addListenerActive(){
-    var els = queryAll(componentSelectors);
-    for (var i = 0; i < els.length; i++) {
-      var el = els[i];
-      var trigger = children('[hagrid-trigger]', el)
-      if(!trigger) return;
-      trigger.hagridParent = el;
-      trigger.addEventListener('click', function(e) {
-        if(e.target.tagName.toLowerCase() === 'a') e.preventDefault();
-        var self = this;
-        var selfParent = self.hagridParent
-        if(self) toggleClass('active', self);
-        if(selfParent) toggleClass('active', selfParent);
-      });
+  /**
+   * Hagrid parent root component
+   * @param  {Object} el html element
+   * @return {Object}    Parent element
+   */
+  function _parentComponent(el){
+    var parent = el.parentNode;
+    var i = 0;
+    var hasAttr = u(parent).attr('hagrid-component');
+    while (!hasAttr || i > 10){
+      var o = parent;
+      parent = o.parentNode;
+      hasAttr = u(parent).attr('hagrid-component');
+      i++;
     }
-  };
+    return parent;
+  }
 
+  /**
+   * Get hagrid component
+   * @param  {String} el Element string
+   * @return {fn}    component function
+   */
+  function _getComponent(el){
+    var hagridTarget = u(el).attr('hagrid-target'),
+        parentTarget = (!!hagridTarget) ? null : _parentComponent(el),
+        hagridRole = u(el).attr('hagrid-role'),
+        elTarget = (!!hagridTarget) ? u(hagridTarget).first() :parentTarget,
+        firstElement = elTarget,
+        componentType = u(firstElement).attr('hagrid-component'),
+        component = components[componentType][hagridRole];
 
-  var hagrid = {
-    components: {
-      dropdowns: function(){
-        var dropdowns = queryAll('.dropdown');
-        return hagrid.dropdowns = dropdowns;
-      },
-      radios: function(){
-        var dropdowns = queryAll('.input-radio');
-        return hagrid.radios = dropdowns;
-      },
-      load: function(){
-        addListenerActive();
+    component(firstElement);
+  }
+
+  /**
+   * Alert Hagrid Component
+   * @return {null}
+   */
+  var alerts = function(){
+    return {
+        component: {
+          tpl: function(title, message, option){
+            return [
+              '<div class="alert alert-show" id="alert1" hagrid-component="alert">',
+                '<div class="alert-wrap">',
+                  '<section class="alert-body">',
+                    '<header class="alert-header">',
+                      '<b class="alert-title">'+title+'</b>',
+                    '</header>',
+                    '<article class="alert-content">',
+                      '<p>'+message+'</p>',
+                    '</article>',
+                    '<footer class="alert-footer">',
+                      '<a href="#" hagrid-role="close">'+option.text+'</a>',
+                    '</footer>',
+                  '</section>',
+                '</div>',
+              '</div>'
+            ].join('')
+          },
+          rootElement: '.alert',
+        },
+        open: function(el){
+          u(el).addClass('alert-show');
+        },
+        close: function(el){
+          u(el).removeClass('alert-show');
+        },
+        launch: function(options){
+          var html = this.component.tpl('test', 'test', {});
+          debugger;
+          var el = document.createElement('div');
+          el.innerHTML = html;
+          while(el.firstChild) {
+              document.body.appendChild(el.firstChild);
+          }
+          debugger;
+          this.open(el);
+        }
       }
-    }
   }
 
-  hagrid.components.load();
-  return hagrid
+  /**
+   * Modal Hagrid Component
+   * @return {null}
+   */
+  var modals = function(){
+    return {
+        component: {
+          tpl: function(title, message, option){
+            return ['', ''].join('')
+          },
+          rootElement: '.modal',
+        },
+        open: function(el){
+          u(el).addClass('modal-show');
+        },
+        close: function(el){
+          u(el).removeClass('modal-show');
+        },
+        launch: function(options){}
+      }
+  }
 
-}());
+  /**
+   * Tooltip Hagrid Component
+   * @return {null}
+   */
+  var tooltips = function(){
+    return {
+        component: {
+          tpl: function(title, message, option){
+            return ['', ''].join('')
+          },
+          rootElement: '.tooltip',
+        },
+        open: function(el){
+          u(el).addClass('tooltip-show');
+        },
+        close: function(el){
+          u(el).removeClass('tooltip-show');
+        },
+        launch: function(options){}
+      }
+  }
+
+  /**
+   * Hagrid Components
+   * @type {Object}
+   */
+  var components = {
+    alert: alerts(),
+    modal: modals(),
+    tooltip: tooltips(),
+  };
+  
+  /**
+   * Binding hagrid click event
+   * @param  {null}
+   * @return {null} 
+   */
+  var bodyEvent = (function(){
+    document.body.addEventListener("click", function(e) {
+      if(e.target.tagName.toLowerCase() === 'a') e.preventDefault();
+      var el = e.target;
+      var isHagridComponent = u(el).attr('hagrid-role');
+      if(isHagridComponent){
+        _getComponent(el);        
+      }
+    });
+  })();
+
+  /**
+   * Event body change
+   * @param  {fn}
+   * @return {null}
+   */
+  var bodyChange = (function(){
+    document.body.addEventListener("change", function(e) {
+      console.log(e.target);
+    });
+  })();
+
+  /**
+   * Event body load
+   * @param  {fn}
+   * @return {null}
+   */
+  var bodyLoad = (function(){
+     document.addEventListener("DOMContentLoaded", function(e) {
+      console.log(e.target);
+    });
+  })();
+
+
+  /**
+   * Hagrid main function
+   * @type {Object}
+   */
+  hagrid = {
+    $: u,
+    createEl : function addElement () { 
+      var el = '<a href="" class="btn btn-inverse" hagrid-target="#alert3" hagrid-role="open">Launch alert</a>';
+      var newDiv = document.createElement("div"); 
+      newDiv.innerHTML = el;
+      var currentDiv = document.getElementById("div1"); 
+      document.body.insertBefore(newDiv, currentDiv); 
+    },
+    component: components
+  }
+  return hagrid;
+
+})();
