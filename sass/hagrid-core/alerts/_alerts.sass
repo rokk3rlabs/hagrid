@@ -6,11 +6,24 @@
   height: $alert-height
   overflow: $alert-overflow
   background-color: $alert-background-color
+  opacity: 0
+  top: -100%
+  transition: opacity .3s 
 
   .alert-wrap
     margin: $alert-wrap-margin
     height: $alert-wrap-height
     text-align: $alert-wrap-text-align
+    transition: bottom .3s 
+    bottom: -100%
+
+  &.alert-show
+    opacity: 1
+    top: 0
+
+    .alert-wrap
+      bottom: 0
+
 
   section.alert-body
     +inline-block

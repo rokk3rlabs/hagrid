@@ -6179,7 +6179,7 @@ div {
 .h4, h5,
 .h5, h6,
 .h6 {
-  padding: 0.5em 0;
+  padding: .5em 0;
   margin: 0;
   line-height: 1.2em;
   font-weight: 400;
@@ -9679,14 +9679,14 @@ ul.list-square.list-error li:before {
 .label {
   display: inline-block;
   *display: inline;
-  padding: 0.2em 0.5em;
+  padding: .2em .5em;
   line-height: 1em;
   color: #f8f8f8;
   background-color: #f8f8f8;
   text-decoration: none;
   font-size: 1em;
   font-weight: 400;
-  margin: 0.25em;
+  margin: .25em;
   border-radius: 4px;
   text-transform: normal;
   position: relative;
@@ -9703,11 +9703,11 @@ ul.list-square.list-error li:before {
   -ms-font-smoothing: antialiased;
   -o-font-smoothing: antialiased;
   font-smoothing: antialiased;
-  -webkit-transition: background 0.2s;
-  -moz-transition: background 0.2s;
-  -ms-transition: background 0.2s;
-  -o-transition: background 0.2s;
-  transition: background 0.2s;
+  -webkit-transition: background .2s;
+  -moz-transition: background .2s;
+  -ms-transition: background .2s;
+  -o-transition: background .2s;
+  transition: background .2s;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -9900,11 +9900,11 @@ table.table.table-lg th {
 .pagination > *:not(.not) {
   display: inline-block;
   *display: inline;
-  -webkit-transition: background-color 0.3s;
-  -moz-transition: background-color 0.3s;
-  -ms-transition: background-color 0.3s;
-  -o-transition: background-color 0.3s;
-  transition: background-color 0.3s;
+  -webkit-transition: background-color .3s;
+  -moz-transition: background-color .3s;
+  -ms-transition: background-color .3s;
+  -o-transition: background-color .3s;
+  transition: background-color .3s;
   cursor: pointer;
   vertical-align: middle;
   text-decoration: none;
@@ -10085,7 +10085,7 @@ table.table.table-lg th {
   border: 1px solid;
   border-color: #f8f8f8;
   border-radius: 100px;
-  margin-right: 0.5em;
+  margin-right: .5em;
   color: #f8f8f8;
 }
 .pagination.pagination-outline.pagination-default > *:not(.not):hover:not(.ellipsis):not(.disable), .pagination.pagination-outline.pagination-default > *:not(.not).current {
@@ -10100,7 +10100,7 @@ table.table.table-lg th {
   border: 1px solid;
   border-color: #f8f8f8;
   border-radius: 100px;
-  margin-right: 0.5em;
+  margin-right: .5em;
   color: #f8f8f8;
   color: #333;
 }
@@ -10117,7 +10117,7 @@ table.table.table-lg th {
   border: 1px solid;
   border-color: #3C3C3C;
   border-radius: 100px;
-  margin-right: 0.5em;
+  margin-right: .5em;
   color: #3C3C3C;
 }
 .pagination.pagination-outline.pagination-inverse > *:not(.not):hover:not(.ellipsis):not(.disable), .pagination.pagination-outline.pagination-inverse > *:not(.not).current {
@@ -10132,7 +10132,7 @@ table.table.table-lg th {
   border: 1px solid;
   border-color: #2D6CC9;
   border-radius: 100px;
-  margin-right: 0.5em;
+  margin-right: .5em;
   color: #2D6CC9;
 }
 .pagination.pagination-outline.pagination-primary > *:not(.not):hover:not(.ellipsis):not(.disable), .pagination.pagination-outline.pagination-primary > *:not(.not).current {
@@ -10147,7 +10147,7 @@ table.table.table-lg th {
   border: 1px solid;
   border-color: #31C290;
   border-radius: 100px;
-  margin-right: 0.5em;
+  margin-right: .5em;
   color: #31C290;
 }
 .pagination.pagination-outline.pagination-secondary > *:not(.not):hover:not(.ellipsis):not(.disable), .pagination.pagination-outline.pagination-secondary > *:not(.not).current {
@@ -10162,7 +10162,7 @@ table.table.table-lg th {
   border: 1px solid;
   border-color: #00BCD4;
   border-radius: 100px;
-  margin-right: 0.5em;
+  margin-right: .5em;
   color: #00BCD4;
 }
 .pagination.pagination-outline.pagination-info > *:not(.not):hover:not(.ellipsis):not(.disable), .pagination.pagination-outline.pagination-info > *:not(.not).current {
@@ -10177,7 +10177,7 @@ table.table.table-lg th {
   border: 1px solid;
   border-color: #E68523;
   border-radius: 100px;
-  margin-right: 0.5em;
+  margin-right: .5em;
   color: #E68523;
 }
 .pagination.pagination-outline.pagination-warning > *:not(.not):hover:not(.ellipsis):not(.disable), .pagination.pagination-outline.pagination-warning > *:not(.not).current {
@@ -10192,7 +10192,7 @@ table.table.table-lg th {
   border: 1px solid;
   border-color: #C53030;
   border-radius: 100px;
-  margin-right: 0.5em;
+  margin-right: .5em;
   color: #C53030;
 }
 .pagination.pagination-outline.pagination-error > *:not(.not):hover:not(.ellipsis):not(.disable), .pagination.pagination-outline.pagination-error > *:not(.not).current {
@@ -10404,11 +10404,11 @@ table.table.table-lg th {
   border: 0;
 }
 .progressbar .progressbar-counting {
-  -webkit-transition: 0.3s width;
-  -moz-transition: 0.3s width;
-  -ms-transition: 0.3s width;
-  -o-transition: 0.3s width;
-  transition: 0.3s width;
+  -webkit-transition: .3s width;
+  -moz-transition: .3s width;
+  -ms-transition: .3s width;
+  -o-transition: .3s width;
+  transition: .3s width;
   position: absolute;
   left: 0;
   top: 0;
@@ -10419,7 +10419,7 @@ table.table.table-lg th {
 }
 .progressbar .progressbar-counting:before {
   content: attr(data-counting);
-  font-size: 0.9em;
+  font-size: .9em;
   font-family: Helvetica, Arial, sans-serif;
   font-weight: bold;
   position: relative;
@@ -10519,11 +10519,10 @@ table.table.table-lg th {
   font-weight: bold;
 }
 .tooltip:hover .tooltip-body, .tooltip.hover .tooltip-body, .tooltip.tooltip-show .tooltip-body {
-  display: block;
-}
-.tooltip .tooltip-body {
   display: inline-block;
   *display: inline;
+}
+.tooltip .tooltip-body {
   position: absolute;
   background: #2D6CC9;
   padding: 0.7em;
@@ -10532,8 +10531,10 @@ table.table.table-lg th {
   font-family: Helvetica, Arial, sans-serif;
   font-weight: 100;
   color: #fff;
+  display: none;
   border-radius: 4px;
   z-index: 1;
+  transition: all 0.3s;
 }
 .tooltip .tooltip-body:before {
   content: "";
@@ -10644,11 +10645,23 @@ table.table.table-lg th {
   height: 100%;
   overflow: hidden;
   background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  top: -100%;
+  transition: opacity 0.3s;
 }
 .alert .alert-wrap {
   margin: 1em;
   height: 100%;
   text-align: center;
+  transition: bottom 0.3s;
+  bottom: -100%;
+}
+.alert.alert-show {
+  opacity: 1;
+  top: 0;
+}
+.alert.alert-show .alert-wrap {
+  bottom: 0;
 }
 .alert section.alert-body {
   display: inline-block;
@@ -10748,5 +10761,160 @@ table.table.table-lg th {
   border-top: 3px solid #C53030;
 }
 .alert.alert-error footer.alert-footer a {
+  color: #C53030;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  top: -100%;
+  transition: opacity 0.3s;
+}
+.modal.modal-show {
+  opacity: 1;
+  top: 0;
+}
+.modal.modal-show .modal-wrap {
+  bottom: 0;
+}
+.modal .modal-wrap {
+  transition: bottom 0.3s;
+  bottom: -100%;
+  margin: 1em;
+  height: 100%;
+  text-align: center;
+}
+.modal .modal-body {
+  display: inline-block;
+  *display: inline;
+  background-color: #fff;
+  color: #333;
+  border-radius: 4px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  max-width: 600px;
+  margin-top: -75px;
+  top: 50%;
+}
+.modal header.modal-header {
+  padding: 1em;
+  font-size: 1.1em;
+}
+.modal header.modal-header .modal-title {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+.modal .modal-close {
+  position: fixed;
+  border-radius: 0 0 0 3px;
+  right: 0;
+  text-decoration: none;
+  right: 0;
+  top: 0;
+  color: #fff;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.5);
+}
+.modal .modal-close:before, .modal .modal-close:after {
+  content: "";
+  position: relative;
+  width: 20px;
+  height: 2px;
+  background: #000;
+  display: block;
+}
+.modal .modal-close:before {
+  transform: rotate(45deg);
+  top: 1px;
+}
+.modal .modal-close:after {
+  transform: rotate(-45deg);
+  top: -2px;
+}
+.modal article.modal-content {
+  padding: 1em;
+}
+.modal article.modal-content * {
+  margin: 0;
+  padding-bottom: 1em;
+}
+.modal footer.modal-footer {
+  border-bottom: 3px solid #2D6CC9;
+}
+.modal footer.modal-footer a {
+  display: block;
+  font-weight: bold;
+  color: #2D6CC9;
+  padding: 1em;
+  text-decoration: none;
+}
+.modal.modal-default footer.modal-footer {
+  border-bottom: 3px solid #f8f8f8;
+}
+.modal.modal-default footer.modal-footer a {
+  color: #f8f8f8;
+}
+.modal.modal-light section.modal-body {
+  color: #333;
+}
+.modal.modal-light footer.modal-footer {
+  border-bottom: 3px solid #f8f8f8;
+  border-top: 3px solid #333;
+}
+.modal.modal-light footer.modal-footer a {
+  color: #f8f8f8;
+}
+.modal.modal-light footer.modal-footer a {
+  color: #333;
+}
+.modal.modal-inverse section.modal-body {
+  color: #fff;
+  background: #333;
+}
+.modal.modal-inverse footer.modal-footer {
+  border-bottom: 3px solid #3C3C3C;
+  border-top: 3px solid #fff;
+}
+.modal.modal-inverse footer.modal-footer a {
+  color: #3C3C3C;
+}
+.modal.modal-inverse footer.modal-footer a {
+  color: #fff;
+}
+.modal.modal-primary footer.modal-footer {
+  border-bottom: 3px solid #2D6CC9;
+}
+.modal.modal-primary footer.modal-footer a {
+  color: #2D6CC9;
+}
+.modal.modal-secondary footer.modal-footer {
+  border-bottom: 3px solid #31C290;
+}
+.modal.modal-secondary footer.modal-footer a {
+  color: #31C290;
+}
+.modal.modal-info footer.modal-footer {
+  border-bottom: 3px solid #00BCD4;
+}
+.modal.modal-info footer.modal-footer a {
+  color: #00BCD4;
+}
+.modal.modal-warning footer.modal-footer {
+  border-bottom: 3px solid #E68523;
+}
+.modal.modal-warning footer.modal-footer a {
+  color: #E68523;
+}
+.modal.modal-error footer.modal-footer {
+  border-bottom: 3px solid #C53030;
+}
+.modal.modal-error footer.modal-footer a {
   color: #C53030;
 }
