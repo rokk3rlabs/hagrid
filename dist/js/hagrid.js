@@ -177,10 +177,10 @@ window.hagrid = (function(){
    */
   var bodyEvent = (function(){
     document.body.addEventListener("click", function(e) {
-      if(e.target.tagName.toLowerCase() === 'a') e.preventDefault();
       var el = e.target;
       var isHagridComponent = u(el).attr('hagrid-role');
       if(isHagridComponent){
+        if(e.target.tagName.toLowerCase() === 'a') e.preventDefault();
         _getComponent(el);        
       }
     });
