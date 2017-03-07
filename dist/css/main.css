@@ -10648,6 +10648,7 @@ table.table.table-lg th {
   opacity: 0;
   top: -100%;
   transition: opacity 0.3s;
+  z-index: 1001;
 }
 .alert .alert-wrap {
   margin: 1em;
@@ -10775,6 +10776,7 @@ table.table.table-lg th {
   opacity: 0;
   top: -100%;
   transition: opacity 0.3s;
+  z-index: 1000;
 }
 .modal.modal-show {
   opacity: 1;
