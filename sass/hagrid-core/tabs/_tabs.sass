@@ -1,6 +1,7 @@
 .tab
   margin: 1em 0
   display: block
+  background-color: nth(nth($base-colors, 1), 2)
 
   .tab-nav
     display: flex
@@ -16,7 +17,7 @@
       padding: 0.7em 1em
       line-height: 1em
       color: #333
-      background-color: nth(nth($base-colors, 1), 2)
+      background-color: transparent
       text-decoration: none
       font-weight: 100
       font-size: $tab-font-size
@@ -42,7 +43,6 @@
         border-bottom-color: $color-primary
 
   .tab-content
-    background-color: nth(nth($base-colors, 1), 2)
     padding: 2em 1em
 
     .tab-panel
@@ -50,4 +50,26 @@
 
       &.tab-show 
         display: block
-  
+
+  @each $base-color in $base-colors
+    $key: nth($base-color, 1)
+    $value: nth($base-color, 2)
+    &.tab-#{$key}
+      .tab-nav
+        .tab-nav-item,
+        a
+
+          &.tab-show
+            color: $value
+            border-bottom-color: $value
+      
+      @if $key == light
+        background-color: #333
+        color: #fff
+
+        .tab-nav
+          .tab-nav-item,
+          a
+            color: #f3f3f3
+
+

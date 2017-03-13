@@ -6596,6 +6596,7 @@ h6,
 .tab {
   margin: 1em 0;
   display: block;
+  background-color: #f8f8f8;
 }
 .tab .tab-nav {
   display: flex;
@@ -6613,7 +6614,7 @@ h6,
   padding: 0.7em 1em;
   line-height: 1em;
   color: #333;
-  background-color: #f8f8f8;
+  background-color: transparent;
   text-decoration: none;
   font-weight: 100;
   font-size: 1em;
@@ -6657,7 +6658,6 @@ h6,
   border-bottom-color: #2D6CC9;
 }
 .tab .tab-content {
-  background-color: #f8f8f8;
   padding: 2em 1em;
 }
 .tab .tab-content .tab-panel {
@@ -6665,6 +6665,54 @@ h6,
 }
 .tab .tab-content .tab-panel.tab-show {
   display: block;
+}
+.tab.tab-default .tab-nav .tab-nav-item.tab-show,
+.tab.tab-default .tab-nav a.tab-show {
+  color: #f8f8f8;
+  border-bottom-color: #f8f8f8;
+}
+.tab.tab-light {
+  background-color: #333;
+  color: #fff;
+}
+.tab.tab-light .tab-nav .tab-nav-item.tab-show,
+.tab.tab-light .tab-nav a.tab-show {
+  color: #f8f8f8;
+  border-bottom-color: #f8f8f8;
+}
+.tab.tab-light .tab-nav .tab-nav-item,
+.tab.tab-light .tab-nav a {
+  color: #f3f3f3;
+}
+.tab.tab-inverse .tab-nav .tab-nav-item.tab-show,
+.tab.tab-inverse .tab-nav a.tab-show {
+  color: #3C3C3C;
+  border-bottom-color: #3C3C3C;
+}
+.tab.tab-primary .tab-nav .tab-nav-item.tab-show,
+.tab.tab-primary .tab-nav a.tab-show {
+  color: #2D6CC9;
+  border-bottom-color: #2D6CC9;
+}
+.tab.tab-secondary .tab-nav .tab-nav-item.tab-show,
+.tab.tab-secondary .tab-nav a.tab-show {
+  color: #31C290;
+  border-bottom-color: #31C290;
+}
+.tab.tab-info .tab-nav .tab-nav-item.tab-show,
+.tab.tab-info .tab-nav a.tab-show {
+  color: #00BCD4;
+  border-bottom-color: #00BCD4;
+}
+.tab.tab-warning .tab-nav .tab-nav-item.tab-show,
+.tab.tab-warning .tab-nav a.tab-show {
+  color: #E68523;
+  border-bottom-color: #E68523;
+}
+.tab.tab-error .tab-nav .tab-nav-item.tab-show,
+.tab.tab-error .tab-nav a.tab-show {
+  color: #C53030;
+  border-bottom-color: #C53030;
 }
 
 .breadcrumb {
