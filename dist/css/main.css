@@ -350,8 +350,8 @@ div {
   color: #333;
 }
 
-.default-color, .btn, .tab-component .nav-tabs .nav-tab,
-.tab-component .nav-tabs li, .label {
+.default-color, .btn, .tab .tab-nav .tab-nav-item,
+.tab .tab-nav a, .label {
   color: #f8f8f8;
 }
 
@@ -6593,17 +6593,18 @@ h6,
   color: #fff;
 }
 
-.tab-component {
+.tab {
   margin: 1em 0;
+  display: block;
 }
-.tab-component .nav-tabs {
+.tab .tab-nav {
   display: flex;
   list-style: none;
   padding: 0;
   margin: 0;
 }
-.tab-component .nav-tabs .nav-tab,
-.tab-component .nav-tabs li {
+.tab .tab-nav .tab-nav-item,
+.tab .tab-nav a {
   cursor: pointer;
   width: 100%;
   text-align: center;
@@ -6611,7 +6612,7 @@ h6,
   *display: inline;
   padding: 0.7em 1em;
   line-height: 1em;
-  color: #f8f8f8;
+  color: #333;
   background-color: #f8f8f8;
   text-decoration: none;
   font-weight: 100;
@@ -6646,23 +6647,24 @@ h6,
   -o-box-sizing: border-box;
   box-sizing: border-box;
 }
-.tab-component .nav-tabs .nav-tab:last-child,
-.tab-component .nav-tabs li:last-child {
+.tab .tab-nav .tab-nav-item:last-child,
+.tab .tab-nav a:last-child {
   border-right: 1px solid transparent;
 }
-.tab-component .nav-tabs .nav-tab.active,
-.tab-component .nav-tabs li.active {
+.tab .tab-nav .tab-nav-item.tab-show,
+.tab .tab-nav a.tab-show {
   color: #2D6CC9;
   border-bottom-color: #2D6CC9;
 }
-.tab-component .content-tabs .content-tab {
+.tab .tab-content {
+  background-color: #f8f8f8;
+  padding: 2em 1em;
+}
+.tab .tab-content .tab-panel {
   display: none;
 }
-.tab-component .content-tabs .content-tab.active {
+.tab .tab-content .tab-panel.tab-show {
   display: block;
-}
-.tab-component.tab-component-primary {
-  border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .breadcrumb {
