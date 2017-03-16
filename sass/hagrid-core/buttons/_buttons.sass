@@ -35,8 +35,8 @@
     $value: nth($base-color, 2)
     &.btn-#{$key}
       background-color: #{$value}
-      @if $key == default
-        color: nth(nth($base-colors, 2), 2)
+      @if $key == light
+        color: nth(nth($base-colors, 3), 2)
         .badge
           background: nth(nth($base-colors, 2), 2)
 
@@ -97,14 +97,14 @@
       $value: nth($base-color, 2)
       &.btn-#{$key}
         border-color: #{$value}
-        @if $key == default
+        @if $key == light
           color: #333
         @else
           color: #{$value}
         @if $btn-outline-hover-bkg == true
           &:hover,
           &.btn-hover
-            @if $key == default
+            @if $key == light
               color: #333
             @else
               color: #fff

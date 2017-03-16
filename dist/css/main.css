@@ -6309,10 +6309,6 @@ h6,
 }
 .btn.btn-default {
   background-color: #f8f8f8;
-  color: #f8f8f8;
-}
-.btn.btn-default .badge {
-  background: #f8f8f8;
 }
 .btn.btn-default .badge {
   color: #f8f8f8;
@@ -6329,6 +6325,10 @@ h6,
 }
 .btn.btn-light {
   background-color: #f8f8f8;
+  color: #3C3C3C;
+}
+.btn.btn-light .badge {
+  background: #f8f8f8;
 }
 .btn.btn-light .badge {
   color: #f8f8f8;
@@ -6485,18 +6485,18 @@ h6,
 }
 .btn.btn-outline.btn-default {
   border-color: #f8f8f8;
-  color: #333;
+  color: #f8f8f8;
 }
 .btn.btn-outline.btn-default:hover, .btn.btn-outline.btn-default.btn-hover {
-  color: #333;
+  color: #fff;
   background-color: #f8f8f8;
 }
 .btn.btn-outline.btn-light {
   border-color: #f8f8f8;
-  color: #f8f8f8;
+  color: #333;
 }
 .btn.btn-outline.btn-light:hover, .btn.btn-outline.btn-light.btn-hover {
-  color: #fff;
+  color: #333;
   background-color: #f8f8f8;
 }
 .btn.btn-outline.btn-inverse {
@@ -10864,6 +10864,7 @@ table.table.table-lg th {
   font-weight: bold;
 }
 .modal .modal-close {
+  display: none;
   position: fixed;
   border-radius: 0 0 0 3px;
   right: 0;
