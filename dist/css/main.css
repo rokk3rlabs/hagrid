@@ -6265,7 +6265,7 @@ h6,
   *display: inline;
   padding: 0.7em 1em;
   line-height: 1em;
-  color: #f8f8f8;
+  color: #3C3C3C;
   background-color: #f8f8f8;
   text-decoration: none;
   font-size: 1em;
@@ -6328,7 +6328,7 @@ h6,
   color: #3C3C3C;
 }
 .btn.btn-light .badge {
-  background: #f8f8f8;
+  background: #3C3C3C;
 }
 .btn.btn-light .badge {
   color: #f8f8f8;
