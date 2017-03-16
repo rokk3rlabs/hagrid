@@ -41,7 +41,7 @@ window.hagrid = (function(){
   function _parentComponent(el){
     var parent = el.parentNode;
     var i = 0;
-    var hasAttr = u(parent).attr('hagrid-component');
+    var hasAttr = u(el).attr('hagrid-component');
     while (!hasAttr || i > 10){
       var o = parent;
       parent = o.parentNode;
