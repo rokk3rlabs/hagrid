@@ -1,13 +1,23 @@
 {
-  "name": "hagrid",
-  "version": "0.0.2",
+  "name": "hagrid.io",
+  "version": "0.0.4",
   "homepage": "https://github.com/rokk3rlabs/hagrid",
   "authors": [
-    "Diego Santiesteban <gatodeveloper@gmail.com>"
+    "Diego Santiesteban <gatodeveloper@gmail.com> (https://twitter.com/gato_developer)"
   ],
-  "description": "Hagrid Framework",
-  "main": "",
+  "description": "Hagrid Front-end Framework",
+  "main": [
+    "dist/css/main.css",
+    "dist/js/hagrid.js",
+    "sass/main.sass"
+  ],
   "moduleType": [],
+  "keywords": [
+    "Web Framework",
+    "Front-end",
+    "Web Elements",
+    "Web Components"
+  ],
   "license": "MIT",
   "ignore": [
     "**/.*",
@@ -16,6 +26,10 @@
     "test",
     "tests"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rokk3rlabs/hagrid.git"
+  },
   "dependencies": {
     "umbrella": "^2.6.7"
   }
