@@ -1,63 +1,34 @@
 @import 'vars'
 @import 'webfonts'
-@import '../../hagrid-core/core'
+
+// Hagrid Core
+@import "../../hagrid-core/globals/mixins"
+@import "../../hagrid-core/base/base"
+@import "../../hagrid-core/globals/utils"
+
+// Hagrid Components
+@import '../../hagrid-core/grid/grid'
+@import '../../hagrid-core/glyphicons/glyphicons'
+@import '../../hagrid-core/typography/typography'
+@import '../../hagrid-core/buttons/buttons'
+@import '../../hagrid-core/navbars/navbars'
+@import '../../hagrid-core/tabs/tabs'
+@import '../../hagrid-core/breadcrumbs/breadcrumbs'
+@import '../../hagrid-core/form-inputs/form-inputs'
+@import '../../hagrid-core/dropdowns/dropdowns'
+@import '../../hagrid-core/lists/lists'
+@import '../../hagrid-core/badges/badges'
+@import '../../hagrid-core/labels/labels'
+@import '../../hagrid-core/tables/tables'
+@import '../../hagrid-core/avatars/avatars'
+@import '../../hagrid-core/paginations/paginations'
+@import '../../hagrid-core/progressbars/progressbars'
+@import '../../hagrid-core/tooltips/tooltips'
+@import '../../hagrid-core/alerts/alerts'
+//@import '../../hagrid-core/modals/modals'
+//@import '../../hagrid-core/sliders/sliders'
+
 
 // Custom and Extend
-
-.sections-style-guide
-  section
-    padding: 1em 0 5em
-
-.colors-preview
-  border-radius: 4px
-  overflow: hidden
-  margin: 0
-  padding: 0
-  position: relative
-  +inline-block
-  line-height: 0
-
-  li
-    +inline-block
-    height: 110px
-    width: 105px
-
-.btn
-  &.btn-sm
-    padding-top: .7em
-    padding-bottom: .5em
-  &.btn-custom
-    @extend .btn-outline
-    background-color: transparent
-    border-color: #fff
-    color: #fff
-
-    &:hover,
-    &.btn-hover
-      background-color: rgba(255, 255, 255, 0.5)
-
-    &:active,
-    &.btn-active
-      background-color: transparent
-      border-color: rgba(255, 255, 255, 0.75)
-
-    &.btn-disable
-      cursor: not-allowed
-      opacity: .35
-
-.dropdown
-  &.dropdown-inverse
-    .btn-dropdown
-      background-color: #f2f2f3
-    .dropdown-menu
-      background-color: #f2f2f3
-      li
-        a
-          &:hover
-            background-color: #fff
-
-  &.dropdown-simple
-    .btn-dropdown
-      border: 0
-      border-bottom: 1px solid 
-      padding-left: 0
+@import 'extend'
+@import 'custom'

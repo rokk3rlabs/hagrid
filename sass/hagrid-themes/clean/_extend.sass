@@ -1,0 +1,277 @@
+.btn
+  &.btn-sm
+    padding-top: .7em
+    padding-bottom: .5em
+  &.btn-custom
+    @extend .btn-outline
+    background-color: transparent
+    border-color: #fff
+    color: #fff
+
+    &:hover,
+    &.btn-hover
+      background-color: rgba(255, 255, 255, 0.5)
+
+    &:active,
+    &.btn-active
+      background-color: transparent
+      border-color: rgba(255, 255, 255, 0.75)
+
+    &.btn-disable
+      cursor: not-allowed
+      opacity: .35
+
+.dropdown
+  &.dropdown-inverse
+    .btn-dropdown
+      background-color: #f2f2f3
+    .dropdown-menu
+      background-color: #f2f2f3
+      li
+        a
+          &:hover
+            background-color: #fff
+
+  &.dropdown-simple
+    .btn-dropdown
+      border: 0
+      border-bottom: 1px solid 
+      padding-left: 0
+
+.input-default 
+  input,
+  button,
+  select
+    border: 0
+    padding: .7em
+    +border-box
+
+    &:focus
+      outline: none
+
+    &[type="text"],
+    &[type="number"]
+      box-shadow: 0 -2px 0 0px rgba(0, 0, 0, .2) inset
+      background: transparent
+      color: #333
+      transition: background-color .3s
+
+      &:focus
+        background: rgba(255, 255, 255, .9)
+        box-shadow: 0 -2px 0 0px #2D6CC9 inset
+
+    &.block
+      width: 100%
+      display: block
+
+  button,
+  [class*="btn-"]
+    [class*="icon-"]
+      font-size: 1.5em
+      line-height: 0px
+      top: -2px
+      display: inline-block
+      position: relative
+      vertical-align: middle
+
+  button,
+  input[type="submit"]
+    background-color: #fff
+    box-shadow: 0 -2px 0 0px rgba(0, 0, 0, .2) inset
+    color: #333
+
+  select
+    +prefix(appearance, none)
+
+  input[type="radio"]
+
+    &:checked
+      background-color: red
+
+.input-form
+  &.input-form-outline
+    input,
+    button,
+    select
+      border: 1px solid
+      border-color: #7e818c
+      padding: $input-padding
+      +placeholder-color(#7e818c)
+      +border-box
+
+
+      &:active,
+      &:focus,
+      &.input-focus,
+      &.input-active
+        border-color: #5e616f
+        outline: none
+        +placeholder-color(#5e616f)
+
+      &.input-disabled
+        color: #dfdfe2
+        border-color: #dfdfe2
+        +placeholder-color(#dfdfe2)
+
+      &.input-invalid
+        color: #ec407a
+        border-color: #ec407a
+        +placeholder-color(#ec407a)
+
+
+  &.input-form-filled
+    input,
+    button,
+    select
+      border: 1px solid
+      border-color: $color-primary
+      color: $color-primary
+      padding: $input-padding
+      background-color: #f2f2f3
+      +placeholder-color($color-primary)
+      +border-box
+
+
+      &:active,
+      &:focus,
+      &.input-focus,
+      &.input-active
+        border-color: $color-primary
+        color: $color-primary
+        outline: none
+        +placeholder-color($color-primary)
+
+      &.input-disabled
+        color: #dfdfe2
+        border-color: #dfdfe2
+        +placeholder-color(#dfdfe2)
+
+      &.input-invalid
+        color: #ec407a
+        border-color: #ec407a
+        +placeholder-color(#ec407a)
+
+  &.input-checkbox
+    .input-checkbox-icon,
+    label
+      +inline-block
+      vertical-align: middle
+      cursor: pointer
+      +not-select
+
+    .input-checkbox-icon
+      width: 25px
+      height: 25px
+      border: 2px solid
+      border-color: #bfc0c5
+      margin-right: 20px
+      +prefix(transition, all .3s)
+
+    input[type="checkbox"]
+      display: none
+      + .input-checkbox-icon
+        position: relative
+
+        &:before
+          +prefix(transition, all .3s)
+          content: ''
+          position: absolute
+          opacity: 0
+          +inline-block
+          top: 30%
+          left: 15%
+          width: 70%
+          height: 30%
+          border: 2px solid #bfc0c5
+          border-right: 0
+          border-top: 0
+          transform: rotate(-45deg)
+
+        &:after
+          +prefix(transition, all .3s)
+          content: ''
+          opacity: 1
+          opacity: 1
+          position: absolute
+          width: 100%
+          height: 100%
+          right: 0
+          background: #fff
+
+      &:checked + .input-checkbox-icon
+        border-color: $color-primary
+
+        &:before
+          opacity: 1
+          //width: 66%
+          border-color: $color-primary
+
+        &:after
+          opacity: 1
+          position: absolute
+          width: 0
+          background: #fff
+
+    &.input-checkbox-sm
+      input[type="checkbox"]
+        + .input-checkbox-icon
+          width: 17px
+          height: 17px
+          border-width: 1px
+          margin-right: 0px
+
+          &:before
+            border-width: 1px
+
+
+  &.input-radio
+    .input-radio-icon,
+    label
+      +inline-block
+      vertical-align: middle
+      cursor: pointer
+      +not-select
+
+    .input-radio-icon
+      width: 23px
+      height: 23px
+      border: 1px solid
+      border-color: #bfc0c5
+      margin-right: 20px
+      border-radius: 25px
+
+    input[type="radio"]
+      display: none
+      + .input-radio-icon
+        position: relative
+        box-shadow: 0 0 0 0 $color-primary inset, 0 0 0 15px rgba(255, 255, 255, 1) inset
+        +prefix(transition, all .3s)
+
+        &:before
+          content: ''
+
+
+      &:checked + .input-radio-icon
+        border-color: $color-primary
+        background-color: $color-primary
+        box-shadow: 0 0 0 1px $color-primary inset, 0 0 0 4px rgba(255, 255, 255, 1) inset
+        //border-color: #3F51B5;
+        //background-color: #3F51B5;
+
+        &:before
+          opacity: 1
+
+
+.input-group-addon
+  display: flex
+
+  .input-addon
+    +inline-block
+    vertical-align: middle
+    height: 100%
+    min-width: 2em
+    text-align: center
+    background: #dfdfe2
+    border: 1px solid
+    border-color: #dfdfe2
+    padding: 0.6em 0.5em 0.4em
