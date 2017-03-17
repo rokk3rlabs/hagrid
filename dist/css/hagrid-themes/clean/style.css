@@ -11414,9 +11414,14 @@ table.table.table-lg th {
 .input-form.input-checkbox .input-checkbox-icon {
   width: 25px;
   height: 25px;
-  border: 1px solid;
+  border: 2px solid;
   border-color: #bfc0c5;
   margin-right: 20px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .input-form.input-checkbox input[type="checkbox"] {
   display: none;
@@ -11425,19 +11430,39 @@ table.table.table-lg th {
   position: relative;
 }
 .input-form.input-checkbox input[type="checkbox"] + .input-checkbox-icon:before {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
   content: "";
   position: absolute;
   opacity: 0;
   display: inline-block;
   *display: inline;
-  top: 29%;
-  left: 20%;
-  width: 12px;
-  height: 4px;
-  border: 3px solid #bfc0c5;
+  top: 30%;
+  left: 15%;
+  width: 70%;
+  height: 30%;
+  border: 2px solid #bfc0c5;
   border-right: 0;
   border-top: 0;
   transform: rotate(-45deg);
+}
+.input-form.input-checkbox input[type="checkbox"] + .input-checkbox-icon:after {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  content: "";
+  opacity: 1;
+  opacity: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: 0;
+  background: #fff;
 }
 .input-form.input-checkbox input[type="checkbox"]:checked + .input-checkbox-icon {
   border-color: #2D6CC9;
@@ -11445,6 +11470,21 @@ table.table.table-lg th {
 .input-form.input-checkbox input[type="checkbox"]:checked + .input-checkbox-icon:before {
   opacity: 1;
   border-color: #2D6CC9;
+}
+.input-form.input-checkbox input[type="checkbox"]:checked + .input-checkbox-icon:after {
+  opacity: 1;
+  position: absolute;
+  width: 0;
+  background: #fff;
+}
+.input-form.input-checkbox.input-checkbox-sm input[type="checkbox"] + .input-checkbox-icon {
+  width: 17px;
+  height: 17px;
+  border-width: 1px;
+  margin-right: 0px;
+}
+.input-form.input-checkbox.input-checkbox-sm input[type="checkbox"] + .input-checkbox-icon:before {
+  border-width: 1px;
 }
 .input-form.input-radio .input-radio-icon,
 .input-form.input-radio label {
@@ -11460,8 +11500,8 @@ table.table.table-lg th {
   user-select: none;
 }
 .input-form.input-radio .input-radio-icon {
-  width: 25px;
-  height: 25px;
+  width: 23px;
+  height: 23px;
   border: 1px solid;
   border-color: #bfc0c5;
   margin-right: 20px;
@@ -11472,29 +11512,39 @@ table.table.table-lg th {
 }
 .input-form.input-radio input[type="radio"] + .input-radio-icon {
   position: relative;
+  box-shadow: 0 0 0 0 #2D6CC9 inset, 0 0 0 15px white inset;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .input-form.input-radio input[type="radio"] + .input-radio-icon:before {
   content: "";
-  position: absolute;
-  opacity: 0;
-  display: inline-block;
-  *display: inline;
-  top: 29%;
-  left: 20%;
-  width: 12px;
-  height: 4px;
-  border: 3px solid #bfc0c5;
-  border-right: 0;
-  border-top: 0;
-  transform: rotate(-45deg);
 }
 .input-form.input-radio input[type="radio"]:checked + .input-radio-icon {
   border-color: #2D6CC9;
   background-color: #2D6CC9;
+  box-shadow: 0 0 0 1px #2D6CC9 inset, 0 0 0 4px white inset;
 }
 .input-form.input-radio input[type="radio"]:checked + .input-radio-icon:before {
   opacity: 1;
-  border-color: #2D6CC9;
+}
+
+.input-group-addon {
+  display: flex;
+}
+.input-group-addon .input-addon {
+  display: inline-block;
+  *display: inline;
+  vertical-align: middle;
+  height: 100%;
+  min-width: 2em;
+  text-align: center;
+  background: #dfdfe2;
+  border: 1px solid;
+  border-color: #dfdfe2;
+  padding: 0.6em 0.5em 0.4em;
 }
 
 .sections-style-guide section {
