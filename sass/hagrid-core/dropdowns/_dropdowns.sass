@@ -1,25 +1,25 @@
 .dropdown
   +inline-block
-  margin: 0 .5em 
+  margin: $dropdown-btn-margin
 
   .btn
-    width: 100%
-    text-align: left
+    width: $dropdown-btn-width
+    text-align: $dropdown-btn-text-align
 
   .btn-dropdown
     padding-right: 3em!important
-    border-width: $dropdown-outline__bdw
-    margin: 0
+    border-width: $dropdown-outline-bdw
+    margin: $dropdown-btn-outline-margin
 
     .icon-dropdown
       +inline-block
-      width: 2.5em
-      height: 100%
+      width: $dropdown-btn-icon-width
+      height: $dropdown-btn-icon-height
       position: absolute
       //border-left: 1px solid rgba(0, 0, 0, .1)
-      margin-left: .5em
-      top: 50%
-      right: -15px
+      margin-left: $dropdown-btn-icon-margin-left
+      top: $dropdown-btn-icon-top
+      right: $dropdown-btn-icon-right
 
   &.support-hover
     .btn-dropdown
@@ -36,37 +36,34 @@
     display: none
     position: absolute
     z-index: 1
-    background: $dropdown-menu__bgc
-    width: 100%
-    box-shadow: $dropdown-menu__bxsh
-    top: 100%
-    padding: 0
-    margin: 5px 0 0
-    list-style: none
-    min-width: 140px
-    border-radius: 5px
+    background: $dropdown-menu-bgc
+    width: $dropdown-menu-width
+    box-shadow: $dropdown-menu-bxsh
+    top: $dropdown-menu-top
+    padding: $dropdown-menu-padding
+    margin: $dropdown-menu-margin
+    list-style: $dropdown-menu-list-style
+    min-width: $dropdown-menu-min-width
+    border-radius: $dropdown-menu-border-radius
 
     li
       display: block
 
       a
-        padding: $dropdown-menu_item-padding
+        padding: $dropdown-menu-item-padding
         display: block
-        text-decoration: none
-        color: inherit
+        text-decoration: $dropdown-menu-item-text-decoration
+        color: $dropdown-menu-item-color
 
         &:hover
-          background-color: $dropdown-menu_item-hover
+          background-color: $dropdown-menu-item-hover
 
   &.dropdown-outline
     .btn-dropdown
-      border-width: $dropdown-outline__bdw
+      border-width: $dropdown-outline-bdw
 
     .dropdown-menu
       @extend .primary-color
-      box-shadow: none
-      border-radius: 0
-      border: solid 1px $color-primary
-
-
-
+      box-shadow: $dropdown-outline-menu-box-shadow
+      border-radius: $dropdown-outline-menu-border-radius
+      border: $dropdown-outline-menu-border $color-primary

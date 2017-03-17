@@ -17,8 +17,14 @@
       <p></p>
       <a href="" class="btn btn-primary" hagrid-target="#alert1" hagrid-role="open">Launch alert</a>
       <a href="" class="btn btn-secondary" hagrid-target="#alert2" hagrid-role="open">Launch alert</a>
-      <a href="" class="btn btn-secondary" hagrid-role="launch" hagrid-component="alert" hagrid-component-type="inverse" hagrid-title="TEST" hagrid-message="MESSAGE TEST">Launch alert</a>
-
+      <a href="" class="btn btn-inverse" hagrid-target="#alert3" hagrid-role="open">Launch alert</a>
+      <a href="" class="btn btn-light" hagrid-target="#alert4" hagrid-role="open">Launch alert</a>
+      <a href="" class="btn btn-info" hagrid-target="#alert5" hagrid-role="open">Launch alert</a>
+      <a href="" class="btn btn-warning" hagrid-target="#alert6" hagrid-role="open">Launch alert</a>
+      <a href="" class="btn btn-error" hagrid-target="#alert7" hagrid-role="open">Launch alert</a>
+      <!--<a href="" class="btn btn-secondary" hagrid-role="launch" hagrid-component="alert" hagrid-component-type="inverse" hagrid-title="TEST" hagrid-message="MESSAGE TEST">Launch alert</a>-->
+      
+      <!-- basic alert -->
       <div class="alert" id="alert1" hagrid-component="alert">
         <div class="alert-wrap" hagrid-role="close">
           <section class="alert-body">
@@ -34,9 +40,9 @@
           </section>
         </div>
       </div>
-
+      <!-- secondary alert -->
       <div class="alert alert-secondary" id="alert2" hagrid-component="alert">
-        <div class="alert-wrap">
+        <div class="alert-wrap" hagrid-role="close">
           <section class="alert-body">
             <header class="alert-header">
               <b class="alert-title">Hagrid Alert</b>
@@ -50,10 +56,73 @@
           </section>
         </div>
       </div>
-
-
+      <!-- inverse alert -->
       <div class="alert alert-inverse" id="alert3" hagrid-component="alert">
-        <div class="alert-wrap">
+        <div class="alert-wrap" hagrid-role="close">
+          <section class="alert-body">
+            <header class="alert-header">
+              <b class="alert-title">Hagrid Alert</b>
+            </header>
+            <article class="alert-content">
+              <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+            </article>
+            <footer class="alert-footer">
+              <a href="#" hagrid-role="close">OK</a>
+            </footer>
+          </section>
+        </div>
+      </div>
+      <!-- light alert -->
+      <div class="alert alert-light" id="alert4" hagrid-component="alert">
+        <div class="alert-wrap" hagrid-role="close">
+          <section class="alert-body">
+            <header class="alert-header">
+              <b class="alert-title">Hagrid Alert</b>
+            </header>
+            <article class="alert-content">
+              <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+            </article>
+            <footer class="alert-footer">
+              <a href="#" hagrid-role="close">OK</a>
+            </footer>
+          </section>
+        </div>
+      </div>
+      <!-- info alert -->
+      <div class="alert alert-info" id="alert5" hagrid-component="alert">
+        <div class="alert-wrap" hagrid-role="close">
+          <section class="alert-body">
+            <header class="alert-header">
+              <b class="alert-title">Hagrid Alert</b>
+            </header>
+            <article class="alert-content">
+              <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+            </article>
+            <footer class="alert-footer">
+              <a href="#" hagrid-role="close">OK</a>
+            </footer>
+          </section>
+        </div>
+      </div>
+      <!-- warning alert -->
+      <div class="alert alert-warning" id="alert6" hagrid-component="alert">
+        <div class="alert-wrap" hagrid-role="close">
+          <section class="alert-body">
+            <header class="alert-header">
+              <b class="alert-title">Hagrid Alert</b>
+            </header>
+            <article class="alert-content">
+              <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+            </article>
+            <footer class="alert-footer">
+              <a href="#" hagrid-role="close">OK</a>
+            </footer>
+          </section>
+        </div>
+      </div>
+      <!-- error alert -->
+      <div class="alert alert-error" id="alert7" hagrid-component="alert">
+        <div class="alert-wrap" hagrid-role="close">
           <section class="alert-body">
             <header class="alert-header">
               <b class="alert-title">Hagrid Alert</b>

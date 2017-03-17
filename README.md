@@ -38,7 +38,7 @@ You can see all available documentation in [hagrid.io][1]
 ### Install
 
 ```
-$ bower install hagrid-io
+$ bower install hagrid.io
 ```
 
 ### Build
@@ -77,8 +77,9 @@ You can create themes with the Hagrid, for now you need follow the next steps.
 
 1. Download this Repository.
 2. Check previous pre requirements of OS and libraries/tools.
-3. 
-
+3. Go to sass/hagrid-themes and duplicate the folder example
+4. Once inside the example folder, update the style properties for your theme on vars folder.
+5. Run/restart the command compass watch, please see above command.
 
 
 ## Examples

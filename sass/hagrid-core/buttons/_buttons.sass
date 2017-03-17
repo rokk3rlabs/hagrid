@@ -3,17 +3,17 @@
   +inline-block
   padding: $btn-padding
   line-height: 1em
-  color: nth(nth($base-colors, 2), 2)
+  color: nth(nth($base-colors, 3), 2)
   background-color: nth(nth($base-colors, 1), 2)
   text-decoration: none
   font-size: $btn-font-size
   font-weight: $btn-font-weight
-  margin: .25em
+  margin: $btn-margin
   border-radius: $btn-border-radius
   text-transform: $btn-text-transform
   position: relative
-  text-align: center
-  border: 1px solid rgba(0, 0, 0, .05)
+  text-align: $btn-text-align
+  border: $btn-border rgba(0, 0, 0, .05)
   cursor: pointer
   +prefix(text-shadow, 0 0 1px rgba(0,0,0,.01))
   +prefix(font-smoothing, antialiased)
@@ -35,10 +35,10 @@
     $value: nth($base-color, 2)
     &.btn-#{$key}
       background-color: #{$value}
-      @if $key == default
-        color: nth(nth($base-colors, 2), 2)
+      @if $key == light
+        color: nth(nth($base-colors, 3), 2)
         .badge
-          background: nth(nth($base-colors, 2), 2)
+          background: nth(nth($base-colors, 3), 2)
 
       .badge
         color: $value
@@ -67,9 +67,9 @@
 
   // Flat Buttons
   &.btn-shadow
-    border: 1px solid rgba(255, 255, 255, .8)
-    border-radius: 2px
-    box-shadow: 1px 2px 3px rgba(0, 0, 0, .1)
+    border: $btn-border rgba(255, 255, 255, .8)
+    border-radius: $btn-shadow-border-radius
+    box-shadow: $btn-shadow-box-shadow rgba(0, 0, 0, .1)
 
   // Upper Button
   &.btn-upper
@@ -85,26 +85,26 @@
 
   // Outline Button
   &.btn-outline
-    padding-right: 2em
-    padding-left: 2em
+    padding-right: $btn-outline-sides-padding
+    padding-left: $btn-outline-sides-padding
     background-color: transparent
     border-radius: $btn-outline-border-radius
     border-width: $btn-outline-border-width
-    border-style: solid
+    border-style: $btn-outline-border-style
 
     @each $base-color in $base-colors
       $key: nth($base-color, 1)
       $value: nth($base-color, 2)
       &.btn-#{$key}
         border-color: #{$value}
-        @if $key == default
+        @if $key == light
           color: #333
         @else
           color: #{$value}
         @if $btn-outline-hover-bkg == true
           &:hover,
           &.btn-hover
-            @if $key == default
+            @if $key == light
               color: #333
             @else
               color: #fff
@@ -124,5 +124,3 @@
             color: #dfdfe2
             border-color: #dfdfe2
             background-color: transparent
-
-

@@ -9,6 +9,7 @@
   opacity: 0
   top: -100%
   transition: opacity .3s 
+  z-index: 1000
 
   &.modal-show
     opacity: 1
@@ -45,6 +46,7 @@
       font-weight: bold
 
   .modal-close
+    display: none
     position: fixed
     border-radius: 0 0 0 3px
     right: 0

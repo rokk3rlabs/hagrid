@@ -6,10 +6,10 @@
   .breadcrumb-item
     +inline-block
     position: relative
-    margin-right: 1em
-    line-height: 100%
-    text-decoration: none
-    font-size: 1em
+    margin-right: $breadcrumb-item-margin-right
+    line-height: $breadcrumb-item-line-height
+    text-decoration: $breadcrumb-item-text-decoration
+    font-size: $breadcrumb-item-font-size
     background: $color-primary
     padding: $breadcrumb-item-padding
     color: $breadcrumb-item-color
@@ -18,13 +18,13 @@
 
     &:first-child,
     &.first-child
-      border-radius: 5px 0 0 5px
+      border-radius: $breadcrumb-item-child-border-radius
       &:before
         display: none 
 
     &:last-child,
     &.last-child
-      border-radius: 0 5px 5px 0
+      border-radius: $breadcrumb-item-child-border-radius
       &:after
         display: none 
     
@@ -37,29 +37,29 @@
       position: absolute
       +prefix(transition, border-color .3s)
       z-index: 1
-      left: -1em
-      top: 0
-      height: 100%
-      width: 0
+      left: $breadcrumb-item-before-left
+      top: $breadcrumb-item-before-top
+      height: $breadcrumb-item-before-height
+      width: $breadcrumb-item-before-width
       background: transparent
-      border: 1em solid $color-primary
-      border-left-width: 1em
+      border: $breadcrumb-item-border $color-primary
+      border-left-width: $breadcrumb-item-before-left-width
       border-left-color: transparent
-      border-right-width: 0
+      border-right-width: $breadcrumb-item-before-right-width
 
     &:after
       content: ''
       position: absolute
       z-index: 2
-      right: -1em
-      top: 0
-      height: 100%
-      width: 0
+      right: $breadcrumb-item-after-right
+      top: $breadcrumb-item-after-top
+      height: $breadcrumb-item-after-height
+      width: $breadcrumb-item-after-width
       background: transparent
-      border: 1em solid transparent
-      border-left-width: 1em
+      border: $breadcrumb-item-border transparent
+      border-left-width: $breadcrumb-item-after-border-left-width
       border-left-color: $color-primary
-      border-right-width: 0
+      border-right-width: $breadcrumb-item-after-border-right-width
 
 
     &:hover
@@ -131,9 +131,3 @@
 
         &:after
           right: -.95em
-
-
-
-
-
-

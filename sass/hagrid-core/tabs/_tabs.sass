@@ -1,28 +1,30 @@
-.tab-component
+.tab
   margin: 1em 0
+  display: block
+  background-color: nth(nth($base-colors, 1), 2)
 
-  .nav-tabs
+  .tab-nav
     display: flex
     +reset-list
 
-    .nav-tab,
-    li
+    .tab-nav-item,
+    a
       cursor: pointer
       width: 100%
       text-align: center
       @extend .default-color
       +inline-block
-      padding: $btn-padding
+      padding: 0.7em 1em
       line-height: 1em
-      color: nth(nth($base-colors, 2), 2)
-      background-color: nth(nth($base-colors, 1), 2)
+      color: #333
+      background-color: transparent
       text-decoration: none
       font-weight: 100
-      font-size: $btn-font-size
-      font-weight: $btn-font-weight
+      font-size: $tab-font-size
+      font-weight: $tab-font-weight
       margin: 0
-      border-radius: $nav-tabs-border-radius
-      text-transform: $nav-tabs-text-transform
+      border-radius: $tab-nav-border-radius
+      text-transform: $tab-nav-text-transform
       position: relative
       text-align: center
       border: 1px solid transparent
@@ -35,17 +37,39 @@
 
       &:last-child
         border-right: 1px solid transparent
-      &.active
+
+      &.tab-show
         color: $color-primary
         border-bottom-color: $color-primary
 
-  .content-tabs
-    //border: 1px solid $color-primary
+  .tab-content
+    padding: 2em 1em
 
-    .content-tab
+    .tab-panel
       display: none
-      &.active 
+
+      &.tab-show 
         display: block
-  
-  &.tab-component-primary
-    border: 1px solid rgba(0, 0, 0, .05)
+
+  @each $base-color in $base-colors
+    $key: nth($base-color, 1)
+    $value: nth($base-color, 2)
+    &.tab-#{$key}
+      .tab-nav
+        .tab-nav-item,
+        a
+
+          &.tab-show
+            color: $value
+            border-bottom-color: $value
+      
+      @if $key == light
+        background-color: #333
+        color: #fff
+
+        .tab-nav
+          .tab-nav-item,
+          a
+            color: #f3f3f3
+
+

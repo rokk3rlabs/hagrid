@@ -40,7 +40,7 @@ window.hagrid = (function(){
   function _parentComponent(el){
     var parent = el.parentNode;
     var i = 0;
-    var hasAttr = u(parent).attr('hagrid-component');
+    var hasAttr = u(el).attr('hagrid-component');
     while (!hasAttr || i > 10){
       var o = parent;
       parent = o.parentNode;
@@ -56,15 +56,19 @@ window.hagrid = (function(){
    * @return {fn}    component function
    */
   function _getComponent(el){
-    var hagridTarget = u(el).attr('hagrid-target'),
+    var hagridTarget = u(el).attr('hagrid-target') || u(el).attr('href'),
         parentTarget = (!!hagridTarget) ? null : _parentComponent(el),
-        hagridRole = u(el).attr('hagrid-role'),
+        hagridRole = u(el).attr('hagrid-role') || 'open',
         elTarget = (!!hagridTarget) ? u(hagridTarget).first() :parentTarget,
         firstElement = elTarget,
-        componentType = u(firstElement).attr('hagrid-component'),
+        parentComponent =  _parentComponent(firstElement),
+        componentType = u(firstElement).attr('hagrid-component') || u(parentComponent).attr('hagrid-component'),
         component = components[componentType][hagridRole];
 
-    component(firstElement);
+    var _self = el;
+    var _target = firstElement;
+
+    component(_target, _self, parentComponent);
   }
 
   /**
@@ -160,6 +164,32 @@ window.hagrid = (function(){
   }
 
   /**
+   * Tab Hagrid Component
+   * @return {null}
+   */
+  var tabs = function(){
+    return {
+        component: {
+          tpl: function(title, message, option){
+            return ['', ''].join('')
+          },
+          rootElement: '.tab',
+        },
+        open: function($target, $seft, $parentComponent){
+          var $childrenTabShow = u($parentComponent).find('.tab-show');
+          $childrenTabShow.removeClass('tab-show');
+          u($seft).addClass('tab-show');
+          u($target).addClass('tab-show');
+        },
+        close: function($target, $seft){
+          u($seft).removeClass('tab-show');
+          u($target).removeClass('tab-show');
+        },
+        launch: function(options){}
+      }
+  }
+
+  /**
    * Hagrid Components
    * @type {Object}
    */
@@ -167,6 +197,7 @@ window.hagrid = (function(){
     alert: alerts(),
     modal: modals(),
     tooltip: tooltips(),
+    tab: tabs(),
   };
   
   /**
@@ -176,10 +207,10 @@ window.hagrid = (function(){
    */
   var bodyEvent = (function(){
     document.body.addEventListener("click", function(e) {
-      if(e.target.tagName.toLowerCase() === 'a') e.preventDefault();
       var el = e.target;
       var isHagridComponent = u(el).attr('hagrid-role');
       if(isHagridComponent){
+        if(e.target.tagName.toLowerCase() === 'a') e.preventDefault();
         _getComponent(el);        
       }
     });
