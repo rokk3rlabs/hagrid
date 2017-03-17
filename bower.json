@@ -17,7 +17,6 @@
     "tests"
   ],
   "dependencies": {
-    "sizzle": "^2.3.3",
     "umbrella": "^2.6.7"
   }
 }
