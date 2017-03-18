@@ -1,8 +1,9 @@
 // navbar
 .navbar
-  //color: #333
+  color: nth(nth($base-colors, 3), 2)
   z-index: 1
   box-shadow: 0 0 5px rgba(0, 0, 0, .5)
+  +flexbox
 
   &.navbar-fixed
     position: fixed
@@ -29,7 +30,7 @@
   .navbar-brand
     font-size: 1.4em
     line-height: 0
-    padding: 1em
+    padding: 1.1em
     height: 100%
 
     small
@@ -41,6 +42,30 @@
       background: inherit
       color: inherit
 
-  &.navbar-primary
-    background: #2D6CC9
+  &[class*="navbar-"]
     color: #fff
+
+  input[type="text"],
+  input[type="number"],
+  input[type="email"],
+  input[type="password"]
+    padding-right: 1em
+    padding-left: 1em
+    color: #333
+    background-color: rgba(255, 255, 255, .9)
+    border: 0
+    outline: none
+
+    &:focus
+      background-color: rgba(255, 255, 255, 1)
+
+
+  
+  @each $base-color in $base-colors
+    $key: nth($base-color, 1)
+    $value: nth($base-color, 2)
+    &.navbar-#{$key}
+      background-color: #{$value}
+      @if $key == light
+        color: nth(nth($base-colors, 3), 2)
+
