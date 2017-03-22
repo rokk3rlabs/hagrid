@@ -1,8 +1,9 @@
 // navbar
 .navbar
-  //color: #333
+  color: nth(nth($base-colors, 3), 2)
   z-index: 1
   box-shadow: 0 0 5px rgba(0, 0, 0, .5)
+  +flexbox
 
   &.navbar-fixed
     position: fixed
@@ -29,7 +30,7 @@
   .navbar-brand
     font-size: 1.4em
     line-height: 0
-    padding: 1em
+    padding: 1.1em
     height: 100%
 
     small
@@ -41,6 +42,112 @@
       background: inherit
       color: inherit
 
-  &.navbar-primary
-    background: #2D6CC9
+  &[class*="navbar-"]
     color: #fff
+
+  input[type="text"],
+  input[type="number"],
+  input[type="email"],
+  input[type="password"]
+    padding-right: 1em
+    padding-left: 1em
+    color: #333
+    background-color: rgba(255, 255, 255, .9)
+    border: 0
+    outline: none
+
+    &:focus
+      background-color: rgba(255, 255, 255, 1)
+
+
+  
+  @each $base-color in $base-colors
+    $key: nth($base-color, 1)
+    $value: nth($base-color, 2)
+    &.navbar-#{$key}
+      background-color: #{$value}
+      @if $key == light
+        color: nth(nth($base-colors, 3), 2)
+
+  .navbar-menu,
+  .navbar-menu-mobile
+    width: 100%
+
+  .navbar-menu-mobile
+    display: none
+    flex-wrap: wrap
+
+    .top-menu
+      +flexbox
+      justify-content: space-between
+
+      .navbar-brand
+        font-size: 1.4em
+        line-height: 0
+
+    a
+      display: block
+    
+    .icon-menu
+      align-self: center
+      display: block
+      padding: 10px
+      width: 50px
+      //position: absolute
+
+      .icon-menu-toggle
+        height: 4px
+        background: #fff
+        display: block
+        margin: 5px 0
+
+      &:before,
+      &:after
+        content: ''
+        position: relative
+        display: block
+        height: 4px
+
+      &:before
+        background: #fff
+
+      &:after
+        background: #fff
+
+
+body
+  .navbar
+    @media screen and (min-width: $md-device)
+      &.navbar-mobile-in-lg
+        .navbar-menu
+          display: none
+
+        .navbar-menu-mobile
+          display: block
+
+    @media screen and (min-width: $sm-device) and (max-width: $md-device)
+      &.navbar-mobile-in-md
+        .navbar-menu
+          display: none
+
+        .navbar-menu-mobile
+          display: block
+
+    @media screen and (min-width: $xs-device) and (max-width: $sm-device)
+      &.navbar-mobile-in-sm
+        .navbar-menu
+          display: none
+
+        .navbar-menu-mobile
+          display: block
+
+    @media screen and (max-width: $xs-device)
+      &.navbar-mobile-in-xs
+        .navbar-menu
+          display: none
+
+        .navbar-menu-mobile
+          display: block
+
+
+
