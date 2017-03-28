@@ -6535,7 +6535,7 @@ h6,
   border-radius: 4px;
   border-bottom: 4px solid rgba(0, 0, 0, 0.2);
 }
-.btn.btn-block, .btn.btn-full-width {
+.btn.btn-block, .btn.block, .btn.btn-full-width {
   display: block;
   width: 100%;
 }
@@ -7416,7 +7416,9 @@ h6,
 }
 .input.input-block input,
 .input.input-block button,
-.input.input-block select {
+.input.input-block select, .input.block input,
+.input.block button,
+.input.block select {
   width: 100%;
   display: block;
 }
