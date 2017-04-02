@@ -23,6 +23,8 @@
     border-radius: $tooltip-body-border-radius
     z-index: 1
     transition: all .3s
+    margin-bottom: 10px 
+    bottom: 100%
 
     &:before
       content: ''
@@ -31,9 +33,28 @@
       border-top-color: $color-primary
       border-bottom-color: $color-primary
 
+  @each $base-color in $base-colors
+    $key: nth($base-color, 1)
+    $value: nth($base-color, 2)
+    &.tooltip-#{$key}
+      .tooltip-body
+        background: $value
+        margin-bottom: 10px 
+        bottom: 100%
+
+        @if $key == light
+          color: #333
+
+        &:before
+          bottom: -10px
+          border-bottom-width: 0
+          border-top-color: $value
+          border-bottom-color: $value
+
   &.tooltip-top-left,
   &.tooltip-top-center,
-  &.tooltip-top-right
+  &.tooltip-top-right,
+  &:not([class*="tooltip-"])
     .tooltip-body
       margin-bottom: 10px 
       bottom: 100%
@@ -47,14 +68,18 @@
   &.tooltip-bottom-right
     .tooltip-body
       top: 100%
+      bottom: auto
       margin-top: 10px 
       
       &:before
         top: -10px
+        border-bottom-width: 10px
         border-top: 0
+        bottom: auto
 
   &.tooltip-top-left,
-  &.tooltip-bottom-left
+  &.tooltip-bottom-left,
+  &:not([class*="tooltip-"])
     .tooltip-body
       left: 0
 
@@ -80,16 +105,4 @@
       &:before
         right: 10px
 
-  @each $base-color in $base-colors
-    $key: nth($base-color, 1)
-    $value: nth($base-color, 2)
-    &.tooltip-#{$key}
-      .tooltip-body
-        background: $value
-        @if $key == light
-          color: #333
-
-        &:before
-          border-top-color: $value
-          border-bottom-color: $value
 
