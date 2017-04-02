@@ -23,6 +23,8 @@
     border-radius: $tooltip-body-border-radius
     z-index: 1
     transition: all .3s
+    margin-bottom: 10px 
+    bottom: 100%
 
     &:before
       content: ''
@@ -51,7 +53,8 @@
 
   &.tooltip-top-left,
   &.tooltip-top-center,
-  &.tooltip-top-right
+  &.tooltip-top-right,
+  &:not([class*="tooltip-"])
     .tooltip-body
       margin-bottom: 10px 
       bottom: 100%
@@ -75,7 +78,8 @@
         bottom: auto
 
   &.tooltip-top-left,
-  &.tooltip-bottom-left
+  &.tooltip-bottom-left,
+  &:not([class*="tooltip-"])
     .tooltip-body
       left: 0
 

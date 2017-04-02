@@ -10475,6 +10475,8 @@ table.table.table-lg th {
   border-radius: 4px;
   z-index: 1;
   transition: all 0.3s;
+  margin-bottom: 10px;
+  bottom: 100%;
 }
 .tooltip .tooltip-body:before {
   content: "";
@@ -10560,11 +10562,11 @@ table.table.table-lg th {
   border-top-color: #ec407a;
   border-bottom-color: #ec407a;
 }
-.tooltip.tooltip-top-left .tooltip-body, .tooltip.tooltip-top-center .tooltip-body, .tooltip.tooltip-top-right .tooltip-body {
+.tooltip.tooltip-top-left .tooltip-body, .tooltip.tooltip-top-center .tooltip-body, .tooltip.tooltip-top-right .tooltip-body, .tooltip:not([class*="tooltip-"]) .tooltip-body {
   margin-bottom: 10px;
   bottom: 100%;
 }
-.tooltip.tooltip-top-left .tooltip-body:before, .tooltip.tooltip-top-center .tooltip-body:before, .tooltip.tooltip-top-right .tooltip-body:before {
+.tooltip.tooltip-top-left .tooltip-body:before, .tooltip.tooltip-top-center .tooltip-body:before, .tooltip.tooltip-top-right .tooltip-body:before, .tooltip:not([class*="tooltip-"]) .tooltip-body:before {
   bottom: -10px;
   border-bottom: 0;
 }
@@ -10579,10 +10581,10 @@ table.table.table-lg th {
   border-top: 0;
   bottom: auto;
 }
-.tooltip.tooltip-top-left .tooltip-body, .tooltip.tooltip-bottom-left .tooltip-body {
+.tooltip.tooltip-top-left .tooltip-body, .tooltip.tooltip-bottom-left .tooltip-body, .tooltip:not([class*="tooltip-"]) .tooltip-body {
   left: 0;
 }
-.tooltip.tooltip-top-left .tooltip-body:before, .tooltip.tooltip-bottom-left .tooltip-body:before {
+.tooltip.tooltip-top-left .tooltip-body:before, .tooltip.tooltip-bottom-left .tooltip-body:before, .tooltip:not([class*="tooltip-"]) .tooltip-body:before {
   left: 10px;
 }
 .tooltip.tooltip-top-center .tooltip-body, .tooltip.tooltip-bottom-center .tooltip-body {
