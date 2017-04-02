@@ -10080,17 +10080,46 @@ ul {
   *display: inline;
 }
 ul.list {
-  padding: 1em 0.7em;
+  padding: 0.5em 0.7em;
   margin: 0;
 }
 ul.list li {
   display: block;
-  padding: 0.7em 1em;
+  padding: 0.25em 1em;
+  margin-bottom: 0.7em;
+  border-left: 2px solid #3C3C3C;
 }
 ul.list li a {
   display: block;
   color: inherit;
   text-decoration: none;
+}
+ul.list.list-default li {
+  border-left-color: #f8f8f8;
+}
+ul.list.list-light li {
+  border-left-color: #f8f8f8;
+}
+ul.list.list-inverse li {
+  border-left-color: #3C3C3C;
+}
+ul.list.list-primary li {
+  border-left-color: #2D6CC9;
+}
+ul.list.list-secondary li {
+  border-left-color: #31C290;
+}
+ul.list.list-info li {
+  border-left-color: #00BCD4;
+}
+ul.list.list-warning li {
+  border-left-color: #E68523;
+}
+ul.list.list-error li {
+  border-left-color: #C53030;
+}
+ul.list-group li, ul.list-divider li, ul.list-arrow li, ul.list-check li, ul.list-dot li, ul.list-disc li, ul.list-circle li, ul.list-cube li, ul.list-square li {
+  border-left: 0;
 }
 ul.list-group {
   border: 1px solid #f8f8f8;
@@ -10258,40 +10287,6 @@ ul.list-group.list-error li:last-child, ul.list-group.list-error li.last-child {
 ul.list-group.list-error li a:hover {
   background-color: #C53030;
   color: white;
-}
-ul.list-border-left {
-  padding: 0.5em 0.7em;
-  margin: 0;
-}
-ul.list-border-left li {
-  display: block;
-  padding: 0.5em 1em;
-  margin-bottom: 0.7em;
-  border-left: 2px solid #3C3C3C;
-}
-ul.list-border-left.list-default li {
-  border-left-color: #f8f8f8;
-}
-ul.list-border-left.list-light li {
-  border-left-color: #f8f8f8;
-}
-ul.list-border-left.list-inverse li {
-  border-left-color: #3C3C3C;
-}
-ul.list-border-left.list-primary li {
-  border-left-color: #2D6CC9;
-}
-ul.list-border-left.list-secondary li {
-  border-left-color: #31C290;
-}
-ul.list-border-left.list-info li {
-  border-left-color: #00BCD4;
-}
-ul.list-border-left.list-warning li {
-  border-left-color: #E68523;
-}
-ul.list-border-left.list-error li {
-  border-left-color: #C53030;
 }
 ul.list-divider {
   padding: 1em 0.7em;
