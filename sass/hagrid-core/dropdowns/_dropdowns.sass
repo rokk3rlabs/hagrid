@@ -2,14 +2,13 @@
   +inline-block
   margin: $dropdown-btn-margin
 
-  .btn
+  .btn,
+  .btn-dropdown
     width: $dropdown-btn-width
     text-align: $dropdown-btn-text-align
-
-  .btn-dropdown
-    padding-right: 3em!important
-    border-width: $dropdown-outline-bdw
-    margin: $dropdown-btn-outline-margin
+    //padding-right: 3em!important
+    //border-width: $dropdown-outline-bdw
+    //margin: $dropdown-btn-outline-margin
 
     .icon-dropdown
       +inline-block
@@ -18,8 +17,18 @@
       position: absolute
       //border-left: 1px solid rgba(0, 0, 0, .1)
       margin-left: $dropdown-btn-icon-margin-left
-      top: $dropdown-btn-icon-top
-      right: $dropdown-btn-icon-right
+      //top: $dropdown-btn-icon-top
+      top: 0
+      //right: $dropdown-btn-icon-right
+      right: 0
+
+      &:before
+        font-size: 1.7em
+        height: 100%
+        display: block
+        vertical-align: middle
+        text-align: center
+        line-height: 150%
 
   &.support-hover
     .btn-dropdown
@@ -57,13 +66,3 @@
 
         &:hover
           background-color: $dropdown-menu-item-hover
-
-  &.dropdown-outline
-    .btn-dropdown
-      border-width: $dropdown-outline-bdw
-
-    .dropdown-menu
-      @extend .primary-color
-      box-shadow: $dropdown-outline-menu-box-shadow
-      border-radius: $dropdown-outline-menu-border-radius
-      border: $dropdown-outline-menu-border $color-primary
