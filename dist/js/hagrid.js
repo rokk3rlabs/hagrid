@@ -39,7 +39,7 @@ window.hagrid = (function(){
    * @return {Object}    Parent element
    */
   function _parentComponent(el){
-    var parent = el.parentNode;
+    var parent = el;
     var i = 0;
     var hasAttr = u(el).attr('hagrid-component');
     while (!hasAttr || i > 10){
@@ -51,15 +51,25 @@ window.hagrid = (function(){
     return parent;
   }
 
+  function getConfCompoment(el){
+    var hasAttr = u(el).attr('hagrid-role');
+    if(hasAttr){
+      var hagridComponent = components[hasAttr];
+      return hagridComponent.component.set(el);
+    }
+    return {};
+  }
+
   /**
    * Get hagrid component
    * @param  {String} el Element string
    * @return {fn}    component function
    */
   function _getComponent(el){
-    var hagridTarget = u(el).attr('hagrid-target') || u(el).attr('href'),
+    var getConf = getConfCompoment(el);
+    var hagridTarget = u(el).attr('hagrid-target') || getConf.hagridTarget || u(el).attr('href'),
         parentTarget = (!!hagridTarget) ? null : _parentComponent(el),
-        hagridRole = u(el).attr('hagrid-role') || 'open',
+        hagridRole = getConf.hagridRole || u(el).attr('hagrid-role') || 'open',
         elTarget = (!!hagridTarget) ? u(hagridTarget).first() :parentTarget,
         firstElement = elTarget,
         parentComponent =  _parentComponent(firstElement),
@@ -191,6 +201,37 @@ window.hagrid = (function(){
   }
 
   /**
+   * Dropdown Hagrid Component
+   * @return {null}
+   */
+  var dropdowns = function(){
+    return {
+        component: {
+          tpl: function(title, message, option){
+            return ['', ''].join('')
+          },
+          set: function(el){
+            return {
+              hagridTarget: u(el).siblings('.dropdown-menu').first(),
+              hagridRole: 'toggle',
+            }
+          },
+          rootElement: '.dropdown',
+        },
+        open: function($target, $seft, $parentComponent){
+          u($parentComponent).addClass('open');
+        },
+        toggle: function($target, $seft, $parentComponent){
+          u($parentComponent).toggleClass('open');
+        },
+        close: function($target, $seft){
+          u($parentComponent).removeClass('open');
+        },
+        launch: function(options){}
+      }
+  }
+
+  /**
    * Hagrid Components
    * @type {Object}
    */
@@ -199,6 +240,7 @@ window.hagrid = (function(){
     modal: modals(),
     tooltip: tooltips(),
     tab: tabs(),
+    dropdown: dropdowns(),
   };
   
   /**
@@ -207,9 +249,13 @@ window.hagrid = (function(){
    * @return {null} 
    */
   var bodyEvent = (function(){
-    document.body.addEventListener("click", function(e) {
+    var DOM = document || document.body ;
+    DOM.addEventListener("click", function(e) {
       var el = e.target;
       var isHagridComponent = u(el).attr('hagrid-role');
+      u('.open').each(function(el){
+        u(el).removeClass('open')
+      })
       if(isHagridComponent){
         if(e.target.tagName.toLowerCase() === 'a') e.preventDefault();
         _getComponent(el);        
@@ -224,7 +270,7 @@ window.hagrid = (function(){
    */
   var bodyChange = (function(){
     document.body.addEventListener("change", function(e) {
-      console.log(e.target);
+      //console.log(e.target);
     });
   })();
 
@@ -235,7 +281,8 @@ window.hagrid = (function(){
    */
   var bodyLoad = (function(){
      document.addEventListener("DOMContentLoaded", function(e) {
-      console.log(e.target);
+      //console.log(e.target);
+      console.log('Hagrid.js loaded!');
     });
   })();
 
