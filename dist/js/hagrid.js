@@ -55,7 +55,9 @@ window.hagrid = (function(){
     var hasAttr = u(el).attr('hagrid-role');
     if(hasAttr){
       var hagridComponent = components[hasAttr];
-      return hagridComponent.component.set(el);
+      if(hagridComponent){
+        return hagridComponent.component.set(el);
+      }
     }
     return {};
   }
@@ -255,7 +257,7 @@ window.hagrid = (function(){
       var isHagridComponent = u(el).attr('hagrid-role');
       u('.open').each(function(el){
         u(el).removeClass('open')
-      })
+      });
       if(isHagridComponent){
         if(e.target.tagName.toLowerCase() === 'a') e.preventDefault();
         _getComponent(el);        

@@ -10354,11 +10354,11 @@ table.table.table-lg th {
   border: 0;
 }
 .progressbar .progressbar-counting {
-  -webkit-transition: .3s width;
-  -moz-transition: .3s width;
-  -ms-transition: .3s width;
-  -o-transition: .3s width;
-  transition: .3s width;
+  -webkit-transition: 0.3s width;
+  -moz-transition: 0.3s width;
+  -ms-transition: 0.3s width;
+  -o-transition: 0.3s width;
+  transition: 0.3s width;
   position: absolute;
   left: 0;
   top: 0;
@@ -10369,7 +10369,7 @@ table.table.table-lg th {
 }
 .progressbar .progressbar-counting:before {
   content: attr(data-counting);
-  font-size: .9em;
+  font-size: 0.9em;
   font-family: Helvetica, Arial, sans-serif;
   font-weight: bold;
   position: relative;
@@ -10380,6 +10380,15 @@ table.table.table-lg th {
   line-height: 0;
   width: 100%;
   top: 50%;
+}
+.progressbar .progressbar-counting:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  animation: loading-bar 2s infinite ease-in-out;
 }
 .progressbar .progressbar-percent {
   position: relative;
@@ -10452,6 +10461,19 @@ table.table.table-lg th {
   height: 2em;
 }
 
+@keyframes loading-bar {
+  0% {
+    width: 70%;
+    background-color: rgba(255, 255, 255, 0);
+  }
+  50% {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  100% {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+  }
+}
 .tooltip {
   display: inline-block;
   *display: inline;

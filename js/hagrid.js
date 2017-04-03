@@ -54,7 +54,9 @@ window.hagrid = (function(){
     var hasAttr = u(el).attr('hagrid-role');
     if(hasAttr){
       var hagridComponent = components[hasAttr];
-      return hagridComponent.component.set(el);
+      if(hagridComponent){
+        return hagridComponent.component.set(el);
+      }
     }
     return {};
   }
