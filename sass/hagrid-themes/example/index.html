@@ -3,30 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <title>Kitchen Sink - Hagrid Theme</title>
-  <link rel="stylesheet" href="../../../dist/css/hagrid-themes/example/style.css">
+  <link rel="stylesheet" href="../../../dist/css/hagrid-themes/example/style.css?vc=0.0.1">
 </head>
 <body>
-  <div class="gs-wrap">
-    <h1 class="align-center">Kitchen Sink <br><small>Hagrid Theme</small></h1>
-    <h2 class="title-section">Typography</h2>
+
+  <header id="main-header">
+    <h1 class="p-0">Kitchen Sink</h1>
+    <span>Hagrid Theme - v.0.10</span>
+  </header>
+
+
+  <section class="gs-wrap">
+    <h6 class="title-section"><span class="kitchen-title">Typography</span></h6>
     <section class="gs gutters">
       <div class="lay">
-          <h4>Headings</h4>
-          <hr>
-          <h1>h1 Heading Title</h1>
-          <h2>h2 Heading Title</h2>
-          <h3>h3 Heading Title</h3>
-          <h4>h4 Heading Title</h4>
-          <h5>h5 Heading Title</h5>
-          <h6>h6 Heading Title</h6>
-          <h4>Paragraphs</h4>
-          <hr>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <h4>Bold</h4>
-          <hr>
-          <b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</b>
+        <h4>Headings</h4>
+        <hr>
+        <h1>h1 Heading Title</h1>
+        <h2>h2 Heading Title</h2>
+        <h3>h3 Heading Title</h3>
+        <h4>h4 Heading Title</h4>
+        <h5>h5 Heading Title</h5>
+        <h6>h6 Heading Title</h6>
+        <h4>Paragraphs</h4>
+        <hr>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h4>Bold</h4>
+        <hr>
+        <b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</b>
       </div>
-      <div class="lay">
+      <div class="lay section-dark p-10-x">
         <h4>Italic Text</h4>
         <hr>
         <i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</i>
@@ -72,8 +78,10 @@
         </ol>
       </div>
     </section>
-
-    <h2>Buttons</h2>
+  </section><!-- end gs-wrap -->
+  
+  <section class="gs-wrap">
+    <h6><span class="kitchen-title">Buttons</span></h4>
     <section class="gs gutters">
       <div class="lay">
         <h4>Button Types</h4>
@@ -127,7 +135,8 @@
         <div class="p-10-y"><a href="#" class="btn block btn-error btn-outline">Button error</a></div>
       </div>
     </section>
-
+  </section><!-- end gs-wrap -->
+  <section class="gs-wrap section-dark">
     <h4>Button sizes</h4>
     <section class="gs gutters">
       <div class="lay">
@@ -166,9 +175,11 @@
         <div class="p-10-y"><a href="#" class="btn block btn-error btn-outline btn-xl">Button xl</a></div>
       </div>
     </section>
+  </section><!-- end gs-wrap -->
     
-    <h2>Navbars</h2>
-    <section>
+  
+  <section class="gs-wrap">
+    <h6><span class="kitchen-title">Navbars</span></h6>
       <div class="p-10-y">
         <nav class="navbar">
           <a href="">Item A</a>
@@ -225,9 +236,11 @@
           <a href="">Item C</a>
         </nav>
       </div>
-    
-    <h2>Inputs</h2>
-    </section>
+  </section><!-- end gs-wrap -->
+  
+  <section class="gs-wrap">
+    <h6><span class="kitchen-title">Inputs</span></h6>
+    <section>
       <div class="gs gutters">
         <div class="lay">
           <h4>Normal Input</h4>
@@ -248,8 +261,7 @@
           </div>
         </div>
       </div>
-    <section>
-
+    </section>
     <section>
       <div class="gs gutters">
         <div class="lay">
@@ -397,8 +409,11 @@
 
       </div>
     </section>
+  </section><!-- end gs-wrap -->
 
-    <h2>Dropdowns</h2>
+  
+  <section class="gs-wrap">
+    <h6><span class="kitchen-title">Dropdowns</span></h6>
     <section>
       <div class="dropdown" hagrid-component="dropdown">
         <a href="#" class="btn btn-primary" hagrid-role="dropdown">Dropdown A<span class="icon-dropdown icon-keyboard_arrow_down"></span></a>
@@ -478,40 +493,42 @@
       </div>
 
     </section>
+  </section><!-- end gs-wrap -->
 
-    <section>
-      <div class="gs gutters">
-        <div class="lay">
-          <h4>Images</h4>
-            <figure class="img img-circle">
-              <img src="http://dummyimage.com/100x100" alt="Image"/>
-            </figure>
-            <figure class="img img-radius">
-              <img src="http://dummyimage.com/100x100" alt="Image"/>
-            </figure>      
-        </div>
-        <div class="lay">
-          <h4>Labels</h4>
-          <p>Lorem ipsum dolor sit amet
-            <span class="label label-primary">primary label</span>,
-            <span class="label label-secondary">secondaty label</span>,
-            <span class="label label-info">info label</span>,
-            <span class="label label-warning">warning label</span>,
-            <span class="label label-error">error label</span>,
-            <span class="label label-inverse">inverse label</span>,
-            <span class="label label-default">default label</span>
-          Lorem ipsum dolor sit amet </p>
-        </div>
-        <div class="lay">
-          <h4>Badges</h4>
-          <a href="#" class="btn btn-primary">Notifications <span class="badge">9</span></a>
-          <a href="#" class="btn btn-warning"><span class="badge">3</span> Alerts </a>
-          <a href="#" class="btn btn-error">Errorss <span class="badge">1</span></a>
-        </div>
+  <section class="gs-wrap">
+    <div class="gs gutters">
+      <div class="lay">
+        <h6><span class="kitchen-title">Images</span></h6>
+        <figure class="img img-circle">
+          <img src="http://dummyimage.com/100x100" alt="Image"/>
+        </figure>
+        <figure class="img img-radius">
+          <img src="http://dummyimage.com/100x100" alt="Image"/>
+        </figure>
       </div>
-    </section>
-
-    <h2>Lists</h2>
+      <div class="lay">
+        <h6><span class="kitchen-title">Labels</span></h6>
+        <p>Lorem ipsum dolor sit amet
+          <span class="label label-primary">primary label</span>,
+          <span class="label label-secondary">secondaty label</span>,
+          <span class="label label-info">info label</span>,
+          <span class="label label-warning">warning label</span>,
+          <span class="label label-error">error label</span>,
+          <span class="label label-inverse">inverse label</span>,
+          <span class="label label-default">default label</span>
+        Lorem ipsum dolor sit amet </p>
+      </div>
+      <div class="lay">
+        <h6><span class="kitchen-title">Badges</span></h6>
+        <a href="#" class="btn btn-primary">Notifications <span class="badge">9</span></a>
+        <a href="#" class="btn btn-warning"><span class="badge">3</span> Alerts </a>
+        <a href="#" class="btn btn-error">Errorss <span class="badge">1</span></a>
+      </div>
+    </div>
+  </section><!-- end gs-wrap -->
+  
+  <section class="gs-wrap">
+    <h6><span class="kitchen-title">Lists</span></h6>
     <section>
       <div class="gs">
         <div class="lay">
@@ -666,8 +683,10 @@
         </div>
       </div>
     </section>
-  
-    <h2>Breadcrumbs</h2>
+  </section><!-- end gs-wrap -->
+
+  <section class="gs-wrap">
+    <h6><span class="kitchen-title">Breadcrumbs</span></h6>
     <section>
       <nav class="breadcrumb breadcrumb-primary">
         <a href="">Home</a>
@@ -769,10 +788,11 @@
       </nav>
       
     </section>
-    
+  </section><!-- end gs-wrap -->
 
-
-    <h2>Paginations</h2>
+  
+  <section class="gs-wrap">
+    <h6><span class="kitchen-title">Paginations</span></h6>
     <section>
       <div class="gs gutters">
         <div class="lay">
@@ -978,8 +998,11 @@
         </div>
       </div>
     </section>
+  </section><!-- end gs-wrap -->
 
-    <h2>Progressbars</h2>
+  
+  <section class="gs-wrap">
+    <h6><span class="kitchen-title">Progressbars</span></h6>
     <section>
       <div class="progressbar">
         <div class="progressbar-counting" data-counting="70%" style="width: 70%"></div>
@@ -1061,8 +1084,10 @@
         </div>
       </div>
     </section>
+  </section><!-- end gs-wrap -->
 
-    <h2>Tables</h2>
+  <section class="gs-wrap">
+    <h6><span class="kitchen-title">Tables</span></h6>
     <section>
       <table class="table">
         <thead>
@@ -1158,8 +1183,10 @@
       </div>
       
     </section>
-      
-    <h2>Tabs</h2>
+  </section><!-- end gs-wrap -->
+
+  <section class="gs-wrap">
+    <h6><span class="kitchen-title">Tabs</span></h6>
     <section>
       <section class="tab" hagrid-component="tab">
         <nav class="tab-nav">
@@ -1297,10 +1324,12 @@
         </div>
       </div>
     </section>
+  </section><!-- end gs-wrap -->
 
-    <h2>Tooltips</h2>
+  <section class="gs-wrap">
+    <h6><span class="kitchen-title">Tooltips</span></h6>
     <section>
-      <p>Lorem ipsum dolor sit amet, sed do eiusmod <span class="tooltip tooltip-show"><span class="tooltip-body"> tempor incididunt ut labore et dolore</span>consectetur adipiscing</span> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+      <p>Lorem ipsum dolor sit amet, sed do eiusmod <span class="tooltip open-component"><span class="tooltip-body"> tempor incididunt ut labore et dolore</span>consectetur adipiscing</span> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
 
       <div class="gs gutters">
         <div class="lay">
@@ -1335,9 +1364,10 @@
         </div>
       </div>
     </section>
+  </section><!-- end gs-wrap -->
 
-
-    <h2>Alerts</h2>
+  <section class="gs-wrap">
+    <h6><span class="kitchen-title">Alerts</span></h6>
     <section>
       <div>
         <!-- Buttons launch alerts -->
@@ -1462,8 +1492,10 @@
         </div>
       </div>
     </section>
+  </section><!-- end gs-wrap -->
 
-    <h2>Modals</h2>
+  <section class="gs-wrap">
+    <h6><span class="kitchen-title">Modals</span></h6>
     <section>
       <!-- Buttons launch modals -->
       <a href="" class="btn btn-primary" hagrid-target="#modal1" hagrid-role="open">Launch modal</a>
@@ -1615,8 +1647,35 @@
       </div>
       
     </section>
+  </section><!-- end gs-wrap -->
 
-  </div>
+  <footer id="main-footer" class="align-center">
+    <span>Kitchen Sink - Hagrid Theme - v.0.10</span>
+  </footer>
+
 </body>
+<style>
+  header#main-header{
+    background: #442db6;
+    color: #fff;
+    padding: 5em 1em;
+  }
+  footer#main-footer{
+    background: #333;
+    color: #fff;
+    padding: 1em 1em;
+  }
+  .kitchen-title{
+    background: #43c28b;
+    color: #fff;
+    padding: .2em .5em;
+    margin: 3em 0 1em;
+    display: inline-block;
+  }
+  .section-dark{
+    background-color: #333;
+    color: #fff; 
+  }
+</style>
 <script src="../../../dist/js/hagrid.js"></script>
 </html>
