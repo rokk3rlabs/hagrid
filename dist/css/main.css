@@ -11480,7 +11480,7 @@ table.table.table-lg th {
   cursor: help;
   font-weight: bold;
 }
-.tooltip:hover .tooltip-body, .tooltip.hover .tooltip-body, .tooltip.tooltip-show .tooltip-body {
+.tooltip:hover .tooltip-body, .tooltip.hover .tooltip-body, .tooltip.open-component .tooltip-body {
   display: inline-block;
   *display: inline;
 }
