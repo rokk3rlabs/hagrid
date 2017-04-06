@@ -418,7 +418,7 @@
     <h6><span class="kitchen-title">Dropdowns</span></h6>
     <section class="gs gutters">
       <div class="lay">
-        <div class="dropdown" hagrid-component="dropdown">
+        <div class="dropdown block-component" hagrid-component="dropdown">
           <a href="#" class="btn btn-primary" hagrid-role="dropdown">Dropdown A<span class="icon-dropdown icon-keyboard_arrow_down"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#">Dropdown Menu 1</a></li>
@@ -430,7 +430,7 @@
         </div>
       </div>
       <div class="lay">
-        <div class="dropdown" hagrid-component="dropdown">
+        <div class="dropdown block-component" hagrid-component="dropdown">
           <a href="#" class="btn btn-secondary btn-upper" hagrid-role="dropdown">Dropdown A<span class="icon-dropdown icon-keyboard_arrow_down"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#">Dropdown Menu 1</a></li>
@@ -442,7 +442,7 @@
         </div>
       </div>
       <div class="lay">
-        <div class="dropdown" hagrid-component="dropdown">
+        <div class="dropdown block-component" hagrid-component="dropdown">
           <a href="#" class="btn btn-light btn-flat" hagrid-role="dropdown">Dropdown A<span class="icon-dropdown icon-keyboard_arrow_down"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#">Dropdown Menu 1</a></li>
@@ -454,7 +454,7 @@
         </div>
       </div>
       <div class="lay">
-        <div class="dropdown" hagrid-component="dropdown">
+        <div class="dropdown block-component" hagrid-component="dropdown">
           <a href="#" class="btn btn-inverse btn-outline" hagrid-role="dropdown">Dropdown A<span class="icon-dropdown icon-keyboard_arrow_down"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#">Dropdown Menu 1</a></li>
@@ -467,7 +467,7 @@
       </div>
 
       <div class="lay">
-        <div class="dropdown" hagrid-component="dropdown">
+        <div class="dropdown block-component" hagrid-component="dropdown">
           <a href="#" class="btn btn-info" hagrid-role="dropdown">Dropdown A<span class="icon-dropdown icon-keyboard_arrow_down"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#">Dropdown Menu 1</a></li>
@@ -762,6 +762,7 @@
     <h6><span class="kitchen-title">Breadcrumbs</span></h6>
     <div class="gs">
       <div class="lay">
+        <h4>Simple breadcrumbs</h4>
         <section>
           <nav class="breadcrumb">
             <a href=""><i class="icon-home"> </i>Home</a>
@@ -823,6 +824,7 @@
         </section>
       </div>
       <div class="lay">
+        <h4>Filled breadcrumbs</h4>
         <nav class="breadcrumb breadcrumb-filled breadcrumb-primary">
           <a href=""><i class="icon-home"> </i>Home</a>
           <a href="">Item a</a>
@@ -883,6 +885,7 @@
     <section>
       <div class="gs gutters">
         <div class="lay">
+          <h4>Default pagination</h4>
           <nav class="pagination">
             <a href="">1</a>
             <a href="">2</a>
@@ -908,6 +911,7 @@
           </nav>
         </div>
         <div class="lay">
+          <h4>Pagination Types</h4>
           <nav class="pagination pagination-primary">
             <span class="pagination-prev disable"></span>
             <a href="">1</a>
@@ -966,6 +970,7 @@
           </nav>
         </div>
         <div class="lay">
+          <h4>Filled Pagination</h4>
           <nav class="pagination pagination-primary pagination-filled">
             <span class="pagination-prev disable"></span>
             <a href="">1</a>
@@ -1024,8 +1029,127 @@
           </nav>
         </div>
       </div>
-      <div class="gs">
+      <div class="gs gutters">
         <div class="lay">
+          <h4>Group Pagination</h4>
+          <nav class="pagination pagination-primary pagination-group">
+            <span class="pagination-prev disable"></span>
+            <a href="">1</a>
+            <a href="" class="current">2</a>
+            <a href="">3</a>
+            <a href="">4</a>
+            <span class="pagination-next"></span>
+          </nav>
+          <nav class="pagination pagination-secondary pagination-group">
+            <span class="pagination-prev disable"></span>
+            <a href="">1</a>
+            <a href="" class="current">2</a>
+            <a href="">3</a>
+            <a href="">4</a>
+            <span class="pagination-next"></span>
+          </nav>
+          <nav class="pagination pagination-light pagination-group">
+            <span class="pagination-prev disable"></span>
+            <a href="">1</a>
+            <a href="" class="current">2</a>
+            <a href="">3</a>
+            <a href="">4</a>
+            <span class="pagination-next"></span>
+          </nav>
+          <nav class="pagination pagination-inverse pagination-group">
+            <span class="pagination-prev disable"></span>
+            <a href="">1</a>
+            <a href="" class="current">2</a>
+            <a href="">3</a>
+            <a href="">4</a>
+            <span class="pagination-next"></span>
+          </nav>
+          <nav class="pagination pagination-info pagination-group">
+            <span class="pagination-prev disable"></span>
+            <a href="">1</a>
+            <a href="" class="current">2</a>
+            <a href="">3</a>
+            <a href="">4</a>
+            <span class="pagination-next"></span>
+          </nav>
+          <nav class="pagination pagination-warning pagination-group">
+            <span class="pagination-prev disable"></span>
+            <a href="">1</a>
+            <a href="" class="current">2</a>
+            <a href="">3</a>
+            <a href="">4</a>
+            <span class="pagination-next"></span>
+          </nav>
+          <nav class="pagination pagination-error pagination-group">
+            <span class="pagination-prev disable"></span>
+            <a href="">1</a>
+            <a href="" class="current">2</a>
+            <a href="">3</a>
+            <a href="">4</a>
+            <span class="pagination-next"></span>
+          </nav>
+        </div>
+        <div class="lay">
+          <h4>Group Pagination</h4>
+          <nav class="pagination pagination-primary pagination-outline">
+            <span class="pagination-prev disable"></span>
+            <a href="">1</a>
+            <a href="" class="current">2</a>
+            <a href="">3</a>
+            <a href="">4</a>
+            <span class="pagination-next"></span>
+          </nav>
+          <nav class="pagination pagination-secondary pagination-outline">
+            <span class="pagination-prev disable"></span>
+            <a href="">1</a>
+            <a href="" class="current">2</a>
+            <a href="">3</a>
+            <a href="">4</a>
+            <span class="pagination-next"></span>
+          </nav>
+          <nav class="pagination pagination-light pagination-outline">
+            <span class="pagination-prev disable"></span>
+            <a href="">1</a>
+            <a href="" class="current">2</a>
+            <a href="">3</a>
+            <a href="">4</a>
+            <span class="pagination-next"></span>
+          </nav>
+          <nav class="pagination pagination-inverse pagination-outline">
+            <span class="pagination-prev disable"></span>
+            <a href="">1</a>
+            <a href="" class="current">2</a>
+            <a href="">3</a>
+            <a href="">4</a>
+            <span class="pagination-next"></span>
+          </nav>
+          <nav class="pagination pagination-info pagination-outline">
+            <span class="pagination-prev disable"></span>
+            <a href="">1</a>
+            <a href="" class="current">2</a>
+            <a href="">3</a>
+            <a href="">4</a>
+            <span class="pagination-next"></span>
+          </nav>
+          <nav class="pagination pagination-warning pagination-outline">
+            <span class="pagination-prev disable"></span>
+            <a href="">1</a>
+            <a href="" class="current">2</a>
+            <a href="">3</a>
+            <a href="">4</a>
+            <span class="pagination-next"></span>
+          </nav>
+          <nav class="pagination pagination-error pagination-outline">
+            <span class="pagination-prev disable"></span>
+            <a href="">1</a>
+            <a href="" class="current">2</a>
+            <a href="">3</a>
+            <a href="">4</a>
+            <span class="pagination-next"></span>
+          </nav>
+        </div>
+        <div class="lay">
+          <h4>Pagination Sizes</h4>
           <nav class="pagination pagination-primary pagination-xs">
             <span class="pagination-prev disable"></span>
             <a href="">1</a>
@@ -1071,19 +1195,18 @@
             <a href="">1</a>
             <a href="" class="current">2</a>
             <a href="">3</a>
-            <a href="">4</a>
             <span class="pagination-next"></span>
           </nav>
-          <nav class="pagination pagination-error">
+          <nav class="pagination pagination-error pagination-xl">
             <span class="pagination-prev disable"></span>
             <a href="">1</a>
             <a href="" class="current">2</a>
             <a href="">3</a>
-            <a href="">4</a>
             <span class="pagination-next"></span>
           </nav>
         </div>
       </div>
+      
     </section>
   </section><!-- end gs-wrap -->
 

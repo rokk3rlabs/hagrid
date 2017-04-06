@@ -10277,7 +10277,7 @@ h6,
   padding: 0;
   margin: 5px 0 0;
   list-style: none;
-  min-width: 140px;
+  min-width: 200px;
   border-radius: 5px;
 }
 .dropdown .dropdown-menu li {
