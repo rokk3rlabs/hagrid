@@ -6,128 +6,169 @@
   .breadcrumb-item
     +inline-block
     position: relative
-    margin-right: $breadcrumb-item-margin-right
+    margin-right: 0
     line-height: $breadcrumb-item-line-height
     text-decoration: $breadcrumb-item-text-decoration
     font-size: $breadcrumb-item-font-size
-    background: $color-primary
     padding: $breadcrumb-item-padding
-    color: $breadcrumb-item-color
+    color: inherit
     +prefix(transition, background .3s)
-
-
-    &:first-child,
-    &.first-child
-      border-radius: $breadcrumb-item-first-child-border-radius
-      &:before
-        display: none 
 
     &:last-child,
     &.last-child
-      border-radius: $breadcrumb-item-last-child-border-radius
-      &:after
-        display: none 
-    
-    &:before,
-    &:after
-      +prefix(transition, border-color .3s)
+      padding-left: 0
 
-    &:before
-      content: ''
+    &:last-child,
+    &.last-child
+      &:after,
+      &.after
+        display: none
+
+    &:after,
+    &.after
+      content: "/"
       position: absolute
-      +prefix(transition, border-color .3s)
-      z-index: 1
-      left: $breadcrumb-item-before-left
-      top: $breadcrumb-item-before-top
-      height: $breadcrumb-item-before-height
-      width: $breadcrumb-item-before-width
-      background: transparent
-      border: $breadcrumb-item-border $color-primary
-      border-left-width: $breadcrumb-item-before-left-width
-      border-left-color: transparent
-      border-right-width: $breadcrumb-item-before-right-width
+      right: 0
 
-    &:after
-      content: ''
-      position: absolute
-      z-index: 2
-      right: $breadcrumb-item-after-right
-      top: $breadcrumb-item-after-top
-      height: $breadcrumb-item-after-height
-      width: $breadcrumb-item-after-width
-      background: transparent
-      border: $breadcrumb-item-border transparent
-      border-left-width: $breadcrumb-item-after-border-left-width
-      border-left-color: $color-primary
-      border-right-width: $breadcrumb-item-after-border-right-width
+    &[data-separator]
+      &:after,
+      &.after
+        content: attr(data-separator)
 
-
-    &:hover
-      background-color: lighten($color-primary, 5)
-      &:before
-        border-top-color: lighten($color-primary, 5)
-        border-bottom-color: lighten($color-primary, 5)
-
-      &:after
-        border-left-color: lighten($color-primary, 5)
-
-    &.current
-      background-color: darken($color-primary, 20)
-      &:before
-        border-top-color: darken($color-primary, 20)
-        border-bottom-color: darken($color-primary, 20)
-
-      &:after
-        border-left-color: darken($color-primary, 20)
 
   @each $base-color in $base-colors
     $key: nth($base-color, 1)
     $value: nth($base-color, 2)
     &.breadcrumb-#{$key}
-      @if $key == default
+      color: $value
+  
+  &.breadcrumb-filled
+    a,
+    .breadcrumb-item
+      +inline-block
+      position: relative
+      margin-right: $breadcrumb-filled-item-margin-right
+      line-height: $breadcrumb-filled-item-line-height
+      text-decoration: $breadcrumb-filled-item-text-decoration
+      font-size: $breadcrumb-filled-item-font-size
+      background: $color-primary
+      padding: $breadcrumb-filled-item-padding
+      color: $breadcrumb-filled-item-color
+      +prefix(transition, background .3s)
+
+
+      &:first-child,
+      &.first-child
+        border-radius: $breadcrumb-filled-item-first-child-border-radius
+        &:before
+          display: none 
+
+      &:last-child,
+      &.last-child
+        border-radius: $breadcrumb-filled-item-last-child-border-radius
+        &:after
+          display: none 
+      
+      &:before,
+      &:after
+        +prefix(transition, border-color .3s)
+
+      &:before
+        content: ''
+        position: absolute
+        +prefix(transition, border-color .3s)
+        z-index: 1
+        left: $breadcrumb-filled-item-before-left
+        top: $breadcrumb-filled-item-before-top
+        height: $breadcrumb-filled-item-before-height
+        width: $breadcrumb-filled-item-before-width
+        background: transparent
+        border: $breadcrumb-filled-item-border $color-primary
+        border-left-width: $breadcrumb-filled-item-before-left-width
+        border-left-color: transparent
+        border-right-width: $breadcrumb-filled-item-before-right-width
+
+      &:after
+        content: ''
+        position: absolute
+        z-index: 2
+        right: $breadcrumb-filled-item-after-right
+        top: $breadcrumb-filled-item-after-top
+        height: $breadcrumb-filled-item-after-height
+        width: $breadcrumb-filled-item-after-width
+        background: transparent
+        border: $breadcrumb-filled-item-border transparent
+        border-left-width: $breadcrumb-filled-item-after-border-left-width
+        border-left-color: $color-primary
+        border-right-width: $breadcrumb-filled-item-after-border-right-width
+
+
+      &:hover
+        background-color: lighten($color-primary, 5)
+        &:before
+          border-top-color: lighten($color-primary, 5)
+          border-bottom-color: lighten($color-primary, 5)
+
+        &:after
+          border-left-color: lighten($color-primary, 5)
+
+      &.current
+        background-color: darken($color-primary, 20)
+        &:before
+          border-top-color: darken($color-primary, 20)
+          border-bottom-color: darken($color-primary, 20)
+
+        &:after
+          border-left-color: darken($color-primary, 20)
+
+    @each $base-color in $base-colors
+      $key: nth($base-color, 1)
+      $value: nth($base-color, 2)
+      &.breadcrumb-#{$key}
+        @if $key == light
+          a,
+          .breadcrumb-item
+            color: #333
         a,
         .breadcrumb-item
-          color: #333
-      a,
-      .breadcrumb-item
-        background-color: $value
+          background-color: $value
 
 
-        &:before
-          border-top-color: $value
-          border-bottom-color: $value
-
-        &:after
-          border-left-color: $value
-
-        &:hover
-          background-color: lighten($value, 5)
           &:before
-            border-top-color: lighten($value, 5)
-            border-bottom-color: lighten($value, 5)
+            border-top-color: $value
+            border-bottom-color: $value
 
           &:after
-            border-left-color: lighten($value, 5)
+            border-left-color: $value
 
-        &.current
-          background-color: darken($value, 5)
+          &:hover
+            background-color: lighten($value, 5)
+            &:before
+              border-top-color: lighten($value, 5)
+              border-bottom-color: lighten($value, 5)
+
+            &:after
+              border-left-color: lighten($value, 5)
+
+          &.current
+            background-color: darken($value, 5)
+            &:before
+              border-top-color: darken($value, 5)
+              border-bottom-color: darken($value, 5)
+
+            &:after
+              border-left-color: darken($value, 5)
+
+    // Size Buttons
+    @for $i from 1 to length($base-sizes)+1
+      $key: nth($base-sizes, $i)
+      &.breadcrumb-#{$key}
+        a,
+        .breadcrumb-item
+          font-size: .4+($breadcrumb-increment-size*$i)+$breadcrumb-measure-size
+
           &:before
-            border-top-color: darken($value, 5)
-            border-bottom-color: darken($value, 5)
+            left: -.95em
 
           &:after
-            border-left-color: darken($value, 5)
-
-  // Size Buttons
-  @for $i from 1 to length($base-sizes)+1
-    $key: nth($base-sizes, $i)
-    &.breadcrumb-#{$key}
-      a,
-      .breadcrumb-item
-        font-size: .4+($breadcrumb-increment-size*$i)+$breadcrumb-measure-size
-
-        &:before
-          left: -.95em
-
-        &:after
-          right: -.95em
+            right: -.95em
