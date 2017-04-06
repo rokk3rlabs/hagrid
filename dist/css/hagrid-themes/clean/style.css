@@ -7544,7 +7544,7 @@ h6,
   box-shadow: 0 -2px 0 0px #f2f2f3 inset;
 }
 .input.input-default input[type="text"]:active, .input.input-default input[type="text"]:focus, .input.input-default input[type="text"].input-focus, .input.input-default input[type="text"].input-active, .input.input-default input[type="email"]:active, .input.input-default input[type="email"]:focus, .input.input-default input[type="email"].input-focus, .input.input-default input[type="email"].input-active, .input.input-default input[type="password"]:active, .input.input-default input[type="password"]:focus, .input.input-default input[type="password"].input-focus, .input.input-default input[type="password"].input-active, .input.input-default input[type="date"]:active, .input.input-default input[type="date"]:focus, .input.input-default input[type="date"].input-focus, .input.input-default input[type="date"].input-active, .input.input-default input[type="number"]:active, .input.input-default input[type="number"]:focus, .input.input-default input[type="number"].input-focus, .input.input-default input[type="number"].input-active {
-  color: #5e616f;
+  color: #f2f2f3;
   background: rgba(255, 255, 255, 0.9);
   box-shadow: 0 -2px 0 0px #e5e5e7 inset;
 }
@@ -7634,7 +7634,6 @@ h6,
   color: #f2f2f3;
   background-color: transparent;
   box-shadow: none;
-  color: #5e616f;
 }
 .input.input-outline.input-default input::-webkit-input-placeholder,
 .input.input-outline.input-default button::-webkit-input-placeholder,
@@ -7655,26 +7654,6 @@ h6,
 .input.input-outline.input-default button:-ms-input-placeholder,
 .input.input-outline.input-default select:-ms-input-placeholder {
   color: #f2f2f3;
-}
-.input.input-outline.input-default input::-webkit-input-placeholder,
-.input.input-outline.input-default button::-webkit-input-placeholder,
-.input.input-outline.input-default select::-webkit-input-placeholder {
-  color: #5e616f;
-}
-.input.input-outline.input-default input:-moz-placeholder,
-.input.input-outline.input-default button:-moz-placeholder,
-.input.input-outline.input-default select:-moz-placeholder {
-  color: #5e616f;
-}
-.input.input-outline.input-default input::-moz-placeholder,
-.input.input-outline.input-default button::-moz-placeholder,
-.input.input-outline.input-default select::-moz-placeholder {
-  color: #5e616f;
-}
-.input.input-outline.input-default input:-ms-input-placeholder,
-.input.input-outline.input-default button:-ms-input-placeholder,
-.input.input-outline.input-default select:-ms-input-placeholder {
-  color: #5e616f;
 }
 .input.input-outline.input-default input:active, .input.input-outline.input-default input:focus, .input.input-outline.input-default input.input-focus, .input.input-outline.input-default input.input-active,
 .input.input-outline.input-default button:active,
@@ -7686,9 +7665,9 @@ h6,
 .input.input-outline.input-default select.input-focus,
 .input.input-outline.input-default select.input-active {
   border-color: #bdbdc2;
+  box-shadow: none;
   color: #f2f2f3;
   outline: none;
-  color: #5e616f;
 }
 .input.input-outline.input-default input:active::-webkit-input-placeholder, .input.input-outline.input-default input:focus::-webkit-input-placeholder, .input.input-outline.input-default input.input-focus::-webkit-input-placeholder, .input.input-outline.input-default input.input-active::-webkit-input-placeholder,
 .input.input-outline.input-default button:active::-webkit-input-placeholder,
@@ -7733,50 +7712,6 @@ h6,
 .input.input-outline.input-default select.input-focus:-ms-input-placeholder,
 .input.input-outline.input-default select.input-active:-ms-input-placeholder {
   color: #f2f2f3;
-}
-.input.input-outline.input-default input:active::-webkit-input-placeholder, .input.input-outline.input-default input:focus::-webkit-input-placeholder, .input.input-outline.input-default input.input-focus::-webkit-input-placeholder, .input.input-outline.input-default input.input-active::-webkit-input-placeholder,
-.input.input-outline.input-default button:active::-webkit-input-placeholder,
-.input.input-outline.input-default button:focus::-webkit-input-placeholder,
-.input.input-outline.input-default button.input-focus::-webkit-input-placeholder,
-.input.input-outline.input-default button.input-active::-webkit-input-placeholder,
-.input.input-outline.input-default select:active::-webkit-input-placeholder,
-.input.input-outline.input-default select:focus::-webkit-input-placeholder,
-.input.input-outline.input-default select.input-focus::-webkit-input-placeholder,
-.input.input-outline.input-default select.input-active::-webkit-input-placeholder {
-  color: #5e616f;
-}
-.input.input-outline.input-default input:active:-moz-placeholder, .input.input-outline.input-default input:focus:-moz-placeholder, .input.input-outline.input-default input.input-focus:-moz-placeholder, .input.input-outline.input-default input.input-active:-moz-placeholder,
-.input.input-outline.input-default button:active:-moz-placeholder,
-.input.input-outline.input-default button:focus:-moz-placeholder,
-.input.input-outline.input-default button.input-focus:-moz-placeholder,
-.input.input-outline.input-default button.input-active:-moz-placeholder,
-.input.input-outline.input-default select:active:-moz-placeholder,
-.input.input-outline.input-default select:focus:-moz-placeholder,
-.input.input-outline.input-default select.input-focus:-moz-placeholder,
-.input.input-outline.input-default select.input-active:-moz-placeholder {
-  color: #5e616f;
-}
-.input.input-outline.input-default input:active::-moz-placeholder, .input.input-outline.input-default input:focus::-moz-placeholder, .input.input-outline.input-default input.input-focus::-moz-placeholder, .input.input-outline.input-default input.input-active::-moz-placeholder,
-.input.input-outline.input-default button:active::-moz-placeholder,
-.input.input-outline.input-default button:focus::-moz-placeholder,
-.input.input-outline.input-default button.input-focus::-moz-placeholder,
-.input.input-outline.input-default button.input-active::-moz-placeholder,
-.input.input-outline.input-default select:active::-moz-placeholder,
-.input.input-outline.input-default select:focus::-moz-placeholder,
-.input.input-outline.input-default select.input-focus::-moz-placeholder,
-.input.input-outline.input-default select.input-active::-moz-placeholder {
-  color: #5e616f;
-}
-.input.input-outline.input-default input:active:-ms-input-placeholder, .input.input-outline.input-default input:focus:-ms-input-placeholder, .input.input-outline.input-default input.input-focus:-ms-input-placeholder, .input.input-outline.input-default input.input-active:-ms-input-placeholder,
-.input.input-outline.input-default button:active:-ms-input-placeholder,
-.input.input-outline.input-default button:focus:-ms-input-placeholder,
-.input.input-outline.input-default button.input-focus:-ms-input-placeholder,
-.input.input-outline.input-default button.input-active:-ms-input-placeholder,
-.input.input-outline.input-default select:active:-ms-input-placeholder,
-.input.input-outline.input-default select:focus:-ms-input-placeholder,
-.input.input-outline.input-default select.input-focus:-ms-input-placeholder,
-.input.input-outline.input-default select.input-active:-ms-input-placeholder {
-  color: #5e616f;
 }
 .input.input-outline.input-inverse input,
 .input.input-outline.input-inverse button,
@@ -7817,6 +7752,7 @@ h6,
 .input.input-outline.input-inverse select.input-focus,
 .input.input-outline.input-inverse select.input-active {
   border-color: #2f3138;
+  box-shadow: none;
   color: #5e616f;
   outline: none;
 }
@@ -7903,6 +7839,7 @@ h6,
 .input.input-outline.input-primary select.input-focus,
 .input.input-outline.input-primary select.input-active {
   border-color: #252f69;
+  box-shadow: none;
   color: #3F51B5;
   outline: none;
 }
@@ -7989,6 +7926,7 @@ h6,
 .input.input-outline.input-secondary select.input-focus,
 .input.input-outline.input-secondary select.input-active {
   border-color: #00626e;
+  box-shadow: none;
   color: #00BCD4;
   outline: none;
 }
@@ -8075,6 +8013,7 @@ h6,
 .input.input-outline.input-info select.input-focus,
 .input.input-outline.input-info select.input-active {
   border-color: #000404;
+  box-shadow: none;
   color: #005e6a;
   outline: none;
 }
@@ -8161,6 +8100,7 @@ h6,
 .input.input-outline.input-warning select.input-focus,
 .input.input-outline.input-warning select.input-active {
   border-color: #925211;
+  box-shadow: none;
   color: #E68523;
   outline: none;
 }
@@ -8247,6 +8187,7 @@ h6,
 .input.input-outline.input-error select.input-focus,
 .input.input-outline.input-error select.input-active {
   border-color: #b41249;
+  box-shadow: none;
   color: #ec407a;
   outline: none;
 }
@@ -8302,7 +8243,6 @@ h6,
   color: #fff;
   background-color: #f2f2f3;
   box-shadow: none;
-  color: #5e616f;
 }
 .input.input-filled.input-default input::-webkit-input-placeholder,
 .input.input-filled.input-default button::-webkit-input-placeholder,
@@ -8323,26 +8263,6 @@ h6,
 .input.input-filled.input-default button:-ms-input-placeholder,
 .input.input-filled.input-default select:-ms-input-placeholder {
   color: #fff;
-}
-.input.input-filled.input-default input::-webkit-input-placeholder,
-.input.input-filled.input-default button::-webkit-input-placeholder,
-.input.input-filled.input-default select::-webkit-input-placeholder {
-  color: #5e616f;
-}
-.input.input-filled.input-default input:-moz-placeholder,
-.input.input-filled.input-default button:-moz-placeholder,
-.input.input-filled.input-default select:-moz-placeholder {
-  color: #5e616f;
-}
-.input.input-filled.input-default input::-moz-placeholder,
-.input.input-filled.input-default button::-moz-placeholder,
-.input.input-filled.input-default select::-moz-placeholder {
-  color: #5e616f;
-}
-.input.input-filled.input-default input:-ms-input-placeholder,
-.input.input-filled.input-default button:-ms-input-placeholder,
-.input.input-filled.input-default select:-ms-input-placeholder {
-  color: #5e616f;
 }
 .input.input-filled.input-default input:active, .input.input-filled.input-default input:focus, .input.input-filled.input-default input.input-focus, .input.input-filled.input-default input.input-active,
 .input.input-filled.input-default button:active,
@@ -8358,8 +8278,6 @@ h6,
   color: #fff;
   outline: none;
   box-shadow: none;
-  color: #5e616f;
-  background-color: #e5e5e7;
 }
 .input.input-filled.input-default input:active::-webkit-input-placeholder, .input.input-filled.input-default input:focus::-webkit-input-placeholder, .input.input-filled.input-default input.input-focus::-webkit-input-placeholder, .input.input-filled.input-default input.input-active::-webkit-input-placeholder,
 .input.input-filled.input-default button:active::-webkit-input-placeholder,
@@ -8404,50 +8322,6 @@ h6,
 .input.input-filled.input-default select.input-focus:-ms-input-placeholder,
 .input.input-filled.input-default select.input-active:-ms-input-placeholder {
   color: #fff;
-}
-.input.input-filled.input-default input:active::-webkit-input-placeholder, .input.input-filled.input-default input:focus::-webkit-input-placeholder, .input.input-filled.input-default input.input-focus::-webkit-input-placeholder, .input.input-filled.input-default input.input-active::-webkit-input-placeholder,
-.input.input-filled.input-default button:active::-webkit-input-placeholder,
-.input.input-filled.input-default button:focus::-webkit-input-placeholder,
-.input.input-filled.input-default button.input-focus::-webkit-input-placeholder,
-.input.input-filled.input-default button.input-active::-webkit-input-placeholder,
-.input.input-filled.input-default select:active::-webkit-input-placeholder,
-.input.input-filled.input-default select:focus::-webkit-input-placeholder,
-.input.input-filled.input-default select.input-focus::-webkit-input-placeholder,
-.input.input-filled.input-default select.input-active::-webkit-input-placeholder {
-  color: #5e616f;
-}
-.input.input-filled.input-default input:active:-moz-placeholder, .input.input-filled.input-default input:focus:-moz-placeholder, .input.input-filled.input-default input.input-focus:-moz-placeholder, .input.input-filled.input-default input.input-active:-moz-placeholder,
-.input.input-filled.input-default button:active:-moz-placeholder,
-.input.input-filled.input-default button:focus:-moz-placeholder,
-.input.input-filled.input-default button.input-focus:-moz-placeholder,
-.input.input-filled.input-default button.input-active:-moz-placeholder,
-.input.input-filled.input-default select:active:-moz-placeholder,
-.input.input-filled.input-default select:focus:-moz-placeholder,
-.input.input-filled.input-default select.input-focus:-moz-placeholder,
-.input.input-filled.input-default select.input-active:-moz-placeholder {
-  color: #5e616f;
-}
-.input.input-filled.input-default input:active::-moz-placeholder, .input.input-filled.input-default input:focus::-moz-placeholder, .input.input-filled.input-default input.input-focus::-moz-placeholder, .input.input-filled.input-default input.input-active::-moz-placeholder,
-.input.input-filled.input-default button:active::-moz-placeholder,
-.input.input-filled.input-default button:focus::-moz-placeholder,
-.input.input-filled.input-default button.input-focus::-moz-placeholder,
-.input.input-filled.input-default button.input-active::-moz-placeholder,
-.input.input-filled.input-default select:active::-moz-placeholder,
-.input.input-filled.input-default select:focus::-moz-placeholder,
-.input.input-filled.input-default select.input-focus::-moz-placeholder,
-.input.input-filled.input-default select.input-active::-moz-placeholder {
-  color: #5e616f;
-}
-.input.input-filled.input-default input:active:-ms-input-placeholder, .input.input-filled.input-default input:focus:-ms-input-placeholder, .input.input-filled.input-default input.input-focus:-ms-input-placeholder, .input.input-filled.input-default input.input-active:-ms-input-placeholder,
-.input.input-filled.input-default button:active:-ms-input-placeholder,
-.input.input-filled.input-default button:focus:-ms-input-placeholder,
-.input.input-filled.input-default button.input-focus:-ms-input-placeholder,
-.input.input-filled.input-default button.input-active:-ms-input-placeholder,
-.input.input-filled.input-default select:active:-ms-input-placeholder,
-.input.input-filled.input-default select:focus:-ms-input-placeholder,
-.input.input-filled.input-default select.input-focus:-ms-input-placeholder,
-.input.input-filled.input-default select.input-active:-ms-input-placeholder {
-  color: #5e616f;
 }
 .input.input-filled.input-inverse input,
 .input.input-filled.input-inverse button,
