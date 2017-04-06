@@ -7,8 +7,9 @@
   input[disabled]
     cursor: not-allowed
 
-  &.input-block,
   &.block,
+  &.block-component
+
     input,
     button,
     select
@@ -23,14 +24,32 @@
   select
     border: 0
     border: 1px solid
-    border-color: #dfdfe2
-    color: #5e616f
     padding: $input-padding
-    +placeholder-color(#9ea0a9)
+    transition: border .3s, background .3s, box-shadow .3s
     +border-box
 
-    &:focus
+    &:active,
+    &:focus,
+    &.input-focus,
+    &.input-active
       outline: none
+
+    &:not([class*="input-"])
+      border-color: (nth(nth($base-colors, 1), 2)) //#dfdfe2
+      color: (nth(nth($base-colors, 1), 2)) // #5e616f
+      padding: $input-padding
+      +placeholder-color((nth(nth($base-colors, 1), 2))) // #9ea0a9)
+      transition: border .3s, background .3s, box-shadow .3s
+      +border-box
+
+      &:active,
+      &:focus,
+      &.input-focus,
+      &.input-active
+        outline: none
+        color: darken((nth(nth($base-colors, 1), 2)), 25)
+        border-color: darken((nth(nth($base-colors, 1), 2)), 25)
+        +placeholder-color(darken((nth(nth($base-colors, 1), 2)), 25))
 
     &.input-disabled
       color: #dfdfe2
@@ -41,6 +60,14 @@
       color: $color-error
       border-color: $color-error
       +placeholder-color($color-error)
+
+      &:active,
+      &:focus,
+      &.input-focus,
+      &.input-active
+        color: darken($color-error, 10)
+        border-color: darken($color-error, 10)
+        +placeholder-color(darken($color-error, 10))
 
   // Sizes
   @for $i from 1 to length($base-sizes)+1
@@ -177,7 +204,8 @@
       + .input-checkbox-icon
         position: relative
 
-        &:before
+        &:before,
+        &.before
           +prefix(transition, all .3s)
           content: ''
           position: absolute
@@ -192,7 +220,8 @@
           border-top: 0
           transform: rotate(-45deg)
 
-        &:after
+        &:after,
+        &.after
           +prefix(transition, all .3s)
           content: ''
           opacity: 1
@@ -206,12 +235,14 @@
       &:checked + .input-checkbox-icon
         border-color: $color-primary
 
-        &:before
+        &:before,
+        &.before
           opacity: 1
           //width: 66%
           border-color: $color-primary
 
-        &:after
+        &:after,
+        &.after
           opacity: 1
           position: absolute
           width: 0
@@ -252,7 +283,8 @@
         box-shadow: 0 0 0 0 $color-primary inset, 0 0 0 15px rgba(255, 255, 255, 1) inset
         +prefix(transition, all .3s)
 
-        &:before
+        &:before,
+        &.before
           content: ''
 
 
@@ -263,7 +295,8 @@
         //border-color: #3F51B5;
         //background-color: #3F51B5;
 
-        &:before
+        &:before,
+        &.before
           opacity: 1
 
 
