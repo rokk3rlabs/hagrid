@@ -9200,6 +9200,9 @@ h6,
   *display: inline;
   margin: 0 0.5em;
 }
+.dropdown.block-component {
+  display: block;
+}
 .dropdown .btn,
 .dropdown .btn-dropdown {
   width: 100%;
