@@ -7069,6 +7069,7 @@ h6,
   -ms-transition: border-color 0.3s;
   -o-transition: border-color 0.3s;
   transition: border-color 0.3s;
+  font-size: 0.9em;
 }
 .breadcrumb.breadcrumb-filled a:before,
 .breadcrumb.breadcrumb-filled .breadcrumb-item:before {
