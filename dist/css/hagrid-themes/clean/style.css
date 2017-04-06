@@ -9200,6 +9200,9 @@ h6,
   *display: inline;
   margin: 0 0.5em;
 }
+.dropdown.block-component {
+  display: block;
+}
 .dropdown .btn,
 .dropdown .btn-dropdown {
   width: 100%;
@@ -9304,6 +9307,9 @@ ul.list.list-warning li {
 ul.list.list-error li {
   border-left-color: #ec407a;
 }
+ul.list.block, ul.list.block-component {
+  display: block;
+}
 ul.list-group li, ul.list-divider li, ul.list-arrow li, ul.list-check li, ul.list-dot li, ul.list-disc li, ul.list-circle li, ul.list-cube li, ul.list-square li {
   border-left: 0;
 }
@@ -9315,6 +9321,7 @@ ul.list-group {
 ul.list-group li {
   border-bottom: 1px solid #f2f2f3;
   margin-bottom: 0;
+  padding: 0.5em 1em;
 }
 ul.list-group li:first-child, ul.list-group li.first-child {
   border-top: 0;
