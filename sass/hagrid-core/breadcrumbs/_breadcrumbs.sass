@@ -56,6 +56,10 @@
       color: $breadcrumb-filled-item-color
       +prefix(transition, background .3s)
 
+      i,
+      .breadcrumb-item-icon
+        font-size: .9em
+
 
       &:first-child,
       &.first-child
@@ -72,7 +76,6 @@
       &:before,
       &:after
         +prefix(transition, border-color .3s)
-        font-size: .9em
 
       &:before
         content: ''
