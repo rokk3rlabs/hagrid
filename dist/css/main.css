@@ -7648,7 +7648,7 @@ h6,
 .breadcrumb a:after, .breadcrumb a.after,
 .breadcrumb .breadcrumb-item:after,
 .breadcrumb .breadcrumb-item.after {
-  content: "/";
+  content: "|";
   position: absolute;
   right: 0;
 }
