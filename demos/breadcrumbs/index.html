@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Hagrid breadcrumbs!</title>
-  <link rel="stylesheet" href="../../dist/css/main.css">
+  <link rel="stylesheet" href="../../dist/css/main.css?vf=0.1.1">
   <link rel="stylesheet" href="../../dist/css/debug/debug.css">
 </head>
 <body>
@@ -11,6 +11,74 @@
     <h1 class="align-center">Breadcrumbs</h1>
     <section>
       <nav class="breadcrumb">
+        <a href=""><i class="icon-home"> </i>Home</a>
+        <a href="" data-separator="-"><i class="icon-star"></i> Item a</a>
+        <a href="">Item b</a>
+        <a href="" class="current">Item c</a>
+        <a href="" >Item d</a>
+      </nav>
+    </section>
+    <section>
+      <p>nav.breadcrumb.breadcrumb-primary > a</p>
+      <nav class="breadcrumb breadcrumb-primary">
+        <a href=""><i class="icon-home"></i> Home</a>
+        <a href="">Item a</a>
+        <a href="">Item b</a>
+        <a href="" class="current">Item c</a>
+        <a href="" >Item d</a>
+      </nav>
+      <p>nav.breadcrumb.breadcrumb-secondary > a</p>
+      <nav class="breadcrumb breadcrumb-secondary">
+        <a href=""><i class="icon-home"></i> Home</a>
+        <a href="">Item a</a>
+        <a href="">Item b</a>
+        <a href="" class="current">Item c</a>
+        <a href="" >Item d</a>
+      </nav>
+      <p>nav.breadcrumb.breadcrumb-inverse > a</p>
+      <nav class="breadcrumb breadcrumb-inverse">
+        <a href=""><i class="icon-home"></i> Home</a>
+        <a href="">Item a</a>
+        <a href="">Item b</a>
+        <a href="" class="current">Item c</a>
+        <a href="" >Item d</a>
+      </nav>
+      <p>nav.breadcrumb.breadcrumb-default > a</p>
+      <nav class="breadcrumb breadcrumb-default">
+        <a href=""><i class="icon-home"></i> Home</a>
+        <a href="">Item a</a>
+        <a href="">Item b</a>
+        <a href="" class="current">Item c</a>
+        <a href="" >Item d</a>
+      </nav>
+      <p>nav.breadcrumb.breadcrumb-info > a</p>
+      <nav class="breadcrumb breadcrumb-info">
+        <a href=""><i class="icon-home"></i> Home</a>
+        <a href="">Item a</a>
+        <a href="">Item b</a>
+        <a href="" class="current">Item c</a>
+        <a href="" >Item d</a>
+      </nav>
+      <p>nav.breadcrumb.breadcrumb-warning > a</p>
+      <nav class="breadcrumb breadcrumb-warning">
+        <a href=""><i class="icon-home"></i> Home</a>
+        <a href="">Item a</a>
+        <a href="">Item b</a>
+        <a href="" class="current">Item c</a>
+        <a href="" >Item d</a>
+      </nav>
+      <p>nav.breadcrumb.breadcrumb-error > a</p>
+      <nav class="breadcrumb breadcrumb-error">
+        <a href=""><i class="icon-home"></i> Home</a>
+        <a href="">Item a</a>
+        <a href="">Item b</a>
+        <a href="" class="current">Item c</a>
+        <a href="" >Item d</a>
+      </nav>
+
+    </section>
+    <section>
+      <nav class="breadcrumb breadcrumb-filled">
         <a href="">Home</a>
         <a href="">Item a</a>
         <a href="">Item b</a>
@@ -20,7 +88,7 @@
     </section>
     <section>
       <p>nav.breadcrumb.breadcrumb-primary > a</p>
-      <nav class="breadcrumb breadcrumb-primary">
+      <nav class="breadcrumb breadcrumb-filled breadcrumb-primary">
         <a href="">Home</a>
         <a href="">Item a</a>
         <a href="">Item b</a>
@@ -28,7 +96,7 @@
         <a href="" >Item d</a>
       </nav>
       <p>nav.breadcrumb.breadcrumb-secondary > a</p>
-      <nav class="breadcrumb breadcrumb-secondary">
+      <nav class="breadcrumb breadcrumb-filled breadcrumb-secondary">
         <a href="">Home</a>
         <a href="">Item a</a>
         <a href="">Item b</a>
@@ -36,7 +104,7 @@
         <a href="" >Item d</a>
       </nav>
       <p>nav.breadcrumb.breadcrumb-inverse > a</p>
-      <nav class="breadcrumb breadcrumb-inverse">
+      <nav class="breadcrumb breadcrumb-filled breadcrumb-inverse">
         <a href="">Home</a>
         <a href="">Item a</a>
         <a href="">Item b</a>
@@ -44,7 +112,7 @@
         <a href="" >Item d</a>
       </nav>
       <p>nav.breadcrumb.breadcrumb-default > a</p>
-      <nav class="breadcrumb breadcrumb-default">
+      <nav class="breadcrumb breadcrumb-filled breadcrumb-default">
         <a href="">Home</a>
         <a href="">Item a</a>
         <a href="">Item b</a>
@@ -52,7 +120,7 @@
         <a href="" >Item d</a>
       </nav>
       <p>nav.breadcrumb.breadcrumb-info > a</p>
-      <nav class="breadcrumb breadcrumb-info">
+      <nav class="breadcrumb breadcrumb-filled breadcrumb-info">
         <a href="">Home</a>
         <a href="">Item a</a>
         <a href="">Item b</a>
@@ -60,7 +128,7 @@
         <a href="" >Item d</a>
       </nav>
       <p>nav.breadcrumb.breadcrumb-warning > a</p>
-      <nav class="breadcrumb breadcrumb-warning">
+      <nav class="breadcrumb breadcrumb-filled breadcrumb-warning">
         <a href="">Home</a>
         <a href="">Item a</a>
         <a href="">Item b</a>
@@ -68,7 +136,7 @@
         <a href="" >Item d</a>
       </nav>
       <p>nav.breadcrumb.breadcrumb-error > a</p>
-      <nav class="breadcrumb breadcrumb-error">
+      <nav class="breadcrumb breadcrumb-filled breadcrumb-error">
         <a href="">Home</a>
         <a href="">Item a</a>
         <a href="">Item b</a>
@@ -79,7 +147,7 @@
     </section>
     <section>
       <p>nav.breadcrumb.breadcrumb-primary.breadcrumb-xs > a</p>
-      <nav class="breadcrumb breadcrumb-primary breadcrumb-xs">
+      <nav class="breadcrumb breadcrumb-filled breadcrumb-primary breadcrumb-xs">
         <a href="">Home</a>
         <a href="">Item a</a>
         <a href="">Item b</a>
@@ -87,7 +155,7 @@
         <a href="" >Item d</a>
       </nav>
       <p>nav.breadcrumb.breadcrumb-secondary.breadcrumb-sm > a</p>
-      <nav class="breadcrumb breadcrumb-secondary breadcrumb-sm">
+      <nav class="breadcrumb breadcrumb-filled breadcrumb-secondary breadcrumb-sm">
         <a href="">Home</a>
         <a href="">Item a</a>
         <a href="">Item b</a>
@@ -95,7 +163,7 @@
         <a href="" >Item d</a>
       </nav>
       <p>nav.breadcrumb.breadcrumb-inverse > a</p>
-      <nav class="breadcrumb breadcrumb-inverse">
+      <nav class="breadcrumb breadcrumb-filled breadcrumb-inverse">
         <a href="">Home</a>
         <a href="">Item a</a>
         <a href="">Item b</a>
@@ -103,7 +171,7 @@
         <a href="" >Item d</a>
       </nav>
       <p>nav.breadcrumb.breadcrumb-default.breadcrumb-md > a</p>
-      <nav class="breadcrumb breadcrumb-default breadcrumb-md">
+      <nav class="breadcrumb breadcrumb-filled breadcrumb-default breadcrumb-md">
         <a href="">Home</a>
         <a href="">Item a</a>
         <a href="">Item b</a>
@@ -111,7 +179,7 @@
         <a href="" >Item d</a>
       </nav>
       <p>nav.breadcrumb.breadcrumb-info.breadcrumb-lg > a</p>
-      <nav class="breadcrumb breadcrumb-info breadcrumb-lg">
+      <nav class="breadcrumb breadcrumb-filled breadcrumb-info breadcrumb-lg">
         <a href="">Home</a>
         <a href="">Item a</a>
         <a href="">Item b</a>
@@ -119,7 +187,7 @@
         <a href="" >Item d</a>
       </nav>
       <p>nav.breadcrumb.breadcrumb-warning.breadcrumb-xl > a</p>
-      <nav class="breadcrumb breadcrumb-warning breadcrumb-xl">
+      <nav class="breadcrumb breadcrumb-filled breadcrumb-warning breadcrumb-xl">
         <a href="">Home</a>
         <a href="">Item a</a>
         <a href="">Item b</a>
@@ -127,7 +195,7 @@
         <a href="" >Item d</a>
       </nav>
       <p>nav.breadcrumb.breadcrumb-error > a</p>
-      <nav class="breadcrumb breadcrumb-error">
+      <nav class="breadcrumb breadcrumb-filled breadcrumb-error">
         <a href="">Home</a>
         <a href="">Item a</a>
         <a href="">Item b</a>

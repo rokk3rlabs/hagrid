@@ -6966,6 +6966,68 @@ h6,
   display: inline-block;
   *display: inline;
   position: relative;
+  margin-right: 0;
+  line-height: 100%;
+  text-decoration: none;
+  font-size: 1em;
+  padding: 0.5em 1em;
+  color: inherit;
+  -webkit-transition: background 0.3s;
+  -moz-transition: background 0.3s;
+  -ms-transition: background 0.3s;
+  -o-transition: background 0.3s;
+  transition: background 0.3s;
+}
+.breadcrumb a:last-child, .breadcrumb a.last-child,
+.breadcrumb .breadcrumb-item:last-child,
+.breadcrumb .breadcrumb-item.last-child {
+  padding-left: 0;
+}
+.breadcrumb a:last-child:after, .breadcrumb a:last-child.after, .breadcrumb a.last-child:after, .breadcrumb a.last-child.after,
+.breadcrumb .breadcrumb-item:last-child:after,
+.breadcrumb .breadcrumb-item:last-child.after,
+.breadcrumb .breadcrumb-item.last-child:after,
+.breadcrumb .breadcrumb-item.last-child.after {
+  display: none;
+}
+.breadcrumb a:after, .breadcrumb a.after,
+.breadcrumb .breadcrumb-item:after,
+.breadcrumb .breadcrumb-item.after {
+  content: "/";
+  position: absolute;
+  right: 0;
+}
+.breadcrumb a[data-separator]:after, .breadcrumb a[data-separator].after,
+.breadcrumb .breadcrumb-item[data-separator]:after,
+.breadcrumb .breadcrumb-item[data-separator].after {
+  content: attr(data-separator);
+}
+.breadcrumb.breadcrumb-default {
+  color: #f2f2f3;
+}
+.breadcrumb.breadcrumb-inverse {
+  color: #5e616f;
+}
+.breadcrumb.breadcrumb-primary {
+  color: #3F51B5;
+}
+.breadcrumb.breadcrumb-secondary {
+  color: #00BCD4;
+}
+.breadcrumb.breadcrumb-info {
+  color: #005e6a;
+}
+.breadcrumb.breadcrumb-warning {
+  color: #E68523;
+}
+.breadcrumb.breadcrumb-error {
+  color: #ec407a;
+}
+.breadcrumb.breadcrumb-filled a,
+.breadcrumb.breadcrumb-filled .breadcrumb-item {
+  display: inline-block;
+  *display: inline;
+  position: relative;
   margin-right: 1em;
   line-height: 100%;
   text-decoration: none;
@@ -6979,37 +7041,37 @@ h6,
   -o-transition: background 0.3s;
   transition: background 0.3s;
 }
-.breadcrumb a:first-child, .breadcrumb a.first-child,
-.breadcrumb .breadcrumb-item:first-child,
-.breadcrumb .breadcrumb-item.first-child {
+.breadcrumb.breadcrumb-filled a:first-child, .breadcrumb.breadcrumb-filled a.first-child,
+.breadcrumb.breadcrumb-filled .breadcrumb-item:first-child,
+.breadcrumb.breadcrumb-filled .breadcrumb-item.first-child {
   border-radius: 5px 0 0 5px;
 }
-.breadcrumb a:first-child:before, .breadcrumb a.first-child:before,
-.breadcrumb .breadcrumb-item:first-child:before,
-.breadcrumb .breadcrumb-item.first-child:before {
+.breadcrumb.breadcrumb-filled a:first-child:before, .breadcrumb.breadcrumb-filled a.first-child:before,
+.breadcrumb.breadcrumb-filled .breadcrumb-item:first-child:before,
+.breadcrumb.breadcrumb-filled .breadcrumb-item.first-child:before {
   display: none;
 }
-.breadcrumb a:last-child, .breadcrumb a.last-child,
-.breadcrumb .breadcrumb-item:last-child,
-.breadcrumb .breadcrumb-item.last-child {
+.breadcrumb.breadcrumb-filled a:last-child, .breadcrumb.breadcrumb-filled a.last-child,
+.breadcrumb.breadcrumb-filled .breadcrumb-item:last-child,
+.breadcrumb.breadcrumb-filled .breadcrumb-item.last-child {
   border-radius: 0;
 }
-.breadcrumb a:last-child:after, .breadcrumb a.last-child:after,
-.breadcrumb .breadcrumb-item:last-child:after,
-.breadcrumb .breadcrumb-item.last-child:after {
+.breadcrumb.breadcrumb-filled a:last-child:after, .breadcrumb.breadcrumb-filled a.last-child:after,
+.breadcrumb.breadcrumb-filled .breadcrumb-item:last-child:after,
+.breadcrumb.breadcrumb-filled .breadcrumb-item.last-child:after {
   display: none;
 }
-.breadcrumb a:before, .breadcrumb a:after,
-.breadcrumb .breadcrumb-item:before,
-.breadcrumb .breadcrumb-item:after {
+.breadcrumb.breadcrumb-filled a:before, .breadcrumb.breadcrumb-filled a:after,
+.breadcrumb.breadcrumb-filled .breadcrumb-item:before,
+.breadcrumb.breadcrumb-filled .breadcrumb-item:after {
   -webkit-transition: border-color 0.3s;
   -moz-transition: border-color 0.3s;
   -ms-transition: border-color 0.3s;
   -o-transition: border-color 0.3s;
   transition: border-color 0.3s;
 }
-.breadcrumb a:before,
-.breadcrumb .breadcrumb-item:before {
+.breadcrumb.breadcrumb-filled a:before,
+.breadcrumb.breadcrumb-filled .breadcrumb-item:before {
   content: "";
   position: absolute;
   -webkit-transition: border-color 0.3s;
@@ -7028,8 +7090,8 @@ h6,
   border-left-color: transparent;
   border-right-width: 0;
 }
-.breadcrumb a:after,
-.breadcrumb .breadcrumb-item:after {
+.breadcrumb.breadcrumb-filled a:after,
+.breadcrumb.breadcrumb-filled .breadcrumb-item:after {
   content: "";
   position: absolute;
   z-index: 2;
@@ -7043,367 +7105,363 @@ h6,
   border-left-color: #3F51B5;
   border-right-width: 0;
 }
-.breadcrumb a:hover,
-.breadcrumb .breadcrumb-item:hover {
+.breadcrumb.breadcrumb-filled a:hover,
+.breadcrumb.breadcrumb-filled .breadcrumb-item:hover {
   background-color: #4d5ec1;
 }
-.breadcrumb a:hover:before,
-.breadcrumb .breadcrumb-item:hover:before {
+.breadcrumb.breadcrumb-filled a:hover:before,
+.breadcrumb.breadcrumb-filled .breadcrumb-item:hover:before {
   border-top-color: #4d5ec1;
   border-bottom-color: #4d5ec1;
 }
-.breadcrumb a:hover:after,
-.breadcrumb .breadcrumb-item:hover:after {
+.breadcrumb.breadcrumb-filled a:hover:after,
+.breadcrumb.breadcrumb-filled .breadcrumb-item:hover:after {
   border-left-color: #4d5ec1;
 }
-.breadcrumb a.current,
-.breadcrumb .breadcrumb-item.current {
+.breadcrumb.breadcrumb-filled a.current,
+.breadcrumb.breadcrumb-filled .breadcrumb-item.current {
   background-color: #252f69;
 }
-.breadcrumb a.current:before,
-.breadcrumb .breadcrumb-item.current:before {
+.breadcrumb.breadcrumb-filled a.current:before,
+.breadcrumb.breadcrumb-filled .breadcrumb-item.current:before {
   border-top-color: #252f69;
   border-bottom-color: #252f69;
 }
-.breadcrumb a.current:after,
-.breadcrumb .breadcrumb-item.current:after {
+.breadcrumb.breadcrumb-filled a.current:after,
+.breadcrumb.breadcrumb-filled .breadcrumb-item.current:after {
   border-left-color: #252f69;
 }
-.breadcrumb.breadcrumb-default a,
-.breadcrumb.breadcrumb-default .breadcrumb-item {
-  color: #333;
-}
-.breadcrumb.breadcrumb-default a,
-.breadcrumb.breadcrumb-default .breadcrumb-item {
+.breadcrumb.breadcrumb-filled.breadcrumb-default a,
+.breadcrumb.breadcrumb-filled.breadcrumb-default .breadcrumb-item {
   background-color: #f2f2f3;
 }
-.breadcrumb.breadcrumb-default a:before,
-.breadcrumb.breadcrumb-default .breadcrumb-item:before {
+.breadcrumb.breadcrumb-filled.breadcrumb-default a:before,
+.breadcrumb.breadcrumb-filled.breadcrumb-default .breadcrumb-item:before {
   border-top-color: #f2f2f3;
   border-bottom-color: #f2f2f3;
 }
-.breadcrumb.breadcrumb-default a:after,
-.breadcrumb.breadcrumb-default .breadcrumb-item:after {
+.breadcrumb.breadcrumb-filled.breadcrumb-default a:after,
+.breadcrumb.breadcrumb-filled.breadcrumb-default .breadcrumb-item:after {
   border-left-color: #f2f2f3;
 }
-.breadcrumb.breadcrumb-default a:hover,
-.breadcrumb.breadcrumb-default .breadcrumb-item:hover {
+.breadcrumb.breadcrumb-filled.breadcrumb-default a:hover,
+.breadcrumb.breadcrumb-filled.breadcrumb-default .breadcrumb-item:hover {
   background-color: white;
 }
-.breadcrumb.breadcrumb-default a:hover:before,
-.breadcrumb.breadcrumb-default .breadcrumb-item:hover:before {
+.breadcrumb.breadcrumb-filled.breadcrumb-default a:hover:before,
+.breadcrumb.breadcrumb-filled.breadcrumb-default .breadcrumb-item:hover:before {
   border-top-color: white;
   border-bottom-color: white;
 }
-.breadcrumb.breadcrumb-default a:hover:after,
-.breadcrumb.breadcrumb-default .breadcrumb-item:hover:after {
+.breadcrumb.breadcrumb-filled.breadcrumb-default a:hover:after,
+.breadcrumb.breadcrumb-filled.breadcrumb-default .breadcrumb-item:hover:after {
   border-left-color: white;
 }
-.breadcrumb.breadcrumb-default a.current,
-.breadcrumb.breadcrumb-default .breadcrumb-item.current {
+.breadcrumb.breadcrumb-filled.breadcrumb-default a.current,
+.breadcrumb.breadcrumb-filled.breadcrumb-default .breadcrumb-item.current {
   background-color: #e5e5e7;
 }
-.breadcrumb.breadcrumb-default a.current:before,
-.breadcrumb.breadcrumb-default .breadcrumb-item.current:before {
+.breadcrumb.breadcrumb-filled.breadcrumb-default a.current:before,
+.breadcrumb.breadcrumb-filled.breadcrumb-default .breadcrumb-item.current:before {
   border-top-color: #e5e5e7;
   border-bottom-color: #e5e5e7;
 }
-.breadcrumb.breadcrumb-default a.current:after,
-.breadcrumb.breadcrumb-default .breadcrumb-item.current:after {
+.breadcrumb.breadcrumb-filled.breadcrumb-default a.current:after,
+.breadcrumb.breadcrumb-filled.breadcrumb-default .breadcrumb-item.current:after {
   border-left-color: #e5e5e7;
 }
-.breadcrumb.breadcrumb-inverse a,
-.breadcrumb.breadcrumb-inverse .breadcrumb-item {
+.breadcrumb.breadcrumb-filled.breadcrumb-inverse a,
+.breadcrumb.breadcrumb-filled.breadcrumb-inverse .breadcrumb-item {
   background-color: #5e616f;
 }
-.breadcrumb.breadcrumb-inverse a:before,
-.breadcrumb.breadcrumb-inverse .breadcrumb-item:before {
+.breadcrumb.breadcrumb-filled.breadcrumb-inverse a:before,
+.breadcrumb.breadcrumb-filled.breadcrumb-inverse .breadcrumb-item:before {
   border-top-color: #5e616f;
   border-bottom-color: #5e616f;
 }
-.breadcrumb.breadcrumb-inverse a:after,
-.breadcrumb.breadcrumb-inverse .breadcrumb-item:after {
+.breadcrumb.breadcrumb-filled.breadcrumb-inverse a:after,
+.breadcrumb.breadcrumb-filled.breadcrumb-inverse .breadcrumb-item:after {
   border-left-color: #5e616f;
 }
-.breadcrumb.breadcrumb-inverse a:hover,
-.breadcrumb.breadcrumb-inverse .breadcrumb-item:hover {
+.breadcrumb.breadcrumb-filled.breadcrumb-inverse a:hover,
+.breadcrumb.breadcrumb-filled.breadcrumb-inverse .breadcrumb-item:hover {
   background-color: #6a6d7d;
 }
-.breadcrumb.breadcrumb-inverse a:hover:before,
-.breadcrumb.breadcrumb-inverse .breadcrumb-item:hover:before {
+.breadcrumb.breadcrumb-filled.breadcrumb-inverse a:hover:before,
+.breadcrumb.breadcrumb-filled.breadcrumb-inverse .breadcrumb-item:hover:before {
   border-top-color: #6a6d7d;
   border-bottom-color: #6a6d7d;
 }
-.breadcrumb.breadcrumb-inverse a:hover:after,
-.breadcrumb.breadcrumb-inverse .breadcrumb-item:hover:after {
+.breadcrumb.breadcrumb-filled.breadcrumb-inverse a:hover:after,
+.breadcrumb.breadcrumb-filled.breadcrumb-inverse .breadcrumb-item:hover:after {
   border-left-color: #6a6d7d;
 }
-.breadcrumb.breadcrumb-inverse a.current,
-.breadcrumb.breadcrumb-inverse .breadcrumb-item.current {
+.breadcrumb.breadcrumb-filled.breadcrumb-inverse a.current,
+.breadcrumb.breadcrumb-filled.breadcrumb-inverse .breadcrumb-item.current {
   background-color: #525561;
 }
-.breadcrumb.breadcrumb-inverse a.current:before,
-.breadcrumb.breadcrumb-inverse .breadcrumb-item.current:before {
+.breadcrumb.breadcrumb-filled.breadcrumb-inverse a.current:before,
+.breadcrumb.breadcrumb-filled.breadcrumb-inverse .breadcrumb-item.current:before {
   border-top-color: #525561;
   border-bottom-color: #525561;
 }
-.breadcrumb.breadcrumb-inverse a.current:after,
-.breadcrumb.breadcrumb-inverse .breadcrumb-item.current:after {
+.breadcrumb.breadcrumb-filled.breadcrumb-inverse a.current:after,
+.breadcrumb.breadcrumb-filled.breadcrumb-inverse .breadcrumb-item.current:after {
   border-left-color: #525561;
 }
-.breadcrumb.breadcrumb-primary a,
-.breadcrumb.breadcrumb-primary .breadcrumb-item {
+.breadcrumb.breadcrumb-filled.breadcrumb-primary a,
+.breadcrumb.breadcrumb-filled.breadcrumb-primary .breadcrumb-item {
   background-color: #3F51B5;
 }
-.breadcrumb.breadcrumb-primary a:before,
-.breadcrumb.breadcrumb-primary .breadcrumb-item:before {
+.breadcrumb.breadcrumb-filled.breadcrumb-primary a:before,
+.breadcrumb.breadcrumb-filled.breadcrumb-primary .breadcrumb-item:before {
   border-top-color: #3F51B5;
   border-bottom-color: #3F51B5;
 }
-.breadcrumb.breadcrumb-primary a:after,
-.breadcrumb.breadcrumb-primary .breadcrumb-item:after {
+.breadcrumb.breadcrumb-filled.breadcrumb-primary a:after,
+.breadcrumb.breadcrumb-filled.breadcrumb-primary .breadcrumb-item:after {
   border-left-color: #3F51B5;
 }
-.breadcrumb.breadcrumb-primary a:hover,
-.breadcrumb.breadcrumb-primary .breadcrumb-item:hover {
+.breadcrumb.breadcrumb-filled.breadcrumb-primary a:hover,
+.breadcrumb.breadcrumb-filled.breadcrumb-primary .breadcrumb-item:hover {
   background-color: #4d5ec1;
 }
-.breadcrumb.breadcrumb-primary a:hover:before,
-.breadcrumb.breadcrumb-primary .breadcrumb-item:hover:before {
+.breadcrumb.breadcrumb-filled.breadcrumb-primary a:hover:before,
+.breadcrumb.breadcrumb-filled.breadcrumb-primary .breadcrumb-item:hover:before {
   border-top-color: #4d5ec1;
   border-bottom-color: #4d5ec1;
 }
-.breadcrumb.breadcrumb-primary a:hover:after,
-.breadcrumb.breadcrumb-primary .breadcrumb-item:hover:after {
+.breadcrumb.breadcrumb-filled.breadcrumb-primary a:hover:after,
+.breadcrumb.breadcrumb-filled.breadcrumb-primary .breadcrumb-item:hover:after {
   border-left-color: #4d5ec1;
 }
-.breadcrumb.breadcrumb-primary a.current,
-.breadcrumb.breadcrumb-primary .breadcrumb-item.current {
+.breadcrumb.breadcrumb-filled.breadcrumb-primary a.current,
+.breadcrumb.breadcrumb-filled.breadcrumb-primary .breadcrumb-item.current {
   background-color: #3849a2;
 }
-.breadcrumb.breadcrumb-primary a.current:before,
-.breadcrumb.breadcrumb-primary .breadcrumb-item.current:before {
+.breadcrumb.breadcrumb-filled.breadcrumb-primary a.current:before,
+.breadcrumb.breadcrumb-filled.breadcrumb-primary .breadcrumb-item.current:before {
   border-top-color: #3849a2;
   border-bottom-color: #3849a2;
 }
-.breadcrumb.breadcrumb-primary a.current:after,
-.breadcrumb.breadcrumb-primary .breadcrumb-item.current:after {
+.breadcrumb.breadcrumb-filled.breadcrumb-primary a.current:after,
+.breadcrumb.breadcrumb-filled.breadcrumb-primary .breadcrumb-item.current:after {
   border-left-color: #3849a2;
 }
-.breadcrumb.breadcrumb-secondary a,
-.breadcrumb.breadcrumb-secondary .breadcrumb-item {
+.breadcrumb.breadcrumb-filled.breadcrumb-secondary a,
+.breadcrumb.breadcrumb-filled.breadcrumb-secondary .breadcrumb-item {
   background-color: #00BCD4;
 }
-.breadcrumb.breadcrumb-secondary a:before,
-.breadcrumb.breadcrumb-secondary .breadcrumb-item:before {
+.breadcrumb.breadcrumb-filled.breadcrumb-secondary a:before,
+.breadcrumb.breadcrumb-filled.breadcrumb-secondary .breadcrumb-item:before {
   border-top-color: #00BCD4;
   border-bottom-color: #00BCD4;
 }
-.breadcrumb.breadcrumb-secondary a:after,
-.breadcrumb.breadcrumb-secondary .breadcrumb-item:after {
+.breadcrumb.breadcrumb-filled.breadcrumb-secondary a:after,
+.breadcrumb.breadcrumb-filled.breadcrumb-secondary .breadcrumb-item:after {
   border-left-color: #00BCD4;
 }
-.breadcrumb.breadcrumb-secondary a:hover,
-.breadcrumb.breadcrumb-secondary .breadcrumb-item:hover {
+.breadcrumb.breadcrumb-filled.breadcrumb-secondary a:hover,
+.breadcrumb.breadcrumb-filled.breadcrumb-secondary .breadcrumb-item:hover {
   background-color: #00d3ee;
 }
-.breadcrumb.breadcrumb-secondary a:hover:before,
-.breadcrumb.breadcrumb-secondary .breadcrumb-item:hover:before {
+.breadcrumb.breadcrumb-filled.breadcrumb-secondary a:hover:before,
+.breadcrumb.breadcrumb-filled.breadcrumb-secondary .breadcrumb-item:hover:before {
   border-top-color: #00d3ee;
   border-bottom-color: #00d3ee;
 }
-.breadcrumb.breadcrumb-secondary a:hover:after,
-.breadcrumb.breadcrumb-secondary .breadcrumb-item:hover:after {
+.breadcrumb.breadcrumb-filled.breadcrumb-secondary a:hover:after,
+.breadcrumb.breadcrumb-filled.breadcrumb-secondary .breadcrumb-item:hover:after {
   border-left-color: #00d3ee;
 }
-.breadcrumb.breadcrumb-secondary a.current,
-.breadcrumb.breadcrumb-secondary .breadcrumb-item.current {
+.breadcrumb.breadcrumb-filled.breadcrumb-secondary a.current,
+.breadcrumb.breadcrumb-filled.breadcrumb-secondary .breadcrumb-item.current {
   background-color: #00a5bb;
 }
-.breadcrumb.breadcrumb-secondary a.current:before,
-.breadcrumb.breadcrumb-secondary .breadcrumb-item.current:before {
+.breadcrumb.breadcrumb-filled.breadcrumb-secondary a.current:before,
+.breadcrumb.breadcrumb-filled.breadcrumb-secondary .breadcrumb-item.current:before {
   border-top-color: #00a5bb;
   border-bottom-color: #00a5bb;
 }
-.breadcrumb.breadcrumb-secondary a.current:after,
-.breadcrumb.breadcrumb-secondary .breadcrumb-item.current:after {
+.breadcrumb.breadcrumb-filled.breadcrumb-secondary a.current:after,
+.breadcrumb.breadcrumb-filled.breadcrumb-secondary .breadcrumb-item.current:after {
   border-left-color: #00a5bb;
 }
-.breadcrumb.breadcrumb-info a,
-.breadcrumb.breadcrumb-info .breadcrumb-item {
+.breadcrumb.breadcrumb-filled.breadcrumb-info a,
+.breadcrumb.breadcrumb-filled.breadcrumb-info .breadcrumb-item {
   background-color: #005e6a;
 }
-.breadcrumb.breadcrumb-info a:before,
-.breadcrumb.breadcrumb-info .breadcrumb-item:before {
+.breadcrumb.breadcrumb-filled.breadcrumb-info a:before,
+.breadcrumb.breadcrumb-filled.breadcrumb-info .breadcrumb-item:before {
   border-top-color: #005e6a;
   border-bottom-color: #005e6a;
 }
-.breadcrumb.breadcrumb-info a:after,
-.breadcrumb.breadcrumb-info .breadcrumb-item:after {
+.breadcrumb.breadcrumb-filled.breadcrumb-info a:after,
+.breadcrumb.breadcrumb-filled.breadcrumb-info .breadcrumb-item:after {
   border-left-color: #005e6a;
 }
-.breadcrumb.breadcrumb-info a:hover,
-.breadcrumb.breadcrumb-info .breadcrumb-item:hover {
+.breadcrumb.breadcrumb-filled.breadcrumb-info a:hover,
+.breadcrumb.breadcrumb-filled.breadcrumb-info .breadcrumb-item:hover {
   background-color: #007584;
 }
-.breadcrumb.breadcrumb-info a:hover:before,
-.breadcrumb.breadcrumb-info .breadcrumb-item:hover:before {
+.breadcrumb.breadcrumb-filled.breadcrumb-info a:hover:before,
+.breadcrumb.breadcrumb-filled.breadcrumb-info .breadcrumb-item:hover:before {
   border-top-color: #007584;
   border-bottom-color: #007584;
 }
-.breadcrumb.breadcrumb-info a:hover:after,
-.breadcrumb.breadcrumb-info .breadcrumb-item:hover:after {
+.breadcrumb.breadcrumb-filled.breadcrumb-info a:hover:after,
+.breadcrumb.breadcrumb-filled.breadcrumb-info .breadcrumb-item:hover:after {
   border-left-color: #007584;
 }
-.breadcrumb.breadcrumb-info a.current,
-.breadcrumb.breadcrumb-info .breadcrumb-item.current {
+.breadcrumb.breadcrumb-filled.breadcrumb-info a.current,
+.breadcrumb.breadcrumb-filled.breadcrumb-info .breadcrumb-item.current {
   background-color: #004751;
 }
-.breadcrumb.breadcrumb-info a.current:before,
-.breadcrumb.breadcrumb-info .breadcrumb-item.current:before {
+.breadcrumb.breadcrumb-filled.breadcrumb-info a.current:before,
+.breadcrumb.breadcrumb-filled.breadcrumb-info .breadcrumb-item.current:before {
   border-top-color: #004751;
   border-bottom-color: #004751;
 }
-.breadcrumb.breadcrumb-info a.current:after,
-.breadcrumb.breadcrumb-info .breadcrumb-item.current:after {
+.breadcrumb.breadcrumb-filled.breadcrumb-info a.current:after,
+.breadcrumb.breadcrumb-filled.breadcrumb-info .breadcrumb-item.current:after {
   border-left-color: #004751;
 }
-.breadcrumb.breadcrumb-warning a,
-.breadcrumb.breadcrumb-warning .breadcrumb-item {
+.breadcrumb.breadcrumb-filled.breadcrumb-warning a,
+.breadcrumb.breadcrumb-filled.breadcrumb-warning .breadcrumb-item {
   background-color: #E68523;
 }
-.breadcrumb.breadcrumb-warning a:before,
-.breadcrumb.breadcrumb-warning .breadcrumb-item:before {
+.breadcrumb.breadcrumb-filled.breadcrumb-warning a:before,
+.breadcrumb.breadcrumb-filled.breadcrumb-warning .breadcrumb-item:before {
   border-top-color: #E68523;
   border-bottom-color: #E68523;
 }
-.breadcrumb.breadcrumb-warning a:after,
-.breadcrumb.breadcrumb-warning .breadcrumb-item:after {
+.breadcrumb.breadcrumb-filled.breadcrumb-warning a:after,
+.breadcrumb.breadcrumb-filled.breadcrumb-warning .breadcrumb-item:after {
   border-left-color: #E68523;
 }
-.breadcrumb.breadcrumb-warning a:hover,
-.breadcrumb.breadcrumb-warning .breadcrumb-item:hover {
+.breadcrumb.breadcrumb-filled.breadcrumb-warning a:hover,
+.breadcrumb.breadcrumb-filled.breadcrumb-warning .breadcrumb-item:hover {
   background-color: #e9923a;
 }
-.breadcrumb.breadcrumb-warning a:hover:before,
-.breadcrumb.breadcrumb-warning .breadcrumb-item:hover:before {
+.breadcrumb.breadcrumb-filled.breadcrumb-warning a:hover:before,
+.breadcrumb.breadcrumb-filled.breadcrumb-warning .breadcrumb-item:hover:before {
   border-top-color: #e9923a;
   border-bottom-color: #e9923a;
 }
-.breadcrumb.breadcrumb-warning a:hover:after,
-.breadcrumb.breadcrumb-warning .breadcrumb-item:hover:after {
+.breadcrumb.breadcrumb-filled.breadcrumb-warning a:hover:after,
+.breadcrumb.breadcrumb-filled.breadcrumb-warning .breadcrumb-item:hover:after {
   border-left-color: #e9923a;
 }
-.breadcrumb.breadcrumb-warning a.current,
-.breadcrumb.breadcrumb-warning .breadcrumb-item.current {
+.breadcrumb.breadcrumb-filled.breadcrumb-warning a.current,
+.breadcrumb.breadcrumb-filled.breadcrumb-warning .breadcrumb-item.current {
   background-color: #d77818;
 }
-.breadcrumb.breadcrumb-warning a.current:before,
-.breadcrumb.breadcrumb-warning .breadcrumb-item.current:before {
+.breadcrumb.breadcrumb-filled.breadcrumb-warning a.current:before,
+.breadcrumb.breadcrumb-filled.breadcrumb-warning .breadcrumb-item.current:before {
   border-top-color: #d77818;
   border-bottom-color: #d77818;
 }
-.breadcrumb.breadcrumb-warning a.current:after,
-.breadcrumb.breadcrumb-warning .breadcrumb-item.current:after {
+.breadcrumb.breadcrumb-filled.breadcrumb-warning a.current:after,
+.breadcrumb.breadcrumb-filled.breadcrumb-warning .breadcrumb-item.current:after {
   border-left-color: #d77818;
 }
-.breadcrumb.breadcrumb-error a,
-.breadcrumb.breadcrumb-error .breadcrumb-item {
+.breadcrumb.breadcrumb-filled.breadcrumb-error a,
+.breadcrumb.breadcrumb-filled.breadcrumb-error .breadcrumb-item {
   background-color: #ec407a;
 }
-.breadcrumb.breadcrumb-error a:before,
-.breadcrumb.breadcrumb-error .breadcrumb-item:before {
+.breadcrumb.breadcrumb-filled.breadcrumb-error a:before,
+.breadcrumb.breadcrumb-filled.breadcrumb-error .breadcrumb-item:before {
   border-top-color: #ec407a;
   border-bottom-color: #ec407a;
 }
-.breadcrumb.breadcrumb-error a:after,
-.breadcrumb.breadcrumb-error .breadcrumb-item:after {
+.breadcrumb.breadcrumb-filled.breadcrumb-error a:after,
+.breadcrumb.breadcrumb-filled.breadcrumb-error .breadcrumb-item:after {
   border-left-color: #ec407a;
 }
-.breadcrumb.breadcrumb-error a:hover,
-.breadcrumb.breadcrumb-error .breadcrumb-item:hover {
+.breadcrumb.breadcrumb-filled.breadcrumb-error a:hover,
+.breadcrumb.breadcrumb-filled.breadcrumb-error .breadcrumb-item:hover {
   background-color: #ee578a;
 }
-.breadcrumb.breadcrumb-error a:hover:before,
-.breadcrumb.breadcrumb-error .breadcrumb-item:hover:before {
+.breadcrumb.breadcrumb-filled.breadcrumb-error a:hover:before,
+.breadcrumb.breadcrumb-filled.breadcrumb-error .breadcrumb-item:hover:before {
   border-top-color: #ee578a;
   border-bottom-color: #ee578a;
 }
-.breadcrumb.breadcrumb-error a:hover:after,
-.breadcrumb.breadcrumb-error .breadcrumb-item:hover:after {
+.breadcrumb.breadcrumb-filled.breadcrumb-error a:hover:after,
+.breadcrumb.breadcrumb-filled.breadcrumb-error .breadcrumb-item:hover:after {
   border-left-color: #ee578a;
 }
-.breadcrumb.breadcrumb-error a.current,
-.breadcrumb.breadcrumb-error .breadcrumb-item.current {
+.breadcrumb.breadcrumb-filled.breadcrumb-error a.current,
+.breadcrumb.breadcrumb-filled.breadcrumb-error .breadcrumb-item.current {
   background-color: #ea296a;
 }
-.breadcrumb.breadcrumb-error a.current:before,
-.breadcrumb.breadcrumb-error .breadcrumb-item.current:before {
+.breadcrumb.breadcrumb-filled.breadcrumb-error a.current:before,
+.breadcrumb.breadcrumb-filled.breadcrumb-error .breadcrumb-item.current:before {
   border-top-color: #ea296a;
   border-bottom-color: #ea296a;
 }
-.breadcrumb.breadcrumb-error a.current:after,
-.breadcrumb.breadcrumb-error .breadcrumb-item.current:after {
+.breadcrumb.breadcrumb-filled.breadcrumb-error a.current:after,
+.breadcrumb.breadcrumb-filled.breadcrumb-error .breadcrumb-item.current:after {
   border-left-color: #ea296a;
 }
-.breadcrumb.breadcrumb-xs a,
-.breadcrumb.breadcrumb-xs .breadcrumb-item {
+.breadcrumb.breadcrumb-filled.breadcrumb-xs a,
+.breadcrumb.breadcrumb-filled.breadcrumb-xs .breadcrumb-item {
   font-size: 0.7em;
 }
-.breadcrumb.breadcrumb-xs a:before,
-.breadcrumb.breadcrumb-xs .breadcrumb-item:before {
+.breadcrumb.breadcrumb-filled.breadcrumb-xs a:before,
+.breadcrumb.breadcrumb-filled.breadcrumb-xs .breadcrumb-item:before {
   left: -0.95em;
 }
-.breadcrumb.breadcrumb-xs a:after,
-.breadcrumb.breadcrumb-xs .breadcrumb-item:after {
+.breadcrumb.breadcrumb-filled.breadcrumb-xs a:after,
+.breadcrumb.breadcrumb-filled.breadcrumb-xs .breadcrumb-item:after {
   right: -0.95em;
 }
-.breadcrumb.breadcrumb-sm a,
-.breadcrumb.breadcrumb-sm .breadcrumb-item {
+.breadcrumb.breadcrumb-filled.breadcrumb-sm a,
+.breadcrumb.breadcrumb-filled.breadcrumb-sm .breadcrumb-item {
   font-size: 1em;
 }
-.breadcrumb.breadcrumb-sm a:before,
-.breadcrumb.breadcrumb-sm .breadcrumb-item:before {
+.breadcrumb.breadcrumb-filled.breadcrumb-sm a:before,
+.breadcrumb.breadcrumb-filled.breadcrumb-sm .breadcrumb-item:before {
   left: -0.95em;
 }
-.breadcrumb.breadcrumb-sm a:after,
-.breadcrumb.breadcrumb-sm .breadcrumb-item:after {
+.breadcrumb.breadcrumb-filled.breadcrumb-sm a:after,
+.breadcrumb.breadcrumb-filled.breadcrumb-sm .breadcrumb-item:after {
   right: -0.95em;
 }
-.breadcrumb.breadcrumb-md a,
-.breadcrumb.breadcrumb-md .breadcrumb-item {
+.breadcrumb.breadcrumb-filled.breadcrumb-md a,
+.breadcrumb.breadcrumb-filled.breadcrumb-md .breadcrumb-item {
   font-size: 1.3em;
 }
-.breadcrumb.breadcrumb-md a:before,
-.breadcrumb.breadcrumb-md .breadcrumb-item:before {
+.breadcrumb.breadcrumb-filled.breadcrumb-md a:before,
+.breadcrumb.breadcrumb-filled.breadcrumb-md .breadcrumb-item:before {
   left: -0.95em;
 }
-.breadcrumb.breadcrumb-md a:after,
-.breadcrumb.breadcrumb-md .breadcrumb-item:after {
+.breadcrumb.breadcrumb-filled.breadcrumb-md a:after,
+.breadcrumb.breadcrumb-filled.breadcrumb-md .breadcrumb-item:after {
   right: -0.95em;
 }
-.breadcrumb.breadcrumb-lg a,
-.breadcrumb.breadcrumb-lg .breadcrumb-item {
+.breadcrumb.breadcrumb-filled.breadcrumb-lg a,
+.breadcrumb.breadcrumb-filled.breadcrumb-lg .breadcrumb-item {
   font-size: 1.6em;
 }
-.breadcrumb.breadcrumb-lg a:before,
-.breadcrumb.breadcrumb-lg .breadcrumb-item:before {
+.breadcrumb.breadcrumb-filled.breadcrumb-lg a:before,
+.breadcrumb.breadcrumb-filled.breadcrumb-lg .breadcrumb-item:before {
   left: -0.95em;
 }
-.breadcrumb.breadcrumb-lg a:after,
-.breadcrumb.breadcrumb-lg .breadcrumb-item:after {
+.breadcrumb.breadcrumb-filled.breadcrumb-lg a:after,
+.breadcrumb.breadcrumb-filled.breadcrumb-lg .breadcrumb-item:after {
   right: -0.95em;
 }
-.breadcrumb.breadcrumb-xl a,
-.breadcrumb.breadcrumb-xl .breadcrumb-item {
+.breadcrumb.breadcrumb-filled.breadcrumb-xl a,
+.breadcrumb.breadcrumb-filled.breadcrumb-xl .breadcrumb-item {
   font-size: 1.9em;
 }
-.breadcrumb.breadcrumb-xl a:before,
-.breadcrumb.breadcrumb-xl .breadcrumb-item:before {
+.breadcrumb.breadcrumb-filled.breadcrumb-xl a:before,
+.breadcrumb.breadcrumb-filled.breadcrumb-xl .breadcrumb-item:before {
   left: -0.95em;
 }
-.breadcrumb.breadcrumb-xl a:after,
-.breadcrumb.breadcrumb-xl .breadcrumb-item:after {
+.breadcrumb.breadcrumb-filled.breadcrumb-xl a:after,
+.breadcrumb.breadcrumb-filled.breadcrumb-xl .breadcrumb-item:after {
   right: -0.95em;
 }
 
