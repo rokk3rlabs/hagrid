@@ -7510,31 +7510,6 @@ h6,
 .navbar input[type="password"]:focus {
   background-color: white;
 }
-.navbar.navbar-default {
-  background-color: #ECECEC;
-}
-.navbar.navbar-light {
-  background-color: #f8f8f8;
-  color: #3C3C3C;
-}
-.navbar.navbar-inverse {
-  background-color: #3C3C3C;
-}
-.navbar.navbar-primary {
-  background-color: #2D6CC9;
-}
-.navbar.navbar-secondary {
-  background-color: #31C290;
-}
-.navbar.navbar-info {
-  background-color: #00BCD4;
-}
-.navbar.navbar-warning {
-  background-color: #E68523;
-}
-.navbar.navbar-error {
-  background-color: #C53030;
-}
 .navbar .navbar-menu,
 .navbar .navbar-menu-mobile {
   width: 100%;
@@ -7580,15 +7555,41 @@ h6,
   position: relative;
   display: block;
   height: 4px;
-}
-.navbar .navbar-menu-mobile .icon-menu:before {
-  background: #fff;
-}
-.navbar .navbar-menu-mobile .icon-menu:after {
   background: #fff;
 }
 .navbar.navbar-open .navbar-menu-mobile nav {
   display: block;
+}
+.navbar.navbar-default {
+  background-color: #ECECEC;
+}
+.navbar.navbar-light {
+  background-color: #f8f8f8;
+  color: #3C3C3C;
+}
+.navbar.navbar-light .navbar-menu-mobile .icon-menu .icon-menu-toggle {
+  background-color: #333;
+}
+.navbar.navbar-light .navbar-menu-mobile .icon-menu:before, .navbar.navbar-light .navbar-menu-mobile .icon-menu:after {
+  background-color: #333;
+}
+.navbar.navbar-inverse {
+  background-color: #3C3C3C;
+}
+.navbar.navbar-primary {
+  background-color: #2D6CC9;
+}
+.navbar.navbar-secondary {
+  background-color: #31C290;
+}
+.navbar.navbar-info {
+  background-color: #00BCD4;
+}
+.navbar.navbar-warning {
+  background-color: #E68523;
+}
+.navbar.navbar-error {
+  background-color: #C53030;
 }
 
 @media screen and (min-width: 1200px) {

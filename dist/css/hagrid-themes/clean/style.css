@@ -6746,27 +6746,6 @@ h6,
 .navbar input[type="password"]:focus {
   background-color: white;
 }
-.navbar.navbar-default {
-  background-color: #f2f2f3;
-}
-.navbar.navbar-inverse {
-  background-color: #5e616f;
-}
-.navbar.navbar-primary {
-  background-color: #3F51B5;
-}
-.navbar.navbar-secondary {
-  background-color: #00BCD4;
-}
-.navbar.navbar-info {
-  background-color: #005e6a;
-}
-.navbar.navbar-warning {
-  background-color: #E68523;
-}
-.navbar.navbar-error {
-  background-color: #ec407a;
-}
 .navbar .navbar-menu,
 .navbar .navbar-menu-mobile {
   width: 100%;
@@ -6812,15 +6791,31 @@ h6,
   position: relative;
   display: block;
   height: 4px;
-}
-.navbar .navbar-menu-mobile .icon-menu:before {
-  background: #fff;
-}
-.navbar .navbar-menu-mobile .icon-menu:after {
   background: #fff;
 }
 .navbar.navbar-open .navbar-menu-mobile nav {
   display: block;
+}
+.navbar.navbar-default {
+  background-color: #f2f2f3;
+}
+.navbar.navbar-inverse {
+  background-color: #5e616f;
+}
+.navbar.navbar-primary {
+  background-color: #3F51B5;
+}
+.navbar.navbar-secondary {
+  background-color: #00BCD4;
+}
+.navbar.navbar-info {
+  background-color: #005e6a;
+}
+.navbar.navbar-warning {
+  background-color: #E68523;
+}
+.navbar.navbar-error {
+  background-color: #ec407a;
 }
 
 @media screen and (min-width: 1200px) {

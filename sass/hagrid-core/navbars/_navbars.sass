@@ -60,15 +60,6 @@
       background-color: rgba(255, 255, 255, 1)
 
 
-  
-  @each $base-color in $base-colors
-    $key: nth($base-color, 1)
-    $value: nth($base-color, 2)
-    &.navbar-#{$key}
-      background-color: #{$value}
-      @if $key == light
-        color: nth(nth($base-colors, 3), 2)
-
   .navbar-menu,
   .navbar-menu-mobile
     width: 100%
@@ -112,17 +103,30 @@
         position: relative
         display: block
         height: 4px
-
-      &:before
         background: #fff
 
-      &:after
-        background: #fff
 
   &.navbar-open
     .navbar-menu-mobile 
       nav
         display: block
+
+  @each $base-color in $base-colors
+    $key: nth($base-color, 1)
+    $value: nth($base-color, 2)
+    &.navbar-#{$key}
+      background-color: #{$value}
+      @if $key == light
+        color: nth(nth($base-colors, 3), 2)
+        
+        .navbar-menu-mobile
+          .icon-menu
+            .icon-menu-toggle
+              background-color: #333
+
+            &:before,
+            &:after
+              background-color: #333
 
 
 body
