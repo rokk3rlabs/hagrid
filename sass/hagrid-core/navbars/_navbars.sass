@@ -86,7 +86,7 @@
         line-height: 0
 
     nav
-      height: 0
+      display: none
       overflow: hidden
 
     a
@@ -118,6 +118,11 @@
 
       &:after
         background: #fff
+
+  &.navbar-open
+    .navbar-menu-mobile 
+      nav
+        display: block
 
 
 body

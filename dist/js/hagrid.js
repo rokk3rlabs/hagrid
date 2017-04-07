@@ -234,15 +234,47 @@ window.hagrid = (function(){
   }
 
   /**
+   * Navbar Hagrid Component
+   * @return {null}
+   */
+  var navbars = function(){
+    return {
+        component: {
+          tpl: function(title, message, option){
+            return ['', ''].join('')
+          },
+          set: function(el){
+            return {
+              hagridTarget: u(el).siblings('.navbar-menu').first(),
+              hagridRole: 'toggle',
+            }
+          },
+          rootElement: '.navbar',
+        },
+        open: function($target, $seft, $parentComponent){
+          u($parentComponent).addClass('open');
+        },
+        toggle: function($target, $seft, $parentComponent){
+          u($parentComponent).toggleClass('navbar-open');
+        },
+        close: function($target, $seft){
+          u($parentComponent).removeClass('open');
+        },
+        launch: function(options){}
+      }
+  } 
+
+  /**
    * Hagrid Components
    * @type {Object}
    */
   var components = {
     alert: alerts(),
-    modal: modals(),
-    tooltip: tooltips(),
-    tab: tabs(),
     dropdown: dropdowns(),
+    modal: modals(),
+    navbar: navbars(),
+    tab: tabs(),
+    tooltip: tooltips(),
   };
   
   /**

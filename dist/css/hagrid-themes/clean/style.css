@@ -6787,7 +6787,7 @@ h6,
   line-height: 0;
 }
 .navbar .navbar-menu-mobile nav {
-  height: 0;
+  display: none;
   overflow: hidden;
 }
 .navbar .navbar-menu-mobile a {
@@ -6818,6 +6818,9 @@ h6,
 }
 .navbar .navbar-menu-mobile .icon-menu:after {
   background: #fff;
+}
+.navbar.navbar-open .navbar-menu-mobile nav {
+  display: block;
 }
 
 @media screen and (min-width: 1200px) {
