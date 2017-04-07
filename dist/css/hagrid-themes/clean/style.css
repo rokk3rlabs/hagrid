@@ -374,6 +374,13 @@ div {
   position: relative;
 }
 
+a.default-link {
+  color: #3F51B5;
+}
+a.default-link:hover {
+  color: #32408f;
+}
+
 .color {
   padding: 0.5em 0;
   text-align: center;

@@ -1,4 +1,4 @@
-# hagrid-framework
+# Hagrid.io
 
 ## Web framework
 
@@ -28,8 +28,6 @@ There is a summary of the main features that hagrid.io support:
 - Ability to create custom theme (color scheme) from UI
 - Ability to be extended for the community
 - Future creation of marketplace for the community (free themes and extensions)
-
-### Examples
 
 
 ### Knowledge Guide / Documentation
