@@ -41,8 +41,8 @@ window.hagrid = (function(){
     var parent = el;
     var i = 0;
     var hasAttr = u(el).attr('hagrid-component');
-    while (!hasAttr || i > 10){
-      var o = parent;
+    while (!hasAttr && i < 20){
+      var o = parent || {};
       parent = o.parentNode;
       hasAttr = u(parent).attr('hagrid-component');
       i++;
@@ -69,9 +69,9 @@ window.hagrid = (function(){
   function _getComponent(el){
     var getConf = getConfCompoment(el);
     var hagridTarget = u(el).attr('hagrid-target') || getConf.hagridTarget || u(el).attr('href'),
-        parentTarget = (!!hagridTarget) ? null : _parentComponent(el),
+        parentTarget = (!!hagridTarget && hagridTarget !== '#') ? null : _parentComponent(el),
         hagridRole = getConf.hagridRole || u(el).attr('hagrid-role') || 'open',
-        elTarget = (!!hagridTarget) ? u(hagridTarget).first() :parentTarget,
+        elTarget = (!!hagridTarget && hagridTarget !== '#') ? u(hagridTarget).first() :parentTarget,
         firstElement = elTarget,
         parentComponent =  _parentComponent(firstElement),
         componentType = u(firstElement).attr('hagrid-component') || u(parentComponent).attr('hagrid-component'),
@@ -283,7 +283,7 @@ window.hagrid = (function(){
   var bodyLoad = (function(){
      document.addEventListener("DOMContentLoaded", function(e) {
       //console.log(e.target);
-      console.log('Hagrid.js loaded!');
+      //console.log('Hagrid.js loaded!');
     });
   })();
 
@@ -295,7 +295,7 @@ window.hagrid = (function(){
   hagrid = {
     $: u,
     createEl : function addElement(htmlEl) { 
-      if(htmlEl) return 'Missing string html';
+      if(!htmlEl) return 'Missing string html';
       var newDiv = document.createElement("div"); 
       newDiv.innerHTML = htmlEl;
       var currentDiv = document.getElementById("div1"); 
