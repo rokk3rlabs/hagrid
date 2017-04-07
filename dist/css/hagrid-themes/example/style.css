@@ -7554,6 +7554,10 @@ h6,
   font-size: 1.4em;
   line-height: 0;
 }
+.navbar .navbar-menu-mobile nav {
+  height: 0;
+  overflow: hidden;
+}
 .navbar .navbar-menu-mobile a {
   display: block;
 }
@@ -7562,6 +7566,8 @@ h6,
   display: block;
   padding: 10px;
   width: 50px;
+  right: 0.5em;
+  position: relative;
 }
 .navbar .navbar-menu-mobile .icon-menu .icon-menu-toggle {
   height: 4px;
