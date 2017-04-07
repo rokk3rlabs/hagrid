@@ -84,7 +84,7 @@ You can create themes with the Hagrid, for now you need follow the next steps.
 
 ## Examples
 
-To see demos and examples please see demos folder on this repository or go to [hagrid.io][1]{:target="_blank"}
+To see demos and examples please see demos folder on this repository or go to [hagrid.io][1]
 
 
-[1]:<http://hagrid.io/>
+[1](http://hagrid.io/){:target="_blank"}
