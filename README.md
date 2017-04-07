@@ -71,20 +71,20 @@ To run and execute this project you need execute compass on root project.
 $ compass watch -c config.rb
 ```
 
-## Create an custom theme
+## Create a custom theme
 
 You can create themes with the Hagrid, for now you need follow the next steps.
 
 1. Download this Repository.
 2. Check previous pre requirements of OS and libraries/tools.
 3. Go to sass/hagrid-themes and duplicate the folder example
-4. Once inside the example folder, update the style properties for your theme on vars folder.
+4. Once inside the folder example, update the properties style for your theme on vars folder.
 5. Run/restart the command compass watch, please see above command.
 
 
 ## Examples
 
-To see demos and examples please see demos folder on this repository or go to [hagrid.io][1]
+To see demos and examples please see demos folder on this repository or go to [hagrid.io][1]{:target="_blank"}
 
 
-[1]:<http://hagrid.io/>{:target="_blank"}
+[1]:<http://hagrid.io/>
