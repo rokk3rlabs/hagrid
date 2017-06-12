@@ -8255,22 +8255,22 @@ h6,
 .input input:not([class*="input-"])::-webkit-input-placeholder,
 .input button:not([class*="input-"])::-webkit-input-placeholder,
 .input select:not([class*="input-"])::-webkit-input-placeholder {
-  color: #ECECEC;
+  color: #acacac;
 }
 .input input:not([class*="input-"]):-moz-placeholder,
 .input button:not([class*="input-"]):-moz-placeholder,
 .input select:not([class*="input-"]):-moz-placeholder {
-  color: #ECECEC;
+  color: #acacac;
 }
 .input input:not([class*="input-"])::-moz-placeholder,
 .input button:not([class*="input-"])::-moz-placeholder,
 .input select:not([class*="input-"])::-moz-placeholder {
-  color: #ECECEC;
+  color: #acacac;
 }
 .input input:not([class*="input-"]):-ms-input-placeholder,
 .input button:not([class*="input-"]):-ms-input-placeholder,
 .input select:not([class*="input-"]):-ms-input-placeholder {
-  color: #ECECEC;
+  color: #acacac;
 }
 .input input:not([class*="input-"]):active, .input input:not([class*="input-"]):focus, .input input:not([class*="input-"]).input-focus, .input input:not([class*="input-"]).input-active,
 .input button:not([class*="input-"]):active,
