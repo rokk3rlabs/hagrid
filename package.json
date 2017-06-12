@@ -1,0 +1,35 @@
+{
+  "name": "hagrid.io",
+  "version": "0.0.5",
+  "description": "Hagrid Front-end Framework",
+  "main": "index.js",
+  "dependencies": {
+    "umbrellajs": "^2.6.7",
+    "html.js": "^0.12.1",
+    "sizzle": "^2.3.3",
+    "zepto": "^1.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rokk3rlabs/hagrid.git"
+  },
+  "keywords": [
+    "Web",
+    "Framework",
+    "Front-end",
+    "Web",
+    "Elements",
+    "Web",
+    "Components"
+  ],
+  "author": "Diego Santiesteban <gatodeveloper@gmail.com> (https://twitter.com/gato_developer)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rokk3rlabs/hagrid/issues"
+  },
+  "homepage": "https://github.com/rokk3rlabs/hagrid#readme"
+}
