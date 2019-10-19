@@ -4,11 +4,12 @@
   "description": "Hagrid Front-end Framework",
   "main": "index.js",
   "dependencies": {
-    "umbrellajs": "^2.6.7",
+    "umbrellajs": "^2.6.7"
+  },
+  "devDependencies": {
     "sizzle": "^2.3.3",
     "zepto": "^1.2.0"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
