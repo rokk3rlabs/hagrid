@@ -1086,7 +1086,7 @@ a.default-link:hover {
 [gutters="10%"] > [class*="lay-"],
 [gutters="10%"] > .lay,
 [gutters="10%"] > .layout {
-  margin: 10%;
+  margin: 10 "%";
 }
 
 [gutters="20px"] > [class*="layout-"],
@@ -1114,7 +1114,7 @@ a.default-link:hover {
 [gutters="20%"] > [class*="lay-"],
 [gutters="20%"] > .lay,
 [gutters="20%"] > .layout {
-  margin: 20%;
+  margin: 20 "%";
 }
 
 [gutters="30px"] > [class*="layout-"],
@@ -1142,7 +1142,7 @@ a.default-link:hover {
 [gutters="30%"] > [class*="lay-"],
 [gutters="30%"] > .lay,
 [gutters="30%"] > .layout {
-  margin: 30%;
+  margin: 30 "%";
 }
 
 .gutters-x > [class*="lay-"],
@@ -1254,1042 +1254,2722 @@ a.default-link:hover {
 }
 
 @media screen and (min-width: 1200px) {
-  body .gutters-lg > [class*="lay-"],
-  body .gutters-lg > [class*="layout-"],
-  body .gutters-lg > .lay,
-  body .gutters-lg > .layout {
+  body .layout-5 .gutters-lg > [class*="lay-"],
+  body .layout-5 .gutters-lg > [class*="layout-"],
+  body .layout-5 .gutters-lg > .lay,
+  body .layout-5 .gutters-lg > .layout,
+  body .lay-5 .gutters-lg > [class*="lay-"],
+  body .lay-5 .gutters-lg > [class*="layout-"],
+  body .lay-5 .gutters-lg > .lay,
+  body .lay-5 .gutters-lg > .layout,
+  body .gs-wrap-5 .gutters-lg > [class*="lay-"],
+  body .gs-wrap-5 .gutters-lg > [class*="layout-"],
+  body .gs-wrap-5 .gutters-lg > .lay,
+  body .gs-wrap-5 .gutters-lg > .layout,
+  body .w-5 .gutters-lg > [class*="lay-"],
+  body .w-5 .gutters-lg > [class*="layout-"],
+  body .w-5 .gutters-lg > .lay,
+  body .w-5 .gutters-lg > .layout {
     margin: 1em;
   }
-  body .layout-lg-5,
-  body .lay-lg-5,
-  body .w-lg-5 {
+  body .layout-5 .layout-lg-5,
+  body .layout-5 .lay-lg-5,
+  body .layout-5 .w-lg-5,
+  body .lay-5 .layout-lg-5,
+  body .lay-5 .lay-lg-5,
+  body .lay-5 .w-lg-5,
+  body .gs-wrap-5 .layout-lg-5,
+  body .gs-wrap-5 .lay-lg-5,
+  body .gs-wrap-5 .w-lg-5,
+  body .w-5 .layout-lg-5,
+  body .w-5 .lay-lg-5,
+  body .w-5 .w-lg-5 {
     width: 5%;
   }
 }
 @media screen and (min-width: 700px) and (max-width: 1200px) {
-  body .gutters-md > [class*="lay-"],
-  body .gutters-md > [class*="layout-"],
-  body .gutters-md > .lay,
-  body .gutters-md > .layout {
+  body .layout-5 .gutters-md > [class*="lay-"],
+  body .layout-5 .gutters-md > [class*="layout-"],
+  body .layout-5 .gutters-md > .lay,
+  body .layout-5 .gutters-md > .layout,
+  body .lay-5 .gutters-md > [class*="lay-"],
+  body .lay-5 .gutters-md > [class*="layout-"],
+  body .lay-5 .gutters-md > .lay,
+  body .lay-5 .gutters-md > .layout,
+  body .gs-wrap-5 .gutters-md > [class*="lay-"],
+  body .gs-wrap-5 .gutters-md > [class*="layout-"],
+  body .gs-wrap-5 .gutters-md > .lay,
+  body .gs-wrap-5 .gutters-md > .layout,
+  body .w-5 .gutters-md > [class*="lay-"],
+  body .w-5 .gutters-md > [class*="layout-"],
+  body .w-5 .gutters-md > .lay,
+  body .w-5 .gutters-md > .layout {
     margin: 1em;
   }
-  body .layout-md-5,
-  body .lay-md-5,
-  body .w-md-5 {
+  body .layout-5 .layout-md-5,
+  body .layout-5 .lay-md-5,
+  body .layout-5 .w-md-5,
+  body .lay-5 .layout-md-5,
+  body .lay-5 .lay-md-5,
+  body .lay-5 .w-md-5,
+  body .gs-wrap-5 .layout-md-5,
+  body .gs-wrap-5 .lay-md-5,
+  body .gs-wrap-5 .w-md-5,
+  body .w-5 .layout-md-5,
+  body .w-5 .lay-md-5,
+  body .w-5 .w-md-5 {
     width: 5%;
   }
 }
 @media screen and (min-width: 460px) and (max-width: 700px) {
-  body .gutters-sm > [class*="lay-"],
-  body .gutters-sm > [class*="layout-"],
-  body .gutters-sm > .lay,
-  body .gutters-sm > .layout {
+  body .layout-5 .gutters-sm > [class*="lay-"],
+  body .layout-5 .gutters-sm > [class*="layout-"],
+  body .layout-5 .gutters-sm > .lay,
+  body .layout-5 .gutters-sm > .layout,
+  body .lay-5 .gutters-sm > [class*="lay-"],
+  body .lay-5 .gutters-sm > [class*="layout-"],
+  body .lay-5 .gutters-sm > .lay,
+  body .lay-5 .gutters-sm > .layout,
+  body .gs-wrap-5 .gutters-sm > [class*="lay-"],
+  body .gs-wrap-5 .gutters-sm > [class*="layout-"],
+  body .gs-wrap-5 .gutters-sm > .lay,
+  body .gs-wrap-5 .gutters-sm > .layout,
+  body .w-5 .gutters-sm > [class*="lay-"],
+  body .w-5 .gutters-sm > [class*="layout-"],
+  body .w-5 .gutters-sm > .lay,
+  body .w-5 .gutters-sm > .layout {
     margin: 1em;
   }
-  body .layout-sm-5,
-  body .lay-sm-5,
-  body .w-sm-5 {
+  body .layout-5 .layout-sm-5,
+  body .layout-5 .lay-sm-5,
+  body .layout-5 .w-sm-5,
+  body .lay-5 .layout-sm-5,
+  body .lay-5 .lay-sm-5,
+  body .lay-5 .w-sm-5,
+  body .gs-wrap-5 .layout-sm-5,
+  body .gs-wrap-5 .lay-sm-5,
+  body .gs-wrap-5 .w-sm-5,
+  body .w-5 .layout-sm-5,
+  body .w-5 .lay-sm-5,
+  body .w-5 .w-sm-5 {
     width: 5%;
   }
 }
 @media screen and (max-width: 460px) {
-  body .gutters-xs > [class*="lay-"],
-  body .gutters-xs > [class*="layout-"],
-  body .gutters-xs > .lay,
-  body .gutters-xs > .layout {
+  body .layout-5 .gutters-xs > [class*="lay-"],
+  body .layout-5 .gutters-xs > [class*="layout-"],
+  body .layout-5 .gutters-xs > .lay,
+  body .layout-5 .gutters-xs > .layout,
+  body .lay-5 .gutters-xs > [class*="lay-"],
+  body .lay-5 .gutters-xs > [class*="layout-"],
+  body .lay-5 .gutters-xs > .lay,
+  body .lay-5 .gutters-xs > .layout,
+  body .gs-wrap-5 .gutters-xs > [class*="lay-"],
+  body .gs-wrap-5 .gutters-xs > [class*="layout-"],
+  body .gs-wrap-5 .gutters-xs > .lay,
+  body .gs-wrap-5 .gutters-xs > .layout,
+  body .w-5 .gutters-xs > [class*="lay-"],
+  body .w-5 .gutters-xs > [class*="layout-"],
+  body .w-5 .gutters-xs > .lay,
+  body .w-5 .gutters-xs > .layout {
     margin: 1em;
   }
-  body .lay-xs-5,
-  body .layout-xs-5,
-  body .w-xs-5 {
+  body .layout-5 .lay-xs-5,
+  body .layout-5 .layout-xs-5,
+  body .layout-5 .w-xs-5,
+  body .lay-5 .lay-xs-5,
+  body .lay-5 .layout-xs-5,
+  body .lay-5 .w-xs-5,
+  body .gs-wrap-5 .lay-xs-5,
+  body .gs-wrap-5 .layout-xs-5,
+  body .gs-wrap-5 .w-xs-5,
+  body .w-5 .lay-xs-5,
+  body .w-5 .layout-xs-5,
+  body .w-5 .w-xs-5 {
     width: 5%;
   }
 }
 @media screen and (min-width: 1200px) {
-  body .gutters-lg > [class*="lay-"],
-  body .gutters-lg > [class*="layout-"],
-  body .gutters-lg > .lay,
-  body .gutters-lg > .layout {
+  body .layout-10 .gutters-lg > [class*="lay-"],
+  body .layout-10 .gutters-lg > [class*="layout-"],
+  body .layout-10 .gutters-lg > .lay,
+  body .layout-10 .gutters-lg > .layout,
+  body .lay-10 .gutters-lg > [class*="lay-"],
+  body .lay-10 .gutters-lg > [class*="layout-"],
+  body .lay-10 .gutters-lg > .lay,
+  body .lay-10 .gutters-lg > .layout,
+  body .gs-wrap-10 .gutters-lg > [class*="lay-"],
+  body .gs-wrap-10 .gutters-lg > [class*="layout-"],
+  body .gs-wrap-10 .gutters-lg > .lay,
+  body .gs-wrap-10 .gutters-lg > .layout,
+  body .w-10 .gutters-lg > [class*="lay-"],
+  body .w-10 .gutters-lg > [class*="layout-"],
+  body .w-10 .gutters-lg > .lay,
+  body .w-10 .gutters-lg > .layout {
     margin: 1em;
   }
-  body .layout-lg-10,
-  body .lay-lg-10,
-  body .w-lg-10 {
+  body .layout-10 .layout-lg-10,
+  body .layout-10 .lay-lg-10,
+  body .layout-10 .w-lg-10,
+  body .lay-10 .layout-lg-10,
+  body .lay-10 .lay-lg-10,
+  body .lay-10 .w-lg-10,
+  body .gs-wrap-10 .layout-lg-10,
+  body .gs-wrap-10 .lay-lg-10,
+  body .gs-wrap-10 .w-lg-10,
+  body .w-10 .layout-lg-10,
+  body .w-10 .lay-lg-10,
+  body .w-10 .w-lg-10 {
     width: 10%;
   }
 }
 @media screen and (min-width: 700px) and (max-width: 1200px) {
-  body .gutters-md > [class*="lay-"],
-  body .gutters-md > [class*="layout-"],
-  body .gutters-md > .lay,
-  body .gutters-md > .layout {
+  body .layout-10 .gutters-md > [class*="lay-"],
+  body .layout-10 .gutters-md > [class*="layout-"],
+  body .layout-10 .gutters-md > .lay,
+  body .layout-10 .gutters-md > .layout,
+  body .lay-10 .gutters-md > [class*="lay-"],
+  body .lay-10 .gutters-md > [class*="layout-"],
+  body .lay-10 .gutters-md > .lay,
+  body .lay-10 .gutters-md > .layout,
+  body .gs-wrap-10 .gutters-md > [class*="lay-"],
+  body .gs-wrap-10 .gutters-md > [class*="layout-"],
+  body .gs-wrap-10 .gutters-md > .lay,
+  body .gs-wrap-10 .gutters-md > .layout,
+  body .w-10 .gutters-md > [class*="lay-"],
+  body .w-10 .gutters-md > [class*="layout-"],
+  body .w-10 .gutters-md > .lay,
+  body .w-10 .gutters-md > .layout {
     margin: 1em;
   }
-  body .layout-md-10,
-  body .lay-md-10,
-  body .w-md-10 {
+  body .layout-10 .layout-md-10,
+  body .layout-10 .lay-md-10,
+  body .layout-10 .w-md-10,
+  body .lay-10 .layout-md-10,
+  body .lay-10 .lay-md-10,
+  body .lay-10 .w-md-10,
+  body .gs-wrap-10 .layout-md-10,
+  body .gs-wrap-10 .lay-md-10,
+  body .gs-wrap-10 .w-md-10,
+  body .w-10 .layout-md-10,
+  body .w-10 .lay-md-10,
+  body .w-10 .w-md-10 {
     width: 10%;
   }
 }
 @media screen and (min-width: 460px) and (max-width: 700px) {
-  body .gutters-sm > [class*="lay-"],
-  body .gutters-sm > [class*="layout-"],
-  body .gutters-sm > .lay,
-  body .gutters-sm > .layout {
+  body .layout-10 .gutters-sm > [class*="lay-"],
+  body .layout-10 .gutters-sm > [class*="layout-"],
+  body .layout-10 .gutters-sm > .lay,
+  body .layout-10 .gutters-sm > .layout,
+  body .lay-10 .gutters-sm > [class*="lay-"],
+  body .lay-10 .gutters-sm > [class*="layout-"],
+  body .lay-10 .gutters-sm > .lay,
+  body .lay-10 .gutters-sm > .layout,
+  body .gs-wrap-10 .gutters-sm > [class*="lay-"],
+  body .gs-wrap-10 .gutters-sm > [class*="layout-"],
+  body .gs-wrap-10 .gutters-sm > .lay,
+  body .gs-wrap-10 .gutters-sm > .layout,
+  body .w-10 .gutters-sm > [class*="lay-"],
+  body .w-10 .gutters-sm > [class*="layout-"],
+  body .w-10 .gutters-sm > .lay,
+  body .w-10 .gutters-sm > .layout {
     margin: 1em;
   }
-  body .layout-sm-10,
-  body .lay-sm-10,
-  body .w-sm-10 {
+  body .layout-10 .layout-sm-10,
+  body .layout-10 .lay-sm-10,
+  body .layout-10 .w-sm-10,
+  body .lay-10 .layout-sm-10,
+  body .lay-10 .lay-sm-10,
+  body .lay-10 .w-sm-10,
+  body .gs-wrap-10 .layout-sm-10,
+  body .gs-wrap-10 .lay-sm-10,
+  body .gs-wrap-10 .w-sm-10,
+  body .w-10 .layout-sm-10,
+  body .w-10 .lay-sm-10,
+  body .w-10 .w-sm-10 {
     width: 10%;
   }
 }
 @media screen and (max-width: 460px) {
-  body .gutters-xs > [class*="lay-"],
-  body .gutters-xs > [class*="layout-"],
-  body .gutters-xs > .lay,
-  body .gutters-xs > .layout {
+  body .layout-10 .gutters-xs > [class*="lay-"],
+  body .layout-10 .gutters-xs > [class*="layout-"],
+  body .layout-10 .gutters-xs > .lay,
+  body .layout-10 .gutters-xs > .layout,
+  body .lay-10 .gutters-xs > [class*="lay-"],
+  body .lay-10 .gutters-xs > [class*="layout-"],
+  body .lay-10 .gutters-xs > .lay,
+  body .lay-10 .gutters-xs > .layout,
+  body .gs-wrap-10 .gutters-xs > [class*="lay-"],
+  body .gs-wrap-10 .gutters-xs > [class*="layout-"],
+  body .gs-wrap-10 .gutters-xs > .lay,
+  body .gs-wrap-10 .gutters-xs > .layout,
+  body .w-10 .gutters-xs > [class*="lay-"],
+  body .w-10 .gutters-xs > [class*="layout-"],
+  body .w-10 .gutters-xs > .lay,
+  body .w-10 .gutters-xs > .layout {
     margin: 1em;
   }
-  body .lay-xs-10,
-  body .layout-xs-10,
-  body .w-xs-10 {
+  body .layout-10 .lay-xs-10,
+  body .layout-10 .layout-xs-10,
+  body .layout-10 .w-xs-10,
+  body .lay-10 .lay-xs-10,
+  body .lay-10 .layout-xs-10,
+  body .lay-10 .w-xs-10,
+  body .gs-wrap-10 .lay-xs-10,
+  body .gs-wrap-10 .layout-xs-10,
+  body .gs-wrap-10 .w-xs-10,
+  body .w-10 .lay-xs-10,
+  body .w-10 .layout-xs-10,
+  body .w-10 .w-xs-10 {
     width: 10%;
   }
 }
 @media screen and (min-width: 1200px) {
-  body .gutters-lg > [class*="lay-"],
-  body .gutters-lg > [class*="layout-"],
-  body .gutters-lg > .lay,
-  body .gutters-lg > .layout {
+  body .layout-15 .gutters-lg > [class*="lay-"],
+  body .layout-15 .gutters-lg > [class*="layout-"],
+  body .layout-15 .gutters-lg > .lay,
+  body .layout-15 .gutters-lg > .layout,
+  body .lay-15 .gutters-lg > [class*="lay-"],
+  body .lay-15 .gutters-lg > [class*="layout-"],
+  body .lay-15 .gutters-lg > .lay,
+  body .lay-15 .gutters-lg > .layout,
+  body .gs-wrap-15 .gutters-lg > [class*="lay-"],
+  body .gs-wrap-15 .gutters-lg > [class*="layout-"],
+  body .gs-wrap-15 .gutters-lg > .lay,
+  body .gs-wrap-15 .gutters-lg > .layout,
+  body .w-15 .gutters-lg > [class*="lay-"],
+  body .w-15 .gutters-lg > [class*="layout-"],
+  body .w-15 .gutters-lg > .lay,
+  body .w-15 .gutters-lg > .layout {
     margin: 1em;
   }
-  body .layout-lg-15,
-  body .lay-lg-15,
-  body .w-lg-15 {
+  body .layout-15 .layout-lg-15,
+  body .layout-15 .lay-lg-15,
+  body .layout-15 .w-lg-15,
+  body .lay-15 .layout-lg-15,
+  body .lay-15 .lay-lg-15,
+  body .lay-15 .w-lg-15,
+  body .gs-wrap-15 .layout-lg-15,
+  body .gs-wrap-15 .lay-lg-15,
+  body .gs-wrap-15 .w-lg-15,
+  body .w-15 .layout-lg-15,
+  body .w-15 .lay-lg-15,
+  body .w-15 .w-lg-15 {
     width: 15%;
   }
 }
 @media screen and (min-width: 700px) and (max-width: 1200px) {
-  body .gutters-md > [class*="lay-"],
-  body .gutters-md > [class*="layout-"],
-  body .gutters-md > .lay,
-  body .gutters-md > .layout {
+  body .layout-15 .gutters-md > [class*="lay-"],
+  body .layout-15 .gutters-md > [class*="layout-"],
+  body .layout-15 .gutters-md > .lay,
+  body .layout-15 .gutters-md > .layout,
+  body .lay-15 .gutters-md > [class*="lay-"],
+  body .lay-15 .gutters-md > [class*="layout-"],
+  body .lay-15 .gutters-md > .lay,
+  body .lay-15 .gutters-md > .layout,
+  body .gs-wrap-15 .gutters-md > [class*="lay-"],
+  body .gs-wrap-15 .gutters-md > [class*="layout-"],
+  body .gs-wrap-15 .gutters-md > .lay,
+  body .gs-wrap-15 .gutters-md > .layout,
+  body .w-15 .gutters-md > [class*="lay-"],
+  body .w-15 .gutters-md > [class*="layout-"],
+  body .w-15 .gutters-md > .lay,
+  body .w-15 .gutters-md > .layout {
     margin: 1em;
   }
-  body .layout-md-15,
-  body .lay-md-15,
-  body .w-md-15 {
+  body .layout-15 .layout-md-15,
+  body .layout-15 .lay-md-15,
+  body .layout-15 .w-md-15,
+  body .lay-15 .layout-md-15,
+  body .lay-15 .lay-md-15,
+  body .lay-15 .w-md-15,
+  body .gs-wrap-15 .layout-md-15,
+  body .gs-wrap-15 .lay-md-15,
+  body .gs-wrap-15 .w-md-15,
+  body .w-15 .layout-md-15,
+  body .w-15 .lay-md-15,
+  body .w-15 .w-md-15 {
     width: 15%;
   }
 }
 @media screen and (min-width: 460px) and (max-width: 700px) {
-  body .gutters-sm > [class*="lay-"],
-  body .gutters-sm > [class*="layout-"],
-  body .gutters-sm > .lay,
-  body .gutters-sm > .layout {
+  body .layout-15 .gutters-sm > [class*="lay-"],
+  body .layout-15 .gutters-sm > [class*="layout-"],
+  body .layout-15 .gutters-sm > .lay,
+  body .layout-15 .gutters-sm > .layout,
+  body .lay-15 .gutters-sm > [class*="lay-"],
+  body .lay-15 .gutters-sm > [class*="layout-"],
+  body .lay-15 .gutters-sm > .lay,
+  body .lay-15 .gutters-sm > .layout,
+  body .gs-wrap-15 .gutters-sm > [class*="lay-"],
+  body .gs-wrap-15 .gutters-sm > [class*="layout-"],
+  body .gs-wrap-15 .gutters-sm > .lay,
+  body .gs-wrap-15 .gutters-sm > .layout,
+  body .w-15 .gutters-sm > [class*="lay-"],
+  body .w-15 .gutters-sm > [class*="layout-"],
+  body .w-15 .gutters-sm > .lay,
+  body .w-15 .gutters-sm > .layout {
     margin: 1em;
   }
-  body .layout-sm-15,
-  body .lay-sm-15,
-  body .w-sm-15 {
+  body .layout-15 .layout-sm-15,
+  body .layout-15 .lay-sm-15,
+  body .layout-15 .w-sm-15,
+  body .lay-15 .layout-sm-15,
+  body .lay-15 .lay-sm-15,
+  body .lay-15 .w-sm-15,
+  body .gs-wrap-15 .layout-sm-15,
+  body .gs-wrap-15 .lay-sm-15,
+  body .gs-wrap-15 .w-sm-15,
+  body .w-15 .layout-sm-15,
+  body .w-15 .lay-sm-15,
+  body .w-15 .w-sm-15 {
     width: 15%;
   }
 }
 @media screen and (max-width: 460px) {
-  body .gutters-xs > [class*="lay-"],
-  body .gutters-xs > [class*="layout-"],
-  body .gutters-xs > .lay,
-  body .gutters-xs > .layout {
+  body .layout-15 .gutters-xs > [class*="lay-"],
+  body .layout-15 .gutters-xs > [class*="layout-"],
+  body .layout-15 .gutters-xs > .lay,
+  body .layout-15 .gutters-xs > .layout,
+  body .lay-15 .gutters-xs > [class*="lay-"],
+  body .lay-15 .gutters-xs > [class*="layout-"],
+  body .lay-15 .gutters-xs > .lay,
+  body .lay-15 .gutters-xs > .layout,
+  body .gs-wrap-15 .gutters-xs > [class*="lay-"],
+  body .gs-wrap-15 .gutters-xs > [class*="layout-"],
+  body .gs-wrap-15 .gutters-xs > .lay,
+  body .gs-wrap-15 .gutters-xs > .layout,
+  body .w-15 .gutters-xs > [class*="lay-"],
+  body .w-15 .gutters-xs > [class*="layout-"],
+  body .w-15 .gutters-xs > .lay,
+  body .w-15 .gutters-xs > .layout {
     margin: 1em;
   }
-  body .lay-xs-15,
-  body .layout-xs-15,
-  body .w-xs-15 {
+  body .layout-15 .lay-xs-15,
+  body .layout-15 .layout-xs-15,
+  body .layout-15 .w-xs-15,
+  body .lay-15 .lay-xs-15,
+  body .lay-15 .layout-xs-15,
+  body .lay-15 .w-xs-15,
+  body .gs-wrap-15 .lay-xs-15,
+  body .gs-wrap-15 .layout-xs-15,
+  body .gs-wrap-15 .w-xs-15,
+  body .w-15 .lay-xs-15,
+  body .w-15 .layout-xs-15,
+  body .w-15 .w-xs-15 {
     width: 15%;
   }
 }
 @media screen and (min-width: 1200px) {
-  body .gutters-lg > [class*="lay-"],
-  body .gutters-lg > [class*="layout-"],
-  body .gutters-lg > .lay,
-  body .gutters-lg > .layout {
+  body .layout-20 .gutters-lg > [class*="lay-"],
+  body .layout-20 .gutters-lg > [class*="layout-"],
+  body .layout-20 .gutters-lg > .lay,
+  body .layout-20 .gutters-lg > .layout,
+  body .lay-20 .gutters-lg > [class*="lay-"],
+  body .lay-20 .gutters-lg > [class*="layout-"],
+  body .lay-20 .gutters-lg > .lay,
+  body .lay-20 .gutters-lg > .layout,
+  body .gs-wrap-20 .gutters-lg > [class*="lay-"],
+  body .gs-wrap-20 .gutters-lg > [class*="layout-"],
+  body .gs-wrap-20 .gutters-lg > .lay,
+  body .gs-wrap-20 .gutters-lg > .layout,
+  body .w-20 .gutters-lg > [class*="lay-"],
+  body .w-20 .gutters-lg > [class*="layout-"],
+  body .w-20 .gutters-lg > .lay,
+  body .w-20 .gutters-lg > .layout {
     margin: 1em;
   }
-  body .layout-lg-20,
-  body .lay-lg-20,
-  body .w-lg-20 {
+  body .layout-20 .layout-lg-20,
+  body .layout-20 .lay-lg-20,
+  body .layout-20 .w-lg-20,
+  body .lay-20 .layout-lg-20,
+  body .lay-20 .lay-lg-20,
+  body .lay-20 .w-lg-20,
+  body .gs-wrap-20 .layout-lg-20,
+  body .gs-wrap-20 .lay-lg-20,
+  body .gs-wrap-20 .w-lg-20,
+  body .w-20 .layout-lg-20,
+  body .w-20 .lay-lg-20,
+  body .w-20 .w-lg-20 {
     width: 20%;
   }
 }
 @media screen and (min-width: 700px) and (max-width: 1200px) {
-  body .gutters-md > [class*="lay-"],
-  body .gutters-md > [class*="layout-"],
-  body .gutters-md > .lay,
-  body .gutters-md > .layout {
+  body .layout-20 .gutters-md > [class*="lay-"],
+  body .layout-20 .gutters-md > [class*="layout-"],
+  body .layout-20 .gutters-md > .lay,
+  body .layout-20 .gutters-md > .layout,
+  body .lay-20 .gutters-md > [class*="lay-"],
+  body .lay-20 .gutters-md > [class*="layout-"],
+  body .lay-20 .gutters-md > .lay,
+  body .lay-20 .gutters-md > .layout,
+  body .gs-wrap-20 .gutters-md > [class*="lay-"],
+  body .gs-wrap-20 .gutters-md > [class*="layout-"],
+  body .gs-wrap-20 .gutters-md > .lay,
+  body .gs-wrap-20 .gutters-md > .layout,
+  body .w-20 .gutters-md > [class*="lay-"],
+  body .w-20 .gutters-md > [class*="layout-"],
+  body .w-20 .gutters-md > .lay,
+  body .w-20 .gutters-md > .layout {
     margin: 1em;
   }
-  body .layout-md-20,
-  body .lay-md-20,
-  body .w-md-20 {
+  body .layout-20 .layout-md-20,
+  body .layout-20 .lay-md-20,
+  body .layout-20 .w-md-20,
+  body .lay-20 .layout-md-20,
+  body .lay-20 .lay-md-20,
+  body .lay-20 .w-md-20,
+  body .gs-wrap-20 .layout-md-20,
+  body .gs-wrap-20 .lay-md-20,
+  body .gs-wrap-20 .w-md-20,
+  body .w-20 .layout-md-20,
+  body .w-20 .lay-md-20,
+  body .w-20 .w-md-20 {
     width: 20%;
   }
 }
 @media screen and (min-width: 460px) and (max-width: 700px) {
-  body .gutters-sm > [class*="lay-"],
-  body .gutters-sm > [class*="layout-"],
-  body .gutters-sm > .lay,
-  body .gutters-sm > .layout {
+  body .layout-20 .gutters-sm > [class*="lay-"],
+  body .layout-20 .gutters-sm > [class*="layout-"],
+  body .layout-20 .gutters-sm > .lay,
+  body .layout-20 .gutters-sm > .layout,
+  body .lay-20 .gutters-sm > [class*="lay-"],
+  body .lay-20 .gutters-sm > [class*="layout-"],
+  body .lay-20 .gutters-sm > .lay,
+  body .lay-20 .gutters-sm > .layout,
+  body .gs-wrap-20 .gutters-sm > [class*="lay-"],
+  body .gs-wrap-20 .gutters-sm > [class*="layout-"],
+  body .gs-wrap-20 .gutters-sm > .lay,
+  body .gs-wrap-20 .gutters-sm > .layout,
+  body .w-20 .gutters-sm > [class*="lay-"],
+  body .w-20 .gutters-sm > [class*="layout-"],
+  body .w-20 .gutters-sm > .lay,
+  body .w-20 .gutters-sm > .layout {
     margin: 1em;
   }
-  body .layout-sm-20,
-  body .lay-sm-20,
-  body .w-sm-20 {
+  body .layout-20 .layout-sm-20,
+  body .layout-20 .lay-sm-20,
+  body .layout-20 .w-sm-20,
+  body .lay-20 .layout-sm-20,
+  body .lay-20 .lay-sm-20,
+  body .lay-20 .w-sm-20,
+  body .gs-wrap-20 .layout-sm-20,
+  body .gs-wrap-20 .lay-sm-20,
+  body .gs-wrap-20 .w-sm-20,
+  body .w-20 .layout-sm-20,
+  body .w-20 .lay-sm-20,
+  body .w-20 .w-sm-20 {
     width: 20%;
   }
 }
 @media screen and (max-width: 460px) {
-  body .gutters-xs > [class*="lay-"],
-  body .gutters-xs > [class*="layout-"],
-  body .gutters-xs > .lay,
-  body .gutters-xs > .layout {
+  body .layout-20 .gutters-xs > [class*="lay-"],
+  body .layout-20 .gutters-xs > [class*="layout-"],
+  body .layout-20 .gutters-xs > .lay,
+  body .layout-20 .gutters-xs > .layout,
+  body .lay-20 .gutters-xs > [class*="lay-"],
+  body .lay-20 .gutters-xs > [class*="layout-"],
+  body .lay-20 .gutters-xs > .lay,
+  body .lay-20 .gutters-xs > .layout,
+  body .gs-wrap-20 .gutters-xs > [class*="lay-"],
+  body .gs-wrap-20 .gutters-xs > [class*="layout-"],
+  body .gs-wrap-20 .gutters-xs > .lay,
+  body .gs-wrap-20 .gutters-xs > .layout,
+  body .w-20 .gutters-xs > [class*="lay-"],
+  body .w-20 .gutters-xs > [class*="layout-"],
+  body .w-20 .gutters-xs > .lay,
+  body .w-20 .gutters-xs > .layout {
     margin: 1em;
   }
-  body .lay-xs-20,
-  body .layout-xs-20,
-  body .w-xs-20 {
+  body .layout-20 .lay-xs-20,
+  body .layout-20 .layout-xs-20,
+  body .layout-20 .w-xs-20,
+  body .lay-20 .lay-xs-20,
+  body .lay-20 .layout-xs-20,
+  body .lay-20 .w-xs-20,
+  body .gs-wrap-20 .lay-xs-20,
+  body .gs-wrap-20 .layout-xs-20,
+  body .gs-wrap-20 .w-xs-20,
+  body .w-20 .lay-xs-20,
+  body .w-20 .layout-xs-20,
+  body .w-20 .w-xs-20 {
     width: 20%;
   }
 }
 @media screen and (min-width: 1200px) {
-  body .gutters-lg > [class*="lay-"],
-  body .gutters-lg > [class*="layout-"],
-  body .gutters-lg > .lay,
-  body .gutters-lg > .layout {
+  body .layout-25 .gutters-lg > [class*="lay-"],
+  body .layout-25 .gutters-lg > [class*="layout-"],
+  body .layout-25 .gutters-lg > .lay,
+  body .layout-25 .gutters-lg > .layout,
+  body .lay-25 .gutters-lg > [class*="lay-"],
+  body .lay-25 .gutters-lg > [class*="layout-"],
+  body .lay-25 .gutters-lg > .lay,
+  body .lay-25 .gutters-lg > .layout,
+  body .gs-wrap-25 .gutters-lg > [class*="lay-"],
+  body .gs-wrap-25 .gutters-lg > [class*="layout-"],
+  body .gs-wrap-25 .gutters-lg > .lay,
+  body .gs-wrap-25 .gutters-lg > .layout,
+  body .w-25 .gutters-lg > [class*="lay-"],
+  body .w-25 .gutters-lg > [class*="layout-"],
+  body .w-25 .gutters-lg > .lay,
+  body .w-25 .gutters-lg > .layout {
     margin: 1em;
   }
-  body .layout-lg-25,
-  body .lay-lg-25,
-  body .w-lg-25 {
+  body .layout-25 .layout-lg-25,
+  body .layout-25 .lay-lg-25,
+  body .layout-25 .w-lg-25,
+  body .lay-25 .layout-lg-25,
+  body .lay-25 .lay-lg-25,
+  body .lay-25 .w-lg-25,
+  body .gs-wrap-25 .layout-lg-25,
+  body .gs-wrap-25 .lay-lg-25,
+  body .gs-wrap-25 .w-lg-25,
+  body .w-25 .layout-lg-25,
+  body .w-25 .lay-lg-25,
+  body .w-25 .w-lg-25 {
     width: 25%;
   }
 }
 @media screen and (min-width: 700px) and (max-width: 1200px) {
-  body .gutters-md > [class*="lay-"],
-  body .gutters-md > [class*="layout-"],
-  body .gutters-md > .lay,
-  body .gutters-md > .layout {
+  body .layout-25 .gutters-md > [class*="lay-"],
+  body .layout-25 .gutters-md > [class*="layout-"],
+  body .layout-25 .gutters-md > .lay,
+  body .layout-25 .gutters-md > .layout,
+  body .lay-25 .gutters-md > [class*="lay-"],
+  body .lay-25 .gutters-md > [class*="layout-"],
+  body .lay-25 .gutters-md > .lay,
+  body .lay-25 .gutters-md > .layout,
+  body .gs-wrap-25 .gutters-md > [class*="lay-"],
+  body .gs-wrap-25 .gutters-md > [class*="layout-"],
+  body .gs-wrap-25 .gutters-md > .lay,
+  body .gs-wrap-25 .gutters-md > .layout,
+  body .w-25 .gutters-md > [class*="lay-"],
+  body .w-25 .gutters-md > [class*="layout-"],
+  body .w-25 .gutters-md > .lay,
+  body .w-25 .gutters-md > .layout {
     margin: 1em;
   }
-  body .layout-md-25,
-  body .lay-md-25,
-  body .w-md-25 {
+  body .layout-25 .layout-md-25,
+  body .layout-25 .lay-md-25,
+  body .layout-25 .w-md-25,
+  body .lay-25 .layout-md-25,
+  body .lay-25 .lay-md-25,
+  body .lay-25 .w-md-25,
+  body .gs-wrap-25 .layout-md-25,
+  body .gs-wrap-25 .lay-md-25,
+  body .gs-wrap-25 .w-md-25,
+  body .w-25 .layout-md-25,
+  body .w-25 .lay-md-25,
+  body .w-25 .w-md-25 {
     width: 25%;
   }
 }
 @media screen and (min-width: 460px) and (max-width: 700px) {
-  body .gutters-sm > [class*="lay-"],
-  body .gutters-sm > [class*="layout-"],
-  body .gutters-sm > .lay,
-  body .gutters-sm > .layout {
+  body .layout-25 .gutters-sm > [class*="lay-"],
+  body .layout-25 .gutters-sm > [class*="layout-"],
+  body .layout-25 .gutters-sm > .lay,
+  body .layout-25 .gutters-sm > .layout,
+  body .lay-25 .gutters-sm > [class*="lay-"],
+  body .lay-25 .gutters-sm > [class*="layout-"],
+  body .lay-25 .gutters-sm > .lay,
+  body .lay-25 .gutters-sm > .layout,
+  body .gs-wrap-25 .gutters-sm > [class*="lay-"],
+  body .gs-wrap-25 .gutters-sm > [class*="layout-"],
+  body .gs-wrap-25 .gutters-sm > .lay,
+  body .gs-wrap-25 .gutters-sm > .layout,
+  body .w-25 .gutters-sm > [class*="lay-"],
+  body .w-25 .gutters-sm > [class*="layout-"],
+  body .w-25 .gutters-sm > .lay,
+  body .w-25 .gutters-sm > .layout {
     margin: 1em;
   }
-  body .layout-sm-25,
-  body .lay-sm-25,
-  body .w-sm-25 {
+  body .layout-25 .layout-sm-25,
+  body .layout-25 .lay-sm-25,
+  body .layout-25 .w-sm-25,
+  body .lay-25 .layout-sm-25,
+  body .lay-25 .lay-sm-25,
+  body .lay-25 .w-sm-25,
+  body .gs-wrap-25 .layout-sm-25,
+  body .gs-wrap-25 .lay-sm-25,
+  body .gs-wrap-25 .w-sm-25,
+  body .w-25 .layout-sm-25,
+  body .w-25 .lay-sm-25,
+  body .w-25 .w-sm-25 {
     width: 25%;
   }
 }
 @media screen and (max-width: 460px) {
-  body .gutters-xs > [class*="lay-"],
-  body .gutters-xs > [class*="layout-"],
-  body .gutters-xs > .lay,
-  body .gutters-xs > .layout {
+  body .layout-25 .gutters-xs > [class*="lay-"],
+  body .layout-25 .gutters-xs > [class*="layout-"],
+  body .layout-25 .gutters-xs > .lay,
+  body .layout-25 .gutters-xs > .layout,
+  body .lay-25 .gutters-xs > [class*="lay-"],
+  body .lay-25 .gutters-xs > [class*="layout-"],
+  body .lay-25 .gutters-xs > .lay,
+  body .lay-25 .gutters-xs > .layout,
+  body .gs-wrap-25 .gutters-xs > [class*="lay-"],
+  body .gs-wrap-25 .gutters-xs > [class*="layout-"],
+  body .gs-wrap-25 .gutters-xs > .lay,
+  body .gs-wrap-25 .gutters-xs > .layout,
+  body .w-25 .gutters-xs > [class*="lay-"],
+  body .w-25 .gutters-xs > [class*="layout-"],
+  body .w-25 .gutters-xs > .lay,
+  body .w-25 .gutters-xs > .layout {
     margin: 1em;
   }
-  body .lay-xs-25,
-  body .layout-xs-25,
-  body .w-xs-25 {
+  body .layout-25 .lay-xs-25,
+  body .layout-25 .layout-xs-25,
+  body .layout-25 .w-xs-25,
+  body .lay-25 .lay-xs-25,
+  body .lay-25 .layout-xs-25,
+  body .lay-25 .w-xs-25,
+  body .gs-wrap-25 .lay-xs-25,
+  body .gs-wrap-25 .layout-xs-25,
+  body .gs-wrap-25 .w-xs-25,
+  body .w-25 .lay-xs-25,
+  body .w-25 .layout-xs-25,
+  body .w-25 .w-xs-25 {
     width: 25%;
   }
 }
 @media screen and (min-width: 1200px) {
-  body .gutters-lg > [class*="lay-"],
-  body .gutters-lg > [class*="layout-"],
-  body .gutters-lg > .lay,
-  body .gutters-lg > .layout {
+  body .layout-30 .gutters-lg > [class*="lay-"],
+  body .layout-30 .gutters-lg > [class*="layout-"],
+  body .layout-30 .gutters-lg > .lay,
+  body .layout-30 .gutters-lg > .layout,
+  body .lay-30 .gutters-lg > [class*="lay-"],
+  body .lay-30 .gutters-lg > [class*="layout-"],
+  body .lay-30 .gutters-lg > .lay,
+  body .lay-30 .gutters-lg > .layout,
+  body .gs-wrap-30 .gutters-lg > [class*="lay-"],
+  body .gs-wrap-30 .gutters-lg > [class*="layout-"],
+  body .gs-wrap-30 .gutters-lg > .lay,
+  body .gs-wrap-30 .gutters-lg > .layout,
+  body .w-30 .gutters-lg > [class*="lay-"],
+  body .w-30 .gutters-lg > [class*="layout-"],
+  body .w-30 .gutters-lg > .lay,
+  body .w-30 .gutters-lg > .layout {
     margin: 1em;
   }
-  body .layout-lg-30,
-  body .lay-lg-30,
-  body .w-lg-30 {
+  body .layout-30 .layout-lg-30,
+  body .layout-30 .lay-lg-30,
+  body .layout-30 .w-lg-30,
+  body .lay-30 .layout-lg-30,
+  body .lay-30 .lay-lg-30,
+  body .lay-30 .w-lg-30,
+  body .gs-wrap-30 .layout-lg-30,
+  body .gs-wrap-30 .lay-lg-30,
+  body .gs-wrap-30 .w-lg-30,
+  body .w-30 .layout-lg-30,
+  body .w-30 .lay-lg-30,
+  body .w-30 .w-lg-30 {
     width: 30%;
   }
 }
 @media screen and (min-width: 700px) and (max-width: 1200px) {
-  body .gutters-md > [class*="lay-"],
-  body .gutters-md > [class*="layout-"],
-  body .gutters-md > .lay,
-  body .gutters-md > .layout {
+  body .layout-30 .gutters-md > [class*="lay-"],
+  body .layout-30 .gutters-md > [class*="layout-"],
+  body .layout-30 .gutters-md > .lay,
+  body .layout-30 .gutters-md > .layout,
+  body .lay-30 .gutters-md > [class*="lay-"],
+  body .lay-30 .gutters-md > [class*="layout-"],
+  body .lay-30 .gutters-md > .lay,
+  body .lay-30 .gutters-md > .layout,
+  body .gs-wrap-30 .gutters-md > [class*="lay-"],
+  body .gs-wrap-30 .gutters-md > [class*="layout-"],
+  body .gs-wrap-30 .gutters-md > .lay,
+  body .gs-wrap-30 .gutters-md > .layout,
+  body .w-30 .gutters-md > [class*="lay-"],
+  body .w-30 .gutters-md > [class*="layout-"],
+  body .w-30 .gutters-md > .lay,
+  body .w-30 .gutters-md > .layout {
     margin: 1em;
   }
-  body .layout-md-30,
-  body .lay-md-30,
-  body .w-md-30 {
+  body .layout-30 .layout-md-30,
+  body .layout-30 .lay-md-30,
+  body .layout-30 .w-md-30,
+  body .lay-30 .layout-md-30,
+  body .lay-30 .lay-md-30,
+  body .lay-30 .w-md-30,
+  body .gs-wrap-30 .layout-md-30,
+  body .gs-wrap-30 .lay-md-30,
+  body .gs-wrap-30 .w-md-30,
+  body .w-30 .layout-md-30,
+  body .w-30 .lay-md-30,
+  body .w-30 .w-md-30 {
     width: 30%;
   }
 }
 @media screen and (min-width: 460px) and (max-width: 700px) {
-  body .gutters-sm > [class*="lay-"],
-  body .gutters-sm > [class*="layout-"],
-  body .gutters-sm > .lay,
-  body .gutters-sm > .layout {
+  body .layout-30 .gutters-sm > [class*="lay-"],
+  body .layout-30 .gutters-sm > [class*="layout-"],
+  body .layout-30 .gutters-sm > .lay,
+  body .layout-30 .gutters-sm > .layout,
+  body .lay-30 .gutters-sm > [class*="lay-"],
+  body .lay-30 .gutters-sm > [class*="layout-"],
+  body .lay-30 .gutters-sm > .lay,
+  body .lay-30 .gutters-sm > .layout,
+  body .gs-wrap-30 .gutters-sm > [class*="lay-"],
+  body .gs-wrap-30 .gutters-sm > [class*="layout-"],
+  body .gs-wrap-30 .gutters-sm > .lay,
+  body .gs-wrap-30 .gutters-sm > .layout,
+  body .w-30 .gutters-sm > [class*="lay-"],
+  body .w-30 .gutters-sm > [class*="layout-"],
+  body .w-30 .gutters-sm > .lay,
+  body .w-30 .gutters-sm > .layout {
     margin: 1em;
   }
-  body .layout-sm-30,
-  body .lay-sm-30,
-  body .w-sm-30 {
+  body .layout-30 .layout-sm-30,
+  body .layout-30 .lay-sm-30,
+  body .layout-30 .w-sm-30,
+  body .lay-30 .layout-sm-30,
+  body .lay-30 .lay-sm-30,
+  body .lay-30 .w-sm-30,
+  body .gs-wrap-30 .layout-sm-30,
+  body .gs-wrap-30 .lay-sm-30,
+  body .gs-wrap-30 .w-sm-30,
+  body .w-30 .layout-sm-30,
+  body .w-30 .lay-sm-30,
+  body .w-30 .w-sm-30 {
     width: 30%;
   }
 }
 @media screen and (max-width: 460px) {
-  body .gutters-xs > [class*="lay-"],
-  body .gutters-xs > [class*="layout-"],
-  body .gutters-xs > .lay,
-  body .gutters-xs > .layout {
+  body .layout-30 .gutters-xs > [class*="lay-"],
+  body .layout-30 .gutters-xs > [class*="layout-"],
+  body .layout-30 .gutters-xs > .lay,
+  body .layout-30 .gutters-xs > .layout,
+  body .lay-30 .gutters-xs > [class*="lay-"],
+  body .lay-30 .gutters-xs > [class*="layout-"],
+  body .lay-30 .gutters-xs > .lay,
+  body .lay-30 .gutters-xs > .layout,
+  body .gs-wrap-30 .gutters-xs > [class*="lay-"],
+  body .gs-wrap-30 .gutters-xs > [class*="layout-"],
+  body .gs-wrap-30 .gutters-xs > .lay,
+  body .gs-wrap-30 .gutters-xs > .layout,
+  body .w-30 .gutters-xs > [class*="lay-"],
+  body .w-30 .gutters-xs > [class*="layout-"],
+  body .w-30 .gutters-xs > .lay,
+  body .w-30 .gutters-xs > .layout {
     margin: 1em;
   }
-  body .lay-xs-30,
-  body .layout-xs-30,
-  body .w-xs-30 {
+  body .layout-30 .lay-xs-30,
+  body .layout-30 .layout-xs-30,
+  body .layout-30 .w-xs-30,
+  body .lay-30 .lay-xs-30,
+  body .lay-30 .layout-xs-30,
+  body .lay-30 .w-xs-30,
+  body .gs-wrap-30 .lay-xs-30,
+  body .gs-wrap-30 .layout-xs-30,
+  body .gs-wrap-30 .w-xs-30,
+  body .w-30 .lay-xs-30,
+  body .w-30 .layout-xs-30,
+  body .w-30 .w-xs-30 {
     width: 30%;
   }
 }
 @media screen and (min-width: 1200px) {
-  body .gutters-lg > [class*="lay-"],
-  body .gutters-lg > [class*="layout-"],
-  body .gutters-lg > .lay,
-  body .gutters-lg > .layout {
+  body .layout-35 .gutters-lg > [class*="lay-"],
+  body .layout-35 .gutters-lg > [class*="layout-"],
+  body .layout-35 .gutters-lg > .lay,
+  body .layout-35 .gutters-lg > .layout,
+  body .lay-35 .gutters-lg > [class*="lay-"],
+  body .lay-35 .gutters-lg > [class*="layout-"],
+  body .lay-35 .gutters-lg > .lay,
+  body .lay-35 .gutters-lg > .layout,
+  body .gs-wrap-35 .gutters-lg > [class*="lay-"],
+  body .gs-wrap-35 .gutters-lg > [class*="layout-"],
+  body .gs-wrap-35 .gutters-lg > .lay,
+  body .gs-wrap-35 .gutters-lg > .layout,
+  body .w-35 .gutters-lg > [class*="lay-"],
+  body .w-35 .gutters-lg > [class*="layout-"],
+  body .w-35 .gutters-lg > .lay,
+  body .w-35 .gutters-lg > .layout {
     margin: 1em;
   }
-  body .layout-lg-35,
-  body .lay-lg-35,
-  body .w-lg-35 {
+  body .layout-35 .layout-lg-35,
+  body .layout-35 .lay-lg-35,
+  body .layout-35 .w-lg-35,
+  body .lay-35 .layout-lg-35,
+  body .lay-35 .lay-lg-35,
+  body .lay-35 .w-lg-35,
+  body .gs-wrap-35 .layout-lg-35,
+  body .gs-wrap-35 .lay-lg-35,
+  body .gs-wrap-35 .w-lg-35,
+  body .w-35 .layout-lg-35,
+  body .w-35 .lay-lg-35,
+  body .w-35 .w-lg-35 {
     width: 35%;
   }
 }
 @media screen and (min-width: 700px) and (max-width: 1200px) {
-  body .gutters-md > [class*="lay-"],
-  body .gutters-md > [class*="layout-"],
-  body .gutters-md > .lay,
-  body .gutters-md > .layout {
+  body .layout-35 .gutters-md > [class*="lay-"],
+  body .layout-35 .gutters-md > [class*="layout-"],
+  body .layout-35 .gutters-md > .lay,
+  body .layout-35 .gutters-md > .layout,
+  body .lay-35 .gutters-md > [class*="lay-"],
+  body .lay-35 .gutters-md > [class*="layout-"],
+  body .lay-35 .gutters-md > .lay,
+  body .lay-35 .gutters-md > .layout,
+  body .gs-wrap-35 .gutters-md > [class*="lay-"],
+  body .gs-wrap-35 .gutters-md > [class*="layout-"],
+  body .gs-wrap-35 .gutters-md > .lay,
+  body .gs-wrap-35 .gutters-md > .layout,
+  body .w-35 .gutters-md > [class*="lay-"],
+  body .w-35 .gutters-md > [class*="layout-"],
+  body .w-35 .gutters-md > .lay,
+  body .w-35 .gutters-md > .layout {
     margin: 1em;
   }
-  body .layout-md-35,
-  body .lay-md-35,
-  body .w-md-35 {
+  body .layout-35 .layout-md-35,
+  body .layout-35 .lay-md-35,
+  body .layout-35 .w-md-35,
+  body .lay-35 .layout-md-35,
+  body .lay-35 .lay-md-35,
+  body .lay-35 .w-md-35,
+  body .gs-wrap-35 .layout-md-35,
+  body .gs-wrap-35 .lay-md-35,
+  body .gs-wrap-35 .w-md-35,
+  body .w-35 .layout-md-35,
+  body .w-35 .lay-md-35,
+  body .w-35 .w-md-35 {
     width: 35%;
   }
 }
 @media screen and (min-width: 460px) and (max-width: 700px) {
-  body .gutters-sm > [class*="lay-"],
-  body .gutters-sm > [class*="layout-"],
-  body .gutters-sm > .lay,
-  body .gutters-sm > .layout {
+  body .layout-35 .gutters-sm > [class*="lay-"],
+  body .layout-35 .gutters-sm > [class*="layout-"],
+  body .layout-35 .gutters-sm > .lay,
+  body .layout-35 .gutters-sm > .layout,
+  body .lay-35 .gutters-sm > [class*="lay-"],
+  body .lay-35 .gutters-sm > [class*="layout-"],
+  body .lay-35 .gutters-sm > .lay,
+  body .lay-35 .gutters-sm > .layout,
+  body .gs-wrap-35 .gutters-sm > [class*="lay-"],
+  body .gs-wrap-35 .gutters-sm > [class*="layout-"],
+  body .gs-wrap-35 .gutters-sm > .lay,
+  body .gs-wrap-35 .gutters-sm > .layout,
+  body .w-35 .gutters-sm > [class*="lay-"],
+  body .w-35 .gutters-sm > [class*="layout-"],
+  body .w-35 .gutters-sm > .lay,
+  body .w-35 .gutters-sm > .layout {
     margin: 1em;
   }
-  body .layout-sm-35,
-  body .lay-sm-35,
-  body .w-sm-35 {
+  body .layout-35 .layout-sm-35,
+  body .layout-35 .lay-sm-35,
+  body .layout-35 .w-sm-35,
+  body .lay-35 .layout-sm-35,
+  body .lay-35 .lay-sm-35,
+  body .lay-35 .w-sm-35,
+  body .gs-wrap-35 .layout-sm-35,
+  body .gs-wrap-35 .lay-sm-35,
+  body .gs-wrap-35 .w-sm-35,
+  body .w-35 .layout-sm-35,
+  body .w-35 .lay-sm-35,
+  body .w-35 .w-sm-35 {
     width: 35%;
   }
 }
 @media screen and (max-width: 460px) {
-  body .gutters-xs > [class*="lay-"],
-  body .gutters-xs > [class*="layout-"],
-  body .gutters-xs > .lay,
-  body .gutters-xs > .layout {
+  body .layout-35 .gutters-xs > [class*="lay-"],
+  body .layout-35 .gutters-xs > [class*="layout-"],
+  body .layout-35 .gutters-xs > .lay,
+  body .layout-35 .gutters-xs > .layout,
+  body .lay-35 .gutters-xs > [class*="lay-"],
+  body .lay-35 .gutters-xs > [class*="layout-"],
+  body .lay-35 .gutters-xs > .lay,
+  body .lay-35 .gutters-xs > .layout,
+  body .gs-wrap-35 .gutters-xs > [class*="lay-"],
+  body .gs-wrap-35 .gutters-xs > [class*="layout-"],
+  body .gs-wrap-35 .gutters-xs > .lay,
+  body .gs-wrap-35 .gutters-xs > .layout,
+  body .w-35 .gutters-xs > [class*="lay-"],
+  body .w-35 .gutters-xs > [class*="layout-"],
+  body .w-35 .gutters-xs > .lay,
+  body .w-35 .gutters-xs > .layout {
     margin: 1em;
   }
-  body .lay-xs-35,
-  body .layout-xs-35,
-  body .w-xs-35 {
+  body .layout-35 .lay-xs-35,
+  body .layout-35 .layout-xs-35,
+  body .layout-35 .w-xs-35,
+  body .lay-35 .lay-xs-35,
+  body .lay-35 .layout-xs-35,
+  body .lay-35 .w-xs-35,
+  body .gs-wrap-35 .lay-xs-35,
+  body .gs-wrap-35 .layout-xs-35,
+  body .gs-wrap-35 .w-xs-35,
+  body .w-35 .lay-xs-35,
+  body .w-35 .layout-xs-35,
+  body .w-35 .w-xs-35 {
     width: 35%;
   }
 }
 @media screen and (min-width: 1200px) {
-  body .gutters-lg > [class*="lay-"],
-  body .gutters-lg > [class*="layout-"],
-  body .gutters-lg > .lay,
-  body .gutters-lg > .layout {
+  body .layout-40 .gutters-lg > [class*="lay-"],
+  body .layout-40 .gutters-lg > [class*="layout-"],
+  body .layout-40 .gutters-lg > .lay,
+  body .layout-40 .gutters-lg > .layout,
+  body .lay-40 .gutters-lg > [class*="lay-"],
+  body .lay-40 .gutters-lg > [class*="layout-"],
+  body .lay-40 .gutters-lg > .lay,
+  body .lay-40 .gutters-lg > .layout,
+  body .gs-wrap-40 .gutters-lg > [class*="lay-"],
+  body .gs-wrap-40 .gutters-lg > [class*="layout-"],
+  body .gs-wrap-40 .gutters-lg > .lay,
+  body .gs-wrap-40 .gutters-lg > .layout,
+  body .w-40 .gutters-lg > [class*="lay-"],
+  body .w-40 .gutters-lg > [class*="layout-"],
+  body .w-40 .gutters-lg > .lay,
+  body .w-40 .gutters-lg > .layout {
     margin: 1em;
   }
-  body .layout-lg-40,
-  body .lay-lg-40,
-  body .w-lg-40 {
+  body .layout-40 .layout-lg-40,
+  body .layout-40 .lay-lg-40,
+  body .layout-40 .w-lg-40,
+  body .lay-40 .layout-lg-40,
+  body .lay-40 .lay-lg-40,
+  body .lay-40 .w-lg-40,
+  body .gs-wrap-40 .layout-lg-40,
+  body .gs-wrap-40 .lay-lg-40,
+  body .gs-wrap-40 .w-lg-40,
+  body .w-40 .layout-lg-40,
+  body .w-40 .lay-lg-40,
+  body .w-40 .w-lg-40 {
     width: 40%;
   }
 }
 @media screen and (min-width: 700px) and (max-width: 1200px) {
-  body .gutters-md > [class*="lay-"],
-  body .gutters-md > [class*="layout-"],
-  body .gutters-md > .lay,
-  body .gutters-md > .layout {
+  body .layout-40 .gutters-md > [class*="lay-"],
+  body .layout-40 .gutters-md > [class*="layout-"],
+  body .layout-40 .gutters-md > .lay,
+  body .layout-40 .gutters-md > .layout,
+  body .lay-40 .gutters-md > [class*="lay-"],
+  body .lay-40 .gutters-md > [class*="layout-"],
+  body .lay-40 .gutters-md > .lay,
+  body .lay-40 .gutters-md > .layout,
+  body .gs-wrap-40 .gutters-md > [class*="lay-"],
+  body .gs-wrap-40 .gutters-md > [class*="layout-"],
+  body .gs-wrap-40 .gutters-md > .lay,
+  body .gs-wrap-40 .gutters-md > .layout,
+  body .w-40 .gutters-md > [class*="lay-"],
+  body .w-40 .gutters-md > [class*="layout-"],
+  body .w-40 .gutters-md > .lay,
+  body .w-40 .gutters-md > .layout {
     margin: 1em;
   }
-  body .layout-md-40,
-  body .lay-md-40,
-  body .w-md-40 {
+  body .layout-40 .layout-md-40,
+  body .layout-40 .lay-md-40,
+  body .layout-40 .w-md-40,
+  body .lay-40 .layout-md-40,
+  body .lay-40 .lay-md-40,
+  body .lay-40 .w-md-40,
+  body .gs-wrap-40 .layout-md-40,
+  body .gs-wrap-40 .lay-md-40,
+  body .gs-wrap-40 .w-md-40,
+  body .w-40 .layout-md-40,
+  body .w-40 .lay-md-40,
+  body .w-40 .w-md-40 {
     width: 40%;
   }
 }
 @media screen and (min-width: 460px) and (max-width: 700px) {
-  body .gutters-sm > [class*="lay-"],
-  body .gutters-sm > [class*="layout-"],
-  body .gutters-sm > .lay,
-  body .gutters-sm > .layout {
+  body .layout-40 .gutters-sm > [class*="lay-"],
+  body .layout-40 .gutters-sm > [class*="layout-"],
+  body .layout-40 .gutters-sm > .lay,
+  body .layout-40 .gutters-sm > .layout,
+  body .lay-40 .gutters-sm > [class*="lay-"],
+  body .lay-40 .gutters-sm > [class*="layout-"],
+  body .lay-40 .gutters-sm > .lay,
+  body .lay-40 .gutters-sm > .layout,
+  body .gs-wrap-40 .gutters-sm > [class*="lay-"],
+  body .gs-wrap-40 .gutters-sm > [class*="layout-"],
+  body .gs-wrap-40 .gutters-sm > .lay,
+  body .gs-wrap-40 .gutters-sm > .layout,
+  body .w-40 .gutters-sm > [class*="lay-"],
+  body .w-40 .gutters-sm > [class*="layout-"],
+  body .w-40 .gutters-sm > .lay,
+  body .w-40 .gutters-sm > .layout {
     margin: 1em;
   }
-  body .layout-sm-40,
-  body .lay-sm-40,
-  body .w-sm-40 {
+  body .layout-40 .layout-sm-40,
+  body .layout-40 .lay-sm-40,
+  body .layout-40 .w-sm-40,
+  body .lay-40 .layout-sm-40,
+  body .lay-40 .lay-sm-40,
+  body .lay-40 .w-sm-40,
+  body .gs-wrap-40 .layout-sm-40,
+  body .gs-wrap-40 .lay-sm-40,
+  body .gs-wrap-40 .w-sm-40,
+  body .w-40 .layout-sm-40,
+  body .w-40 .lay-sm-40,
+  body .w-40 .w-sm-40 {
     width: 40%;
   }
 }
 @media screen and (max-width: 460px) {
-  body .gutters-xs > [class*="lay-"],
-  body .gutters-xs > [class*="layout-"],
-  body .gutters-xs > .lay,
-  body .gutters-xs > .layout {
+  body .layout-40 .gutters-xs > [class*="lay-"],
+  body .layout-40 .gutters-xs > [class*="layout-"],
+  body .layout-40 .gutters-xs > .lay,
+  body .layout-40 .gutters-xs > .layout,
+  body .lay-40 .gutters-xs > [class*="lay-"],
+  body .lay-40 .gutters-xs > [class*="layout-"],
+  body .lay-40 .gutters-xs > .lay,
+  body .lay-40 .gutters-xs > .layout,
+  body .gs-wrap-40 .gutters-xs > [class*="lay-"],
+  body .gs-wrap-40 .gutters-xs > [class*="layout-"],
+  body .gs-wrap-40 .gutters-xs > .lay,
+  body .gs-wrap-40 .gutters-xs > .layout,
+  body .w-40 .gutters-xs > [class*="lay-"],
+  body .w-40 .gutters-xs > [class*="layout-"],
+  body .w-40 .gutters-xs > .lay,
+  body .w-40 .gutters-xs > .layout {
     margin: 1em;
   }
-  body .lay-xs-40,
-  body .layout-xs-40,
-  body .w-xs-40 {
+  body .layout-40 .lay-xs-40,
+  body .layout-40 .layout-xs-40,
+  body .layout-40 .w-xs-40,
+  body .lay-40 .lay-xs-40,
+  body .lay-40 .layout-xs-40,
+  body .lay-40 .w-xs-40,
+  body .gs-wrap-40 .lay-xs-40,
+  body .gs-wrap-40 .layout-xs-40,
+  body .gs-wrap-40 .w-xs-40,
+  body .w-40 .lay-xs-40,
+  body .w-40 .layout-xs-40,
+  body .w-40 .w-xs-40 {
     width: 40%;
   }
 }
 @media screen and (min-width: 1200px) {
-  body .gutters-lg > [class*="lay-"],
-  body .gutters-lg > [class*="layout-"],
-  body .gutters-lg > .lay,
-  body .gutters-lg > .layout {
+  body .layout-45 .gutters-lg > [class*="lay-"],
+  body .layout-45 .gutters-lg > [class*="layout-"],
+  body .layout-45 .gutters-lg > .lay,
+  body .layout-45 .gutters-lg > .layout,
+  body .lay-45 .gutters-lg > [class*="lay-"],
+  body .lay-45 .gutters-lg > [class*="layout-"],
+  body .lay-45 .gutters-lg > .lay,
+  body .lay-45 .gutters-lg > .layout,
+  body .gs-wrap-45 .gutters-lg > [class*="lay-"],
+  body .gs-wrap-45 .gutters-lg > [class*="layout-"],
+  body .gs-wrap-45 .gutters-lg > .lay,
+  body .gs-wrap-45 .gutters-lg > .layout,
+  body .w-45 .gutters-lg > [class*="lay-"],
+  body .w-45 .gutters-lg > [class*="layout-"],
+  body .w-45 .gutters-lg > .lay,
+  body .w-45 .gutters-lg > .layout {
     margin: 1em;
   }
-  body .layout-lg-45,
-  body .lay-lg-45,
-  body .w-lg-45 {
+  body .layout-45 .layout-lg-45,
+  body .layout-45 .lay-lg-45,
+  body .layout-45 .w-lg-45,
+  body .lay-45 .layout-lg-45,
+  body .lay-45 .lay-lg-45,
+  body .lay-45 .w-lg-45,
+  body .gs-wrap-45 .layout-lg-45,
+  body .gs-wrap-45 .lay-lg-45,
+  body .gs-wrap-45 .w-lg-45,
+  body .w-45 .layout-lg-45,
+  body .w-45 .lay-lg-45,
+  body .w-45 .w-lg-45 {
     width: 45%;
   }
 }
 @media screen and (min-width: 700px) and (max-width: 1200px) {
-  body .gutters-md > [class*="lay-"],
-  body .gutters-md > [class*="layout-"],
-  body .gutters-md > .lay,
-  body .gutters-md > .layout {
+  body .layout-45 .gutters-md > [class*="lay-"],
+  body .layout-45 .gutters-md > [class*="layout-"],
+  body .layout-45 .gutters-md > .lay,
+  body .layout-45 .gutters-md > .layout,
+  body .lay-45 .gutters-md > [class*="lay-"],
+  body .lay-45 .gutters-md > [class*="layout-"],
+  body .lay-45 .gutters-md > .lay,
+  body .lay-45 .gutters-md > .layout,
+  body .gs-wrap-45 .gutters-md > [class*="lay-"],
+  body .gs-wrap-45 .gutters-md > [class*="layout-"],
+  body .gs-wrap-45 .gutters-md > .lay,
+  body .gs-wrap-45 .gutters-md > .layout,
+  body .w-45 .gutters-md > [class*="lay-"],
+  body .w-45 .gutters-md > [class*="layout-"],
+  body .w-45 .gutters-md > .lay,
+  body .w-45 .gutters-md > .layout {
     margin: 1em;
   }
-  body .layout-md-45,
-  body .lay-md-45,
-  body .w-md-45 {
+  body .layout-45 .layout-md-45,
+  body .layout-45 .lay-md-45,
+  body .layout-45 .w-md-45,
+  body .lay-45 .layout-md-45,
+  body .lay-45 .lay-md-45,
+  body .lay-45 .w-md-45,
+  body .gs-wrap-45 .layout-md-45,
+  body .gs-wrap-45 .lay-md-45,
+  body .gs-wrap-45 .w-md-45,
+  body .w-45 .layout-md-45,
+  body .w-45 .lay-md-45,
+  body .w-45 .w-md-45 {
     width: 45%;
   }
 }
 @media screen and (min-width: 460px) and (max-width: 700px) {
-  body .gutters-sm > [class*="lay-"],
-  body .gutters-sm > [class*="layout-"],
-  body .gutters-sm > .lay,
-  body .gutters-sm > .layout {
+  body .layout-45 .gutters-sm > [class*="lay-"],
+  body .layout-45 .gutters-sm > [class*="layout-"],
+  body .layout-45 .gutters-sm > .lay,
+  body .layout-45 .gutters-sm > .layout,
+  body .lay-45 .gutters-sm > [class*="lay-"],
+  body .lay-45 .gutters-sm > [class*="layout-"],
+  body .lay-45 .gutters-sm > .lay,
+  body .lay-45 .gutters-sm > .layout,
+  body .gs-wrap-45 .gutters-sm > [class*="lay-"],
+  body .gs-wrap-45 .gutters-sm > [class*="layout-"],
+  body .gs-wrap-45 .gutters-sm > .lay,
+  body .gs-wrap-45 .gutters-sm > .layout,
+  body .w-45 .gutters-sm > [class*="lay-"],
+  body .w-45 .gutters-sm > [class*="layout-"],
+  body .w-45 .gutters-sm > .lay,
+  body .w-45 .gutters-sm > .layout {
     margin: 1em;
   }
-  body .layout-sm-45,
-  body .lay-sm-45,
-  body .w-sm-45 {
+  body .layout-45 .layout-sm-45,
+  body .layout-45 .lay-sm-45,
+  body .layout-45 .w-sm-45,
+  body .lay-45 .layout-sm-45,
+  body .lay-45 .lay-sm-45,
+  body .lay-45 .w-sm-45,
+  body .gs-wrap-45 .layout-sm-45,
+  body .gs-wrap-45 .lay-sm-45,
+  body .gs-wrap-45 .w-sm-45,
+  body .w-45 .layout-sm-45,
+  body .w-45 .lay-sm-45,
+  body .w-45 .w-sm-45 {
     width: 45%;
   }
 }
 @media screen and (max-width: 460px) {
-  body .gutters-xs > [class*="lay-"],
-  body .gutters-xs > [class*="layout-"],
-  body .gutters-xs > .lay,
-  body .gutters-xs > .layout {
+  body .layout-45 .gutters-xs > [class*="lay-"],
+  body .layout-45 .gutters-xs > [class*="layout-"],
+  body .layout-45 .gutters-xs > .lay,
+  body .layout-45 .gutters-xs > .layout,
+  body .lay-45 .gutters-xs > [class*="lay-"],
+  body .lay-45 .gutters-xs > [class*="layout-"],
+  body .lay-45 .gutters-xs > .lay,
+  body .lay-45 .gutters-xs > .layout,
+  body .gs-wrap-45 .gutters-xs > [class*="lay-"],
+  body .gs-wrap-45 .gutters-xs > [class*="layout-"],
+  body .gs-wrap-45 .gutters-xs > .lay,
+  body .gs-wrap-45 .gutters-xs > .layout,
+  body .w-45 .gutters-xs > [class*="lay-"],
+  body .w-45 .gutters-xs > [class*="layout-"],
+  body .w-45 .gutters-xs > .lay,
+  body .w-45 .gutters-xs > .layout {
     margin: 1em;
   }
-  body .lay-xs-45,
-  body .layout-xs-45,
-  body .w-xs-45 {
+  body .layout-45 .lay-xs-45,
+  body .layout-45 .layout-xs-45,
+  body .layout-45 .w-xs-45,
+  body .lay-45 .lay-xs-45,
+  body .lay-45 .layout-xs-45,
+  body .lay-45 .w-xs-45,
+  body .gs-wrap-45 .lay-xs-45,
+  body .gs-wrap-45 .layout-xs-45,
+  body .gs-wrap-45 .w-xs-45,
+  body .w-45 .lay-xs-45,
+  body .w-45 .layout-xs-45,
+  body .w-45 .w-xs-45 {
     width: 45%;
   }
 }
 @media screen and (min-width: 1200px) {
-  body .gutters-lg > [class*="lay-"],
-  body .gutters-lg > [class*="layout-"],
-  body .gutters-lg > .lay,
-  body .gutters-lg > .layout {
+  body .layout-50 .gutters-lg > [class*="lay-"],
+  body .layout-50 .gutters-lg > [class*="layout-"],
+  body .layout-50 .gutters-lg > .lay,
+  body .layout-50 .gutters-lg > .layout,
+  body .lay-50 .gutters-lg > [class*="lay-"],
+  body .lay-50 .gutters-lg > [class*="layout-"],
+  body .lay-50 .gutters-lg > .lay,
+  body .lay-50 .gutters-lg > .layout,
+  body .gs-wrap-50 .gutters-lg > [class*="lay-"],
+  body .gs-wrap-50 .gutters-lg > [class*="layout-"],
+  body .gs-wrap-50 .gutters-lg > .lay,
+  body .gs-wrap-50 .gutters-lg > .layout,
+  body .w-50 .gutters-lg > [class*="lay-"],
+  body .w-50 .gutters-lg > [class*="layout-"],
+  body .w-50 .gutters-lg > .lay,
+  body .w-50 .gutters-lg > .layout {
     margin: 1em;
   }
-  body .layout-lg-50,
-  body .lay-lg-50,
-  body .w-lg-50 {
+  body .layout-50 .layout-lg-50,
+  body .layout-50 .lay-lg-50,
+  body .layout-50 .w-lg-50,
+  body .lay-50 .layout-lg-50,
+  body .lay-50 .lay-lg-50,
+  body .lay-50 .w-lg-50,
+  body .gs-wrap-50 .layout-lg-50,
+  body .gs-wrap-50 .lay-lg-50,
+  body .gs-wrap-50 .w-lg-50,
+  body .w-50 .layout-lg-50,
+  body .w-50 .lay-lg-50,
+  body .w-50 .w-lg-50 {
     width: 50%;
   }
 }
 @media screen and (min-width: 700px) and (max-width: 1200px) {
-  body .gutters-md > [class*="lay-"],
-  body .gutters-md > [class*="layout-"],
-  body .gutters-md > .lay,
-  body .gutters-md > .layout {
+  body .layout-50 .gutters-md > [class*="lay-"],
+  body .layout-50 .gutters-md > [class*="layout-"],
+  body .layout-50 .gutters-md > .lay,
+  body .layout-50 .gutters-md > .layout,
+  body .lay-50 .gutters-md > [class*="lay-"],
+  body .lay-50 .gutters-md > [class*="layout-"],
+  body .lay-50 .gutters-md > .lay,
+  body .lay-50 .gutters-md > .layout,
+  body .gs-wrap-50 .gutters-md > [class*="lay-"],
+  body .gs-wrap-50 .gutters-md > [class*="layout-"],
+  body .gs-wrap-50 .gutters-md > .lay,
+  body .gs-wrap-50 .gutters-md > .layout,
+  body .w-50 .gutters-md > [class*="lay-"],
+  body .w-50 .gutters-md > [class*="layout-"],
+  body .w-50 .gutters-md > .lay,
+  body .w-50 .gutters-md > .layout {
     margin: 1em;
   }
-  body .layout-md-50,
-  body .lay-md-50,
-  body .w-md-50 {
+  body .layout-50 .layout-md-50,
+  body .layout-50 .lay-md-50,
+  body .layout-50 .w-md-50,
+  body .lay-50 .layout-md-50,
+  body .lay-50 .lay-md-50,
+  body .lay-50 .w-md-50,
+  body .gs-wrap-50 .layout-md-50,
+  body .gs-wrap-50 .lay-md-50,
+  body .gs-wrap-50 .w-md-50,
+  body .w-50 .layout-md-50,
+  body .w-50 .lay-md-50,
+  body .w-50 .w-md-50 {
     width: 50%;
   }
 }
 @media screen and (min-width: 460px) and (max-width: 700px) {
-  body .gutters-sm > [class*="lay-"],
-  body .gutters-sm > [class*="layout-"],
-  body .gutters-sm > .lay,
-  body .gutters-sm > .layout {
+  body .layout-50 .gutters-sm > [class*="lay-"],
+  body .layout-50 .gutters-sm > [class*="layout-"],
+  body .layout-50 .gutters-sm > .lay,
+  body .layout-50 .gutters-sm > .layout,
+  body .lay-50 .gutters-sm > [class*="lay-"],
+  body .lay-50 .gutters-sm > [class*="layout-"],
+  body .lay-50 .gutters-sm > .lay,
+  body .lay-50 .gutters-sm > .layout,
+  body .gs-wrap-50 .gutters-sm > [class*="lay-"],
+  body .gs-wrap-50 .gutters-sm > [class*="layout-"],
+  body .gs-wrap-50 .gutters-sm > .lay,
+  body .gs-wrap-50 .gutters-sm > .layout,
+  body .w-50 .gutters-sm > [class*="lay-"],
+  body .w-50 .gutters-sm > [class*="layout-"],
+  body .w-50 .gutters-sm > .lay,
+  body .w-50 .gutters-sm > .layout {
     margin: 1em;
   }
-  body .layout-sm-50,
-  body .lay-sm-50,
-  body .w-sm-50 {
+  body .layout-50 .layout-sm-50,
+  body .layout-50 .lay-sm-50,
+  body .layout-50 .w-sm-50,
+  body .lay-50 .layout-sm-50,
+  body .lay-50 .lay-sm-50,
+  body .lay-50 .w-sm-50,
+  body .gs-wrap-50 .layout-sm-50,
+  body .gs-wrap-50 .lay-sm-50,
+  body .gs-wrap-50 .w-sm-50,
+  body .w-50 .layout-sm-50,
+  body .w-50 .lay-sm-50,
+  body .w-50 .w-sm-50 {
     width: 50%;
   }
 }
 @media screen and (max-width: 460px) {
-  body .gutters-xs > [class*="lay-"],
-  body .gutters-xs > [class*="layout-"],
-  body .gutters-xs > .lay,
-  body .gutters-xs > .layout {
+  body .layout-50 .gutters-xs > [class*="lay-"],
+  body .layout-50 .gutters-xs > [class*="layout-"],
+  body .layout-50 .gutters-xs > .lay,
+  body .layout-50 .gutters-xs > .layout,
+  body .lay-50 .gutters-xs > [class*="lay-"],
+  body .lay-50 .gutters-xs > [class*="layout-"],
+  body .lay-50 .gutters-xs > .lay,
+  body .lay-50 .gutters-xs > .layout,
+  body .gs-wrap-50 .gutters-xs > [class*="lay-"],
+  body .gs-wrap-50 .gutters-xs > [class*="layout-"],
+  body .gs-wrap-50 .gutters-xs > .lay,
+  body .gs-wrap-50 .gutters-xs > .layout,
+  body .w-50 .gutters-xs > [class*="lay-"],
+  body .w-50 .gutters-xs > [class*="layout-"],
+  body .w-50 .gutters-xs > .lay,
+  body .w-50 .gutters-xs > .layout {
     margin: 1em;
   }
-  body .lay-xs-50,
-  body .layout-xs-50,
-  body .w-xs-50 {
+  body .layout-50 .lay-xs-50,
+  body .layout-50 .layout-xs-50,
+  body .layout-50 .w-xs-50,
+  body .lay-50 .lay-xs-50,
+  body .lay-50 .layout-xs-50,
+  body .lay-50 .w-xs-50,
+  body .gs-wrap-50 .lay-xs-50,
+  body .gs-wrap-50 .layout-xs-50,
+  body .gs-wrap-50 .w-xs-50,
+  body .w-50 .lay-xs-50,
+  body .w-50 .layout-xs-50,
+  body .w-50 .w-xs-50 {
     width: 50%;
   }
 }
 @media screen and (min-width: 1200px) {
-  body .gutters-lg > [class*="lay-"],
-  body .gutters-lg > [class*="layout-"],
-  body .gutters-lg > .lay,
-  body .gutters-lg > .layout {
+  body .layout-55 .gutters-lg > [class*="lay-"],
+  body .layout-55 .gutters-lg > [class*="layout-"],
+  body .layout-55 .gutters-lg > .lay,
+  body .layout-55 .gutters-lg > .layout,
+  body .lay-55 .gutters-lg > [class*="lay-"],
+  body .lay-55 .gutters-lg > [class*="layout-"],
+  body .lay-55 .gutters-lg > .lay,
+  body .lay-55 .gutters-lg > .layout,
+  body .gs-wrap-55 .gutters-lg > [class*="lay-"],
+  body .gs-wrap-55 .gutters-lg > [class*="layout-"],
+  body .gs-wrap-55 .gutters-lg > .lay,
+  body .gs-wrap-55 .gutters-lg > .layout,
+  body .w-55 .gutters-lg > [class*="lay-"],
+  body .w-55 .gutters-lg > [class*="layout-"],
+  body .w-55 .gutters-lg > .lay,
+  body .w-55 .gutters-lg > .layout {
     margin: 1em;
   }
-  body .layout-lg-55,
-  body .lay-lg-55,
-  body .w-lg-55 {
+  body .layout-55 .layout-lg-55,
+  body .layout-55 .lay-lg-55,
+  body .layout-55 .w-lg-55,
+  body .lay-55 .layout-lg-55,
+  body .lay-55 .lay-lg-55,
+  body .lay-55 .w-lg-55,
+  body .gs-wrap-55 .layout-lg-55,
+  body .gs-wrap-55 .lay-lg-55,
+  body .gs-wrap-55 .w-lg-55,
+  body .w-55 .layout-lg-55,
+  body .w-55 .lay-lg-55,
+  body .w-55 .w-lg-55 {
     width: 55%;
   }
 }
 @media screen and (min-width: 700px) and (max-width: 1200px) {
-  body .gutters-md > [class*="lay-"],
-  body .gutters-md > [class*="layout-"],
-  body .gutters-md > .lay,
-  body .gutters-md > .layout {
+  body .layout-55 .gutters-md > [class*="lay-"],
+  body .layout-55 .gutters-md > [class*="layout-"],
+  body .layout-55 .gutters-md > .lay,
+  body .layout-55 .gutters-md > .layout,
+  body .lay-55 .gutters-md > [class*="lay-"],
+  body .lay-55 .gutters-md > [class*="layout-"],
+  body .lay-55 .gutters-md > .lay,
+  body .lay-55 .gutters-md > .layout,
+  body .gs-wrap-55 .gutters-md > [class*="lay-"],
+  body .gs-wrap-55 .gutters-md > [class*="layout-"],
+  body .gs-wrap-55 .gutters-md > .lay,
+  body .gs-wrap-55 .gutters-md > .layout,
+  body .w-55 .gutters-md > [class*="lay-"],
+  body .w-55 .gutters-md > [class*="layout-"],
+  body .w-55 .gutters-md > .lay,
+  body .w-55 .gutters-md > .layout {
     margin: 1em;
   }
-  body .layout-md-55,
-  body .lay-md-55,
-  body .w-md-55 {
+  body .layout-55 .layout-md-55,
+  body .layout-55 .lay-md-55,
+  body .layout-55 .w-md-55,
+  body .lay-55 .layout-md-55,
+  body .lay-55 .lay-md-55,
+  body .lay-55 .w-md-55,
+  body .gs-wrap-55 .layout-md-55,
+  body .gs-wrap-55 .lay-md-55,
+  body .gs-wrap-55 .w-md-55,
+  body .w-55 .layout-md-55,
+  body .w-55 .lay-md-55,
+  body .w-55 .w-md-55 {
     width: 55%;
   }
 }
 @media screen and (min-width: 460px) and (max-width: 700px) {
-  body .gutters-sm > [class*="lay-"],
-  body .gutters-sm > [class*="layout-"],
-  body .gutters-sm > .lay,
-  body .gutters-sm > .layout {
+  body .layout-55 .gutters-sm > [class*="lay-"],
+  body .layout-55 .gutters-sm > [class*="layout-"],
+  body .layout-55 .gutters-sm > .lay,
+  body .layout-55 .gutters-sm > .layout,
+  body .lay-55 .gutters-sm > [class*="lay-"],
+  body .lay-55 .gutters-sm > [class*="layout-"],
+  body .lay-55 .gutters-sm > .lay,
+  body .lay-55 .gutters-sm > .layout,
+  body .gs-wrap-55 .gutters-sm > [class*="lay-"],
+  body .gs-wrap-55 .gutters-sm > [class*="layout-"],
+  body .gs-wrap-55 .gutters-sm > .lay,
+  body .gs-wrap-55 .gutters-sm > .layout,
+  body .w-55 .gutters-sm > [class*="lay-"],
+  body .w-55 .gutters-sm > [class*="layout-"],
+  body .w-55 .gutters-sm > .lay,
+  body .w-55 .gutters-sm > .layout {
     margin: 1em;
   }
-  body .layout-sm-55,
-  body .lay-sm-55,
-  body .w-sm-55 {
+  body .layout-55 .layout-sm-55,
+  body .layout-55 .lay-sm-55,
+  body .layout-55 .w-sm-55,
+  body .lay-55 .layout-sm-55,
+  body .lay-55 .lay-sm-55,
+  body .lay-55 .w-sm-55,
+  body .gs-wrap-55 .layout-sm-55,
+  body .gs-wrap-55 .lay-sm-55,
+  body .gs-wrap-55 .w-sm-55,
+  body .w-55 .layout-sm-55,
+  body .w-55 .lay-sm-55,
+  body .w-55 .w-sm-55 {
     width: 55%;
   }
 }
 @media screen and (max-width: 460px) {
-  body .gutters-xs > [class*="lay-"],
-  body .gutters-xs > [class*="layout-"],
-  body .gutters-xs > .lay,
-  body .gutters-xs > .layout {
+  body .layout-55 .gutters-xs > [class*="lay-"],
+  body .layout-55 .gutters-xs > [class*="layout-"],
+  body .layout-55 .gutters-xs > .lay,
+  body .layout-55 .gutters-xs > .layout,
+  body .lay-55 .gutters-xs > [class*="lay-"],
+  body .lay-55 .gutters-xs > [class*="layout-"],
+  body .lay-55 .gutters-xs > .lay,
+  body .lay-55 .gutters-xs > .layout,
+  body .gs-wrap-55 .gutters-xs > [class*="lay-"],
+  body .gs-wrap-55 .gutters-xs > [class*="layout-"],
+  body .gs-wrap-55 .gutters-xs > .lay,
+  body .gs-wrap-55 .gutters-xs > .layout,
+  body .w-55 .gutters-xs > [class*="lay-"],
+  body .w-55 .gutters-xs > [class*="layout-"],
+  body .w-55 .gutters-xs > .lay,
+  body .w-55 .gutters-xs > .layout {
     margin: 1em;
   }
-  body .lay-xs-55,
-  body .layout-xs-55,
-  body .w-xs-55 {
+  body .layout-55 .lay-xs-55,
+  body .layout-55 .layout-xs-55,
+  body .layout-55 .w-xs-55,
+  body .lay-55 .lay-xs-55,
+  body .lay-55 .layout-xs-55,
+  body .lay-55 .w-xs-55,
+  body .gs-wrap-55 .lay-xs-55,
+  body .gs-wrap-55 .layout-xs-55,
+  body .gs-wrap-55 .w-xs-55,
+  body .w-55 .lay-xs-55,
+  body .w-55 .layout-xs-55,
+  body .w-55 .w-xs-55 {
     width: 55%;
   }
 }
 @media screen and (min-width: 1200px) {
-  body .gutters-lg > [class*="lay-"],
-  body .gutters-lg > [class*="layout-"],
-  body .gutters-lg > .lay,
-  body .gutters-lg > .layout {
+  body .layout-60 .gutters-lg > [class*="lay-"],
+  body .layout-60 .gutters-lg > [class*="layout-"],
+  body .layout-60 .gutters-lg > .lay,
+  body .layout-60 .gutters-lg > .layout,
+  body .lay-60 .gutters-lg > [class*="lay-"],
+  body .lay-60 .gutters-lg > [class*="layout-"],
+  body .lay-60 .gutters-lg > .lay,
+  body .lay-60 .gutters-lg > .layout,
+  body .gs-wrap-60 .gutters-lg > [class*="lay-"],
+  body .gs-wrap-60 .gutters-lg > [class*="layout-"],
+  body .gs-wrap-60 .gutters-lg > .lay,
+  body .gs-wrap-60 .gutters-lg > .layout,
+  body .w-60 .gutters-lg > [class*="lay-"],
+  body .w-60 .gutters-lg > [class*="layout-"],
+  body .w-60 .gutters-lg > .lay,
+  body .w-60 .gutters-lg > .layout {
     margin: 1em;
   }
-  body .layout-lg-60,
-  body .lay-lg-60,
-  body .w-lg-60 {
+  body .layout-60 .layout-lg-60,
+  body .layout-60 .lay-lg-60,
+  body .layout-60 .w-lg-60,
+  body .lay-60 .layout-lg-60,
+  body .lay-60 .lay-lg-60,
+  body .lay-60 .w-lg-60,
+  body .gs-wrap-60 .layout-lg-60,
+  body .gs-wrap-60 .lay-lg-60,
+  body .gs-wrap-60 .w-lg-60,
+  body .w-60 .layout-lg-60,
+  body .w-60 .lay-lg-60,
+  body .w-60 .w-lg-60 {
     width: 60%;
   }
 }
 @media screen and (min-width: 700px) and (max-width: 1200px) {
-  body .gutters-md > [class*="lay-"],
-  body .gutters-md > [class*="layout-"],
-  body .gutters-md > .lay,
-  body .gutters-md > .layout {
+  body .layout-60 .gutters-md > [class*="lay-"],
+  body .layout-60 .gutters-md > [class*="layout-"],
+  body .layout-60 .gutters-md > .lay,
+  body .layout-60 .gutters-md > .layout,
+  body .lay-60 .gutters-md > [class*="lay-"],
+  body .lay-60 .gutters-md > [class*="layout-"],
+  body .lay-60 .gutters-md > .lay,
+  body .lay-60 .gutters-md > .layout,
+  body .gs-wrap-60 .gutters-md > [class*="lay-"],
+  body .gs-wrap-60 .gutters-md > [class*="layout-"],
+  body .gs-wrap-60 .gutters-md > .lay,
+  body .gs-wrap-60 .gutters-md > .layout,
+  body .w-60 .gutters-md > [class*="lay-"],
+  body .w-60 .gutters-md > [class*="layout-"],
+  body .w-60 .gutters-md > .lay,
+  body .w-60 .gutters-md > .layout {
     margin: 1em;
   }
-  body .layout-md-60,
-  body .lay-md-60,
-  body .w-md-60 {
+  body .layout-60 .layout-md-60,
+  body .layout-60 .lay-md-60,
+  body .layout-60 .w-md-60,
+  body .lay-60 .layout-md-60,
+  body .lay-60 .lay-md-60,
+  body .lay-60 .w-md-60,
+  body .gs-wrap-60 .layout-md-60,
+  body .gs-wrap-60 .lay-md-60,
+  body .gs-wrap-60 .w-md-60,
+  body .w-60 .layout-md-60,
+  body .w-60 .lay-md-60,
+  body .w-60 .w-md-60 {
     width: 60%;
   }
 }
 @media screen and (min-width: 460px) and (max-width: 700px) {
-  body .gutters-sm > [class*="lay-"],
-  body .gutters-sm > [class*="layout-"],
-  body .gutters-sm > .lay,
-  body .gutters-sm > .layout {
+  body .layout-60 .gutters-sm > [class*="lay-"],
+  body .layout-60 .gutters-sm > [class*="layout-"],
+  body .layout-60 .gutters-sm > .lay,
+  body .layout-60 .gutters-sm > .layout,
+  body .lay-60 .gutters-sm > [class*="lay-"],
+  body .lay-60 .gutters-sm > [class*="layout-"],
+  body .lay-60 .gutters-sm > .lay,
+  body .lay-60 .gutters-sm > .layout,
+  body .gs-wrap-60 .gutters-sm > [class*="lay-"],
+  body .gs-wrap-60 .gutters-sm > [class*="layout-"],
+  body .gs-wrap-60 .gutters-sm > .lay,
+  body .gs-wrap-60 .gutters-sm > .layout,
+  body .w-60 .gutters-sm > [class*="lay-"],
+  body .w-60 .gutters-sm > [class*="layout-"],
+  body .w-60 .gutters-sm > .lay,
+  body .w-60 .gutters-sm > .layout {
     margin: 1em;
   }
-  body .layout-sm-60,
-  body .lay-sm-60,
-  body .w-sm-60 {
+  body .layout-60 .layout-sm-60,
+  body .layout-60 .lay-sm-60,
+  body .layout-60 .w-sm-60,
+  body .lay-60 .layout-sm-60,
+  body .lay-60 .lay-sm-60,
+  body .lay-60 .w-sm-60,
+  body .gs-wrap-60 .layout-sm-60,
+  body .gs-wrap-60 .lay-sm-60,
+  body .gs-wrap-60 .w-sm-60,
+  body .w-60 .layout-sm-60,
+  body .w-60 .lay-sm-60,
+  body .w-60 .w-sm-60 {
     width: 60%;
   }
 }
 @media screen and (max-width: 460px) {
-  body .gutters-xs > [class*="lay-"],
-  body .gutters-xs > [class*="layout-"],
-  body .gutters-xs > .lay,
-  body .gutters-xs > .layout {
+  body .layout-60 .gutters-xs > [class*="lay-"],
+  body .layout-60 .gutters-xs > [class*="layout-"],
+  body .layout-60 .gutters-xs > .lay,
+  body .layout-60 .gutters-xs > .layout,
+  body .lay-60 .gutters-xs > [class*="lay-"],
+  body .lay-60 .gutters-xs > [class*="layout-"],
+  body .lay-60 .gutters-xs > .lay,
+  body .lay-60 .gutters-xs > .layout,
+  body .gs-wrap-60 .gutters-xs > [class*="lay-"],
+  body .gs-wrap-60 .gutters-xs > [class*="layout-"],
+  body .gs-wrap-60 .gutters-xs > .lay,
+  body .gs-wrap-60 .gutters-xs > .layout,
+  body .w-60 .gutters-xs > [class*="lay-"],
+  body .w-60 .gutters-xs > [class*="layout-"],
+  body .w-60 .gutters-xs > .lay,
+  body .w-60 .gutters-xs > .layout {
     margin: 1em;
   }
-  body .lay-xs-60,
-  body .layout-xs-60,
-  body .w-xs-60 {
+  body .layout-60 .lay-xs-60,
+  body .layout-60 .layout-xs-60,
+  body .layout-60 .w-xs-60,
+  body .lay-60 .lay-xs-60,
+  body .lay-60 .layout-xs-60,
+  body .lay-60 .w-xs-60,
+  body .gs-wrap-60 .lay-xs-60,
+  body .gs-wrap-60 .layout-xs-60,
+  body .gs-wrap-60 .w-xs-60,
+  body .w-60 .lay-xs-60,
+  body .w-60 .layout-xs-60,
+  body .w-60 .w-xs-60 {
     width: 60%;
   }
 }
 @media screen and (min-width: 1200px) {
-  body .gutters-lg > [class*="lay-"],
-  body .gutters-lg > [class*="layout-"],
-  body .gutters-lg > .lay,
-  body .gutters-lg > .layout {
+  body .layout-65 .gutters-lg > [class*="lay-"],
+  body .layout-65 .gutters-lg > [class*="layout-"],
+  body .layout-65 .gutters-lg > .lay,
+  body .layout-65 .gutters-lg > .layout,
+  body .lay-65 .gutters-lg > [class*="lay-"],
+  body .lay-65 .gutters-lg > [class*="layout-"],
+  body .lay-65 .gutters-lg > .lay,
+  body .lay-65 .gutters-lg > .layout,
+  body .gs-wrap-65 .gutters-lg > [class*="lay-"],
+  body .gs-wrap-65 .gutters-lg > [class*="layout-"],
+  body .gs-wrap-65 .gutters-lg > .lay,
+  body .gs-wrap-65 .gutters-lg > .layout,
+  body .w-65 .gutters-lg > [class*="lay-"],
+  body .w-65 .gutters-lg > [class*="layout-"],
+  body .w-65 .gutters-lg > .lay,
+  body .w-65 .gutters-lg > .layout {
     margin: 1em;
   }
-  body .layout-lg-65,
-  body .lay-lg-65,
-  body .w-lg-65 {
+  body .layout-65 .layout-lg-65,
+  body .layout-65 .lay-lg-65,
+  body .layout-65 .w-lg-65,
+  body .lay-65 .layout-lg-65,
+  body .lay-65 .lay-lg-65,
+  body .lay-65 .w-lg-65,
+  body .gs-wrap-65 .layout-lg-65,
+  body .gs-wrap-65 .lay-lg-65,
+  body .gs-wrap-65 .w-lg-65,
+  body .w-65 .layout-lg-65,
+  body .w-65 .lay-lg-65,
+  body .w-65 .w-lg-65 {
     width: 65%;
   }
 }
 @media screen and (min-width: 700px) and (max-width: 1200px) {
-  body .gutters-md > [class*="lay-"],
-  body .gutters-md > [class*="layout-"],
-  body .gutters-md > .lay,
-  body .gutters-md > .layout {
+  body .layout-65 .gutters-md > [class*="lay-"],
+  body .layout-65 .gutters-md > [class*="layout-"],
+  body .layout-65 .gutters-md > .lay,
+  body .layout-65 .gutters-md > .layout,
+  body .lay-65 .gutters-md > [class*="lay-"],
+  body .lay-65 .gutters-md > [class*="layout-"],
+  body .lay-65 .gutters-md > .lay,
+  body .lay-65 .gutters-md > .layout,
+  body .gs-wrap-65 .gutters-md > [class*="lay-"],
+  body .gs-wrap-65 .gutters-md > [class*="layout-"],
+  body .gs-wrap-65 .gutters-md > .lay,
+  body .gs-wrap-65 .gutters-md > .layout,
+  body .w-65 .gutters-md > [class*="lay-"],
+  body .w-65 .gutters-md > [class*="layout-"],
+  body .w-65 .gutters-md > .lay,
+  body .w-65 .gutters-md > .layout {
     margin: 1em;
   }
-  body .layout-md-65,
-  body .lay-md-65,
-  body .w-md-65 {
+  body .layout-65 .layout-md-65,
+  body .layout-65 .lay-md-65,
+  body .layout-65 .w-md-65,
+  body .lay-65 .layout-md-65,
+  body .lay-65 .lay-md-65,
+  body .lay-65 .w-md-65,
+  body .gs-wrap-65 .layout-md-65,
+  body .gs-wrap-65 .lay-md-65,
+  body .gs-wrap-65 .w-md-65,
+  body .w-65 .layout-md-65,
+  body .w-65 .lay-md-65,
+  body .w-65 .w-md-65 {
     width: 65%;
   }
 }
 @media screen and (min-width: 460px) and (max-width: 700px) {
-  body .gutters-sm > [class*="lay-"],
-  body .gutters-sm > [class*="layout-"],
-  body .gutters-sm > .lay,
-  body .gutters-sm > .layout {
+  body .layout-65 .gutters-sm > [class*="lay-"],
+  body .layout-65 .gutters-sm > [class*="layout-"],
+  body .layout-65 .gutters-sm > .lay,
+  body .layout-65 .gutters-sm > .layout,
+  body .lay-65 .gutters-sm > [class*="lay-"],
+  body .lay-65 .gutters-sm > [class*="layout-"],
+  body .lay-65 .gutters-sm > .lay,
+  body .lay-65 .gutters-sm > .layout,
+  body .gs-wrap-65 .gutters-sm > [class*="lay-"],
+  body .gs-wrap-65 .gutters-sm > [class*="layout-"],
+  body .gs-wrap-65 .gutters-sm > .lay,
+  body .gs-wrap-65 .gutters-sm > .layout,
+  body .w-65 .gutters-sm > [class*="lay-"],
+  body .w-65 .gutters-sm > [class*="layout-"],
+  body .w-65 .gutters-sm > .lay,
+  body .w-65 .gutters-sm > .layout {
     margin: 1em;
   }
-  body .layout-sm-65,
-  body .lay-sm-65,
-  body .w-sm-65 {
+  body .layout-65 .layout-sm-65,
+  body .layout-65 .lay-sm-65,
+  body .layout-65 .w-sm-65,
+  body .lay-65 .layout-sm-65,
+  body .lay-65 .lay-sm-65,
+  body .lay-65 .w-sm-65,
+  body .gs-wrap-65 .layout-sm-65,
+  body .gs-wrap-65 .lay-sm-65,
+  body .gs-wrap-65 .w-sm-65,
+  body .w-65 .layout-sm-65,
+  body .w-65 .lay-sm-65,
+  body .w-65 .w-sm-65 {
     width: 65%;
   }
 }
 @media screen and (max-width: 460px) {
-  body .gutters-xs > [class*="lay-"],
-  body .gutters-xs > [class*="layout-"],
-  body .gutters-xs > .lay,
-  body .gutters-xs > .layout {
+  body .layout-65 .gutters-xs > [class*="lay-"],
+  body .layout-65 .gutters-xs > [class*="layout-"],
+  body .layout-65 .gutters-xs > .lay,
+  body .layout-65 .gutters-xs > .layout,
+  body .lay-65 .gutters-xs > [class*="lay-"],
+  body .lay-65 .gutters-xs > [class*="layout-"],
+  body .lay-65 .gutters-xs > .lay,
+  body .lay-65 .gutters-xs > .layout,
+  body .gs-wrap-65 .gutters-xs > [class*="lay-"],
+  body .gs-wrap-65 .gutters-xs > [class*="layout-"],
+  body .gs-wrap-65 .gutters-xs > .lay,
+  body .gs-wrap-65 .gutters-xs > .layout,
+  body .w-65 .gutters-xs > [class*="lay-"],
+  body .w-65 .gutters-xs > [class*="layout-"],
+  body .w-65 .gutters-xs > .lay,
+  body .w-65 .gutters-xs > .layout {
     margin: 1em;
   }
-  body .lay-xs-65,
-  body .layout-xs-65,
-  body .w-xs-65 {
+  body .layout-65 .lay-xs-65,
+  body .layout-65 .layout-xs-65,
+  body .layout-65 .w-xs-65,
+  body .lay-65 .lay-xs-65,
+  body .lay-65 .layout-xs-65,
+  body .lay-65 .w-xs-65,
+  body .gs-wrap-65 .lay-xs-65,
+  body .gs-wrap-65 .layout-xs-65,
+  body .gs-wrap-65 .w-xs-65,
+  body .w-65 .lay-xs-65,
+  body .w-65 .layout-xs-65,
+  body .w-65 .w-xs-65 {
     width: 65%;
   }
 }
 @media screen and (min-width: 1200px) {
-  body .gutters-lg > [class*="lay-"],
-  body .gutters-lg > [class*="layout-"],
-  body .gutters-lg > .lay,
-  body .gutters-lg > .layout {
+  body .layout-70 .gutters-lg > [class*="lay-"],
+  body .layout-70 .gutters-lg > [class*="layout-"],
+  body .layout-70 .gutters-lg > .lay,
+  body .layout-70 .gutters-lg > .layout,
+  body .lay-70 .gutters-lg > [class*="lay-"],
+  body .lay-70 .gutters-lg > [class*="layout-"],
+  body .lay-70 .gutters-lg > .lay,
+  body .lay-70 .gutters-lg > .layout,
+  body .gs-wrap-70 .gutters-lg > [class*="lay-"],
+  body .gs-wrap-70 .gutters-lg > [class*="layout-"],
+  body .gs-wrap-70 .gutters-lg > .lay,
+  body .gs-wrap-70 .gutters-lg > .layout,
+  body .w-70 .gutters-lg > [class*="lay-"],
+  body .w-70 .gutters-lg > [class*="layout-"],
+  body .w-70 .gutters-lg > .lay,
+  body .w-70 .gutters-lg > .layout {
     margin: 1em;
   }
-  body .layout-lg-70,
-  body .lay-lg-70,
-  body .w-lg-70 {
+  body .layout-70 .layout-lg-70,
+  body .layout-70 .lay-lg-70,
+  body .layout-70 .w-lg-70,
+  body .lay-70 .layout-lg-70,
+  body .lay-70 .lay-lg-70,
+  body .lay-70 .w-lg-70,
+  body .gs-wrap-70 .layout-lg-70,
+  body .gs-wrap-70 .lay-lg-70,
+  body .gs-wrap-70 .w-lg-70,
+  body .w-70 .layout-lg-70,
+  body .w-70 .lay-lg-70,
+  body .w-70 .w-lg-70 {
     width: 70%;
   }
 }
 @media screen and (min-width: 700px) and (max-width: 1200px) {
-  body .gutters-md > [class*="lay-"],
-  body .gutters-md > [class*="layout-"],
-  body .gutters-md > .lay,
-  body .gutters-md > .layout {
+  body .layout-70 .gutters-md > [class*="lay-"],
+  body .layout-70 .gutters-md > [class*="layout-"],
+  body .layout-70 .gutters-md > .lay,
+  body .layout-70 .gutters-md > .layout,
+  body .lay-70 .gutters-md > [class*="lay-"],
+  body .lay-70 .gutters-md > [class*="layout-"],
+  body .lay-70 .gutters-md > .lay,
+  body .lay-70 .gutters-md > .layout,
+  body .gs-wrap-70 .gutters-md > [class*="lay-"],
+  body .gs-wrap-70 .gutters-md > [class*="layout-"],
+  body .gs-wrap-70 .gutters-md > .lay,
+  body .gs-wrap-70 .gutters-md > .layout,
+  body .w-70 .gutters-md > [class*="lay-"],
+  body .w-70 .gutters-md > [class*="layout-"],
+  body .w-70 .gutters-md > .lay,
+  body .w-70 .gutters-md > .layout {
     margin: 1em;
   }
-  body .layout-md-70,
-  body .lay-md-70,
-  body .w-md-70 {
+  body .layout-70 .layout-md-70,
+  body .layout-70 .lay-md-70,
+  body .layout-70 .w-md-70,
+  body .lay-70 .layout-md-70,
+  body .lay-70 .lay-md-70,
+  body .lay-70 .w-md-70,
+  body .gs-wrap-70 .layout-md-70,
+  body .gs-wrap-70 .lay-md-70,
+  body .gs-wrap-70 .w-md-70,
+  body .w-70 .layout-md-70,
+  body .w-70 .lay-md-70,
+  body .w-70 .w-md-70 {
     width: 70%;
   }
 }
 @media screen and (min-width: 460px) and (max-width: 700px) {
-  body .gutters-sm > [class*="lay-"],
-  body .gutters-sm > [class*="layout-"],
-  body .gutters-sm > .lay,
-  body .gutters-sm > .layout {
+  body .layout-70 .gutters-sm > [class*="lay-"],
+  body .layout-70 .gutters-sm > [class*="layout-"],
+  body .layout-70 .gutters-sm > .lay,
+  body .layout-70 .gutters-sm > .layout,
+  body .lay-70 .gutters-sm > [class*="lay-"],
+  body .lay-70 .gutters-sm > [class*="layout-"],
+  body .lay-70 .gutters-sm > .lay,
+  body .lay-70 .gutters-sm > .layout,
+  body .gs-wrap-70 .gutters-sm > [class*="lay-"],
+  body .gs-wrap-70 .gutters-sm > [class*="layout-"],
+  body .gs-wrap-70 .gutters-sm > .lay,
+  body .gs-wrap-70 .gutters-sm > .layout,
+  body .w-70 .gutters-sm > [class*="lay-"],
+  body .w-70 .gutters-sm > [class*="layout-"],
+  body .w-70 .gutters-sm > .lay,
+  body .w-70 .gutters-sm > .layout {
     margin: 1em;
   }
-  body .layout-sm-70,
-  body .lay-sm-70,
-  body .w-sm-70 {
+  body .layout-70 .layout-sm-70,
+  body .layout-70 .lay-sm-70,
+  body .layout-70 .w-sm-70,
+  body .lay-70 .layout-sm-70,
+  body .lay-70 .lay-sm-70,
+  body .lay-70 .w-sm-70,
+  body .gs-wrap-70 .layout-sm-70,
+  body .gs-wrap-70 .lay-sm-70,
+  body .gs-wrap-70 .w-sm-70,
+  body .w-70 .layout-sm-70,
+  body .w-70 .lay-sm-70,
+  body .w-70 .w-sm-70 {
     width: 70%;
   }
 }
 @media screen and (max-width: 460px) {
-  body .gutters-xs > [class*="lay-"],
-  body .gutters-xs > [class*="layout-"],
-  body .gutters-xs > .lay,
-  body .gutters-xs > .layout {
+  body .layout-70 .gutters-xs > [class*="lay-"],
+  body .layout-70 .gutters-xs > [class*="layout-"],
+  body .layout-70 .gutters-xs > .lay,
+  body .layout-70 .gutters-xs > .layout,
+  body .lay-70 .gutters-xs > [class*="lay-"],
+  body .lay-70 .gutters-xs > [class*="layout-"],
+  body .lay-70 .gutters-xs > .lay,
+  body .lay-70 .gutters-xs > .layout,
+  body .gs-wrap-70 .gutters-xs > [class*="lay-"],
+  body .gs-wrap-70 .gutters-xs > [class*="layout-"],
+  body .gs-wrap-70 .gutters-xs > .lay,
+  body .gs-wrap-70 .gutters-xs > .layout,
+  body .w-70 .gutters-xs > [class*="lay-"],
+  body .w-70 .gutters-xs > [class*="layout-"],
+  body .w-70 .gutters-xs > .lay,
+  body .w-70 .gutters-xs > .layout {
     margin: 1em;
   }
-  body .lay-xs-70,
-  body .layout-xs-70,
-  body .w-xs-70 {
+  body .layout-70 .lay-xs-70,
+  body .layout-70 .layout-xs-70,
+  body .layout-70 .w-xs-70,
+  body .lay-70 .lay-xs-70,
+  body .lay-70 .layout-xs-70,
+  body .lay-70 .w-xs-70,
+  body .gs-wrap-70 .lay-xs-70,
+  body .gs-wrap-70 .layout-xs-70,
+  body .gs-wrap-70 .w-xs-70,
+  body .w-70 .lay-xs-70,
+  body .w-70 .layout-xs-70,
+  body .w-70 .w-xs-70 {
     width: 70%;
   }
 }
 @media screen and (min-width: 1200px) {
-  body .gutters-lg > [class*="lay-"],
-  body .gutters-lg > [class*="layout-"],
-  body .gutters-lg > .lay,
-  body .gutters-lg > .layout {
+  body .layout-75 .gutters-lg > [class*="lay-"],
+  body .layout-75 .gutters-lg > [class*="layout-"],
+  body .layout-75 .gutters-lg > .lay,
+  body .layout-75 .gutters-lg > .layout,
+  body .lay-75 .gutters-lg > [class*="lay-"],
+  body .lay-75 .gutters-lg > [class*="layout-"],
+  body .lay-75 .gutters-lg > .lay,
+  body .lay-75 .gutters-lg > .layout,
+  body .gs-wrap-75 .gutters-lg > [class*="lay-"],
+  body .gs-wrap-75 .gutters-lg > [class*="layout-"],
+  body .gs-wrap-75 .gutters-lg > .lay,
+  body .gs-wrap-75 .gutters-lg > .layout,
+  body .w-75 .gutters-lg > [class*="lay-"],
+  body .w-75 .gutters-lg > [class*="layout-"],
+  body .w-75 .gutters-lg > .lay,
+  body .w-75 .gutters-lg > .layout {
     margin: 1em;
   }
-  body .layout-lg-75,
-  body .lay-lg-75,
-  body .w-lg-75 {
+  body .layout-75 .layout-lg-75,
+  body .layout-75 .lay-lg-75,
+  body .layout-75 .w-lg-75,
+  body .lay-75 .layout-lg-75,
+  body .lay-75 .lay-lg-75,
+  body .lay-75 .w-lg-75,
+  body .gs-wrap-75 .layout-lg-75,
+  body .gs-wrap-75 .lay-lg-75,
+  body .gs-wrap-75 .w-lg-75,
+  body .w-75 .layout-lg-75,
+  body .w-75 .lay-lg-75,
+  body .w-75 .w-lg-75 {
     width: 75%;
   }
 }
 @media screen and (min-width: 700px) and (max-width: 1200px) {
-  body .gutters-md > [class*="lay-"],
-  body .gutters-md > [class*="layout-"],
-  body .gutters-md > .lay,
-  body .gutters-md > .layout {
+  body .layout-75 .gutters-md > [class*="lay-"],
+  body .layout-75 .gutters-md > [class*="layout-"],
+  body .layout-75 .gutters-md > .lay,
+  body .layout-75 .gutters-md > .layout,
+  body .lay-75 .gutters-md > [class*="lay-"],
+  body .lay-75 .gutters-md > [class*="layout-"],
+  body .lay-75 .gutters-md > .lay,
+  body .lay-75 .gutters-md > .layout,
+  body .gs-wrap-75 .gutters-md > [class*="lay-"],
+  body .gs-wrap-75 .gutters-md > [class*="layout-"],
+  body .gs-wrap-75 .gutters-md > .lay,
+  body .gs-wrap-75 .gutters-md > .layout,
+  body .w-75 .gutters-md > [class*="lay-"],
+  body .w-75 .gutters-md > [class*="layout-"],
+  body .w-75 .gutters-md > .lay,
+  body .w-75 .gutters-md > .layout {
     margin: 1em;
   }
-  body .layout-md-75,
-  body .lay-md-75,
-  body .w-md-75 {
+  body .layout-75 .layout-md-75,
+  body .layout-75 .lay-md-75,
+  body .layout-75 .w-md-75,
+  body .lay-75 .layout-md-75,
+  body .lay-75 .lay-md-75,
+  body .lay-75 .w-md-75,
+  body .gs-wrap-75 .layout-md-75,
+  body .gs-wrap-75 .lay-md-75,
+  body .gs-wrap-75 .w-md-75,
+  body .w-75 .layout-md-75,
+  body .w-75 .lay-md-75,
+  body .w-75 .w-md-75 {
     width: 75%;
   }
 }
 @media screen and (min-width: 460px) and (max-width: 700px) {
-  body .gutters-sm > [class*="lay-"],
-  body .gutters-sm > [class*="layout-"],
-  body .gutters-sm > .lay,
-  body .gutters-sm > .layout {
+  body .layout-75 .gutters-sm > [class*="lay-"],
+  body .layout-75 .gutters-sm > [class*="layout-"],
+  body .layout-75 .gutters-sm > .lay,
+  body .layout-75 .gutters-sm > .layout,
+  body .lay-75 .gutters-sm > [class*="lay-"],
+  body .lay-75 .gutters-sm > [class*="layout-"],
+  body .lay-75 .gutters-sm > .lay,
+  body .lay-75 .gutters-sm > .layout,
+  body .gs-wrap-75 .gutters-sm > [class*="lay-"],
+  body .gs-wrap-75 .gutters-sm > [class*="layout-"],
+  body .gs-wrap-75 .gutters-sm > .lay,
+  body .gs-wrap-75 .gutters-sm > .layout,
+  body .w-75 .gutters-sm > [class*="lay-"],
+  body .w-75 .gutters-sm > [class*="layout-"],
+  body .w-75 .gutters-sm > .lay,
+  body .w-75 .gutters-sm > .layout {
     margin: 1em;
   }
-  body .layout-sm-75,
-  body .lay-sm-75,
-  body .w-sm-75 {
+  body .layout-75 .layout-sm-75,
+  body .layout-75 .lay-sm-75,
+  body .layout-75 .w-sm-75,
+  body .lay-75 .layout-sm-75,
+  body .lay-75 .lay-sm-75,
+  body .lay-75 .w-sm-75,
+  body .gs-wrap-75 .layout-sm-75,
+  body .gs-wrap-75 .lay-sm-75,
+  body .gs-wrap-75 .w-sm-75,
+  body .w-75 .layout-sm-75,
+  body .w-75 .lay-sm-75,
+  body .w-75 .w-sm-75 {
     width: 75%;
   }
 }
 @media screen and (max-width: 460px) {
-  body .gutters-xs > [class*="lay-"],
-  body .gutters-xs > [class*="layout-"],
-  body .gutters-xs > .lay,
-  body .gutters-xs > .layout {
+  body .layout-75 .gutters-xs > [class*="lay-"],
+  body .layout-75 .gutters-xs > [class*="layout-"],
+  body .layout-75 .gutters-xs > .lay,
+  body .layout-75 .gutters-xs > .layout,
+  body .lay-75 .gutters-xs > [class*="lay-"],
+  body .lay-75 .gutters-xs > [class*="layout-"],
+  body .lay-75 .gutters-xs > .lay,
+  body .lay-75 .gutters-xs > .layout,
+  body .gs-wrap-75 .gutters-xs > [class*="lay-"],
+  body .gs-wrap-75 .gutters-xs > [class*="layout-"],
+  body .gs-wrap-75 .gutters-xs > .lay,
+  body .gs-wrap-75 .gutters-xs > .layout,
+  body .w-75 .gutters-xs > [class*="lay-"],
+  body .w-75 .gutters-xs > [class*="layout-"],
+  body .w-75 .gutters-xs > .lay,
+  body .w-75 .gutters-xs > .layout {
     margin: 1em;
   }
-  body .lay-xs-75,
-  body .layout-xs-75,
-  body .w-xs-75 {
+  body .layout-75 .lay-xs-75,
+  body .layout-75 .layout-xs-75,
+  body .layout-75 .w-xs-75,
+  body .lay-75 .lay-xs-75,
+  body .lay-75 .layout-xs-75,
+  body .lay-75 .w-xs-75,
+  body .gs-wrap-75 .lay-xs-75,
+  body .gs-wrap-75 .layout-xs-75,
+  body .gs-wrap-75 .w-xs-75,
+  body .w-75 .lay-xs-75,
+  body .w-75 .layout-xs-75,
+  body .w-75 .w-xs-75 {
     width: 75%;
   }
 }
 @media screen and (min-width: 1200px) {
-  body .gutters-lg > [class*="lay-"],
-  body .gutters-lg > [class*="layout-"],
-  body .gutters-lg > .lay,
-  body .gutters-lg > .layout {
+  body .layout-80 .gutters-lg > [class*="lay-"],
+  body .layout-80 .gutters-lg > [class*="layout-"],
+  body .layout-80 .gutters-lg > .lay,
+  body .layout-80 .gutters-lg > .layout,
+  body .lay-80 .gutters-lg > [class*="lay-"],
+  body .lay-80 .gutters-lg > [class*="layout-"],
+  body .lay-80 .gutters-lg > .lay,
+  body .lay-80 .gutters-lg > .layout,
+  body .gs-wrap-80 .gutters-lg > [class*="lay-"],
+  body .gs-wrap-80 .gutters-lg > [class*="layout-"],
+  body .gs-wrap-80 .gutters-lg > .lay,
+  body .gs-wrap-80 .gutters-lg > .layout,
+  body .w-80 .gutters-lg > [class*="lay-"],
+  body .w-80 .gutters-lg > [class*="layout-"],
+  body .w-80 .gutters-lg > .lay,
+  body .w-80 .gutters-lg > .layout {
     margin: 1em;
   }
-  body .layout-lg-80,
-  body .lay-lg-80,
-  body .w-lg-80 {
+  body .layout-80 .layout-lg-80,
+  body .layout-80 .lay-lg-80,
+  body .layout-80 .w-lg-80,
+  body .lay-80 .layout-lg-80,
+  body .lay-80 .lay-lg-80,
+  body .lay-80 .w-lg-80,
+  body .gs-wrap-80 .layout-lg-80,
+  body .gs-wrap-80 .lay-lg-80,
+  body .gs-wrap-80 .w-lg-80,
+  body .w-80 .layout-lg-80,
+  body .w-80 .lay-lg-80,
+  body .w-80 .w-lg-80 {
     width: 80%;
   }
 }
 @media screen and (min-width: 700px) and (max-width: 1200px) {
-  body .gutters-md > [class*="lay-"],
-  body .gutters-md > [class*="layout-"],
-  body .gutters-md > .lay,
-  body .gutters-md > .layout {
+  body .layout-80 .gutters-md > [class*="lay-"],
+  body .layout-80 .gutters-md > [class*="layout-"],
+  body .layout-80 .gutters-md > .lay,
+  body .layout-80 .gutters-md > .layout,
+  body .lay-80 .gutters-md > [class*="lay-"],
+  body .lay-80 .gutters-md > [class*="layout-"],
+  body .lay-80 .gutters-md > .lay,
+  body .lay-80 .gutters-md > .layout,
+  body .gs-wrap-80 .gutters-md > [class*="lay-"],
+  body .gs-wrap-80 .gutters-md > [class*="layout-"],
+  body .gs-wrap-80 .gutters-md > .lay,
+  body .gs-wrap-80 .gutters-md > .layout,
+  body .w-80 .gutters-md > [class*="lay-"],
+  body .w-80 .gutters-md > [class*="layout-"],
+  body .w-80 .gutters-md > .lay,
+  body .w-80 .gutters-md > .layout {
     margin: 1em;
   }
-  body .layout-md-80,
-  body .lay-md-80,
-  body .w-md-80 {
+  body .layout-80 .layout-md-80,
+  body .layout-80 .lay-md-80,
+  body .layout-80 .w-md-80,
+  body .lay-80 .layout-md-80,
+  body .lay-80 .lay-md-80,
+  body .lay-80 .w-md-80,
+  body .gs-wrap-80 .layout-md-80,
+  body .gs-wrap-80 .lay-md-80,
+  body .gs-wrap-80 .w-md-80,
+  body .w-80 .layout-md-80,
+  body .w-80 .lay-md-80,
+  body .w-80 .w-md-80 {
     width: 80%;
   }
 }
 @media screen and (min-width: 460px) and (max-width: 700px) {
-  body .gutters-sm > [class*="lay-"],
-  body .gutters-sm > [class*="layout-"],
-  body .gutters-sm > .lay,
-  body .gutters-sm > .layout {
+  body .layout-80 .gutters-sm > [class*="lay-"],
+  body .layout-80 .gutters-sm > [class*="layout-"],
+  body .layout-80 .gutters-sm > .lay,
+  body .layout-80 .gutters-sm > .layout,
+  body .lay-80 .gutters-sm > [class*="lay-"],
+  body .lay-80 .gutters-sm > [class*="layout-"],
+  body .lay-80 .gutters-sm > .lay,
+  body .lay-80 .gutters-sm > .layout,
+  body .gs-wrap-80 .gutters-sm > [class*="lay-"],
+  body .gs-wrap-80 .gutters-sm > [class*="layout-"],
+  body .gs-wrap-80 .gutters-sm > .lay,
+  body .gs-wrap-80 .gutters-sm > .layout,
+  body .w-80 .gutters-sm > [class*="lay-"],
+  body .w-80 .gutters-sm > [class*="layout-"],
+  body .w-80 .gutters-sm > .lay,
+  body .w-80 .gutters-sm > .layout {
     margin: 1em;
   }
-  body .layout-sm-80,
-  body .lay-sm-80,
-  body .w-sm-80 {
+  body .layout-80 .layout-sm-80,
+  body .layout-80 .lay-sm-80,
+  body .layout-80 .w-sm-80,
+  body .lay-80 .layout-sm-80,
+  body .lay-80 .lay-sm-80,
+  body .lay-80 .w-sm-80,
+  body .gs-wrap-80 .layout-sm-80,
+  body .gs-wrap-80 .lay-sm-80,
+  body .gs-wrap-80 .w-sm-80,
+  body .w-80 .layout-sm-80,
+  body .w-80 .lay-sm-80,
+  body .w-80 .w-sm-80 {
     width: 80%;
   }
 }
 @media screen and (max-width: 460px) {
-  body .gutters-xs > [class*="lay-"],
-  body .gutters-xs > [class*="layout-"],
-  body .gutters-xs > .lay,
-  body .gutters-xs > .layout {
+  body .layout-80 .gutters-xs > [class*="lay-"],
+  body .layout-80 .gutters-xs > [class*="layout-"],
+  body .layout-80 .gutters-xs > .lay,
+  body .layout-80 .gutters-xs > .layout,
+  body .lay-80 .gutters-xs > [class*="lay-"],
+  body .lay-80 .gutters-xs > [class*="layout-"],
+  body .lay-80 .gutters-xs > .lay,
+  body .lay-80 .gutters-xs > .layout,
+  body .gs-wrap-80 .gutters-xs > [class*="lay-"],
+  body .gs-wrap-80 .gutters-xs > [class*="layout-"],
+  body .gs-wrap-80 .gutters-xs > .lay,
+  body .gs-wrap-80 .gutters-xs > .layout,
+  body .w-80 .gutters-xs > [class*="lay-"],
+  body .w-80 .gutters-xs > [class*="layout-"],
+  body .w-80 .gutters-xs > .lay,
+  body .w-80 .gutters-xs > .layout {
     margin: 1em;
   }
-  body .lay-xs-80,
-  body .layout-xs-80,
-  body .w-xs-80 {
+  body .layout-80 .lay-xs-80,
+  body .layout-80 .layout-xs-80,
+  body .layout-80 .w-xs-80,
+  body .lay-80 .lay-xs-80,
+  body .lay-80 .layout-xs-80,
+  body .lay-80 .w-xs-80,
+  body .gs-wrap-80 .lay-xs-80,
+  body .gs-wrap-80 .layout-xs-80,
+  body .gs-wrap-80 .w-xs-80,
+  body .w-80 .lay-xs-80,
+  body .w-80 .layout-xs-80,
+  body .w-80 .w-xs-80 {
     width: 80%;
   }
 }
 @media screen and (min-width: 1200px) {
-  body .gutters-lg > [class*="lay-"],
-  body .gutters-lg > [class*="layout-"],
-  body .gutters-lg > .lay,
-  body .gutters-lg > .layout {
+  body .layout-85 .gutters-lg > [class*="lay-"],
+  body .layout-85 .gutters-lg > [class*="layout-"],
+  body .layout-85 .gutters-lg > .lay,
+  body .layout-85 .gutters-lg > .layout,
+  body .lay-85 .gutters-lg > [class*="lay-"],
+  body .lay-85 .gutters-lg > [class*="layout-"],
+  body .lay-85 .gutters-lg > .lay,
+  body .lay-85 .gutters-lg > .layout,
+  body .gs-wrap-85 .gutters-lg > [class*="lay-"],
+  body .gs-wrap-85 .gutters-lg > [class*="layout-"],
+  body .gs-wrap-85 .gutters-lg > .lay,
+  body .gs-wrap-85 .gutters-lg > .layout,
+  body .w-85 .gutters-lg > [class*="lay-"],
+  body .w-85 .gutters-lg > [class*="layout-"],
+  body .w-85 .gutters-lg > .lay,
+  body .w-85 .gutters-lg > .layout {
     margin: 1em;
   }
-  body .layout-lg-85,
-  body .lay-lg-85,
-  body .w-lg-85 {
+  body .layout-85 .layout-lg-85,
+  body .layout-85 .lay-lg-85,
+  body .layout-85 .w-lg-85,
+  body .lay-85 .layout-lg-85,
+  body .lay-85 .lay-lg-85,
+  body .lay-85 .w-lg-85,
+  body .gs-wrap-85 .layout-lg-85,
+  body .gs-wrap-85 .lay-lg-85,
+  body .gs-wrap-85 .w-lg-85,
+  body .w-85 .layout-lg-85,
+  body .w-85 .lay-lg-85,
+  body .w-85 .w-lg-85 {
     width: 85%;
   }
 }
 @media screen and (min-width: 700px) and (max-width: 1200px) {
-  body .gutters-md > [class*="lay-"],
-  body .gutters-md > [class*="layout-"],
-  body .gutters-md > .lay,
-  body .gutters-md > .layout {
+  body .layout-85 .gutters-md > [class*="lay-"],
+  body .layout-85 .gutters-md > [class*="layout-"],
+  body .layout-85 .gutters-md > .lay,
+  body .layout-85 .gutters-md > .layout,
+  body .lay-85 .gutters-md > [class*="lay-"],
+  body .lay-85 .gutters-md > [class*="layout-"],
+  body .lay-85 .gutters-md > .lay,
+  body .lay-85 .gutters-md > .layout,
+  body .gs-wrap-85 .gutters-md > [class*="lay-"],
+  body .gs-wrap-85 .gutters-md > [class*="layout-"],
+  body .gs-wrap-85 .gutters-md > .lay,
+  body .gs-wrap-85 .gutters-md > .layout,
+  body .w-85 .gutters-md > [class*="lay-"],
+  body .w-85 .gutters-md > [class*="layout-"],
+  body .w-85 .gutters-md > .lay,
+  body .w-85 .gutters-md > .layout {
     margin: 1em;
   }
-  body .layout-md-85,
-  body .lay-md-85,
-  body .w-md-85 {
+  body .layout-85 .layout-md-85,
+  body .layout-85 .lay-md-85,
+  body .layout-85 .w-md-85,
+  body .lay-85 .layout-md-85,
+  body .lay-85 .lay-md-85,
+  body .lay-85 .w-md-85,
+  body .gs-wrap-85 .layout-md-85,
+  body .gs-wrap-85 .lay-md-85,
+  body .gs-wrap-85 .w-md-85,
+  body .w-85 .layout-md-85,
+  body .w-85 .lay-md-85,
+  body .w-85 .w-md-85 {
     width: 85%;
   }
 }
 @media screen and (min-width: 460px) and (max-width: 700px) {
-  body .gutters-sm > [class*="lay-"],
-  body .gutters-sm > [class*="layout-"],
-  body .gutters-sm > .lay,
-  body .gutters-sm > .layout {
+  body .layout-85 .gutters-sm > [class*="lay-"],
+  body .layout-85 .gutters-sm > [class*="layout-"],
+  body .layout-85 .gutters-sm > .lay,
+  body .layout-85 .gutters-sm > .layout,
+  body .lay-85 .gutters-sm > [class*="lay-"],
+  body .lay-85 .gutters-sm > [class*="layout-"],
+  body .lay-85 .gutters-sm > .lay,
+  body .lay-85 .gutters-sm > .layout,
+  body .gs-wrap-85 .gutters-sm > [class*="lay-"],
+  body .gs-wrap-85 .gutters-sm > [class*="layout-"],
+  body .gs-wrap-85 .gutters-sm > .lay,
+  body .gs-wrap-85 .gutters-sm > .layout,
+  body .w-85 .gutters-sm > [class*="lay-"],
+  body .w-85 .gutters-sm > [class*="layout-"],
+  body .w-85 .gutters-sm > .lay,
+  body .w-85 .gutters-sm > .layout {
     margin: 1em;
   }
-  body .layout-sm-85,
-  body .lay-sm-85,
-  body .w-sm-85 {
+  body .layout-85 .layout-sm-85,
+  body .layout-85 .lay-sm-85,
+  body .layout-85 .w-sm-85,
+  body .lay-85 .layout-sm-85,
+  body .lay-85 .lay-sm-85,
+  body .lay-85 .w-sm-85,
+  body .gs-wrap-85 .layout-sm-85,
+  body .gs-wrap-85 .lay-sm-85,
+  body .gs-wrap-85 .w-sm-85,
+  body .w-85 .layout-sm-85,
+  body .w-85 .lay-sm-85,
+  body .w-85 .w-sm-85 {
     width: 85%;
   }
 }
 @media screen and (max-width: 460px) {
-  body .gutters-xs > [class*="lay-"],
-  body .gutters-xs > [class*="layout-"],
-  body .gutters-xs > .lay,
-  body .gutters-xs > .layout {
+  body .layout-85 .gutters-xs > [class*="lay-"],
+  body .layout-85 .gutters-xs > [class*="layout-"],
+  body .layout-85 .gutters-xs > .lay,
+  body .layout-85 .gutters-xs > .layout,
+  body .lay-85 .gutters-xs > [class*="lay-"],
+  body .lay-85 .gutters-xs > [class*="layout-"],
+  body .lay-85 .gutters-xs > .lay,
+  body .lay-85 .gutters-xs > .layout,
+  body .gs-wrap-85 .gutters-xs > [class*="lay-"],
+  body .gs-wrap-85 .gutters-xs > [class*="layout-"],
+  body .gs-wrap-85 .gutters-xs > .lay,
+  body .gs-wrap-85 .gutters-xs > .layout,
+  body .w-85 .gutters-xs > [class*="lay-"],
+  body .w-85 .gutters-xs > [class*="layout-"],
+  body .w-85 .gutters-xs > .lay,
+  body .w-85 .gutters-xs > .layout {
     margin: 1em;
   }
-  body .lay-xs-85,
-  body .layout-xs-85,
-  body .w-xs-85 {
+  body .layout-85 .lay-xs-85,
+  body .layout-85 .layout-xs-85,
+  body .layout-85 .w-xs-85,
+  body .lay-85 .lay-xs-85,
+  body .lay-85 .layout-xs-85,
+  body .lay-85 .w-xs-85,
+  body .gs-wrap-85 .lay-xs-85,
+  body .gs-wrap-85 .layout-xs-85,
+  body .gs-wrap-85 .w-xs-85,
+  body .w-85 .lay-xs-85,
+  body .w-85 .layout-xs-85,
+  body .w-85 .w-xs-85 {
     width: 85%;
   }
 }
 @media screen and (min-width: 1200px) {
-  body .gutters-lg > [class*="lay-"],
-  body .gutters-lg > [class*="layout-"],
-  body .gutters-lg > .lay,
-  body .gutters-lg > .layout {
+  body .layout-90 .gutters-lg > [class*="lay-"],
+  body .layout-90 .gutters-lg > [class*="layout-"],
+  body .layout-90 .gutters-lg > .lay,
+  body .layout-90 .gutters-lg > .layout,
+  body .lay-90 .gutters-lg > [class*="lay-"],
+  body .lay-90 .gutters-lg > [class*="layout-"],
+  body .lay-90 .gutters-lg > .lay,
+  body .lay-90 .gutters-lg > .layout,
+  body .gs-wrap-90 .gutters-lg > [class*="lay-"],
+  body .gs-wrap-90 .gutters-lg > [class*="layout-"],
+  body .gs-wrap-90 .gutters-lg > .lay,
+  body .gs-wrap-90 .gutters-lg > .layout,
+  body .w-90 .gutters-lg > [class*="lay-"],
+  body .w-90 .gutters-lg > [class*="layout-"],
+  body .w-90 .gutters-lg > .lay,
+  body .w-90 .gutters-lg > .layout {
     margin: 1em;
   }
-  body .layout-lg-90,
-  body .lay-lg-90,
-  body .w-lg-90 {
+  body .layout-90 .layout-lg-90,
+  body .layout-90 .lay-lg-90,
+  body .layout-90 .w-lg-90,
+  body .lay-90 .layout-lg-90,
+  body .lay-90 .lay-lg-90,
+  body .lay-90 .w-lg-90,
+  body .gs-wrap-90 .layout-lg-90,
+  body .gs-wrap-90 .lay-lg-90,
+  body .gs-wrap-90 .w-lg-90,
+  body .w-90 .layout-lg-90,
+  body .w-90 .lay-lg-90,
+  body .w-90 .w-lg-90 {
     width: 90%;
   }
 }
 @media screen and (min-width: 700px) and (max-width: 1200px) {
-  body .gutters-md > [class*="lay-"],
-  body .gutters-md > [class*="layout-"],
-  body .gutters-md > .lay,
-  body .gutters-md > .layout {
+  body .layout-90 .gutters-md > [class*="lay-"],
+  body .layout-90 .gutters-md > [class*="layout-"],
+  body .layout-90 .gutters-md > .lay,
+  body .layout-90 .gutters-md > .layout,
+  body .lay-90 .gutters-md > [class*="lay-"],
+  body .lay-90 .gutters-md > [class*="layout-"],
+  body .lay-90 .gutters-md > .lay,
+  body .lay-90 .gutters-md > .layout,
+  body .gs-wrap-90 .gutters-md > [class*="lay-"],
+  body .gs-wrap-90 .gutters-md > [class*="layout-"],
+  body .gs-wrap-90 .gutters-md > .lay,
+  body .gs-wrap-90 .gutters-md > .layout,
+  body .w-90 .gutters-md > [class*="lay-"],
+  body .w-90 .gutters-md > [class*="layout-"],
+  body .w-90 .gutters-md > .lay,
+  body .w-90 .gutters-md > .layout {
     margin: 1em;
   }
-  body .layout-md-90,
-  body .lay-md-90,
-  body .w-md-90 {
+  body .layout-90 .layout-md-90,
+  body .layout-90 .lay-md-90,
+  body .layout-90 .w-md-90,
+  body .lay-90 .layout-md-90,
+  body .lay-90 .lay-md-90,
+  body .lay-90 .w-md-90,
+  body .gs-wrap-90 .layout-md-90,
+  body .gs-wrap-90 .lay-md-90,
+  body .gs-wrap-90 .w-md-90,
+  body .w-90 .layout-md-90,
+  body .w-90 .lay-md-90,
+  body .w-90 .w-md-90 {
     width: 90%;
   }
 }
 @media screen and (min-width: 460px) and (max-width: 700px) {
-  body .gutters-sm > [class*="lay-"],
-  body .gutters-sm > [class*="layout-"],
-  body .gutters-sm > .lay,
-  body .gutters-sm > .layout {
+  body .layout-90 .gutters-sm > [class*="lay-"],
+  body .layout-90 .gutters-sm > [class*="layout-"],
+  body .layout-90 .gutters-sm > .lay,
+  body .layout-90 .gutters-sm > .layout,
+  body .lay-90 .gutters-sm > [class*="lay-"],
+  body .lay-90 .gutters-sm > [class*="layout-"],
+  body .lay-90 .gutters-sm > .lay,
+  body .lay-90 .gutters-sm > .layout,
+  body .gs-wrap-90 .gutters-sm > [class*="lay-"],
+  body .gs-wrap-90 .gutters-sm > [class*="layout-"],
+  body .gs-wrap-90 .gutters-sm > .lay,
+  body .gs-wrap-90 .gutters-sm > .layout,
+  body .w-90 .gutters-sm > [class*="lay-"],
+  body .w-90 .gutters-sm > [class*="layout-"],
+  body .w-90 .gutters-sm > .lay,
+  body .w-90 .gutters-sm > .layout {
     margin: 1em;
   }
-  body .layout-sm-90,
-  body .lay-sm-90,
-  body .w-sm-90 {
+  body .layout-90 .layout-sm-90,
+  body .layout-90 .lay-sm-90,
+  body .layout-90 .w-sm-90,
+  body .lay-90 .layout-sm-90,
+  body .lay-90 .lay-sm-90,
+  body .lay-90 .w-sm-90,
+  body .gs-wrap-90 .layout-sm-90,
+  body .gs-wrap-90 .lay-sm-90,
+  body .gs-wrap-90 .w-sm-90,
+  body .w-90 .layout-sm-90,
+  body .w-90 .lay-sm-90,
+  body .w-90 .w-sm-90 {
     width: 90%;
   }
 }
 @media screen and (max-width: 460px) {
-  body .gutters-xs > [class*="lay-"],
-  body .gutters-xs > [class*="layout-"],
-  body .gutters-xs > .lay,
-  body .gutters-xs > .layout {
+  body .layout-90 .gutters-xs > [class*="lay-"],
+  body .layout-90 .gutters-xs > [class*="layout-"],
+  body .layout-90 .gutters-xs > .lay,
+  body .layout-90 .gutters-xs > .layout,
+  body .lay-90 .gutters-xs > [class*="lay-"],
+  body .lay-90 .gutters-xs > [class*="layout-"],
+  body .lay-90 .gutters-xs > .lay,
+  body .lay-90 .gutters-xs > .layout,
+  body .gs-wrap-90 .gutters-xs > [class*="lay-"],
+  body .gs-wrap-90 .gutters-xs > [class*="layout-"],
+  body .gs-wrap-90 .gutters-xs > .lay,
+  body .gs-wrap-90 .gutters-xs > .layout,
+  body .w-90 .gutters-xs > [class*="lay-"],
+  body .w-90 .gutters-xs > [class*="layout-"],
+  body .w-90 .gutters-xs > .lay,
+  body .w-90 .gutters-xs > .layout {
     margin: 1em;
   }
-  body .lay-xs-90,
-  body .layout-xs-90,
-  body .w-xs-90 {
+  body .layout-90 .lay-xs-90,
+  body .layout-90 .layout-xs-90,
+  body .layout-90 .w-xs-90,
+  body .lay-90 .lay-xs-90,
+  body .lay-90 .layout-xs-90,
+  body .lay-90 .w-xs-90,
+  body .gs-wrap-90 .lay-xs-90,
+  body .gs-wrap-90 .layout-xs-90,
+  body .gs-wrap-90 .w-xs-90,
+  body .w-90 .lay-xs-90,
+  body .w-90 .layout-xs-90,
+  body .w-90 .w-xs-90 {
     width: 90%;
   }
 }
 @media screen and (min-width: 1200px) {
-  body .gutters-lg > [class*="lay-"],
-  body .gutters-lg > [class*="layout-"],
-  body .gutters-lg > .lay,
-  body .gutters-lg > .layout {
+  body .layout-95 .gutters-lg > [class*="lay-"],
+  body .layout-95 .gutters-lg > [class*="layout-"],
+  body .layout-95 .gutters-lg > .lay,
+  body .layout-95 .gutters-lg > .layout,
+  body .lay-95 .gutters-lg > [class*="lay-"],
+  body .lay-95 .gutters-lg > [class*="layout-"],
+  body .lay-95 .gutters-lg > .lay,
+  body .lay-95 .gutters-lg > .layout,
+  body .gs-wrap-95 .gutters-lg > [class*="lay-"],
+  body .gs-wrap-95 .gutters-lg > [class*="layout-"],
+  body .gs-wrap-95 .gutters-lg > .lay,
+  body .gs-wrap-95 .gutters-lg > .layout,
+  body .w-95 .gutters-lg > [class*="lay-"],
+  body .w-95 .gutters-lg > [class*="layout-"],
+  body .w-95 .gutters-lg > .lay,
+  body .w-95 .gutters-lg > .layout {
     margin: 1em;
   }
-  body .layout-lg-95,
-  body .lay-lg-95,
-  body .w-lg-95 {
+  body .layout-95 .layout-lg-95,
+  body .layout-95 .lay-lg-95,
+  body .layout-95 .w-lg-95,
+  body .lay-95 .layout-lg-95,
+  body .lay-95 .lay-lg-95,
+  body .lay-95 .w-lg-95,
+  body .gs-wrap-95 .layout-lg-95,
+  body .gs-wrap-95 .lay-lg-95,
+  body .gs-wrap-95 .w-lg-95,
+  body .w-95 .layout-lg-95,
+  body .w-95 .lay-lg-95,
+  body .w-95 .w-lg-95 {
     width: 95%;
   }
 }
 @media screen and (min-width: 700px) and (max-width: 1200px) {
-  body .gutters-md > [class*="lay-"],
-  body .gutters-md > [class*="layout-"],
-  body .gutters-md > .lay,
-  body .gutters-md > .layout {
+  body .layout-95 .gutters-md > [class*="lay-"],
+  body .layout-95 .gutters-md > [class*="layout-"],
+  body .layout-95 .gutters-md > .lay,
+  body .layout-95 .gutters-md > .layout,
+  body .lay-95 .gutters-md > [class*="lay-"],
+  body .lay-95 .gutters-md > [class*="layout-"],
+  body .lay-95 .gutters-md > .lay,
+  body .lay-95 .gutters-md > .layout,
+  body .gs-wrap-95 .gutters-md > [class*="lay-"],
+  body .gs-wrap-95 .gutters-md > [class*="layout-"],
+  body .gs-wrap-95 .gutters-md > .lay,
+  body .gs-wrap-95 .gutters-md > .layout,
+  body .w-95 .gutters-md > [class*="lay-"],
+  body .w-95 .gutters-md > [class*="layout-"],
+  body .w-95 .gutters-md > .lay,
+  body .w-95 .gutters-md > .layout {
     margin: 1em;
   }
-  body .layout-md-95,
-  body .lay-md-95,
-  body .w-md-95 {
+  body .layout-95 .layout-md-95,
+  body .layout-95 .lay-md-95,
+  body .layout-95 .w-md-95,
+  body .lay-95 .layout-md-95,
+  body .lay-95 .lay-md-95,
+  body .lay-95 .w-md-95,
+  body .gs-wrap-95 .layout-md-95,
+  body .gs-wrap-95 .lay-md-95,
+  body .gs-wrap-95 .w-md-95,
+  body .w-95 .layout-md-95,
+  body .w-95 .lay-md-95,
+  body .w-95 .w-md-95 {
     width: 95%;
   }
 }
 @media screen and (min-width: 460px) and (max-width: 700px) {
-  body .gutters-sm > [class*="lay-"],
-  body .gutters-sm > [class*="layout-"],
-  body .gutters-sm > .lay,
-  body .gutters-sm > .layout {
+  body .layout-95 .gutters-sm > [class*="lay-"],
+  body .layout-95 .gutters-sm > [class*="layout-"],
+  body .layout-95 .gutters-sm > .lay,
+  body .layout-95 .gutters-sm > .layout,
+  body .lay-95 .gutters-sm > [class*="lay-"],
+  body .lay-95 .gutters-sm > [class*="layout-"],
+  body .lay-95 .gutters-sm > .lay,
+  body .lay-95 .gutters-sm > .layout,
+  body .gs-wrap-95 .gutters-sm > [class*="lay-"],
+  body .gs-wrap-95 .gutters-sm > [class*="layout-"],
+  body .gs-wrap-95 .gutters-sm > .lay,
+  body .gs-wrap-95 .gutters-sm > .layout,
+  body .w-95 .gutters-sm > [class*="lay-"],
+  body .w-95 .gutters-sm > [class*="layout-"],
+  body .w-95 .gutters-sm > .lay,
+  body .w-95 .gutters-sm > .layout {
     margin: 1em;
   }
-  body .layout-sm-95,
-  body .lay-sm-95,
-  body .w-sm-95 {
+  body .layout-95 .layout-sm-95,
+  body .layout-95 .lay-sm-95,
+  body .layout-95 .w-sm-95,
+  body .lay-95 .layout-sm-95,
+  body .lay-95 .lay-sm-95,
+  body .lay-95 .w-sm-95,
+  body .gs-wrap-95 .layout-sm-95,
+  body .gs-wrap-95 .lay-sm-95,
+  body .gs-wrap-95 .w-sm-95,
+  body .w-95 .layout-sm-95,
+  body .w-95 .lay-sm-95,
+  body .w-95 .w-sm-95 {
     width: 95%;
   }
 }
 @media screen and (max-width: 460px) {
-  body .gutters-xs > [class*="lay-"],
-  body .gutters-xs > [class*="layout-"],
-  body .gutters-xs > .lay,
-  body .gutters-xs > .layout {
+  body .layout-95 .gutters-xs > [class*="lay-"],
+  body .layout-95 .gutters-xs > [class*="layout-"],
+  body .layout-95 .gutters-xs > .lay,
+  body .layout-95 .gutters-xs > .layout,
+  body .lay-95 .gutters-xs > [class*="lay-"],
+  body .lay-95 .gutters-xs > [class*="layout-"],
+  body .lay-95 .gutters-xs > .lay,
+  body .lay-95 .gutters-xs > .layout,
+  body .gs-wrap-95 .gutters-xs > [class*="lay-"],
+  body .gs-wrap-95 .gutters-xs > [class*="layout-"],
+  body .gs-wrap-95 .gutters-xs > .lay,
+  body .gs-wrap-95 .gutters-xs > .layout,
+  body .w-95 .gutters-xs > [class*="lay-"],
+  body .w-95 .gutters-xs > [class*="layout-"],
+  body .w-95 .gutters-xs > .lay,
+  body .w-95 .gutters-xs > .layout {
     margin: 1em;
   }
-  body .lay-xs-95,
-  body .layout-xs-95,
-  body .w-xs-95 {
+  body .layout-95 .lay-xs-95,
+  body .layout-95 .layout-xs-95,
+  body .layout-95 .w-xs-95,
+  body .lay-95 .lay-xs-95,
+  body .lay-95 .layout-xs-95,
+  body .lay-95 .w-xs-95,
+  body .gs-wrap-95 .lay-xs-95,
+  body .gs-wrap-95 .layout-xs-95,
+  body .gs-wrap-95 .w-xs-95,
+  body .w-95 .lay-xs-95,
+  body .w-95 .layout-xs-95,
+  body .w-95 .w-xs-95 {
     width: 95%;
   }
 }
 @media screen and (min-width: 1200px) {
-  body .gutters-lg > [class*="lay-"],
-  body .gutters-lg > [class*="layout-"],
-  body .gutters-lg > .lay,
-  body .gutters-lg > .layout {
+  body .layout-100 .gutters-lg > [class*="lay-"],
+  body .layout-100 .gutters-lg > [class*="layout-"],
+  body .layout-100 .gutters-lg > .lay,
+  body .layout-100 .gutters-lg > .layout,
+  body .lay-100 .gutters-lg > [class*="lay-"],
+  body .lay-100 .gutters-lg > [class*="layout-"],
+  body .lay-100 .gutters-lg > .lay,
+  body .lay-100 .gutters-lg > .layout,
+  body .gs-wrap-100 .gutters-lg > [class*="lay-"],
+  body .gs-wrap-100 .gutters-lg > [class*="layout-"],
+  body .gs-wrap-100 .gutters-lg > .lay,
+  body .gs-wrap-100 .gutters-lg > .layout,
+  body .w-100 .gutters-lg > [class*="lay-"],
+  body .w-100 .gutters-lg > [class*="layout-"],
+  body .w-100 .gutters-lg > .lay,
+  body .w-100 .gutters-lg > .layout {
     margin: 1em;
   }
-  body .layout-lg-100,
-  body .lay-lg-100,
-  body .w-lg-100 {
+  body .layout-100 .layout-lg-100,
+  body .layout-100 .lay-lg-100,
+  body .layout-100 .w-lg-100,
+  body .lay-100 .layout-lg-100,
+  body .lay-100 .lay-lg-100,
+  body .lay-100 .w-lg-100,
+  body .gs-wrap-100 .layout-lg-100,
+  body .gs-wrap-100 .lay-lg-100,
+  body .gs-wrap-100 .w-lg-100,
+  body .w-100 .layout-lg-100,
+  body .w-100 .lay-lg-100,
+  body .w-100 .w-lg-100 {
     width: 100%;
   }
 }
 @media screen and (min-width: 700px) and (max-width: 1200px) {
-  body .gutters-md > [class*="lay-"],
-  body .gutters-md > [class*="layout-"],
-  body .gutters-md > .lay,
-  body .gutters-md > .layout {
+  body .layout-100 .gutters-md > [class*="lay-"],
+  body .layout-100 .gutters-md > [class*="layout-"],
+  body .layout-100 .gutters-md > .lay,
+  body .layout-100 .gutters-md > .layout,
+  body .lay-100 .gutters-md > [class*="lay-"],
+  body .lay-100 .gutters-md > [class*="layout-"],
+  body .lay-100 .gutters-md > .lay,
+  body .lay-100 .gutters-md > .layout,
+  body .gs-wrap-100 .gutters-md > [class*="lay-"],
+  body .gs-wrap-100 .gutters-md > [class*="layout-"],
+  body .gs-wrap-100 .gutters-md > .lay,
+  body .gs-wrap-100 .gutters-md > .layout,
+  body .w-100 .gutters-md > [class*="lay-"],
+  body .w-100 .gutters-md > [class*="layout-"],
+  body .w-100 .gutters-md > .lay,
+  body .w-100 .gutters-md > .layout {
     margin: 1em;
   }
-  body .layout-md-100,
-  body .lay-md-100,
-  body .w-md-100 {
+  body .layout-100 .layout-md-100,
+  body .layout-100 .lay-md-100,
+  body .layout-100 .w-md-100,
+  body .lay-100 .layout-md-100,
+  body .lay-100 .lay-md-100,
+  body .lay-100 .w-md-100,
+  body .gs-wrap-100 .layout-md-100,
+  body .gs-wrap-100 .lay-md-100,
+  body .gs-wrap-100 .w-md-100,
+  body .w-100 .layout-md-100,
+  body .w-100 .lay-md-100,
+  body .w-100 .w-md-100 {
     width: 100%;
   }
 }
 @media screen and (min-width: 460px) and (max-width: 700px) {
-  body .gutters-sm > [class*="lay-"],
-  body .gutters-sm > [class*="layout-"],
-  body .gutters-sm > .lay,
-  body .gutters-sm > .layout {
+  body .layout-100 .gutters-sm > [class*="lay-"],
+  body .layout-100 .gutters-sm > [class*="layout-"],
+  body .layout-100 .gutters-sm > .lay,
+  body .layout-100 .gutters-sm > .layout,
+  body .lay-100 .gutters-sm > [class*="lay-"],
+  body .lay-100 .gutters-sm > [class*="layout-"],
+  body .lay-100 .gutters-sm > .lay,
+  body .lay-100 .gutters-sm > .layout,
+  body .gs-wrap-100 .gutters-sm > [class*="lay-"],
+  body .gs-wrap-100 .gutters-sm > [class*="layout-"],
+  body .gs-wrap-100 .gutters-sm > .lay,
+  body .gs-wrap-100 .gutters-sm > .layout,
+  body .w-100 .gutters-sm > [class*="lay-"],
+  body .w-100 .gutters-sm > [class*="layout-"],
+  body .w-100 .gutters-sm > .lay,
+  body .w-100 .gutters-sm > .layout {
     margin: 1em;
   }
-  body .layout-sm-100,
-  body .lay-sm-100,
-  body .w-sm-100 {
+  body .layout-100 .layout-sm-100,
+  body .layout-100 .lay-sm-100,
+  body .layout-100 .w-sm-100,
+  body .lay-100 .layout-sm-100,
+  body .lay-100 .lay-sm-100,
+  body .lay-100 .w-sm-100,
+  body .gs-wrap-100 .layout-sm-100,
+  body .gs-wrap-100 .lay-sm-100,
+  body .gs-wrap-100 .w-sm-100,
+  body .w-100 .layout-sm-100,
+  body .w-100 .lay-sm-100,
+  body .w-100 .w-sm-100 {
     width: 100%;
   }
 }
 @media screen and (max-width: 460px) {
-  body .gutters-xs > [class*="lay-"],
-  body .gutters-xs > [class*="layout-"],
-  body .gutters-xs > .lay,
-  body .gutters-xs > .layout {
+  body .layout-100 .gutters-xs > [class*="lay-"],
+  body .layout-100 .gutters-xs > [class*="layout-"],
+  body .layout-100 .gutters-xs > .lay,
+  body .layout-100 .gutters-xs > .layout,
+  body .lay-100 .gutters-xs > [class*="lay-"],
+  body .lay-100 .gutters-xs > [class*="layout-"],
+  body .lay-100 .gutters-xs > .lay,
+  body .lay-100 .gutters-xs > .layout,
+  body .gs-wrap-100 .gutters-xs > [class*="lay-"],
+  body .gs-wrap-100 .gutters-xs > [class*="layout-"],
+  body .gs-wrap-100 .gutters-xs > .lay,
+  body .gs-wrap-100 .gutters-xs > .layout,
+  body .w-100 .gutters-xs > [class*="lay-"],
+  body .w-100 .gutters-xs > [class*="layout-"],
+  body .w-100 .gutters-xs > .lay,
+  body .w-100 .gutters-xs > .layout {
     margin: 1em;
   }
-  body .lay-xs-100,
-  body .layout-xs-100,
-  body .w-xs-100 {
+  body .layout-100 .lay-xs-100,
+  body .layout-100 .layout-xs-100,
+  body .layout-100 .w-xs-100,
+  body .lay-100 .lay-xs-100,
+  body .lay-100 .layout-xs-100,
+  body .lay-100 .w-xs-100,
+  body .gs-wrap-100 .lay-xs-100,
+  body .gs-wrap-100 .layout-xs-100,
+  body .gs-wrap-100 .w-xs-100,
+  body .w-100 .lay-xs-100,
+  body .w-100 .layout-xs-100,
+  body .w-100 .w-xs-100 {
     width: 100%;
   }
 }
@@ -2515,6 +4195,8 @@ a.default-link:hover {
   body .gs-block_auto-sm {
     display: block;
   }
+  body .gs-block_auto-sm > [class*="lay-"],
+  body .gs-block_auto-sm > [class*="layout-"],
   body .gs-block_auto-sm > .lay,
   body .gs-block_auto-sm > .layout {
     width: auto;

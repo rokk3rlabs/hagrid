@@ -216,62 +216,81 @@
 
 body
   @for $i from 1 through 20
-    .#{$class-layout}-#{(1*$i/20)*100},
-    .#{$class-lay}-#{(1*$i/20)*100},
-    .gs-wrap-#{(1*$i/20)*100},
-    .w-#{(1*$i/20)*100}
 
     @media screen and (min-width: $md-device)
-      .gutters-lg
-        > [class*="#{$class-lay}-"],
-        > [class*="#{$class-layout}-"],
-        > .#{$class-lay},
-        > .#{$class-layout}
-          margin: 1em
 
-      .#{$class-layout}-lg-#{(1*$i/20)*100},
-      .#{$class-lay}-lg-#{(1*$i/20)*100},
-      .w-lg-#{(1*$i/20)*100}
-        width: (($i*5)/100)*100%
+      .#{$class-layout}-#{(1*$i/20)*100},
+      .#{$class-lay}-#{(1*$i/20)*100},
+      .gs-wrap-#{(1*$i/20)*100},
+      .w-#{(1*$i/20)*100}
+
+        .gutters-lg
+          > [class*="#{$class-lay}-"],
+          > [class*="#{$class-layout}-"],
+          > .#{$class-lay},
+          > .#{$class-layout}
+            margin: 1em
+
+        .#{$class-layout}-lg-#{(1*$i/20)*100},
+        .#{$class-lay}-lg-#{(1*$i/20)*100},
+        .w-lg-#{(1*$i/20)*100}
+          width: (($i*5)/100)*100%
 
     @media screen and (min-width: $sm-device) and (max-width: $md-device)
-      .gutters-md
-        > [class*="#{$class-lay}-"],
-        > [class*="#{$class-layout}-"],
-        > .#{$class-lay},
-        > .#{$class-layout}
-          margin: 1em
 
-      .#{$class-layout}-md-#{(1*$i/20)*100},
-      .#{$class-lay}-md-#{(1*$i/20)*100},
-      .w-md-#{(1*$i/20)*100}
-        width: (($i*5)/100)*100%
+      .#{$class-layout}-#{(1*$i/20)*100},
+      .#{$class-lay}-#{(1*$i/20)*100},
+      .gs-wrap-#{(1*$i/20)*100},
+      .w-#{(1*$i/20)*100}
+
+        .gutters-md
+          > [class*="#{$class-lay}-"],
+          > [class*="#{$class-layout}-"],
+          > .#{$class-lay},
+          > .#{$class-layout}
+            margin: 1em
+
+        .#{$class-layout}-md-#{(1*$i/20)*100},
+        .#{$class-lay}-md-#{(1*$i/20)*100},
+        .w-md-#{(1*$i/20)*100}
+          width: (($i*5)/100)*100%
 
     @media screen and (min-width: $xs-device) and (max-width: $sm-device)
-      .gutters-sm
-        > [class*="#{$class-lay}-"],
-        > [class*="#{$class-layout}-"],
-        > .#{$class-lay},
-        > .#{$class-layout}
-          margin: 1em
 
-      .#{$class-layout}-sm-#{(1*$i/20)*100},
-      .#{$class-lay}-sm-#{(1*$i/20)*100},
-      .w-sm-#{(1*$i/20)*100}
-        width: (($i*5)/100)*100%
+      .#{$class-layout}-#{(1*$i/20)*100},
+      .#{$class-lay}-#{(1*$i/20)*100},
+      .gs-wrap-#{(1*$i/20)*100},
+      .w-#{(1*$i/20)*100}
+
+        .gutters-sm
+          > [class*="#{$class-lay}-"],
+          > [class*="#{$class-layout}-"],
+          > .#{$class-lay},
+          > .#{$class-layout}
+            margin: 1em
+
+        .#{$class-layout}-sm-#{(1*$i/20)*100},
+        .#{$class-lay}-sm-#{(1*$i/20)*100},
+        .w-sm-#{(1*$i/20)*100}
+          width: (($i*5)/100)*100%
 
     @media screen and (max-width: $xs-device)
-      .gutters-xs
-        > [class*="#{$class-lay}-"],
-        > [class*="#{$class-layout}-"],
-        > .#{$class-lay},
-        > .#{$class-layout}
-          margin: 1em
+      .#{$class-layout}-#{(1*$i/20)*100},
+      .#{$class-lay}-#{(1*$i/20)*100},
+      .gs-wrap-#{(1*$i/20)*100},
+      .w-#{(1*$i/20)*100}
+      
+        .gutters-xs
+          > [class*="#{$class-lay}-"],
+          > [class*="#{$class-layout}-"],
+          > .#{$class-lay},
+          > .#{$class-layout}
+            margin: 1em
 
-      .#{$class-lay}-xs-#{(1*$i/20)*100},
-      .#{$class-layout}-xs-#{(1*$i/20)*100},
-      .w-xs-#{(1*$i/20)*100}
-        width: (($i*5)/100)*100%
+        .#{$class-lay}-xs-#{(1*$i/20)*100},
+        .#{$class-layout}-xs-#{(1*$i/20)*100},
+        .w-xs-#{(1*$i/20)*100}
+          width: (($i*5)/100)*100%
 
 
   @media screen and (min-width: $md-device)

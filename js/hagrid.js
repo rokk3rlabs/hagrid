@@ -60,7 +60,7 @@ window.hagrid = (function(){
     }
     return {};
   }
-
+  
   /**
    * Get hagrid component
    * @param  {String} el Element string
